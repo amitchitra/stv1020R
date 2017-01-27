@@ -1,0 +1,34 @@
+---
+title: "Kort intro til seminarene"
+author: Martin Søyland
+date: Februar 2017
+output:
+  beamer_presentation:
+    incremental: false
+    theme: "Boadilla"
+    colortheme: "sidebartab"
+    fonttheme: "structurebold"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Note to self:
+  # Legg inn svar og kompiler fortløpende -- Evince oppdaterer automatisk
+```
+
+
+# 1. Hvorfor skal vi lære statistisk verktøy?
+
+# 2. Hva er fordelene med R?
+
+# 3. Hvilke forventninger har dere til seminarrekka?
+
+# 4. Hvordan kan vi forsikre oss om at disse forventningene innfris?
+
+# R blir det du gjør det til!
+```{r}
+r_is <- function(R){
+  print(paste("R is ", R, "!", sep = ""))
+}
+r_is("easy")
+```
