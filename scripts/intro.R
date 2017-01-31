@@ -162,15 +162,17 @@ length(Vektor)
 ##  HELTALL (INTEGER):
 IntegerVektor <- 1:10
 class(IntegerVektor)
+summary(IntegerVektor)
 
 ##  NUMERISK, ALTSÅ MED DESIMALER (NUMERIC):
 NumeriskVektor <- 0.5:10
 class(NumeriskVektor)
-
+summary(NumeriskVektor)
 
 ##  TEKST (CHARACTER):
 TekstVektor <- c("kjøtt", "fisk", "vegetar", "vegetar", "fisk", "vegetar", "kjøtt", "kjøtt", "fisk", "vegetar")
 class(TekstVektor)
+summary(TekstVektor)
 
 ##  FAKTOR, ELLER "KATEGORIER" (FACTOR):
 FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
@@ -348,8 +350,8 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
   labs(x = "Antall øl drukket", y = "Hodepineindeks",
        color = "Middag", size = "Kg mat konsumert",
        title = "Tulleplot") +
-  theme(panel.background = element_rect(fill = "white", color = "white"),
-        panel.grid.major.y = element_line(color = "gray", linetype = "dashed"),
+  theme_classic()+
+  theme(panel.grid.major.y = element_line(color = "gray", linetype = "dashed"),
         axis.line = element_line(arrow = arrow()))
 
 
