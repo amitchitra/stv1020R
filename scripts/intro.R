@@ -64,14 +64,14 @@ Vektor <- 1:10  # LEGG MERKE TIL AT ":" LAGER EN REKKE AV TALL FRA 1 TIL 10.
 Vektor
 
 ##  OBJEKTER KAN HETE HVA SOM HELST:
-Trump_VS_Clinton <- "'Murica"
-Trump_VS_Clinton
+lars_sponheim <- "Hver mann sin høne!"
+lars_sponheim
 
 ##  OBJEKTER KAN BRUKES TIL AKKURAT DET SAMME SOM DET OBJEKTET INNEHOLDER.
 ##  AKKURAT SOM VI GJORDE OVENFOR, KAN VI GJØRE REGNESTYKKER MED OBJEKTER SOM INNEHOLDER TALL (MEN IKKE DE SOM INNEHOLDER TEKST):
 Ti + Vektor
-Ti*Vektor
-Ti/Vektor
+Ti * Vektor
+Ti / Vektor
 Vektor^2
 Vektor^3
 
@@ -101,7 +101,7 @@ Vektor^3
 
 ##  FOR EKSEMPEL (HUSK AT OBJEKTET VÅRT Vektor INNEHOLDER 1 TIL 10):
 mean(Vektor)
-navn(argumenter,argument2,argument3)
+navn(argumenter, argument2, argument3)
 ?mean
 
 
@@ -111,7 +111,7 @@ navn(argumenter,argument2,argument3)
 ##  ARGUMENTET na.rm VIL DUKKE OPP I MANGE FUNKSJONER.
 
 ##  MAN KAN IKKE BEREGNE ET GJENNOMSNITT DERSOM MAN MANGLER INFORMASJON OM EN AV ENHETENE SOM GJENNOMSNITTET ER BEREGNET OVER.
-##  DERFOR FUNGERER IKKE mean HVIS VI ENDRER Vektor TIL DET FØLGENDE:
+##  DERFOR FUNGERER IKKE `mean()` HVIS VI ENDRER Vektor TIL DET FØLGENDE:
 Vektor <- c(1, 2, 3, NA)
 mean(x = Vektor)
 
@@ -127,13 +127,14 @@ mean(Ti) + Vektor
 mean(Vektor) + Ti
 
 
-##  HER ER NOEN ANDRE MATEMATISKE FUNKSJONER:
+##  HER ER NOEN ANDRE FUNKSJONER SOM BRUKES OFTE:
 median(Vektor)
 sum(Vektor)
 sd(Vektor)
 sqrt(Vektor)
+length(Vektor)
 
-
+# TEST PÅ OM DERE FØLGER MED: HVORDAN KUNNE VI REGNET GJENNOMSNITT AV "Vektor" PÅ EGENHÅND?
 
 ###################################################################
 #####                                                         #####
@@ -168,44 +169,32 @@ class(NumeriskVektor)
 
 
 ##  TEKST (CHARACTER):
-TekstVektor <- c("red","green","blue","blue","green","blue","red","red","green","blue")
+TekstVektor <- c("kjøtt", "fisk", "vegetar", "vegetar", "fisk", "vegetar", "kjøtt", "kjøtt", "fisk", "vegetar")
 class(TekstVektor)
 
 ##  FAKTOR, ELLER "KATEGORIER" (FACTOR):
-FaktorVektor <- factor(c("Liten","Middels","Stor","Liten",
-                         "Liten","Stor","Middels","Stor",
-                         "Middels","Liten"))
+FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
+                         "Liten", "Stor", "Middels", "Stor",
+                         "Middels", "Liten"))
 class(FaktorVektor)
-levels(FaktorVektor)
-
+levels(FaktorVektor) # LEGG MERKE TIL AT R HAR KATEGORISERT -- ALFABETISK
+summary(FaktorVektor)
 
 ##  LOGISKE, SOM BARE TAR VERDIEN TRUE ELLER FALSE, (LOGICAL):
-LogiskVektor <- c(TRUE,TRUE,FALSE,TRUE,FALSE,
-                  FALSE,TRUE,FALSE,FALSE,FALSE)
+LogiskVektor <- c(TRUE, TRUE, FALSE, TRUE, FALSE,
+                  FALSE, TRUE, FALSE, FALSE, FALSE)
 class(LogiskVektor)
 
 
 
 
-##  HVIS DU PRØVER Å SETTE SAMMEN ELEMENTER MED FORSKJELLIG TYPE, VIL DE KONVERTERES TIL "MINSTE FELLES MULTIPLUM",
-eksempel1 <- c("Tekst",4,TRUE)
+##  HVIS DU PRØVER Å SETTE SAMMEN ELEMENTER MED FORSKJELLIG TYPE, VIL DE KONVERTERES TIL ELEMENTET MED LAVES MÅLENIVÅ
+eksempel1 <- c("Tekst", 4, TRUE)
 
 class(eksempel1)
 eksempel1
 
-##  SIDEN TEKST IKKE KAN GJØRES TIL ET TALL ELLER TRUE, MÅ 4 OG TRUE GJØRES TIL TEKST.
-##  DET VIKTIG HER Å FÅ MED SEG AT R LESER 4 OG "4" FORSKJELLIG. DET FØRSTE BEHANDLER DEN SOM TALLET 4, DET SISTE SOM TEKSTEN "4".
-##  DEN SISTE KAN IKKE BRUKES I REGNEOPPGAVER
-
-
-##  HVA MED LOGICAL OG NUMERIC?
-eksempel2 <- c(4, TRUE, FALSE)
-
-class(eksempel2)
-eksempel2
-
-##  4 KAN IKKE GJØRES TIL TRUE ELLER FALSE. MEN R KAN GJØRE TRUE TIL 1 OG FALSE TIL 0
-##  ALTSÅ KAN LOGISKE VEKTORER OGSÅ BRUKES SOM DUMMYVARIABLER (VARIABLER SOM KUN TAR VERDIEN 0 ELLER 1)
+##  UNGÅ Å BLANDE MÅLENIVÅER (MED MINDRE DET ER EN GOD GRUNN TIL Å GJØRE DET)
 
 
 ###################################################################
@@ -234,6 +223,7 @@ NumeriskVektor[1:5]
 
 which(NumeriskVektor >= 5)
 NumeriskVektor
+
 ##  VED Å PUTTE which() INN I [] HENTER VI UT DE ELEMENTENE SOM TILFREDSSTILLER DET VI BER OM
 NumeriskVektor[which(NumeriskVektor >= 8)]  ##  DISSE GIR ALTSÅ SAMME RESULTAT
 NumeriskVektor[6:10]                        ##  DISSE GIR ALTSÅ SAMME RESULTAT
@@ -243,7 +233,8 @@ NumeriskVektor[6:10]                        ##  DISSE GIR ALTSÅ SAMME RESULTAT
 
 ##  PÅ SAMME MÅTE KAN VI STILLE R FORSKJELLIGE SPØRSMÅL SOM PROGRAMMET SVARER PÅ:
 
-LogiskVektor == FALSE         ##  HER SPØR VI PROGRAMMET: "ER ELEMENTET I LogiskVektor FALSE? SÅ GIR DEN OSS TRUE (JA DET ER FALSE), ELLER FALSE (NEI DET ER IKKE FALSE) FOR HVERT ELEMENT I LogiskVektor
+LogiskVektor == FALSE ##  HER SPØR VI PROGRAMMET: "ER ELEMENTET I LogiskVektor FALSE? SÅ GIR DEN OSS TRUE (JA DET ER FALSE), 
+                       ## ELLER FALSE (NEI DET ER IKKE FALSE) FOR HVERT ELEMENT I LogiskVektor
 which(LogiskVektor == FALSE)   ##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I LogiskVektor ER FALSE? SÅ GIR DEN OSS DE ELEMENTNUMRENE SOM HAR FALSE
 
 
@@ -255,13 +246,14 @@ which(LogiskVektor == FALSE)   ##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I 
 #####                                                         #####
 ###################################################################
 
-##    ET DATASETT ER MANGE VEKTORER SATT SAMMEN SOM KOLONNER.
-##    REKKEFØLGEN ER VIKTIG: HVER RAD INDIKERER EN VISS ENHET.
+## ET DATASETT ER MANGE VEKTORER SATT SAMMEN SOM KOLONNER.
+## REKKEFØLGEN ER VIKTIG: HVER RAD INDIKERER EN VISS ENHET.
 
 ##  VI KAN LAGE ET DATASETT AV VEKTORENE VÅRE SLIK:
-##  LEGG MERKE TIL ARGUMENTET "stringsAsFactors". VANLIGVIS BLIR "TEKST"-VEKTORER OMGJORT TIL FAKTORER, MEN DET SKRUR VI AV MED DETTE ARGUMENTET, FORDI VI VIL BEHOLDE DE SOM TEKST.
+##  LEGG MERKE TIL ARGUMENTET "stringsAsFactors". VANLIGVIS BLIR "TEKST"-VEKTORER OMGJORT TIL FAKTORER, MEN DET SKRUR VI AV MED DETTE ARGUMENTET, 
+##  FORDI VI VIL BEHOLDE DE SOM TEKST.
 datasett <- data.frame(IntegerVektor, NumeriskVektor,
-                       TekstVektor,FaktorVektor, LogiskVektor,
+                       TekstVektor, FaktorVektor, LogiskVektor,
                        stringsAsFactors = FALSE)
 class(datasett)
 datasett
@@ -293,23 +285,23 @@ datasett
 ##  NÅR ET OBJEKT HAR FLERE DIMENSJONER (SOM DATASETT SOM HAR 2: RADER OG KOLONNER), KAN VI BRUKE KOMMA I [,] TIL Å SPESIFISERE RADER OG KOLONNER
 ##  SLIK: [rad,kolonne]
 
-datasett[3,5]
+datasett[3, 5]
 
-datasett[2:5,5]
-datasett[c(1,3),c(3,5)]
+datasett[2:5, 5]
+datasett[c(1, 3), c(3, 5)]
 ##  HVIS DET ER TOMT PÅ ENTEN PLASSEN TIL RADER ELLER TIL KOLONNER, HENTER R ALLE:
-datasett[2:5,]
-datasett[which(datasett$NumeriskVektor>=5),]
+datasett[2:5, ]
+datasett[which(datasett$NumeriskVektor>=5), ]
 
 
 ##  VI KAN OGSÅ BRUKE NAVNENE PÅ KOLONNENE:
-datasett[, c("LogiskVektor","NumeriskVektor")]
+datasett[, c("LogiskVektor", "NumeriskVektor")]
 datasett[, "NumeriskVektor"]
 
 
 ##  c() BRUKES TIL Å 
-datasett[c(2,5,6), c("TekstVektor", "NumeriskVektor", "IntegerVektor")]
-datasett[c(2,5,6), c(3,2)]
+datasett[c(2, 5, 6), c("TekstVektor", "NumeriskVektor", "IntegerVektor")]
+datasett[c(2, 5, 6), c(3, 2)]
 
 
 datasett
@@ -330,30 +322,35 @@ datasett
 ##  DET FUNGERER SLIK: plot(x-aksen, y-aksen)
 plot(datasett$IntegerVektor, datasett$NumeriskVektor)
 
+## VI KOMMER TIL Å BRUKE PAKKEN ggplot2, SOM ER EN ANNEN MÅTE Å PLOTTE PÅ -- OFTE ENKLERE "OUT OF THE BOX" ENN plot()
+# install.packages("ggplot2")
+library(ggplot2)
+prikkeplot <- ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor))
+prikkeplot
 
-##  LA OSS FÅ LITT FINERE PUNKTER, MED ARGUMENTET pch=. pch= BESTEMMER UTSEENDE PÅ PUNKTENE, AVHENGIG AV HVILKET TALL DU GIR (FULL OVERSIKT OVER PUNKTER FINNER DU HER: http://www.statmethods.net/advgraphs/parameters.html)
-plot(datasett$IntegerVektor, datasett$NumeriskVektor, pch=16)
+## VI MÅ LEGGE TIL EN "LAYER" FOR Å FÅ INN DATA
+prikkeplot + geom_point()
+
+##   (FULL OVERSIKT OVER PUNKTER FINNER DU HER: http://sape.inf.usi.ch/quick-reference/ggplot2/shape)
+prikkeplot + geom_point(shape = 1)
 
 
 ##  VI KAN OGSÅ FARGELEGGE BASERT PÅ VERDIEN I EN ANNEN KOLONNE:
-plot(datasett$IntegerVektor, datasett$NumeriskVektor, pch=16,
-     col=datasett$TekstVektor)
-
-
+prikkeplot <- prikkeplot + geom_point(aes(color = TekstVektor))
+prikkeplot
 ##  LA OSS SETTE NAVN PÅ X- OG Y-AKSEN
-plot(datasett$IntegerVektor, datasett$NumeriskVektor,
-     pch=16, col=datasett$TekstVektor, xlab="Enheter øl",
-     ylab="Styrke på hodepine")
-
-
-## LÆR FLERE INSTILLINGER TIL PLOTET VED HJELP AV ?par
-?par
+prikkeplot <- prikkeplot + labs(x = "Antall øl drukket", y = "Hodepineindeks")
+prikkeplot
 
 ##  DE SOM VIL HA LITT Å BRYNE SEG PÅ, KAN PRØVE Å FORSTÅ ALT SOM FOREGÅR HER:
-plot(datasett$IntegerVektor, datasett$NumeriskVektor, pch=16, col=datasett$TekstVektor, xlab="Enheter øl", ylab="Styrke på hodepine",
-     bty="n",cex=as.numeric(datasett$FaktorVektor),yaxt="n")
-grid()
-axis(2, at=datasett$IntegerVektor,las=2,col="white")
+ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
+  geom_point(aes(color = TekstVektor, size = as.numeric(FaktorVektor)), shape = 64) +
+  labs(x = "Antall øl drukket", y = "Hodepineindeks",
+       color = "Middag", size = "Kg mat konsumert",
+       title = "Tulleplot") +
+  theme(panel.background = element_rect(fill = "white", color = "white"),
+        panel.grid.major.y = element_line(color = "gray", linetype = "dashed"),
+        axis.line = element_line(arrow = arrow()))
 
 
 
@@ -374,11 +371,11 @@ table(datasett$IntegerVektor)
 table(datasett$LogiskVektor)
 table(datasett$FaktorVektor)    ##  ALTSÅ: 4 ENHETER HAR VERDIEN "Liten"
 
-table(datasett$FaktorVektor , datasett$LogiskVektor) ## 3 ENHETER HAR KOBINASJONEN "Stor" OG "FALSE"
+table(datasett$FaktorVektor, datasett$LogiskVektor) ## 3 ENHETER HAR KOBINASJONEN "Stor" OG "FALSE"
 
 
 ##  SOM ALLE ANDRE TING, KAN VI LAGRE TABELLER SOM OBJEKTER:
-tabell <- table(datasett$FaktorVektor,datasett$LogiskVektor)
+tabell <- table(datasett$FaktorVektor, datasett$LogiskVektor)
 
 class(tabell)
 
@@ -386,10 +383,12 @@ tabell
 
 ##  I STEDET FOR Å FÅ ANTALL ENHETER, KAN VI BEREGNE ANDEL ENHETER:
 sum(tabell)                         ##  DET ER TI ENHETER. DELER VI HVER CELLE I TABELLEN PÅ DETTE, FÅR VI ANDEL.
-tabell/sum(tabell)                  ##  ANDEL
+tabell / sum(tabell)                  ##  ANDEL
 tabell_andel <- tabell/sum(tabell)
 
 
+# SIDEN VI IKKE TRENGER DISSE TULLEDATAENE VIDERE KAN VI FJERNE ALT FRA "ENVIRONMENT"
+rm(list = ls())
 
 
 ##### OPPGAVEINNLEVERINGER #####
