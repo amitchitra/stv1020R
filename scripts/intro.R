@@ -134,7 +134,7 @@ sd(Vektor)
 sqrt(Vektor)
 length(Vektor)
 
-# TEST PÅ OM DERE FØLGER MED: HVORDAN KUNNE VI REGNET GJENNOMSNITT AV "Vektor" PÅ EGENHÅND?
+# TEST PÅ OM DERE FØLGER MED: HVORDAN KUNNE VI REGNET GJENNOMSNITT AV "Vektor" PÅ EGENHÅND? (Uten å bruke `mean()`)
 
 ###################################################################
 #####                                                         #####
@@ -399,3 +399,15 @@ rm(list = ls())
 ##  VED Å HA DISSE, KAN JEG TILPASSE SEMINARENE ETTER HVA DERE FÅR TIL OG IKKE
 ##  DET VIL SI: SVARER DU IKKE PÅ OPPGAVENE, HAR DU HELLER INGEN INNFLYTELSE PÅ HVORDAN JEG TILPASSER SEMINARENE.
 
+
+
+##### NESTE GANG #####
+
+# 1. Gjennomgang av hjemmeoppgaver
+# 2. Prosjekter i R-studio
+# 3. Laste inn data
+# 4. Tabulering
+# 5. Deskriptiv statistikk
+# 6. Enkel omkoding
+# 7. Boxplot
+# 8. Kjikvadrattesten

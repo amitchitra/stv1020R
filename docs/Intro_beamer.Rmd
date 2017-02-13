@@ -37,3 +37,4 @@ r_is("easy")
 1. Slack for kommunikasjon
 2. www.statpol.wordpress.com 
 3. Oppgaver mellom seminarene
+  - Sendes som direktemelding til meg ("martigso") på slack
