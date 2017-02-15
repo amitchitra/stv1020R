@@ -6,6 +6,7 @@
 #####                                                       #####
 #################################################################
 
+1+1
 
 ###   NOEN TIPS TIL Å MANØVRERE SEG I RSTUDIO: ###
 ##  I SCRIPTET SKRIVER VI KODE. SÅ SENDER VI KODEN TIL KONSOLLEN. I KONSOLLEN SKJER MAGIEN.
@@ -100,7 +101,7 @@ Vektor^3
 ##  DER FINNER MAN argumentene TIL EN FUNKSJON, OG "STANDARDINSTILLINGENE"
 
 ##  FOR EKSEMPEL (HUSK AT OBJEKTET VÅRT Vektor INNEHOLDER 1 TIL 10):
-mean(Vektor)
+mean(x = Vektor)
 navn(argumenter, argument2, argument3)
 ?mean
 
@@ -112,11 +113,11 @@ navn(argumenter, argument2, argument3)
 
 ##  MAN KAN IKKE BEREGNE ET GJENNOMSNITT DERSOM MAN MANGLER INFORMASJON OM EN AV ENHETENE SOM GJENNOMSNITTET ER BEREGNET OVER.
 ##  DERFOR FUNGERER IKKE `mean()` HVIS VI ENDRER Vektor TIL DET FØLGENDE:
-Vektor <- c(1, 2, 3, NA)
+Vektor <- c(10, 2, 3, NA)
 mean(x = Vektor)
 
 ##  VED Å SETTE na.rm=TRUE, FJERNER R ALLE "NA" FØR DEN BEREGNER GJENNOMSNITTET:
-mean(x = Vektor, na.rm=TRUE)
+mean(x = Vektor, na.rm = TRUE)
 
 
 
@@ -135,7 +136,7 @@ sqrt(Vektor)
 length(Vektor)
 
 # TEST PÅ OM DERE FØLGER MED: HVORDAN KUNNE VI REGNET GJENNOMSNITT AV "Vektor" PÅ EGENHÅND? (Uten å bruke `mean()`)
-
+sum(Vektor) / length(Vektor)
 ###################################################################
 #####                                                         #####
 #####                                                         #####
@@ -166,11 +167,13 @@ summary(IntegerVektor)
 
 ##  NUMERISK, ALTSÅ MED DESIMALER (NUMERIC):
 NumeriskVektor <- 0.5:10
+NumeriskVektor
 class(NumeriskVektor)
 summary(NumeriskVektor)
 
 ##  TEKST (CHARACTER):
-TekstVektor <- c("kjøtt", "fisk", "vegetar", "vegetar", "fisk", "vegetar", "kjøtt", "kjøtt", "fisk", "vegetar")
+TekstVektor <- c("kjøtt", "fisk", "vegetar", "vegetar", "fisk",
+                 "vegetar", "kjøtt", "kjøtt", "fisk", "vegetar")
 class(TekstVektor)
 summary(TekstVektor)
 
@@ -178,6 +181,7 @@ summary(TekstVektor)
 FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
                          "Liten", "Stor", "Middels", "Stor",
                          "Middels", "Liten"))
+
 class(FaktorVektor)
 levels(FaktorVektor) # LEGG MERKE TIL AT R HAR KATEGORISERT -- ALFABETISK
 summary(FaktorVektor)
@@ -235,7 +239,7 @@ NumeriskVektor[6:10]                        ##  DISSE GIR ALTSÅ SAMME RESULTAT
 
 ##  PÅ SAMME MÅTE KAN VI STILLE R FORSKJELLIGE SPØRSMÅL SOM PROGRAMMET SVARER PÅ:
 
-LogiskVektor == FALSE ##  HER SPØR VI PROGRAMMET: "ER ELEMENTET I LogiskVektor FALSE? SÅ GIR DEN OSS TRUE (JA DET ER FALSE), 
+LogiskVektor == FALSE ##  HER SPØR VI PROGRAMMET: "ER ELEMENTET I LogiskVektor FALSE? SÅ GIR DEN OSS TRUE (JA DET ER FALSE),
                        ## ELLER FALSE (NEI DET ER IKKE FALSE) FOR HVERT ELEMENT I LogiskVektor
 which(LogiskVektor == FALSE)   ##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I LogiskVektor ER FALSE? SÅ GIR DEN OSS DE ELEMENTNUMRENE SOM HAR FALSE
 
@@ -252,7 +256,7 @@ which(LogiskVektor == FALSE)   ##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I 
 ## REKKEFØLGEN ER VIKTIG: HVER RAD INDIKERER EN VISS ENHET.
 
 ##  VI KAN LAGE ET DATASETT AV VEKTORENE VÅRE SLIK:
-##  LEGG MERKE TIL ARGUMENTET "stringsAsFactors". VANLIGVIS BLIR "TEKST"-VEKTORER OMGJORT TIL FAKTORER, MEN DET SKRUR VI AV MED DETTE ARGUMENTET, 
+##  LEGG MERKE TIL ARGUMENTET "stringsAsFactors". VANLIGVIS BLIR "TEKST"-VEKTORER OMGJORT TIL FAKTORER, MEN DET SKRUR VI AV MED DETTE ARGUMENTET,
 ##  FORDI VI VIL BEHOLDE DE SOM TEKST.
 datasett <- data.frame(IntegerVektor, NumeriskVektor,
                        TekstVektor, FaktorVektor, LogiskVektor,
@@ -264,8 +268,8 @@ datasett
 
 ##  FOR Å GJØRE DET MER ELEGANT, KAN VI SPESIFISERE NAVN PÅ KOLONNENE:
 datasett2 <- data.frame(Integer = IntegerVektor,
-                        Numerisk = NumeriskVektor, 
-                        Tekst = TekstVektor, 
+                        Numerisk = NumeriskVektor,
+                        Tekst = TekstVektor,
                         Faktor = FaktorVektor,
                         Logisk = LogiskVektor, stringsAsFactors = FALSE)
 datasett2
@@ -274,7 +278,7 @@ datasett2
 View(datasett2)
 
 
-##  FOR Å HENTE UT EN KOLONNE, BRUKER VI $ SLIK: 
+##  FOR Å HENTE UT EN KOLONNE, BRUKER VI $ SLIK:
 ##  <navn på datasettet>$<navn på kolonne>
 
 datasett$NumeriskVektor
@@ -301,7 +305,7 @@ datasett[, c("LogiskVektor", "NumeriskVektor")]
 datasett[, "NumeriskVektor"]
 
 
-##  c() BRUKES TIL Å 
+##  c() BRUKES TIL Å
 datasett[c(2, 5, 6), c("TekstVektor", "NumeriskVektor", "IntegerVektor")]
 datasett[c(2, 5, 6), c(3, 2)]
 
