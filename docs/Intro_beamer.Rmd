@@ -18,13 +18,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 # 1. Hvorfor skal vi lære statistisk verktøy?
-
+  - For å gjøre kompliserte analyser-- vanskelig for hånd
+  - Relevant senere i studieløpet
+  - Forsknings- og arb.liv
+  
 # 2. Hva er fordelene med R?
-
+  - Bedre forståelse for programmet
+  - Brukes på master
+  - Gratis!
+  - Enklere programmeringssyntaks
+  
 # 3. Hvilke forventninger har dere til seminarrekka?
 
 # 4. Hvordan kan vi forsikre oss om at disse forventningene innfris?
-
+  - Aktivisere gruppa
+  - Konkrete øvelser
+  - Oppgavesett
+  
 # R blir det du gjør det til!
 ```{r}
 r_is <- function(R){
