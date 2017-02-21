@@ -21,7 +21,7 @@
 ##  PRØV Å SENDE DISSE LINJENE:
 
 
-##  UTREGNING:
+#UTREGNING:
 1 + 1
 
 ##  VI "SPØR" R OM VI HAR RIKTIG SVAR:
@@ -31,7 +31,7 @@
 
 
 ##  KONSOLLEN EVALUERER IKKE TING SOM KOMMER ETTER "#"
-10 * 10 # + 10 * 3
+10 * 10 + 10 * 3
 
 
 # <----- FORHOLD DEG TIL KODELINJNENE
@@ -59,7 +59,7 @@ Ti
 navn <- "Hva skal den inneholde da?!?"
 navn
 
-navn <- "Hvertfall ikke dét"
+Navn <- "Hvertfall ikke dét"
 ## OG ETT OBJEKT KAN INNEHOLDE MER ENN BARE 1 TALL:
 Vektor <- 1:10  # LEGG MERKE TIL AT ":" LAGER EN REKKE AV TALL FRA 1 TIL 10.
 Vektor
@@ -74,8 +74,7 @@ Ti + Vektor
 Ti * Vektor
 Ti / Vektor
 Vektor^2
-Vektor^3
-
+Vektor^Ti
 
 
 #################################################################
@@ -113,8 +112,8 @@ navn(argumenter, argument2, argument3)
 
 ##  MAN KAN IKKE BEREGNE ET GJENNOMSNITT DERSOM MAN MANGLER INFORMASJON OM EN AV ENHETENE SOM GJENNOMSNITTET ER BEREGNET OVER.
 ##  DERFOR FUNGERER IKKE `mean()` HVIS VI ENDRER Vektor TIL DET FØLGENDE:
-Vektor <- c(10, 2, 3, NA)
-mean(x = Vektor)
+Vektor2 <- c(10, 2, 3, NA)
+mean(x = Vektor2, na.rm = FALSE)
 
 ##  VED Å SETTE na.rm=TRUE, FJERNER R ALLE "NA" FØR DEN BEREGNER GJENNOMSNITTET:
 mean(x = Vektor, na.rm = TRUE)
@@ -123,6 +122,7 @@ mean(x = Vektor, na.rm = TRUE)
 
 ##  ELLERS FUNGERER mean OG MANGE ANDRE MATEMATISKE FUNKSJONER AKKURAT SOM MATEMATIKK:
 Vektor <- 1:10
+mean(Vektor)
 mean(Ti + Vektor)
 mean(Ti) + Vektor
 mean(Vektor) + Ti
@@ -137,6 +137,7 @@ length(Vektor)
 
 # TEST PÅ OM DERE FØLGER MED: HVORDAN KUNNE VI REGNET GJENNOMSNITT AV "Vektor" PÅ EGENHÅND? (Uten å bruke `mean()`)
 sum(Vektor) / length(Vektor)
+
 ###################################################################
 #####                                                         #####
 #####                                                         #####
@@ -156,7 +157,6 @@ sum(Vektor) / length(Vektor)
 ##  DET BETYR AT DU IKKE KAN SLÅ SAMMEN TALL OG TEKST.
 ##  HVILKEN TYPE VEKTOREN HAR, FINNER VI MED FUNKSJONEN class()
 ##  FOR Å LAGE EN VEKTOR, KAN VI BRUKE ":" OG c()
-
 ##  VI HAR SÆRLIG 5 TYPER VEKTORER:
 
 
@@ -176,11 +176,18 @@ TekstVektor <- c("kjøtt", "fisk", "vegetar", "vegetar", "fisk",
                  "vegetar", "kjøtt", "kjøtt", "fisk", "vegetar")
 class(TekstVektor)
 summary(TekstVektor)
+table(TekstVektor)
 
 ##  FAKTOR, ELLER "KATEGORIER" (FACTOR):
+FaktorVektor <- c("Liten", "Middels", "Stor", "Liten",
+                  "Liten", "Stor", "Middels", "Stor",
+                  "Middels", "Liten")
+FaktorVektor <- factor(FaktorVektor)
+
 FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
                          "Liten", "Stor", "Middels", "Stor",
                          "Middels", "Liten"))
+?factor
 
 class(FaktorVektor)
 levels(FaktorVektor) # LEGG MERKE TIL AT R HAR KATEGORISERT -- ALFABETISK
@@ -215,7 +222,7 @@ eksempel1
 ##  JO: HVIS VI HAR EN VEKTOR MED 10 ELEMENTER, MEN VIL HA UT ELEMENT NR. 5, MÅ VI PÅ EN ELLER ANNET MÅTE BE R OM Å BARE FÅ ELEMENT NR. 5.
 ##  DA BRUKER VI []
 
-
+FaktorVektor
 FaktorVektor[3]
 NumeriskVektor[3]
 FaktorVektor[5]
@@ -226,13 +233,15 @@ NumeriskVektor[1:5]
 ##  FOR EKSEMPEL VIL VI KANSKJE HA UT DE SOM HAR STEMT venstre I EN SPØRREUNDERSØKELSE, ALLE MED INNTEKT UNDER 400 000 ELLER LIGNENDE.
 
 ##  which() SVARER OSS PÅ "HVILKE DELER AV DETTE OBJEKTET TILFREDSSTILLER <ET ELLER ANNET>. FOR EKSEMPEL:
-
-which(NumeriskVektor >= 5)
 NumeriskVektor
+NumeriskVektor >= 5
+which(NumeriskVektor >= 5)
+
 
 ##  VED Å PUTTE which() INN I [] HENTER VI UT DE ELEMENTENE SOM TILFREDSSTILLER DET VI BER OM
-NumeriskVektor[which(NumeriskVektor >= 8)]  ##  DISSE GIR ALTSÅ SAMME RESULTAT
-NumeriskVektor[6:10]                        ##  DISSE GIR ALTSÅ SAMME RESULTAT
+NumeriskVektor[which(NumeriskVektor >= 8)]  ##  DISSE GIR ALTSÅ SAMMERESULTAT
+which(NumeriskVektor >= 8)
+NumeriskVektor[9:10]                        ##  DISSE GIR ALTSÅ SAMME RESULTAT
 
 
 
@@ -259,7 +268,7 @@ which(LogiskVektor == FALSE)   ##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I 
 ##  LEGG MERKE TIL ARGUMENTET "stringsAsFactors". VANLIGVIS BLIR "TEKST"-VEKTORER OMGJORT TIL FAKTORER, MEN DET SKRUR VI AV MED DETTE ARGUMENTET,
 ##  FORDI VI VIL BEHOLDE DE SOM TEKST.
 datasett <- data.frame(IntegerVektor, NumeriskVektor,
-                       TekstVektor, FaktorVektor, LogiskVektor,
+                       TekstVektor, FaktorVektor,
                        stringsAsFactors = FALSE)
 class(datasett)
 datasett
@@ -267,11 +276,11 @@ datasett
 
 
 ##  FOR Å GJØRE DET MER ELEGANT, KAN VI SPESIFISERE NAVN PÅ KOLONNENE:
-datasett2 <- data.frame(Integer = IntegerVektor,
-                        Numerisk = NumeriskVektor,
-                        Tekst = TekstVektor,
-                        Faktor = FaktorVektor,
-                        Logisk = LogiskVektor, stringsAsFactors = FALSE)
+datasett2 <- data.frame(id = IntegerVektor,
+                        sovn = NumeriskVektor,
+                        middag = TekstVektor,
+                        mengde = FaktorVektor,
+                        stringsAsFactors = FALSE)
 datasett2
 
 ##  MED View() KAN VI SE PÅ DATASETTET I STEDET FOR Å PRINTE I KONSOLLEN:
@@ -281,10 +290,12 @@ View(datasett2)
 ##  FOR Å HENTE UT EN KOLONNE, BRUKER VI $ SLIK:
 ##  <navn på datasettet>$<navn på kolonne>
 
-datasett$NumeriskVektor
-datasett$IntegerVektor
+datasett2$sovn
+datasett2$middag
 ##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
-datasett$NumeriskVektor[3]
+datasett2$middag[which(datasett2$middag == "fisk")]
+datasett2$sovn[which(datasett2$middag == "fisk")]
+
 datasett
 
 ##  VI MÅ IKKE BRUKE $. VI KAN OGSÅ BRUKE []
