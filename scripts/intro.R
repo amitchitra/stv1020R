@@ -29,11 +29,7 @@
 
 
 ##  KONSOLLEN EVALUERER IKKE TING SOM KOMMER ETTER "#"
-<<<<<<< HEAD
-10 * 10 + 10 * 3
-=======
 10 * 10 + # 10 * 3
->>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 
 # <----- FORHOLD DEG TIL KODELINJNENE
@@ -62,12 +58,8 @@ navn <- "Hva skal den inneholde da?!?"
 navn
 
 Navn <- "Hvertfall ikke dét"
-<<<<<<< HEAD
-=======
-
 navn <- 10
 
->>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 ## OG ETT OBJEKT KAN INNEHOLDE MER ENN BARE 1 TALL:
 Vektor <- 1:10  # LEGG MERKE TIL AT ":" LAGER EN REKKE AV TALL FRA 1 TIL 10.
 Vektor
@@ -123,11 +115,7 @@ navn(argumenter, argument2, argument3)
 ##  MAN KAN IKKE BEREGNE ET GJENNOMSNITT DERSOM MAN MANGLER INFORMASJON OM EN AV ENHETENE SOM GJENNOMSNITTET ER BEREGNET OVER.
 ##  DERFOR FUNGERER IKKE `mean()` HVIS VI ENDRER Vektor TIL DET FØLGENDE:
 Vektor2 <- c(10, 2, 3, NA)
-<<<<<<< HEAD
 mean(x = Vektor2, na.rm = FALSE)
-=======
-mean(x = Vektor2)
->>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 ##  VED Å SETTE na.rm=TRUE, FJERNER R ALLE "NA" FØR DEN BEREGNER GJENNOMSNITTET:
 mean(x = Vektor2, na.rm = TRUE)
@@ -197,15 +185,11 @@ FaktorVektor <- c("Liten", "Middels", "Stor", "Liten",
                   "Liten", "Stor", "Middels", "Stor",
                   "Middels", "Liten")
 FaktorVektor <- factor(FaktorVektor)
-<<<<<<< HEAD
-=======
 ?factor
->>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
                          "Liten", "Stor", "Middels", "Stor",
                          "Middels", "Liten"))
-?factor
 
 class(FaktorVektor)
 levels(FaktorVektor) # LEGG MERKE TIL AT R HAR KATEGORISERT -- ALFABETISK
@@ -255,11 +239,7 @@ NumeriskVektor[1:5]
 NumeriskVektor
 NumeriskVektor >= 5
 which(NumeriskVektor >= 5)
-<<<<<<< HEAD
-
-=======
 100:1
->>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 ##  VED Å PUTTE which() INN I [] HENTER VI UT DE ELEMENTENE SOM TILFREDSSTILLER DET VI BER OM
 NumeriskVektor[which(NumeriskVektor >= 8)]  ##  DISSE GIR ALTSÅ SAMMERESULTAT
@@ -314,21 +294,14 @@ View(datasett2)
 
 ##  FOR Å HENTE UT EN KOLONNE, BRUKER VI $ SLIK:
 ##  <navn på datasettet>$<navn på kolonne>
-
-<<<<<<< HEAD
 datasett2$sovn
 datasett2$middag
-##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
-=======
-datasett2$id
-datasett2$middag
-##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
 
->>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
+##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
 datasett2$middag[which(datasett2$middag == "fisk")]
 datasett2$sovn[which(datasett2$middag == "fisk")]
 
-datasett
+datasett2
 
 ##  VI MÅ IKKE BRUKE $. VI KAN OGSÅ BRUKE []
 ##  NÅR ET OBJEKT HAR FLERE DIMENSJONER (SOM DATASETT SOM HAR 2: RADER OG KOLONNER), KAN VI BRUKE KOMMA I [,] TIL Å SPESIFISERE RADER OG KOLONNER
