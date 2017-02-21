@@ -6,8 +6,6 @@
 #####                                                       #####
 #################################################################
 
-1+1
-
 ###   NOEN TIPS TIL Å MANØVRERE SEG I RSTUDIO: ###
 ##  I SCRIPTET SKRIVER VI KODE. SÅ SENDER VI KODEN TIL KONSOLLEN. I KONSOLLEN SKJER MAGIEN.
 ##  CTRL/CMD + ENTER: SENDER KODE
@@ -31,7 +29,11 @@
 
 
 ##  KONSOLLEN EVALUERER IKKE TING SOM KOMMER ETTER "#"
+<<<<<<< HEAD
 10 * 10 + 10 * 3
+=======
+10 * 10 + # 10 * 3
+>>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 
 # <----- FORHOLD DEG TIL KODELINJNENE
@@ -51,8 +53,8 @@
 
 
 ##  OBJEKTER LAGER VI VED HJELP AV "<-"
-Ti <- 10
-Ti
+et_tall <- 10
+et_tall
 
 
 ##  VI TRENGER IKKE BEGRENSE OSS TIL TALL:
@@ -60,6 +62,12 @@ navn <- "Hva skal den inneholde da?!?"
 navn
 
 Navn <- "Hvertfall ikke dét"
+<<<<<<< HEAD
+=======
+
+navn <- 10
+
+>>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 ## OG ETT OBJEKT KAN INNEHOLDE MER ENN BARE 1 TALL:
 Vektor <- 1:10  # LEGG MERKE TIL AT ":" LAGER EN REKKE AV TALL FRA 1 TIL 10.
 Vektor
@@ -70,6 +78,8 @@ lars_sponheim
 
 ##  OBJEKTER KAN BRUKES TIL AKKURAT DET SAMME SOM DET OBJEKTET INNEHOLDER.
 ##  AKKURAT SOM VI GJORDE OVENFOR, KAN VI GJØRE REGNESTYKKER MED OBJEKTER SOM INNEHOLDER TALL (MEN IKKE DE SOM INNEHOLDER TEKST):
+Ti <- 10
+
 Ti + Vektor
 Ti * Vektor
 Ti / Vektor
@@ -113,10 +123,14 @@ navn(argumenter, argument2, argument3)
 ##  MAN KAN IKKE BEREGNE ET GJENNOMSNITT DERSOM MAN MANGLER INFORMASJON OM EN AV ENHETENE SOM GJENNOMSNITTET ER BEREGNET OVER.
 ##  DERFOR FUNGERER IKKE `mean()` HVIS VI ENDRER Vektor TIL DET FØLGENDE:
 Vektor2 <- c(10, 2, 3, NA)
+<<<<<<< HEAD
 mean(x = Vektor2, na.rm = FALSE)
+=======
+mean(x = Vektor2)
+>>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 ##  VED Å SETTE na.rm=TRUE, FJERNER R ALLE "NA" FØR DEN BEREGNER GJENNOMSNITTET:
-mean(x = Vektor, na.rm = TRUE)
+mean(x = Vektor2, na.rm = TRUE)
 
 
 
@@ -183,6 +197,10 @@ FaktorVektor <- c("Liten", "Middels", "Stor", "Liten",
                   "Liten", "Stor", "Middels", "Stor",
                   "Middels", "Liten")
 FaktorVektor <- factor(FaktorVektor)
+<<<<<<< HEAD
+=======
+?factor
+>>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
                          "Liten", "Stor", "Middels", "Stor",
@@ -224,6 +242,7 @@ eksempel1
 
 FaktorVektor
 FaktorVektor[3]
+NumeriskVektor
 NumeriskVektor[3]
 FaktorVektor[5]
 NumeriskVektor[1:5]
@@ -236,7 +255,11 @@ NumeriskVektor[1:5]
 NumeriskVektor
 NumeriskVektor >= 5
 which(NumeriskVektor >= 5)
+<<<<<<< HEAD
 
+=======
+100:1
+>>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 
 ##  VED Å PUTTE which() INN I [] HENTER VI UT DE ELEMENTENE SOM TILFREDSSTILLER DET VI BER OM
 NumeriskVektor[which(NumeriskVektor >= 8)]  ##  DISSE GIR ALTSÅ SAMMERESULTAT
@@ -247,6 +270,7 @@ NumeriskVektor[9:10]                        ##  DISSE GIR ALTSÅ SAMME RESULTAT
 
 
 ##  PÅ SAMME MÅTE KAN VI STILLE R FORSKJELLIGE SPØRSMÅL SOM PROGRAMMET SVARER PÅ:
+LogiskVektor
 
 LogiskVektor == FALSE ##  HER SPØR VI PROGRAMMET: "ER ELEMENTET I LogiskVektor FALSE? SÅ GIR DEN OSS TRUE (JA DET ER FALSE),
                        ## ELLER FALSE (NEI DET ER IKKE FALSE) FOR HVERT ELEMENT I LogiskVektor
@@ -270,6 +294,7 @@ which(LogiskVektor == FALSE)   ##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I 
 datasett <- data.frame(IntegerVektor, NumeriskVektor,
                        TekstVektor, FaktorVektor,
                        stringsAsFactors = FALSE)
+TekstVektor
 class(datasett)
 datasett
 ?data.frame
@@ -290,9 +315,16 @@ View(datasett2)
 ##  FOR Å HENTE UT EN KOLONNE, BRUKER VI $ SLIK:
 ##  <navn på datasettet>$<navn på kolonne>
 
+<<<<<<< HEAD
 datasett2$sovn
 datasett2$middag
 ##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
+=======
+datasett2$id
+datasett2$middag
+##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
+
+>>>>>>> 13d9f21c5548b0eeabaa6cf0da2ecd7748c301a4
 datasett2$middag[which(datasett2$middag == "fisk")]
 datasett2$sovn[which(datasett2$middag == "fisk")]
 
@@ -302,17 +334,17 @@ datasett
 ##  NÅR ET OBJEKT HAR FLERE DIMENSJONER (SOM DATASETT SOM HAR 2: RADER OG KOLONNER), KAN VI BRUKE KOMMA I [,] TIL Å SPESIFISERE RADER OG KOLONNER
 ##  SLIK: [rad,kolonne]
 
-datasett[3, 5]
+datasett[3, 4]
 
-datasett[2:5, 5]
-datasett[c(1, 3), c(3, 5)]
+datasett[2:5, 3]
+datasett2[c(1, 3), c(2, 3)]
 ##  HVIS DET ER TOMT PÅ ENTEN PLASSEN TIL RADER ELLER TIL KOLONNER, HENTER R ALLE:
-datasett[2:5, ]
-datasett[which(datasett$NumeriskVektor>=5), ]
+datasett2[2:5, ]
+datasett2[which(datasett2$sovn >= 5), ]
 
 
 ##  VI KAN OGSÅ BRUKE NAVNENE PÅ KOLONNENE:
-datasett[, c("LogiskVektor", "NumeriskVektor")]
+datasett[, c("sovn", "middag")]
 datasett[, "NumeriskVektor"]
 
 

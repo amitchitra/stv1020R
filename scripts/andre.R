@@ -10,7 +10,7 @@
 
 # 0. Få tak i data og lagre data
 #     a. Lag prosjekt i R-studio -> rullegardin helt oppe til høyre
-#     b. Last ned personstemmer.csv fra https://github.com/martigso/stv1020R/data
+#     b. Last ned personstemmer.csv fra https://github.com/martigso/stv1020R/tree/master/data
 #        (God mappestruktur er viktig: lag en egen mappe for data!)
 
 # 1. Last inn `personstemmer.csv` i R

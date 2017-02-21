@@ -45,7 +45,7 @@ knitr::opts_chunk$set(echo = TRUE)
   - Kunne stille spørsmål -- lav terskel
   - Forberedelse fra begge sider
   - Repetere det som er viktig -- rød tråd gjennom seminarene
-  
+
 # R blir det du gjør det til!
 ```{r}
 r_is <- function(R){
