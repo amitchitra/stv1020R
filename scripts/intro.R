@@ -58,7 +58,6 @@ navn <- "Hva skal den inneholde da?!?"
 navn
 
 Navn <- "Hvertfall ikke dét"
-
 navn <- 10
 
 ## OG ETT OBJEKT KAN INNEHOLDE MER ENN BARE 1 TALL:
@@ -116,7 +115,7 @@ navn(argumenter, argument2, argument3)
 ##  MAN KAN IKKE BEREGNE ET GJENNOMSNITT DERSOM MAN MANGLER INFORMASJON OM EN AV ENHETENE SOM GJENNOMSNITTET ER BEREGNET OVER.
 ##  DERFOR FUNGERER IKKE `mean()` HVIS VI ENDRER Vektor TIL DET FØLGENDE:
 Vektor2 <- c(10, 2, 3, NA)
-mean(x = Vektor2)
+mean(x = Vektor2, na.rm = FALSE)
 
 ##  VED Å SETTE na.rm=TRUE, FJERNER R ALLE "NA" FØR DEN BEREGNER GJENNOMSNITTET:
 mean(x = Vektor2, na.rm = TRUE)
@@ -191,7 +190,6 @@ FaktorVektor <- factor(FaktorVektor)
 FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
                          "Liten", "Stor", "Middels", "Stor",
                          "Middels", "Liten"))
-?factor
 
 class(FaktorVektor)
 levels(FaktorVektor) # LEGG MERKE TIL AT R HAR KATEGORISERT -- ALFABETISK
@@ -296,15 +294,14 @@ View(datasett2)
 
 ##  FOR Å HENTE UT EN KOLONNE, BRUKER VI $ SLIK:
 ##  <navn på datasettet>$<navn på kolonne>
-
-datasett2$id
+datasett2$sovn
 datasett2$middag
-##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
 
+##  ... OG INDEKSERER PÅ SAMME MÅTE SOM OVENFOR:
 datasett2$middag[which(datasett2$middag == "fisk")]
 datasett2$sovn[which(datasett2$middag == "fisk")]
 
-datasett
+datasett2
 
 ##  VI MÅ IKKE BRUKE $. VI KAN OGSÅ BRUKE []
 ##  NÅR ET OBJEKT HAR FLERE DIMENSJONER (SOM DATASETT SOM HAR 2: RADER OG KOLONNER), KAN VI BRUKE KOMMA I [,] TIL Å SPESIFISERE RADER OG KOLONNER

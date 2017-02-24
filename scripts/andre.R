@@ -21,6 +21,7 @@ table(kjonn)
 # 1. Last inn `personstemmer.csv` i R
 #     a. Bruk read.csv()-funksjonen
 #     b. Husk å sende R inn i data-mappen
+<<<<<<< HEAD
 personst <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/personstemmer.csv", stringsAsFactors = FALSE)
 
 str(personst)
@@ -28,19 +29,18 @@ head(personst)
 tail(personst)
 summary(personst)
 
+
 # 2. Vis hvordan du får frem frekvensfordelingen til «parti» med et stolpediagram.
 
 # Installerer pakken "ggplot2"
 # install.packages("ggplot2")
 
 # Laster inn pakken ggplot2
-library("ggplot2")
+library(ggplot2)
 
 # Lager enkelt barplot av parti
-ggplot(personst, aes(x = parti)) +
-  geom_bar(fill = "darkblue") +
-  theme_classic() +
-  labs(x = "Parti", y = "Antall kandidater")
+ggplot(personst, aes(x = parti))+
+  geom_bar()
 
 # Legger på farge på søyler og forenklet tema
 ggplot(personst, aes(x = parti))+
@@ -49,14 +49,13 @@ ggplot(personst, aes(x = parti))+
 
 # Endrer teksten på x- og y-aksen
 ggplot(personst, aes(x = parti))+
-  geom_bar()+
-  theme_bw()+
+  geom_bar(fill = "darkblue")+
+  theme_classic()+
   labs(x = "Parti", y = "Antall kandidater")
 
 
 # 3. Vis hvordan du får frem gjennomsnitt, median, standardavvik, skjevhet og kurtose til «mediatreff».
 
-#
 # Gjennomsnitt og median
 summary(personst$medietreff)
 # Stort avvik mellom gjennomsnitt og median -- trolig veldig skjevfordelt
@@ -77,12 +76,11 @@ skewness(personst$medietreff)
 kurtosis(personst$medietreff)
 #Fordelingen til variabelen er også veldig spiss
 
-
+# Bonus
 ggplot(personst, aes(x = medietreff)) +
   geom_density() +
   theme_classic()
-# plot(density(rnorm(1000)))
-# Dette viser godt at variabelen er skjev og spiss
+  # Dette viser godt at variabelen er skjev og spiss
 
 # 4. Opprett variabelen «media» med utgangspunkt i variabelen «mediatreff», slik at:
 #     a. media = 0: Hvis mediatreff er lavere enn sin median
@@ -97,10 +95,9 @@ personst$media <- NA # Lager først en "tom" variabel
 tail(personst)
 
 personst$media[which(personst$medietreff < median(personst$medietreff))] <- 0 # Setter verdien 0 til de som har mindre enn median
+tail(personst)
 
-personst$media[which(personst$medietreff >= median(personst$medietreff))] <- 1
-
-# Setter verdien 1 til de som har mer eller lik median
+personst$media[which(personst$medietreff >= median(personst$medietreff))] <- 1 # Setter verdien 1 til de som har mer eller lik  median
 tail(personst)
 
 table(personst$medietreff, personst$media) # Sjekker at resultatet ble riktig
@@ -108,9 +105,9 @@ table(personst$medietreff, personst$media) # Sjekker at resultatet ble riktig
 
 # 2. bruke ifelse
 ?ifelse
-# Hvis medietreff er mindren enn median av medietreff skal "media" ha verdien 0, alle andre skal ha 1
-personst$media <- ifelse(personst$medietreff < median(personst$medietreff), 0, 1)
 
+# Hvis medietreff er mindren enn median av medietreff skal "media" ha verdien 0, alle andre skal ha 0
+personst$media <- ifelse(personst$medietreff < median(personst$medietreff), 0, 1)
 
 table(personst$medietreff, personst$media) # Sjekker at resultatet ble riktig
 
@@ -118,6 +115,7 @@ table(personst$medietreff, personst$media) # Sjekker at resultatet ble riktig
 ggplot(personst, aes(x = valgt, y = personstemmer))+
   geom_boxplot()+
   theme_bw()
+
 # Som vi kan forvente, er resultatet at de som ble valgt har mer personstemmer enn de som ikke ble valgt og de som ble vara
 
 # Bonus: Hva skjer her?
@@ -130,6 +128,7 @@ ggplot(personst[which(personst$parti == "ap" | personst$parti == "frp"), ], aes(
 
 # Setter alle som ble vara til missing, og resten til sin opprinnelige verdi
 personst$valgt2 <- ifelse(personst$valgt == "Vara", NA, personst$valgt)
+
 # personst$valgt == "Vara"
 # head(personst)
 
@@ -139,12 +138,12 @@ table(personst$valgt, personst$valgt2, useNA = "always") # Sjekker at det ble ri
 #     a. Hva forteller testen om styrken og retningen på sammenhengen? 
 
 # Beregner Pearson's R
-cor(personst$personstemmer, personst$medietreff)
-# Veldig høy korrelasjon; dess flere ganger en kandidat har vært i media, dess mer personstemmer vil kandidaten få
+cor(personst$personstemmer, personst$medietreff) 
+  # Veldig høy korrelasjon; dess flere ganger en kandidat har vært i media, dess mer personstemmer vil kandidaten få
 
 # Evt. også med konfidensintervall
 cor.test(personst$personstemmer, personst$medietreff)
-# Sammenhengen er også signifikant på 5% nivå
+  # Sammenhengen er også signifikant på 5% nivå
 
 # Bonus: Hvorfor er dette veldig dårlige slutninger?
 ggplot(personst, aes(x = medietreff, y = personstemmer))+
