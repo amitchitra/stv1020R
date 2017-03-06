@@ -1,3 +1,11 @@
+### religion.csv
+[Subset of European Values Study](http://www.europeanvaluesstudy.eu/)
+
+How to load:
+  ~~~~ 
+  religion <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/religion.csv")
+  ~~~~ 
+
 ### personstemmer.csv
 From Langsæther, Gjerløw og Søyland (work in progress), "Voter competence in election: On media exposure and preferential voting"
 

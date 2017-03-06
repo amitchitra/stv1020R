@@ -1,14 +1,3 @@
-#####################
-#### Seminar 1.5 ####
-#####################
-
-# Gjenomgang av de leverte skriptene fra forrige gang.
-prof <- c("Malnes", "Gornitzka", "Solli")
-
-kjonn <- c("mann", "kvinne", "kvinne")
-
-table(kjonn)
-
 ###################
 #### Seminar 2 ####
 ###################
@@ -21,7 +10,6 @@ table(kjonn)
 # 1. Last inn `personstemmer.csv` i R
 #     a. Bruk read.csv()-funksjonen
 #     b. Husk å sende R inn i data-mappen
-<<<<<<< HEAD
 personst <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/personstemmer.csv", stringsAsFactors = FALSE)
 
 str(personst)
@@ -36,10 +24,10 @@ summary(personst)
 # install.packages("ggplot2")
 
 # Laster inn pakken ggplot2
-library(ggplot2)
+library("ggplot2")
 
 # Lager enkelt barplot av parti
-ggplot(personst, aes(x = parti))+
+ggplot(personst, aes(x = parti)) +
   geom_bar()
 
 # Legger på farge på søyler og forenklet tema
@@ -49,7 +37,7 @@ ggplot(personst, aes(x = parti))+
 
 # Endrer teksten på x- og y-aksen
 ggplot(personst, aes(x = parti))+
-  geom_bar(fill = "darkblue")+
+  geom_bar(fill = "darkred")+
   theme_classic()+
   labs(x = "Parti", y = "Antall kandidater")
 
@@ -95,6 +83,7 @@ personst$media <- NA # Lager først en "tom" variabel
 tail(personst)
 
 personst$media[which(personst$medietreff < median(personst$medietreff))] <- 0 # Setter verdien 0 til de som har mindre enn median
+
 tail(personst)
 
 personst$media[which(personst$medietreff >= median(personst$medietreff))] <- 1 # Setter verdien 1 til de som har mer eller lik  median

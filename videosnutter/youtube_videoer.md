@@ -1,5 +1,6 @@
 ## Våren 2017
 - [Seminar 1](https://youtu.be/dNGfFkzpguc)
+- [Seminar 2](https://youtu.be/puLdcco0vLc)
 
 ## Våren 2016
 - [Introduksjon til R og RStudio](https://youtu.be/hDJ_qBW2TpY?list=PLV_hHjWSKKOg6_Nha1LOnCQ-BJgzSM9rH)
