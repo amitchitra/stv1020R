@@ -1,3 +1,12 @@
+### congress.Rdata
+Congress members since the 80th Congress (US) from https://github.com/rudeboybert/fivethirtyeight/blob/master/data/
+
+How to load:
+  ~~~~ 
+  download.file("https://github.com/martigso/stv1020R/blob/master/data/congress.Rdata?raw=true", "data/congress.Rdata")
+  load("data/congress.Rdata")
+  ~~~~ 
+
 ### religion.csv
 [Subset of European Values Study](http://www.europeanvaluesstudy.eu/)
 
