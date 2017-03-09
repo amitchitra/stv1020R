@@ -3,8 +3,7 @@ Congress members since the 80th Congress (US) from https://github.com/rudeboyber
 
 How to load:
   ~~~~ 
-  download.file("https://github.com/martigso/stv1020R/blob/master/data/congress.Rdata?raw=true", "data/congress.Rdata")
-  load("data/congress.Rdata")
+  congress <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/congress.csv")
   ~~~~ 
 
 ### religion.csv

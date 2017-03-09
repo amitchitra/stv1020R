@@ -2,7 +2,7 @@
 # og spesielt forholdet mellom senatet og huset. Han har bedt deg strukturere og analysere 
 # data på dette. 
 # Du finner ut at det er data tilgjengelig på https://github.com/martigso/stv1020R/tree/master/data . Du kan kjøre:
-download.file("https://github.com/martigso/stv1020R/blob/master/data/congress.Rdata?raw=true", "data/congress.Rdata")
+
 
 # Disse dataene inkluderer nummer på kongressen, kammer, alder, navn med mer.
 
