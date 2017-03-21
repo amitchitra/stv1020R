@@ -4,7 +4,7 @@
 # (se https://github.com/martigso/stv1020R/tree/master/docs/aidgrowth). 
 
 # 0. Last inn dataene "aidgrowth"
-aidgrowth <- read.csv("./data/aidgrowth.csv", stringsAsFactors = FALSE)
+aidgrowth <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/aidgrowth.csv", stringsAsFactors = FALSE)
 
 # 1. Gjør om variablen "gdp_pr_capita" til en logget versjon med funksjonen log() 
   # og omkod variablene "sub_saharan_africa", "fast_growing_east_asia" og "period" til
