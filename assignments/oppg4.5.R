@@ -13,7 +13,7 @@ aidgrowth <- read.csv("./data/aidgrowth.csv", stringsAsFactors = FALSE)
 
 # 2. Repliser modellen med funksjonen lm() (OLS). Se https://github.com/martigso/stv1020R/tree/master/docs/aidgrowth for originale resultater og modellspesifikasjon
   # Avhengig variabel er "gdp_growth"
-  # Husk å bruke variablene du opprettet i oppgave 1
+  # Husk å bruke variablene du opprettet i oppgave 1 (også "period", selv om denne ikke er rapportert i Burnside & Dollar (2000))
   # a. Blir resultatene like? 
   # b. Hvilken informasjon har Burnside & Dollar utelatt fra sin tabell, og hvorfor er dette problematisk?
 
