@@ -1,5 +1,5 @@
 ### aidgrowth.csv
-[Replication file for Easterly, Levine, and Roodman (2003)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=425001)
+[Replication file for Burnside and Dollar (2000)](http://www.jstor.org/stable/117311?seq=1#page_scan_tab_contents)
 
 How to load:
   ~~~~
