@@ -3,7 +3,7 @@
 
 How to load:
   ~~~~
-  congress <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/aidgrowth.csv")
+  aidgrowth <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/aidgrowth.csv")
   ~~~~
 * See [here](https://github.com/martigso/stv1020R/tree/master/docs/aidgrowth) for variable description and more
 
