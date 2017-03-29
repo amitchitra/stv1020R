@@ -2,6 +2,7 @@
 - [Seminar 1](https://youtu.be/dNGfFkzpguc)
 - [Seminar 2](https://youtu.be/puLdcco0vLc)
 - [Seminar 3](https://youtu.be/zK2sifkfnjU)
+- [Seminar 4](https://youtu.be/2RhGD4yvlcc)
 
 ## Våren 2016
 - [Introduksjon til R og RStudio](https://youtu.be/hDJ_qBW2TpY?list=PLV_hHjWSKKOg6_Nha1LOnCQ-BJgzSM9rH)
