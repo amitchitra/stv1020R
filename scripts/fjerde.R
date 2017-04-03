@@ -1,16 +1,37 @@
+rm(list = ls())
+cat("\014") # Eller ctrl / cmd + l
+
 # Oppgaver fjerde seminar
 # Datasett: religion.csv
 # Hver rad er en respondent i en survey
 
-
 # 0. Opprett nytt skript og finn kode for å laste inn data (samme som forrige gang: ligger på www.github.com/martigso/stv1020r)
 
 # 1. Last inn religion i kommaseperert format (.csv) -- viktig å huske stringsAsFactors = FALSE
-religion <- read.csv("https://raw.githubusercontent.com/martigso/stv1020R/master/data/religion.csv", stringsAsFactors = FALSE)
+religion <- read.csv("./data/religion.csv", stringsAsFactors = FALSE)
+str(religion)
 
+#####
 # 2. Kod om variabelen "utdanning til å være nummerisk, slik at laveste utdanningsnivå er 0 og høyeste er 6 (det er 7 nivåer i data) i en ny variabel "utd_num"
+table(religion$utdanning, useNA = "always")
+
+# install.packages("car")
 library(car)
-table(religion$utdanning)
+
+religion$utd_num <- recode(religion$utdanning, "
+                           'pre-primary education or none education'='0';
+                           'primary education or first stage of basic education'='1';
+                           'lower secondary or second stage of basic education'='2';
+                           '(upper) secondary education'='3';
+                           'post-secondary non-tertiary education'='4';
+                           'first stage of tertiary education'='5';
+                           'second stage of tertiary education'='6'")
+
+table(religion$utdanning, religion$utd_num)
+# table(substr(religion$utdanning, 1, 10), religion$utd_num)
+
+######
+
 religion$utd_num <- recode(religion$utdanning,"
                            'pre-primary education or none education'='0';
                            'primary education or first stage of basic education'='1';
@@ -18,49 +39,74 @@ religion$utd_num <- recode(religion$utdanning,"
                            '(upper) secondary education'='3';
                            'post-secondary non-tertiary education'='4';
                            'first stage of tertiary education'='5';
-                           'second stage of tertiary education'='6'
-                           ")
+                           'second stage of tertiary education'='6'")
 
 table(religion$utd_num, substr(religion$utdanning, 1, 5))
-
-  # a. Lag så enda en ny variabel (utd_cat) der du slår sammen alle fra den opprinnelige variabelen som har "primary" i teksten, alle som har "secondary" og alle
+unique(religion$utdanning)
+  
+  # a. Lag så enda en ny variabel (utd_cat) der du slår sammen alle 
+    # fra den opprinnelige variabelen som har "primary" i teksten, alle som har "secondary" og alle
     # som har "tertiary" i hver sin kategori. 
 religion$utd_cat <- NA
-religion$utd_cat[which(grepl("tertiary", religion$utdanning))] <- "Tertiary" # Siden en av "secondary" verdiene også har "tertiary" i seg kjører vi denne først
+
+# Siden en av "secondary" verdiene også har "tertiary" i seg kjører vi denne først
+religion$utd_cat[which(grepl("tertiary", religion$utdanning))] <- "Tertiary" 
 religion$utd_cat[which(grepl("secondary", religion$utdanning))] <- "Secondary"
 religion$utd_cat[which(grepl("primary", religion$utdanning))] <- "Primary"
 
-table(religion$utd_cat, religion$utd_num)
+# grepl("tertiary", religion$utdanning)
+# which(grepl("tertiary", religion$utdanning))
+
+table(religion$utdanning, religion$utd_cat)
+# table(substr(religion$utdanning, 1, 10), religion$utd_cat)
 
 
   # b. Hvilken av de to nye variablene bør vi bruke videre? Og hvorfor?
-
-
-
+  
+#####
 # 3. Lag et subset "prot" av "religion" data, der bare de som er protestanter eller ikke har religiøs tilhørighet er med
+table(religion$relig_denom)
+
 prot <- subset(religion, relig_denom == "ingen religion" | relig_denom == "protestant")
 
+# data[rader , kolonner]
+prot2 <- religion[which(religion$relig_denom == "ingen religion" | religion$relig_denom == "protestant"), ]
+
   # a. Gjør om "relig_denom" til nummerisk dikotom variabel der protestanter får verdien 0 og ingen religion verdien 1 
+
+# Måte 1:
+prot$denom_num <- NA
+prot$denom_num[which(prot$relig_denom == "ingen religion")] <- 1
+prot$denom_num[which(prot$relig_denom == "protestant")] <- 0
+
+table(prot$relig_denom, prot$denom_num)
+
+
+# Måte 2:
 prot$relig_denom_num <- ifelse(prot$relig_denom == "protestant", 0, 1)
 
+table(prot$relig_denom, prot$relig_denom_num, useNA = "always")
+
+#####
 # 4. I de nye data, vis hvordan du finner korrelasjonen mellom "aksept_homofili", "utd_num", "alder" og "ant_barn".
 # Bruk pakken "psych" 
+# install.packages("psych")
 library(psych)
-cor_mat <- corr.test(prot[, c("utd_num", "alder", "aksept_aktiv_dodshjelp", "ant_barn")])
+cor_mat <- corr.test(prot[, c("utd_num", "alder", "aksept_homofili", "ant_barn")], alpha = 0.01)
 print(cor_mat, short = FALSE)
   
   # a. Kommentér sammenhengens styrke, retning, form og om sammenhengen er signifikant.
 
-
-
+######
 # 5. Vis hvordan du gjennomfører en regresjonsanalyse med "aksept_aktiv_dodshjelp" som AV 
 # og "alder", "utd_cat", "ant_barn" og "kjonn" som UV. Husk 'na.action = "na.exclude"'
-aktiv_reg <- lm(aksept_aktiv_dodshjelp ~ alder + factor(utd_cat) + factor(kjonn) + ant_barn + factor(relig_denom), na.action = "na.exclude", data = prot)
+aktiv_reg <- lm(aksept_aktiv_dodshjelp ~ alder + factor(utd_cat) + factor(kjonn) + ant_barn + factor(relig_denom),
+                na.action = "na.exclude", data = prot)
 
 summary(aktiv_reg)
 
 # a. Tolk konstantleddet, variabelkoeffisientene og R2.
-
+#########
 # b. Lag en kopi av "prot", "prot2", der du standariserer versjoner av alle variablene i analysen.
 prot2 <- prot
 prot2[, c("utd_cat", "kjonn", "relig_denom_num")] <- apply(prot2[, c("utd_cat", "kjonn", "relig_denom_num")], 2, function(x) as.numeric(as.factor(x)))
@@ -78,26 +124,33 @@ aktiv_reg_scaled <- lm(aksept_aktiv_dodshjelp ~ alder + utd_cat + kjonn + ant_ba
 
 summary(aktiv_reg_scaled)
 
+######
 # 6. For å teste om regresjonene er i tråd med forutsetningene til OLS må vi gjøre flere ting:
 # a. Legg inn forventede verdier og residualer i datasettet "prot"
 prot$reg_resid <- resid(aktiv_reg)
 prot$reg_forventet <- predict(aktiv_reg)
 
-prot2$reg_scaled_resid <- resid(aktiv_reg_scaled)
-prot2$reg_scaled_forventet <- predict(aktiv_reg_scaled)
+# prot2$reg_scaled_resid <- resid(aktiv_reg_scaled)
+# prot2$reg_scaled_forventet <- predict(aktiv_reg_scaled)
 
-# b. Sjekk om residualene er normalfordelt i begge regresjonene. Kommenter resultatene.
+######
+# b. Sjekk om residualene er normalfordelt i regresjonen. Kommenter resultatene.
 library(ggplot2)
 ggplot(prot, aes(x = reg_resid)) +
   geom_density()
 
-ggplot(prot2, aes(x = reg_scaled_resid)) +
-  geom_density()
-
+# ggplot(prot2, aes(x = reg_scaled_resid)) +
+#   geom_density()
+######
 # c. Visualiser forventede verdier og residualer. Kommenter plottet.
 ggplot(prot, aes(x = reg_forventet, y = reg_resid)) +
   geom_point() +
   geom_smooth(method = "lm")
+
+
+# Seminar 5:
+  # Si fra om ting dere vil gå gjennom/repetere før siste seminar innen torsdag 30.03 !
+
 
 
 # BONUS! Visualiser forskjellen i forventet Y mellom en ikke religiøs person og en protestant
@@ -107,7 +160,8 @@ pred_df <- data.frame(alder = median(prot$alder, na.rm = TRUE),
                       ant_barn = median(prot$ant_barn, na.rm = TRUE),
                       relig_denom = c("protestant", "ingen religion"))
 
-pred_df <- data.frame(pred_df, predict(aktiv_reg, newdata = pred_df, interval = "confidence", level = 0.99)) 
+pred <- predict(aktiv_reg, newdata = pred_df, interval = "confidence", level = .95)
+pred_df <- data.frame(pred_df, pred) 
   # Se hva som skjer når level varieres
 
 ggplot(pred_df, aes(x = relig_denom, y = fit)) +
@@ -115,6 +169,3 @@ ggplot(pred_df, aes(x = relig_denom, y = fit)) +
   scale_y_continuous(limits = c(5, 7.1), breaks = seq(5, 7, .5)) +
   labs(x = "Religiøs tilhørighet", y = "Forventet aksept for aktiv dødshjelp") +
   theme_bw()
-
-
-unique(prot$kjonn)
