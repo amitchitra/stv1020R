@@ -1,8 +1,8 @@
 # Mens ting blir gjort ferdig
-./data/trump_face.csv
-./data/sentiment/*
-./docs/testprove/*
-./scripts/femte*
+data/trump_face.csv
+data/sentiment/*
+docs/testprove/*
+scripts/femte*
 
 # History files
 .Rhistory
