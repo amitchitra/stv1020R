@@ -1,8 +1,6 @@
 # Mens ting blir gjort ferdig
-data/trump_face.csv
 data/sentiment/*
-docs/testprove/*
-scripts/femte*
+stv_1020prove/*
 
 # History files
 .Rhistory
@@ -40,4 +38,3 @@ vignettes/*.pdf
 .Rproj.user
 README.html
 *.Rmd
-
