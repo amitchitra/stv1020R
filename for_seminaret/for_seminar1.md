@@ -13,9 +13,9 @@ Første gang du åpner Rstudio er alt fremmed, du blir du møtt av en rekke vind
 Installere R og Rstudio
 -----------------------
 
-Før du går videre, ber jeg om at du installerer [R](https://cloud.r-project.org/) og [Rstudio](https://www.rstudio.com/products/rstudio/download/). Følg lenkene, og kjør standardinstallasjonen for ditt operativsystem. Ta kontakt med meg på <erlend.langorgen@stv.uio.no> dersom installasjonen ikke virker.
+Før du går videre, ber jeg om at du installerer [R](https://cloud.r-project.org/) og [Rstudio](https://www.rstudio.com/products/rstudio/download/). Følg lenkene, og kjør standardinstallasjonen for ditt operativsystem. Ta kontakt med meg på slack, eller på <erlend.langorgen@stv.uio.no> dersom installasjonen ikke virker.
 
-Dersom du ikke vil installere R og Rstudio på pcen din, kan du finne en UiO-pc med Rstudio, eller kjøre Rstudio gjennom [kiosk](https://kiosk.uio.no/RDWeb/Pages/en-US/login.aspx?ReturnUrl=/RDWeb/Pages/en-US/Default.aspx/kontor).
+Dersom du ikke vil installere R og Rstudio på pcen din, kan du finne en UiO-pc med Rstudio, eller kjøre Rstudio gjennom [kiosk](https://kiosk.uio.no/RDWeb/Pages/en-US/login.aspx?ReturnUrl=/RDWeb/Pages/en-US/Default.aspx/kontor). Det vil være tilgang på pcer med Rstudio i seminarene.
 
 Åpne Rstudio
 ------------
@@ -42,7 +42,7 @@ Når du har åpnet et nytt R-script vil denne skjermen med fire paneler dukker o
 
 ![](../bilder/Rstudio3.PNG)
 
-I R-scriptet, det øverste panelet til venstre, kan du nå skrive R-koder. La oss prøve å skrive to gyldige R-koder, `Hello world!` og "1+1". R-scriptet ditt skal se slik ut:
+I R-scriptet, det øverste panelet til venstre, kan du nå skrive R-koder. La oss prøve å skrive to gyldige R-koder, `Hello world!` og `1+1`. R-scriptet ditt skal se slik ut:
 
 ![](../bilder/Rstudio4.PNG)
 
@@ -51,7 +51,7 @@ Du har nå skrevet to linjer med R-kode!
 Console
 -------
 
-I forrige bilde merket jeg den nederste linjen i **Console**, som begynner med `>`. Den er tom, men når vi kjører koden vi har skrevet, vil Rstudio evaluere/kjøre koden i **Console**. Dersom koden produserer output, vil denne også printes i **Console**. Vi kjører koden ved å merke koden i scriptet, og trykke på `ctrl/cmd + enter`. La oss se på resultatet av å kjøre koden vi har skrevet i scriptet:
+I forrige bilde merket jeg den nederste linjen i **Console**, som begynner med `>`. Den er tom, men når vi kjører koden vi har skrevet, vil Rstudio evaluere/kjøre koden i **Console**. Dersom koden produserer output, vil denne også printes i **Console**. Vi kjører koden ved å merke koden i scriptet, og trykke på `ctrl/cmd + enter` (`ctrl` på pc, `cmd` på mac). La oss se på resultatet av å kjøre koden vi har skrevet i scriptet:
 
 ![](../bilder/Rstudio5.PNG)
 
