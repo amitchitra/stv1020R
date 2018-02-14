@@ -1,0 +1,93 @@
+---
+title: "Introduksjon 1. seminar"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Velkommen til R-seminar
+
+Velkommen til R-undervisningen i STV 1020! Jeg setter stor pris på at du tar deg tid til å gjennomføre denne introduksjonen før første seminar. Jeg lover at det ikke tar mer enn ca. et kvarter.  
+
+Det går fint å bruke egen laptop i seminarene. Da må dere imidlertid intallere [Rstudio](https://www.rstudio.com/products/rstudio/download/) og [R](https://cloud.r-project.org/) på forhånd. Dersom dere får problemer, ber jeg om at dere kommer innom kontoret mitt i 7., så skal dere få hjelp med installasjonen.  
+
+### Min første R-kode
+
+R er et fleksibelt og kraftfullt statistisk programm, som kan gjøre alle slags tenkelige og utenkelige operasjoner i forbindelse med dataanalyse. I tillegg til å gjennomføre statistisk analyse, kan R brukes til en rekke andre ting, som å laste ned og strukturere data fra nettsider, lage interaktive plot, og å effektivisere alle slags repetitive oppgaver. 
+
+For deres første R-kode, skal dere imidlertid få starte enklere. R kan brukes som kalkulator. I vinduet under kan du skrive inn mattestykker og få R til å løse dem, ved å trykke på `run`. Forsøk å regne ut `2 + 2`, `4 - 2`, `4/2` og `2*2` i vinduet, trykk deretter på `run`. Dersom noe går galt, kan du trykke på `start over`  
+
+```{r kalkulator, exercise=TRUE}
+
+```
+
+Gratulerer, du har nå kjørt din første R-kode!
+
+### Enheter, variabler og verdier
+
+Du trenger ikke bruke R for å gjøre mattestykkene over. Men klarer du å gjør det samme mattestykket for en rekke *enheter* samtidig? R kan gjøre dette for deg. La oss lage noen enheter og se. Funksjonen c() lar oss binde sammen verdier (vi skiller mellom verdier med `,`). Dette er nyttig for å binde sammen informasjon om en enhet.  Vi kan lagre verdiene som navngitte enheter eller andre typer objekter (f.eks. variabler) ved hjelp av `<-`. Vi kan velge alle mulige slags navn, men merk at R er sensitivt til store og små bokstaver!  
+
+Jeg har laget et eksempel under, basert på slopestyle-konkurransen i snowboard under OL. Her er enhetene  de tre medaljevinnerne, Gerrard, Parrot og McMorris. Første verdi er poengsummen fra første runde, andre verdi er for andre runde, og tredje verdi er fra tredje runde. Kjør koden jeg har lagt inn under og forsøk å forstå hva som skjer.
+
+Merk at når vi oppretter objekter med `<-`, gir vi input til R, vi får ikke output. Når vi kjører et objekt, som `Gerrard` forteller imidlertid R oss hva objektet (her: enheten) inneholder.
+
+
+
+
+
+```{r enheter, exercise=TRUE, exercise.lines = 8}
+Gerrard <- c(43.33, 46.40, 87.16)
+Parrot <- c(45.13, 49.48, 86.00)
+McMorris <- c(75.3, 85.2, 60.68)
+Gerrard + Parrot + McMorris
+Gerrard
+sum(Gerrard)
+sum(Parrot)
+sum(McMorris)
+```
+
+Hva tror du funksjonen `sum` gjør?
+
+## Topic 2
+
+### Exercise with Hint
+
+*Here's an exercise where the chunk is pre-evaulated via the `exercise.eval` option (so the user can see the default output we'd like them to customize). We also add a "hint" to the correct solution via the chunk immediate below labeled `print-limit-hint`.*
+
+Modify the following code to limit the number of rows printed to 5:
+
+```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
