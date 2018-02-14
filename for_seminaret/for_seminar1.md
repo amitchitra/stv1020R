@@ -42,7 +42,7 @@ Når du har åpnet et nytt R-script vil denne skjermen med fire paneler dukker o
 
 ![](../bilder/Rstudio3.PNG)
 
-I R-scriptet, det øverste panelet til venstre, kan du nå skrive R-koder. La oss prøve å skrive to gyldige R-koder, `Hello world!` og `1+1`. R-scriptet ditt skal se slik ut:
+I R-scriptet, det øverste panelet til venstre, kan du nå skrive R-koder. La oss prøve å skrive to gyldige R-koder, `"Hello world!"` og `1+1`. R-scriptet ditt skal se slik ut:
 
 ![](../bilder/Rstudio4.PNG)
 
@@ -55,7 +55,7 @@ I forrige bilde merket jeg den nederste linjen i **Console**, som begynner med `
 
 ![](../bilder/Rstudio5.PNG)
 
-På linjen med `>` vises kode som R har kjørt. På linjen under kode som er kjørt, vises output fra koden. Koden `"Hello world!"`ble lest som tekst, og printet som outputen **Hello world!**. Koden `1+1` ble lest som et mattestykke, og Rstudio produserte outputen **2**, løsningen på mattestykket vi ba Rstudio om å kjøre/evaluere for oss. Rstudio kan tydeligvis både lese og regne.
+På linjen med `>` vises kode som R har kjørt. På linjen under kode som er kjørt, vises output fra koden. Koden `"Hello world!"`ble lest som tekst, og printet som outputen **"Hello world!"**. Koden `1+1` ble lest som et mattestykke, og Rstudio produserte outputen **2**, løsningen på mattestykket vi ba Rstudio om å kjøre/evaluere for oss. Rstudio kan tydeligvis både lese og regne.
 
 Environment
 -----------
