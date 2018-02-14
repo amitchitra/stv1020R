@@ -2,7 +2,7 @@
 Portal for deling av data og skript for R-undervisning i STV1020
 
 ## **Seminarstruktur**
-Vi kommer til å ha 5 undervisningsseminarer og ett seminar hvor det avholdes prøve. Om man ikke skulle bestå prøven første gang, blir det også satt opp seminar for å ta ny prøve (for alle), dato kommer snart. Alt dette finner dere frem til på [semestersidene](http://www.uio.no/studier/emner/sv/statsvitenskap/STV1020/v18/).
+Vi kommer til å ha 5 undervisningsseminarer og ett seminar hvor det avholdes prøve. Om man ikke skulle bestå prøven første gang, blir det satt opp ett seminar for å ta ny prøve, dato kommer snart. Alt dette finner dere frem til på [semestersidene](http://www.uio.no/studier/emner/sv/statsvitenskap/STV1020/v18/).
 
 #### **Første seminar**
 Til første seminar vil jeg gjerne at dere gjør dere tenker gjennom hva dere forventer å lære, og hvordan det kan være lurt å gå frem for å nå læringsmålene deres. Jeg vil også at du ser på dokumentet [jeg har forberedt til første seminar](https://github.com/langoergen/stv1020R/blob/master/for_seminaret/for_seminar1.md).
