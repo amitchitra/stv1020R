@@ -7,7 +7,7 @@ Vi kommer til å ha 5 undervisningsseminarer og ett seminar hvor det avholdes pr
 #### **Første seminar**
 Til første seminar vil jeg gjerne at dere gjør dere tenker gjennom hva dere forventer å lære, og hvordan det kan være lurt å gå frem for å nå læringsmålene deres. Jeg vil også at du ser på dokumentet [jeg har forberedt til første seminar](https://github.com/langoergen/stv1020R/blob/master/for_seminaret/for_seminar1.md).
 
-Dette korte dokumentet går gjennom installasjon av R og Rstudio. Det forteller også ørlitet om hvordan Rstudio og mappesystemet virker. Jeg forventer at dere leser gjennom før første seminar, og  at dere har grunnleggende forståelse for filsystemet på Windows/Mac og mappestruktur. Dette har tidligere vært en flaskehals som har gått utover hva vi har rukket å gjøre i seminarene. 
+Dette korte dokumentet går gjennom installasjon av R og Rstudio. Det forteller også ørlite om hvordan Rstudio og mappesystemet virker. Jeg forventer at dere leser gjennom før første seminar, og  at dere har grunnleggende forståelse for filsystemet på Windows/Mac og mappestruktur. Dette har tidligere vært en flaskehals som har gått utover hva vi har rukket å gjøre i seminarene. 
 
 #### **Egen datamaskin**
 I selve seminarene har dere valget mellom å bruke maskinene som står i seminarrommet via deres UiO-bruker (R er forhåndsinstallert på alle maskinene) eller dere kan bruke egen bærbar PC/Mac. Hvis dere bruker egen maskin forventer jeg at dere har installert både R og RStudio før det første seminaret. 
