@@ -107,3 +107,8 @@ P.S. - Om viktigheten av working directory og mapper:
 -----------------------------------------------------
 
 Ofte ligger mapper inne i andre mapper, under en harddisk (for eksempel C:). Mappene vi må klikke oss gjennom for å komme fra harddisken til en bestemt mappe, f.eks. STV1020, utgjør *filstien* til mappen STV1020. Ved å spesifisere filstien til en mappe, kan du kan bytte working directory med funksjonen `setwd()`. Dersom vi skriver navnet på en fil som ligger i en annen mappe enn **working directory**, vil ikke R klare å finne denne, med mindre vi spesifiserer filstien. Vi kan lese filstien til nåværende **working directory** på toppen av **Files**-panelet. Fra bildet over, ser vi at mitt **working directory** er satt til C:/Users/erlenlan/OneDrive/STV1020/data (Bruk `/` for å skille mellom mapper når du skriver filstier). Du kan også finne nåværende **working directory** ved å kjøre koden `getwd()`.
+
+Bonus
+-----
+
+Dersom du vil prøve litt mer R-kode, kan du gjøre det [på denne interaktive nettsiden](https://langoergen.shinyapps.io/Intro1/). Dessverre har serveren jeg bruker noe begrenset kapasitet, siden vil bare virke mellom kl. 10.00-18.00 fredag 16., mandag 19. og onsdag 21. februar. Dersom siden ikke virker er årsaken problemer med serveren. En bedre løsning vil være klar før andre seminar.
