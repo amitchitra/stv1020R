@@ -62,7 +62,7 @@ Environment
 
 Det er ikke all kode som gir output i **Console**. Noen ganger skriver vi kode som gir input til Rstudio i form av informasjon/data som vi ber Rstudio huske på for oss. Rstudio kan huske på informasjon, uten av vi trenger å lagre informasjonen i en fil på datamaskinen. I stedet lagrer R informasjonen i objekter. Data som Rstudio husker, vises i **Environment**. Jeg har merket dette panelet, øverst til høyre. Vi bruker som regel objekter med informasjon, gjerne datasett, i mye kodingen vi gjør.
 
-La oss skrive en kode som gir Rstudio informasjon å huske på. Til dette bruker vi funksjonen (mer presist: assignment operatoren) `<-`, som brukes til å oprette objekter. Objekter inneholder ulike samlinger av informasjon/data som Rstudio husker på for oss. Vi kan selv velge navnet på objektene våre. Navnet kommer før `<-`, jeg velger å kalle objektet mitt velkommen. Etter pilen forteller vi hva objektet skal inneholde. Under har jeg brukt funksjonen `c()` for å fortelle Rstudio at jeg ønsker å opprette en vektor (en ordnet liste av verdier) bestående av fire elementer, `"Velkommen"` , `"til"`, `"R-seminar"` og `"!"`. Når jeg bruker hermetegn, `" "`, behandler R disse elementene som tekst.
+La oss skrive en kode som gir Rstudio informasjon å huske på. Til dette bruker vi funksjonen (mer presist: assignment operatoren) `<-`, som brukes til å oprette objekter. Objekter inneholder som sagt ulike samlinger av informasjon/data som Rstudio husker på for oss. Vi kan selv velge navnet på objektene våre. Navnet kommer før `<-`, jeg velger å kalle objektet mitt `velkommen`. Etter pilen forteller vi hva objektet skal inneholde. Under har jeg brukt funksjonen `c()` for å fortelle Rstudio at jeg ønsker å opprette en vektor (en ordnet liste av verdier) bestående av fire elementer, `"Velkommen"` , `"til"`, `"R-seminar"` og `"!"`. Når jeg bruker hermetegn, `" "`, behandler R disse elementene som tekst.
 
 ![](../bilder/Rstudio6.PNG)
 
@@ -72,7 +72,7 @@ La oss se hva som skjer når vi kjører koden (med `ctrl + enter` på pc og `cmd
 
 Vi ser at objektet velkommen har dukket opp i **Environment** panelet øverst til høyre. Vi får også informasjon om hva objektet inneholder. Først kommer navnet på objektet, chr referer til at objektet består av tekst. Deretter referer \[1:4\] til at objektet består av fire elementer, som vises til slutt.
 
-Legg for øvrig merke til at når vi kjørte koden, ble den evaluert i **Console**, men vi fikk ikke output på en ny linje i **Console**. Dersom vi evaluerer objektet vi laget, velkommen, får vi imidlertid en egen linje med output, i dette tilfellet innholdet i objektet. Som hovedregel får vi output i **Console**, men noen typer kode, som opprettelse av objekter med `<-` gir output i andre paneler, som **Environment**
+Legg for øvrig merke til at når vi kjørte koden, ble den evaluert i **Console**, men vi fikk ikke output på en ny linje i **Console**. Dersom vi evaluerer objektet vi laget, velkommen, får vi imidlertid en egen linje med output, i dette tilfellet innholdet i objektet. Som hovedregel får vi output i **Console**. Men noen typer kode, som opprettelse av objekter med `<-`, gir output i andre paneler, som **Environment**.
 
 ![](../bilder/Rstudio8.PNG)
 
@@ -80,16 +80,16 @@ Vi har nå sett på 3 deler av arbeidsflyten i Rstudio:
 
 1.  Først skriver vi kode i et **script**.
 2.  Deretter kjører/evaluerer vi koden i **Console** med `ctrl/cmd + enter`.
-3.  Når koden produserer output, dukker output opp i **Console**. Når koden produserer objekter med informasjon som Rstudio skal huske på, dukker objektet opp i **Environment**.
+3.  Når koden produserer output, dukker den som regel opp i **Console**. Når koden produserer objekter med informasjon som Rstudio skal huske på, dukker objektet opp i **Environment**.
 
 Files
 -----
 
 Når vi er ferdig med de 3 stegene over, vil vi som regel lagre arbeidet vårt, slik at vi ikke trenger å gjøre arbeidet på nytt senere. Dersom det går fort å kjøre gjennom R-scriptet, er scriptet alt vi trenger å lagre. Det er også mulig å lagre datasett, figurer, tabeller og bilder, men dette skal vi lære senere. For å forstå hvordan vi kan lagre ulike filer i Rstudio, og hvor R leter etter filer (som datasett) som vi ber R finne, må vi kjenne til mappesystemet på datamaskinen vi jobber fra.
 
-Et eksempel på en mappe som finnes på de fleste pcer er Mine dokumenter eller Documents. Rstudio velger en mappe av denne typen på datamaskinen som **working directory**. Rstudio forventer at filnavn som refereres til ligger i *working directory*. Rstudio vil også sette som default option at filer lagres i **working directory**.
+Et eksempel på en mappe som finnes på de fleste pcer er "Mine dokumenter" eller "Documents". Rstudio velger en mappe av denne typen på datamaskinen som **working directory**. Rstudio forventer at filnavn som refereres til ligger i *working directory*. Rstudio vil også sette som default option at filer lagres i **working directory**.
 
-Panelet **Files** nederst til høyre viser filer i ditt nåværende **working directory**. På bildet under, ser du at mappen jeg har som **working directory**, data, er tom.
+Panelet **Files** nederst til høyre viser filer i ditt nåværende **working directory**. På bildet under, ser du at mappen jeg har som **working directory**, "data", er tom.
 
 ![](../bilder/Rstudio8.PNG)
 
