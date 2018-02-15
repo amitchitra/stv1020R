@@ -8,7 +8,7 @@ Hva er R og Rstudio?
 
 R er et gratisprogram som er spesielt egnet for statistikk og dataanalyse. Rstudio er en IDE (integrated development environment), et gratisprogram som gjør det lettere å bruke R. Derfor skal vi lære R med Rstudio i seminarene i STV 1020.
 
-Første gang du åpner Rstudio er alt fremmed, du blir du møtt av en rekke vinduer, menyer og knapper. Dette dokumentet er ment gir deg en kort forklaring av det aller mest grunnleggende i R og Rstudio gjennom 10 bilder. Dersom du tar deg 5 minutter til å lese dokumentet, og forsøke koden, kommer det første seminar til å gå som en lek. Dersom første seminar ikke gikk som en lek, og du er usikker på hva som foregår i Rstudio, kan det også være nyttig å lese dette dokumentet.
+Første gang du åpner Rstudio er alt fremmed, du blir møtt av en rekke vinduer, menyer og knapper. Dette dokumentet er ment å gi deg en kort forklaring av det aller mest grunnleggende i R og Rstudio gjennom 10 bilder. Dersom du tar deg 5 minutter til å lese dokumentet, og forsøke koden, kommer det første seminar til å gå som en lek. Dersom første seminar ikke gikk som en lek, og du er usikker på hva som foregår i Rstudio, kan det også være nyttig å lese dette dokumentet.
 
 Installere R og Rstudio
 -----------------------
