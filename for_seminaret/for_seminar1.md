@@ -60,7 +60,7 @@ På linjen med `>` vises kode som R har kjørt. På linjen under kode som er kj�
 Environment
 -----------
 
-Det er ikke all kode som gir output i **Console**. Noen ganger skriver vi kode som gir input til Rstudio i form av informasjon/data som vi ber Rstudio huske på for oss. Rstudio kan huske på informasjon, uten av vi trenger å lagre den på datamaskinen. Data som Rstudio husker, vises i **Environment**. Jeg har merket dette panelet, øverst til høyre. Vi bruker som regel slike objekter, gjerne datasett i kodingen vi gjør.
+Det er ikke all kode som gir output i **Console**. Noen ganger skriver vi kode som gir input til Rstudio i form av informasjon/data som vi ber Rstudio huske på for oss. Rstudio kan huske på informasjon, uten av vi trenger å lagre informasjonen i en fil på datamaskinen. Data som Rstudio husker, vises i **Environment**. Jeg har merket dette panelet, øverst til høyre. Vi bruker som regel slike objekter, gjerne datasett i kodingen vi gjør.
 
 La oss skrive en kode som gir Rstudio informasjon å huske på. Til dette bruker vi funksjonen (mer presist: assignment operatoren) `<-`, som brukes til å oprette objekter. Objekter inneholder ulike samlinger av informasjon/data som Rstudio husker på for oss. Vi kan selv velge navnet på objektene våre. Navnet kommer før `<-`, jeg velger å kalle objektet mitt velkommen. Etter pilen forteller vi hva objektet skal inneholde. Under har jeg brukt funksjonen `c()` for å fortelle Rstudio at jeg ønsker å opprette en vektor (en ordnet liste av verdier) bestående av fire elementer, `"Velkommen"` , `"til"`, `"R-seminar"` og `"!"`. Når jeg bruker hermetegn, `" "`, behandler R disse elementene som tekst.
 
