@@ -476,7 +476,7 @@ install.packages("ggplot2") # for installasjon: pakkenavn i ""
 library(ggplot2) # for å laste inn pakke: pakkenavn uten ""
 ```
 
-```{r, echo = F}
+```{r, echo = F, warning = F}
 library(ggplot2)
 ```
 
@@ -485,21 +485,80 @@ Nå kan vi bruke funksjonen `ggplot()` fra pakken `ggplot2`:
 ```{r}
 prikkeplot <- ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor))
 prikkeplot
+```
 
+```{r, include=F}
+ggsave("prikkeplot1.png")
+dev.off()
+```
+
+```{r echo = FALSE}
+knitr::include_graphics("../bilder/prikkeplot1.png")
+```
+
+
+```{r}
 ## VI MÅ LEGGE TIL EN "LAYER" FOR Å FÅ INN DATA
 prikkeplot + geom_point()
 prikkeplot
+```
+
+
+```{r, include=F}
+ggsave("prikkeplot2.png")
+dev.off()
+```
+
+```{r echo = FALSE}
+knitr::include_graphics("../bilder/prikkeplot2.png")
+```
+
+```{r}
 ##   (FULL OVERSIKT OVER PUNKTER FINNER DU HER: http://sape.inf.usi.ch/quick-reference/ggplot2/shape)
 prikkeplot + geom_point(shape = 1)
+```
 
+
+```{r, include=F}
+ggsave("prikkeplot3.png")
+dev.off()
+```
+
+```{r echo = FALSE}
+knitr::include_graphics("../bilder/prikkeplot3.png")
+```
+
+```{r}
 ##  VI KAN OGSÅ FARGELEGGE BASERT PÅ VERDIEN I EN ANNEN KOLONNE:
 prikkeplot <- prikkeplot + geom_point(aes(color = TekstVektor))
 prikkeplot
+```
+
+
+```{r, include=F}
+ggsave("prikkeplot4.png")
+dev.off()
+```
+
+```{r echo = FALSE}
+knitr::include_graphics("../bilder/prikkeplot4.png")
+```
+
+```{r}
 ##  LA OSS SETTE NAVN PÅ X- OG Y-AKSEN
 prikkeplot <- prikkeplot + labs(x = "Antall øl drukket", y = "Hodepineindeks")
 prikkeplot
 ```
 
+
+```{r, include=F}
+ggsave("prikkeplot5.png")
+dev.off()
+```
+
+```{r echo = FALSE}
+knitr::include_graphics("../bilder/prikkeplot5.png")
+```
 
 
 De som vil ha mer å bryne seg på, kan prøve å forstå alt som foregår her (bruk `?`):
@@ -516,13 +575,22 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
 ```
 
 
+```{r, include=F}
+ggsave("prikkeplot6.png")
+dev.off()
+```
+
+```{r echo = FALSE}
+knitr::include_graphics("../bilder/prikkeplot6.png")
+```
+
 `ggplot()` gjør det lett å se mange variabler i sammenheng, men vi må ofte jobbe for å visualisere mye informasjon på en effektiv måte. Her er et forsøk på å gjøre forrige plot litt ryddigere:
 
 ```{r, eval = F}
 install.packages("ggthemes")
 library(ggthemes)
 ```
-```{r, echo = F}
+```{r, echo = F, warning = F}
 library(ggthemes)
 ```
 
@@ -538,6 +606,14 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
 ```
 
 
+```{r, include=F}
+ggsave("prikkeplot7.png")
+dev.off()
+```
+
+```{r echo = FALSE}
+knitr::include_graphics("../bilder/prikkeplot7.png")
+```
 
 
 

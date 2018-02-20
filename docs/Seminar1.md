@@ -1084,9 +1084,6 @@ library(ggplot2) # for å laste inn pakke: pakkenavn uten ""
 ```
 
 
-```
-## Warning: package 'ggplot2' was built under R version 3.4.3
-```
 
 
 Nå kan vi bruke funksjonen `ggplot()` fra pakken `ggplot2`:
@@ -1098,25 +1095,43 @@ prikkeplot
 
 ![](Seminar1_files/figure-html/unnamed-chunk-36-1.png)<!-- -->
 
+
+
+![](../bilder/prikkeplot1.png)<!-- -->
+
+
+
 ```r
 ## VI MÅ LEGGE TIL EN "LAYER" FOR Å FÅ INN DATA
 prikkeplot + geom_point()
 ```
 
-![](Seminar1_files/figure-html/unnamed-chunk-36-2.png)<!-- -->
+![](Seminar1_files/figure-html/unnamed-chunk-39-1.png)<!-- -->
 
 ```r
 prikkeplot
 ```
 
-![](Seminar1_files/figure-html/unnamed-chunk-36-3.png)<!-- -->
+![](Seminar1_files/figure-html/unnamed-chunk-39-2.png)<!-- -->
+
+
+
+
+![](../bilder/prikkeplot2.png)<!-- -->
+
 
 ```r
 ##   (FULL OVERSIKT OVER PUNKTER FINNER DU HER: http://sape.inf.usi.ch/quick-reference/ggplot2/shape)
 prikkeplot + geom_point(shape = 1)
 ```
 
-![](Seminar1_files/figure-html/unnamed-chunk-36-4.png)<!-- -->
+![](Seminar1_files/figure-html/unnamed-chunk-42-1.png)<!-- -->
+
+
+
+
+![](../bilder/prikkeplot3.png)<!-- -->
+
 
 ```r
 ##  VI KAN OGSÅ FARGELEGGE BASERT PÅ VERDIEN I EN ANNEN KOLONNE:
@@ -1124,7 +1139,13 @@ prikkeplot <- prikkeplot + geom_point(aes(color = TekstVektor))
 prikkeplot
 ```
 
-![](Seminar1_files/figure-html/unnamed-chunk-36-5.png)<!-- -->
+![](Seminar1_files/figure-html/unnamed-chunk-45-1.png)<!-- -->
+
+
+
+
+![](../bilder/prikkeplot4.png)<!-- -->
+
 
 ```r
 ##  LA OSS SETTE NAVN PÅ X- OG Y-AKSEN
@@ -1132,8 +1153,12 @@ prikkeplot <- prikkeplot + labs(x = "Antall øl drukket", y = "Hodepineindeks")
 prikkeplot
 ```
 
-![](Seminar1_files/figure-html/unnamed-chunk-36-6.png)<!-- -->
+![](Seminar1_files/figure-html/unnamed-chunk-48-1.png)<!-- -->
 
+
+
+
+![](../bilder/prikkeplot5.png)<!-- -->
 
 
 De som vil ha mer å bryne seg på, kan prøve å forstå alt som foregår her (bruk `?`):
@@ -1149,8 +1174,12 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
         axis.line = element_line(arrow = arrow()))
 ```
 
-![](Seminar1_files/figure-html/unnamed-chunk-37-1.png)<!-- -->
+![](Seminar1_files/figure-html/unnamed-chunk-51-1.png)<!-- -->
 
+
+
+
+![](../bilder/prikkeplot6.png)<!-- -->
 
 `ggplot()` gjør det lett å se mange variabler i sammenheng, men vi må ofte jobbe for å visualisere mye informasjon på en effektiv måte. Her er et forsøk på å gjøre forrige plot litt ryddigere:
 
@@ -1160,9 +1189,6 @@ install.packages("ggthemes")
 library(ggthemes)
 ```
 
-```
-## Warning: package 'ggthemes' was built under R version 3.4.3
-```
 
 
 ```r
@@ -1176,9 +1202,12 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
         axis.line = element_line(arrow = arrow()))
 ```
 
-![](Seminar1_files/figure-html/unnamed-chunk-40-1.png)<!-- -->
+![](Seminar1_files/figure-html/unnamed-chunk-56-1.png)<!-- -->
 
 
+
+
+![](../bilder/prikkeplot7.png)<!-- -->
 
 
 
