@@ -7,6 +7,7 @@ Erlend Langørgen
 
 # Velkommen!
 
+![](../bilder/welcome.jpg)
 
 # Seminaropplegg
 
