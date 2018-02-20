@@ -14,6 +14,12 @@ I selve seminarene har dere valget mellom å bruke maskinene som står i seminar
 
 ## **Slack**
 Jeg har satt opp et Slack-team (slack.com) som vi kommer til å bruke gjennom seminarrekka. Jeg har lagt opp til at dere også kan bruke denne til samarbeid i de andre delene av STV1020. Hensikten med dette er å tilrettelegge for en platform der dere kan sette frem problemer dere støter på med R (eller med oppgaver til teori-seminarene og spørsmål angående forelesningene) med hverandre, samarbeide om å løse disse, og at spørsmål bare jeg kan svare på blir åpne for alle. Slack er også et verktøy som blir brukt mer og mer i både arbeidsliv og forskning, så det kan være god verdi i å få kjennskap til hvordan det fungerer. Alle skal ha fått invitasjon til Slack på sin UiO-mail.
+## **Filtyper**
+Dere vil finne flere forskjellige filtyper i mappene, her er en kort guide:
+
+1. R-script: slutter med `.R`, disse filene kan du laste ned og åpne i R.
+2. Markdown-dokumenter: disse filene slutter med `.md`, og vil inneholde mer tekst og utdypende forklaring enn R-script. Dersom du ikke forstår en forklaring i en slik fil, gi beskjed til meg.
+3. Rmd.-filer: Disse dokumentene slutter med `.Rmd`, og er inkludert først og fremst for spesielt interesserte/fremtidig bruk. Ved å klikke på "raw" får du se R-koden som ligger bak de korresponderende `.md` filene. Dersom noen har lyst til å lære seg å skrive markdown (anbefales!), lager vi en egen kanal på slack.
 
 ## **Nyttige Lenker**
 - [Last ned R](http://cran.uib.no/)
