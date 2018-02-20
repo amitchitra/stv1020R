@@ -43,8 +43,8 @@
 #################################################################
 
 
-## I R LAGER VI "OBJEKTER" AV TING.
-## DET BETYR: VI "LAGRER" TINGENE VÅRE MIDLERTIDIG I PROGRAMMET (MEN IKKE PÅ MASKINEN!)
+## I R LAGER VI "OBJEKTER" AV INFORMASJON.
+## DET BETYR: VI "LAGRER" INFORMASJONEN VÅR MIDLERTIDIG I PROGRAMMET (MEN IKKE PÅ MASKINEN!)
 ## HVA VI LAGRER, KAN VÆRE HVA SOM HELST: VI BARE GIR DET ET NAVN OG BER R HUSKE PÅ DET FOR OSS
 
 
@@ -68,10 +68,11 @@ Vektor
 lars_sponheim <- "Hver mann sin høne!"
 lars_sponheim
 
-##  OBJEKTER KAN BRUKES TIL AKKURAT DET SAMME SOM DET OBJEKTET INNEHOLDER.
+##  VED Å KJØRE NAVNET TIL ET OBJEKT, KAN VI HENTE UT INFORMASJONEN OBJEKTET INNEHOLDER, OG ANVENDE INFORMASJONEN. 
 ##  AKKURAT SOM VI GJORDE OVENFOR, KAN VI GJØRE REGNESTYKKER MED OBJEKTER SOM INNEHOLDER TALL (MEN IKKE DE SOM INNEHOLDER TEKST):
-Ti <- 10
 
+Ti <- 10
+Ti
 Ti + Vektor
 Ti * Vektor
 Ti / Vektor
@@ -160,7 +161,7 @@ sum(Vektor) / length(Vektor)
 ###################################################################
 
 
-##  EN VEKTOR ER DET SAMME SOM EN VARIABEL.
+##  VI KAN LAGRE EN VARIABEL SOM EN VEKTOR.
 ##  EN VEKTOR ER EN REKKE AV ELEMENTER AV SAMME TYPE, SOM ER ORDNET I EN BESTEMT REKKEFØLGE (DETTE GJELDER UNIVERSELT, IKKE BARE R)
 
 ##  ET DATASETT ER BARE MANGE VEKTORER VED SIDEN AV HVERANDRE (MED EN BESTEMT REKKEFØLGE, SLIK AT HVER RAD INDIKERER EN "ENHET")
@@ -169,7 +170,7 @@ sum(Vektor) / length(Vektor)
 ##  HVA BETYR DET AT EN VEKTOR HAR ELEMENTER AV "SAMME TYPE"?
 ##  DET BETYR AT DU IKKE KAN SLÅ SAMMEN TALL OG TEKST.
 ##  HVILKEN TYPE VEKTOREN HAR, FINNER VI MED FUNKSJONEN class()
-##  EN ANNEN FUNKSJON SOM GIR OSS NYTTIG INFO OMO OBJEKTER ER str()
+##  EN ANNEN FUNKSJON SOM GIR OSS NYTTIG INFO OM OBJEKTER ER str()
 ##  FOR Å LAGE EN VEKTOR, KAN VI BRUKE ":" OG c()
 ##  VI HAR SÆRLIG 5 TYPER VEKTORER:
 
@@ -215,14 +216,14 @@ class(LogiskVektor)
 
 
 
-##  HVIS DU PRØVER Å SETTE SAMMEN ELEMENTER MED FORSKJELLIG TYPE, VIL DE KONVERTERES TIL ELEMENTET MED LAVES MÅLENIVÅ
+##  HVIS DU PRØVER Å SETTE SAMMEN ELEMENTER MED FORSKJELLIG TYPE, VIL DE KONVERTERES TIL ELEMENTET MED LAVEST MÅLENIVÅ
 eksempel1 <- c("Tekst", 4, TRUE)
 
 class(eksempel1)
 str(eksempel1) # str forteller oss også at eksempel1 er character, men forkorter til chr
 eksempel1
 
-## Oppgave: kjør koden under, hva kan du si om målenivået til "liste" og "ikkeliste"?
+## OPPGAVE: KJØR KODEN UNDER, HVA KAN DU SI OM MÅLENIVÅET TIL "liste" OG "ikkeliste"?
 liste <- list(c("tekst", 'tekst2'), 4, c(TRUE, FALSE))
 class(liste)
 str(liste)
@@ -230,8 +231,8 @@ ikkeliste <- unlist(liste)
 class(ikkeliste)
 str(ikkeliste)
 
-##  UNGÅ Å BLANDE MÅLENIVÅER (MED MINDRE DET ER EN GOD GRUNN TIL Å GJØRE DET),
-##  vEKTORER BESTÅENDE AV ELEMENTER AV SAMME TYPE ER SO REGEL LETTEST Å JOBBE MED.
+##  UNNGÅ Å BLANDE MÅLENIVÅER (MED MINDRE DET ER EN GOD GRUNN TIL Å GJØRE DET),
+##  vEKTORER BESTÅENDE AV ELEMENTER AV SAMME TYPE ER SOM REGEL LETTEST Å JOBBE MED.
 
 
 
@@ -239,7 +240,7 @@ str(ikkeliste)
 ###################################################################
 #####                                                         #####
 #####                                                         #####
-#####               4. INDEKSERING AV VEKTORER                #####
+#####               5. INDEKSERING AV VEKTORER                #####
 #####                                                         #####
 #####                                                         #####
 ###################################################################
@@ -289,7 +290,7 @@ which(LogiskVektor == FALSE)   ##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I 
 ###################################################################
 #####                                                         #####
 #####                                                         #####
-#####                 5. DATA FRAMES (DATASETT)               #####
+#####                 6. DATA FRAMES (DATASETT)               #####
 #####                                                         #####
 #####                                                         #####
 ###################################################################
@@ -361,7 +362,7 @@ datasett
 
 ## OPPGAVE: LAG TEKSTVEKTOREN "tekst" SOM BESTÅR  av DE TO VERDIENE "to" OG "tre".
 ## LAG OGSÅ EN TALLVEKTOREN "tall" BESTÅENDE AV TALLENE FRA 1 TIL 10. 
-## OPPRETT DERETTERET DATASETT BESTÅENDE AV DE TO VARIABLENE VED HJELP AV DATAFRAME
+## OPPRETT DERETTERET DATASETT BESTÅENDE AV DE TO VARIABLENE VED HJELP AV data.frame
 ## INSPISER DATA, OG DISUKTER HVA SOM SKJER MED SIDEMANNEN
 
 
@@ -369,7 +370,7 @@ datasett
 ###################################################################
 #####                                                         #####
 #####                                                         #####
-#####                         6. GRAFIKK                      #####
+#####                         7. GRAFIKK                      #####
 #####                                                         #####
 #####                                                         #####
 ###################################################################
@@ -434,7 +435,7 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
 ###################################################################
 #####                                                         #####
 #####                                                         #####
-#####                         7. Tabulere                     #####
+#####                         8. Tabulere                     #####
 #####                                                         #####
 #####                                                         #####
 ###################################################################
@@ -492,4 +493,4 @@ rm(list = ls())
 # 6. Enkel omkoding
 # 7. Boxplot
 # 8. Kjikvadrattesten
-# 9. Arbeid med oppgaver
+# 9. Arbeid med seminaroppgaver
