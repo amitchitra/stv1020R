@@ -3,7 +3,7 @@ title: "Første R-Seminar"
 author: "Erlend Langørgen"
 date: "12 februar 2018"
 output:
-  html_document
+  html_document:
     keep_md: TRUE
     self_contained: no
 ---
@@ -90,7 +90,7 @@ Plan for i dag:
 ## [1. Åpne Rstudio](#Rstudio)
 Rstudio er en IDE (integrated development environment) til R. Rstudio gjør R mer brukervennlig, og har en del tilleggsfunksjonalitet som er nyttig. Derfor bruker vi Rstudio. Rstudio består av 3 vinduer første gang dere åpner det. Til venstre ser dere console. Her vises kode som vi kjører. Oppe til høyre er environment, hvor objekter vi har opprettet vises. Nede til høyre vises filer i mappen vi jobber fra. Fra menyen over vinduet nede til høyre, ser vi at "plot", "packages" og "Help" også vises i dette vinduet. Mer om dette i løpet av dagens seminar, dersom dere fortsatt har spørsmål om hvordan Rstudio virker etter seminaret, ber jeg om at dere ser på forklaringen jeg har lagt ut på [nett](https://github.com/langoergen/stv1020R/blob/master/for_seminaret/for_seminar1.md), eller sender meg et spørsmål på slack.
 
-![](./bilder/Rstudio1.PNG)
+![](../bilder/Rstudio1.PNG)
 
 Det viktigste vinduet må vi imidlertid opprette selv. Klikk på arket med en grønn sirkel med et plusstegn like under `File` øverst til venstre, og velg `R Script`. Vi har nå opprettet et R-script. Vi skriver all kode i R-script, fordi r-script lar oss skrive, redigere, kommentere og lagre kode. I tillegg hjelper R-studio oss med å rette og organisere kode som skrives i R-script. R-script hjelper oss med å gjøre arbeidet vårt **reproduserbart**. For å kjøre koden på en linje i et r-script, naviger til linjen og trykk `ctrl + enter` (`Cmd` i stedet for `Ctrl` for dem som bruker mac). forsøk med `1 + 1`. Når dere kjører kode, kjøres, enten koden dere har markert, eller koden på den linjen dere er.
 
@@ -591,7 +591,7 @@ Før vi møtes neste gang, ber jeg om at dere:
 1. Forsøker å løse hjemmeoppgavene. 
 2. Melder dere inn i slack-gruppen (dere har fått invitasjon på email, send meg en mail hvis ikke). Still meg spørsmål dersom det er noe du ikke får til.
 3. Går gjennom introduksjonen til neste seminar. Dere åpner denne introduksjonen ved å åpne filen i Rstudio, og deretter trykke på `Run Document` 
-```{r, eval = F, echo = FALSE, fig.align='default'}
+```{r, eval = T, echo = FALSE, fig.align='default'}
 knitr::include_graphics("../bilder/Run_tutorial.PNG")
 ```
 
