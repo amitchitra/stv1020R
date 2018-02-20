@@ -6,7 +6,7 @@ Erlend Langørgen
 Oppgaver
 --------
 
-I disse oppgavene får du mer selvstending trening i temaene vi gikk gjennom i dagens seminar. Oppgavene trener deg i indeksering, og i forståelse av enheter, variabler og datasett. Du blir også trent i å lese hjelpefiler, og å forstå nye funksjoner. Evnen til å kombinere funksjoner du har lært med andre funksjoner er essensielt for å lykkes med R.
+I disse oppgavene får du mer selvstending trening i temaene vi gikk gjennom i 1. seminar. Oppgavene trener deg i indeksering, og i forståelse av enheter, variabler og datasett. Du blir også trent i å lese hjelpefiler, og å forstå nye funksjoner. Evnen til å kombinere funksjoner du har lært med andre funksjoner er essensielt for å lykkes med R.
 
 ### Oppgave 1:
 
