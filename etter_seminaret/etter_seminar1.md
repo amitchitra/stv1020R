@@ -26,9 +26,9 @@ I denne oppgaven skal du lage et datasett av objektene du opprettet i forrige op
 
 `t()` eller `rbind()`.
 
-Funksjonen `rbind()` binder sammen vektorer i rekker, dersom dere vil bruke `t()` får dere finne ut av hva som foregår på egenhånd :). Lagre datasettet som et objekt.
+Funksjonen `rbind()` binder sammen vektorer i rader (argumentene fungerer som `c()`, men binder sammen vektorer i rader stedet for verdier). Du kan lage et objekt med `rbind()`, og deretter bruke `data.frame()` på objektet for å lage datasett. Dersom dere vil bruke `t()` får dere finne ut av hva som foregår på egenhånd :). Lagre datasettet som et objekt.
 
-Hjelp: du kan sjekke at du har gjort riktig ved å lage variabler av informasjonen i oppgave 1, og opprette datasett på samme måte som i seminaret. Resultatene skal bli like (jeg anbefaler forøvrig å sette `stringsAsFactors = FALSE`)
+Hjelp: du kan sjekke at du har gjort riktig ved å lage variabler av informasjonen i oppgave 1, og opprette datasett på samme måte som i seminaret. Resultatene skal bli like (jeg anbefaler forøvrig å sette `stringsAsFactors = FALSE`) Dersom du ikke får til oppgaven, kan du lage datasettet med vektorer som representerer variablene, og gå videre til oppgave 4.
 
 ### Oppgave 3:
 
