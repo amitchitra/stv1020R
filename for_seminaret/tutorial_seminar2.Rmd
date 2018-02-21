@@ -1,0 +1,136 @@
+---
+title: "Introduksjon til andre R-seminar"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Velkommen til introduksjonen til 2. R-seminar! 
+
+
+Denne tutorialen gir deg en introduksjon til `pakker`, og tre former for deskriptiv statistikk i R:
+
+1. Univariate statistiske mål
+2. Tabeller
+3. Grafikk
+
+I seminaret skal vi lære å importere datasett. Dersom du ikke husker hvordan mapper og **working directory** virker fra [installasjonsguiden](https://github.com/langoergen/stv1020R/blob/master/for_seminaret/for_seminar1.md), bør du ta en rask titt på forklaringen av dette før neste seminar. I denne introduksjonen skal vi imidlertid bruke et datasett som blir installert sammen med R, `mtcars`.
+
+## Pakker
+
+Når man jobber med R, hender det noen ganger at man ikke finner en funksjon som gjør den jobben man skal ha gjort. I slike tilfeller, er det en god sjanse for at noen har laget en funksjon som gjør jobben for deg, og lagret den i en `pakke`. Pakker kan også inneholde datasett eller annen informasjon, men i seminarene skal vi først og fremst bruke pakker fordi de inneholder svært anvendelige funksjoner. Den vanligste måten å laste ned pakker på, er fra `CRAN`, som er et internasjonalt nettverk av webservere, som lagrer kvalitetssikret R-kode. Det finnes over 10 000 pakker på `CRAN`. For å laste ned en pakke fra `CRAN`, skriver vi koden `install.packages("pakkenavn")`, der `"pakkenavn"` byttes ut med navnet på pakken du skal bruke. Denne koden laster ned pakken, og lagrer `filene` pakken inneholder på pcen din, i en mappe som heter `library` (en undermappe under mappen for R-installasjonen din).
+
+For å bruke funksjoner fra en pakke som vi har lastet ned, må vi også laste pakken inn i R. Dette gjør vi med koden `library(pakkenavn)`. 
+
+I denne introduksjonen skal vi bruke en pakke, `ggplot`. Test at du har forstått kodene for å bruke pakker fra `CRAN` før du går videre:
+
+```{r pakkequiz}
+quiz(
+  question("Hvilken kombinasjon av koder laster først ned pakken ggplot, før pakken ggplot lastes inn i R?",
+    answer("Kodelinje 1: `install.packages(ggplot)`, Kodelinje 2: `library(\"ggplot\")`"),
+    answer("Kodelinje 1: `install.packages(\"pakkenavn\")`, Kodelinje 2: `library(pakkenavn)`"),
+    answer("Kodelinje 1: `install.packages(\"ggplot\")`, Kodelinje 2: `library(ggplot)`", correct = TRUE),
+    answer("Kodelinje 1: `install.packages(moments)`, Kodelinje 2: `library(moments)`"))
+)
+```
+
+Kjør den riktige koden for å installere `ggplot` i Rstudio før du fortsetter.
+
+## Statistiske mål
+
+På forelesning har dere lært om mål for sentraltendens. I første seminar så vi på `mean()`. 
+Funksjonen for medianverdien er `median()`, mens modus kan leses ut fra `table()`. 
+
+På forelsening har dere også lære om spredningsmål. Maksimumsverdien til en variabel finner du med `max()`, mens minimumsverdien finner du med `min()`, disse funksjonene kan brukes til å finne variasjonsbredden. Andre funksjoner for spredningsmål er `sd()` og `var()`, lær mer med `?sd()` og `?var()`. En svært nyttig funksjon er `summary()`, den gir deg flere former for deskriptiv statistikk, inkludert kvartilene du trenger for å regne ut kvartildifferansen. 
+
+Forsøk funksjonene på `mtcars$cyl` i boksen under (jeg har lagt inn koden `mtcars` på toppen av kodeboksen, slik at du kan se hva datasettet inneholder). Du kan også forsøke funksjonene på andre variabler i `mtcars()` dersom du har lyst.
+
+```{r two-plus-two, exercise=TRUE}
+mtcars
+```
+
+Når du har forsøkt funksjonene, er du klar til å svare på en liten quiz:
+
+```{r statistikkquiz}
+quiz(
+  question("Hvilken av kodelinjene under lar deg finne variasjonsbredden til variabelen cyl i mtcars?",
+    answer("`min(mtcars$cyl - max(mtcars$cyl))`"),
+    answer("`min(mtcars) - max(mtcars)`"),
+    answer("`max(cyl) - min(cyl)`"),
+    answer("`max(mtcars$cyl)- min(mtcars$cyl)`", correct = TRUE),
+    answer("`min(mtcars$cyl) - max(mtcars$cyl)`")
+  ),
+  question("Hva viser funksjonene `sd()` og `var()`?",
+    answer("modalprosent og modus"),
+    answer("standardavvik og varians", , correct = TRUE),
+    answer("median og gjennomsnitt")
+      )
+)
+
+```
+
+
+
+## Tabeller
+
+### Hvilke funksjon bruker vi for å lage tabeller? 
+
+I denne seksjonen har jeg kun et spørsmål til deg, tenk tilbake på forrige avsnitt når du svarer: 
+
+```{r tabellquiz}
+quiz(
+  question("Hvilke koder oppretter et objekt som inneholder en tabell med mtcars$cyl? (to alternativ er riktig)",
+    answer("`tabell < tabell(mtcars$cyl)`"),
+    answer("`tabbe <- table(mtcars$cyl)`", correct = TRUE),
+    answer("`objekt <- table(mtcars$cyl)`", correct = TRUE),
+    answer("`tabellen <- table(cyl)`"),
+    answer("`sylindre <- tabell(mtcars$cyl)`")
+  )
+)
+```
+
+
+## Grafikk
+
+I denne seksjonen skal vi lage et stolpediagram. Til dette formålet skal vi bruke funksjonen `ggplot()` fra pakken `ggplot2`. Jeg har kjørt koden for deg (forutsetter at du har installert `ggplot()` med `install.packages("ggplot")`). Din jobb er å lese forklaringene, og se på plottene.
+
+```{r pakker, warning = F}
+library(ggplot2)
+```
+
+Nå som du har lastet inn `ggplot2`, kan vi lage et stolpediagram. Under følger kode med en forklaring av hvordan `ggplot()`fungerer. Kjør gjennom koden, og forsøk så godt du kan å forstå. 
+
+Først definerer vi hva vi skal plotte. Første argument i `ggplot()` spesifiserer et datasett, inne i argumentet aes() spesifiserer vi variabler fra datasettet vi har lyst til å plotte. Dersom vi har lyst til å plotte en variabel på x-aksen spesifiserer vi `x = variabel1`. Dersom vi vil plotte en variabel på y-aksen også, spesifiserer vi `y = variabel2`. Kjør koden under før du fortsetter. 
+
+
+```{r plot1, echo= T}
+ggplot(mtcars, aes(x=cyl)) 
+```
+
+Vi har nå fått et tomt plot, men på x-aksen har vi fått variabelen `cyl`, med verdier som dekker variasjonsbredden til variabelen. Vi kan nå legge til et argument for å bestemme hvordan vi vil plotte variabelen. Dette gjør vi ved å skrive `+` etter den linjen vi allerede har sendt, og deretter spesifisere et `geom_` argument. Det finnes en rekke `geom_`argumenter, eksempelvis for stolpediagramm, histogram og scatterplot en oversikt over slike argumenter, se [her](http://ggplot2.tidyverse.org/reference/#section-layer-geoms). For å lage stolpediagram, velger vi å bruke argumentet `geom_bar()`:
+
+```{r plot2, echo = T}
+ggplot(mtcars, aes(x=cyl)) + geom_bar()
+```
+
+Vi kunne valgt et annet `geom_`, som `geom_density`:
+
+```{r plot3, echo = T}
+ggplot(mtcars, aes(x=cyl)) + geom_density()
+```
+Dersom vi vil legge til enda flere argumenter, for eksempel for å pynte plottet, bruker vi `+` etter siste argument. La oss legge til en tittel: 
+
+```{r plot4, echo = T}
+ggplot(mtcars, aes(x=cyl)) + geom_bar() + ggtitle("En tittel")
+```
+
+Det er svært mange argumenter som lar deg pynte et `ggplot`,  det er som regel mulig å gjøre den endringen du måtte ønske med et lite tilleggsargument. Det er også mulig å legge flere lag oppå hverandre i `ggplot`. Under demonstrerer jeg dette ved å legge til en rød linje over stolpediagrammet. Disse mulighetene gjør `ggplot()` til en svært effektiv måte å fremstille data på visuelt.
+
+```{r plot5, echo = T}
+ggplot(mtcars, aes(x=cyl)) + geom_bar() + geom_abline(col = "red") + ggtitle("En tittel")
+```
+
