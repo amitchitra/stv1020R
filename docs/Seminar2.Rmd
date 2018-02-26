@@ -46,7 +46,7 @@ knitr::include_graphics("../bilder/fixing_problems.png")
 
 ## Organisering av script
 
-I første omgang skal vi fokusere på oppsett av `R-script`, dere skal få noen nyttige tips som vil gi dere gode vaner. Jeg rekker imidlertid ikke gjennom alle gode prinsipper, [her er noen flere forslag til hvordan du kan skrive god kode](https://google.github.io/styleguide/Rguide.xml). Jeg har lagt en [mal i mappen scripts]() dere kan bruke til dagens seminar, dere trenger derfor ikke å skrive alt jeg gjennomgår om oppsett av script.
+I første omgang skal vi fokusere på oppsett av `R-script`, dere skal få noen nyttige tips som vil gi dere gode vaner. Jeg rekker imidlertid ikke gjennom alle gode prinsipper, [her er noen flere forslag til hvordan du kan skrive god kode](https://google.github.io/styleguide/Rguide.xml). Jeg har lagt en [mal i mappen scripts](https://raw.githubusercontent.com/langoergen/stv1020R/master/scripts/seminar2.R) dere kan kopiere og bruke til dagens seminar, dere trenger derfor ikke å skrive alt jeg gjennomgår om oppsett av script. Dette scriptet, `seminar2.R` inneholder også oppgavene til dagen seminar.
 
 ### Kommentering
 Som dere kanskje har lagt merke til, kan vi bruke `#` til å kommentere kode i R.
