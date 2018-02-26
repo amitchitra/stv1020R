@@ -12,10 +12,10 @@ I dagens seminar skal vi dekke følgende emner:
 
 1. Organisering av arbeidet ditt i R
 2. Laste inn datasett
-3. Statistiske mål (univariat og bivariat)
-4. Grafikk (plot, ggplot)
+3. Statistiske mål
+4. Grafikk 
 5. Tabulering
-6. Lagre output (write.csv, script, ggsave)
+6. Lagre output 
 
 Noen av disse emnene har dere allerede kjennskap til gjennom introduksjonen jeg lagde til seminaret. Jeg skal bruke de neste 10 minuttene på å gi dere litt utfyllende informasjon. Det er valgfritt å kode underveis, men jeg anbefaler dere å gjøre det så lange dere klarer å følge med.
 
@@ -25,7 +25,7 @@ De siste minuttene bruker vi på å snakke om oppgavene og annet dere måtte lur
 
 # Organisering av arbeid i R
 
-Organisering av arbeid er viktig for å lykkes med **R**. Dersom du holder orden i scriptene dine, og koder fint og oversiktlig, med gode kommentarer, kommer du til å gjøre mindre feil. Det blir også lettere for fremtidsversjonen av deg, og for andre å få glede av koden din. Det er såpass mye å tjene på god organisering at vi skal bruke de neste minuttene på dette emnet. Denne tegneserien fra xkcd oppsummerer resultatet av dårlig organisering godt:
+Organisering av arbeid er viktig for å lykkes med **R**. Dersom du holder orden i scriptene dine, og koder fint og oversiktlig, med gode kommentarer, kommer du til å gjøre mindre feil. Det blir også lettere for fremtidsversjonen av deg, og for andre å få glede av koden din. Det er såpass mye å tjene på god organisering at vi skal bruke de neste minuttene på dette emnet. Denne tegneserien fra [xkcd](https://xkcd.com/) oppsummerer resultatet av dårlig organisering godt:
 
 ![](../bilder/fixing_problems.png)<!-- -->
 
@@ -322,31 +322,31 @@ table(personst==personst2) # tester om alle radene i de to datasettene har likt 
 
 # Statistiske mål
 
-I introduksjonen til dagens seminar har dere sett på forskjellige funksjoner for univariat deskriptiv statistikk. Forhåpentligvis har dere nå en formening om hva som foregår her:
+I introduksjonen til dagens seminar har dere sett på forskjellige funksjoner for univariat deskriptiv statistikk. Forhåpentligvis har dere nå en formening om hva som foregår her (her bruker jeg eksempeldatasettet mtcars):
 
 ```r
-summary(personst$personstemmer)
+summary(mtcars$mpg) # mpg er miles per gallon, enhetene er biltyper
 ```
 
 ```
 ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-##     1.0    47.0   150.0   590.5   480.5 43915.0
+##   10.40   15.43   19.20   20.09   22.80   33.90
 ```
 
 ```r
-sd(personst$personstemmer)
+sd(mtcars$mpg)
 ```
 
 ```
-## [1] 2136.561
+## [1] 6.026948
 ```
 
 ```r
-mean(personst$personstemmer)
+mean(mtcars$mpg)
 ```
 
 ```
-## [1] 590.4507
+## [1] 20.09062
 ```
 
 I dagens seminar vil dere få oppgaver som også tar for seg bivariat statistikk, med korrelasjonsmål. Til dette formålet skal vi bruke funksjonene `cor()` og `cor.test()`. Her er en forklaring av hvordan funksjonene virker, og demonstrasjon av hva slags output de gir:
@@ -354,11 +354,11 @@ I dagens seminar vil dere få oppgaver som også tar for seg bivariat statistikk
 ```r
 # generell syntaks for variabler i datasett: cor(data$variabel1, data$variabel2)
 # output i Console er et tall som angir korrelasjon (pearsons r)
-cor(personst$personstemmer, personst$medietreff) # Eksempel 
+cor(mtcars$mpg, mtcars$cyl) # Eksempel 
 ```
 
 ```
-## [1] 0.6538174
+## [1] -0.852162
 ```
 
 Funksjonen `cor()` har blant annet argumenter som lar deg bestemme hvordan missing skal håndteres (argumentet `use()`), og hvilken korrelasjonskoeffisient som skal beregnes (argumentet `method`). Dersom du ikke angir en bestemt korrelasjonskoeffisient beregnes **pearsons r**. Bruk `?cor()` for mer informasjon
@@ -368,21 +368,21 @@ Funksjonen `cor()` har blant annet argumenter som lar deg bestemme hvordan missi
 # generell syntaks for variabler i datasett: cor.test(): cor.test(datasett$variabel1, datasett$variabel2)
 # output gir nå også konfidensintervall, t-test, frihetsgrader og p-verdi for t-testen. 
 # 0 - hypotesen er at det ikke er korrelasjon mellom variabel1 og variabel2.
-cor.test(personst$personstemmer, personst$medietreff)
+cor.test(mtcars$mpg, mtcars$cyl)
 ```
 
 ```
 ## 
 ## 	Pearson's product-moment correlation
 ## 
-## data:  personst$personstemmer and personst$medietreff
-## t = 22.148, df = 657, p-value < 2.2e-16
+## data:  mtcars$mpg and mtcars$cyl
+## t = -8.9197, df = 30, p-value = 6.113e-10
 ## alternative hypothesis: true correlation is not equal to 0
 ## 95 percent confidence interval:
-##  0.6077929 0.6954640
+##  -0.9257694 -0.7163171
 ## sample estimates:
 ##       cor 
-## 0.6538174
+## -0.852162
 ```
 
 I tillegg til å la deg bruke forskjellige korrelasjonskoeffisienter og metoder for å håndtere missing, gir `cor.test()` mulilgheten til å spesifisere andre 0 - hypoteser med argumentet `alternative =`. 
@@ -392,6 +392,21 @@ I tillegg til å la deg bruke forskjellige korrelasjonskoeffisienter og metoder 
 
 Dette emnet skrve jeg om i dokumentet til forrige seminar, [som dere finner her](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md)
 Vi kommer stort sett bare til å bruke `ggplot()` funksjonen for plotting i seminarene.
+
+Her viser jeg hvordan vi lager et spredningsplot ved hjelp av argumentet `geom_point()`.
+
+
+```r
+ggplot(mtcars, aes(x = mpg, y = cyl)) + geom_point()
+```
+
+```r
+knitr::include_graphics("../bilder/spredningsplot.png")
+```
+
+![](../bilder/spredningsplot.png)<!-- -->
+
+
 
 # Tabulering
 
