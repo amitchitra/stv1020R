@@ -427,7 +427,7 @@ I andre time av dagens seminar skal dere få jobbe mer med logiske tester og ind
 `!=`    | ulik    
 `!x`    | forskjellig fra x  
 `is.na` | logisk test for missing 
-`x|y`   | x eller y (`|` betyr eller)    
+`x\|y`  | x eller y (`\|` betyr eller)    
 `x & y` | x og y (`&` betyr og)    
    
 De to siste symbolene, `|` og `&`, brukest til å lage logiske tester med flere betingelser. De resterende symbolene er logiske tester, som forteller deg om noe er `TRUE` eller `FALSE`.
