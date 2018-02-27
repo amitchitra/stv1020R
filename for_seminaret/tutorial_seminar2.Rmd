@@ -31,14 +31,14 @@ I denne introduksjonen skal vi bruke en pakke, `ggplot`. Test at du har forståt
 ```{r pakkequiz}
 quiz(
   question("Hvilken kombinasjon av koder laster først ned pakken ggplot, før pakken ggplot lastes inn i R?",
-    answer("Kodelinje 1: `install.packages(ggplot)`, Kodelinje 2: `library(\"ggplot\")`"),
+    answer("Kodelinje 1: `install.packages(ggplot2)`, Kodelinje 2: `library(\"ggplot2\")`"),
     answer("Kodelinje 1: `install.packages(\"pakkenavn\")`, Kodelinje 2: `library(pakkenavn)`"),
-    answer("Kodelinje 1: `install.packages(\"ggplot\")`, Kodelinje 2: `library(ggplot)`", correct = TRUE),
+    answer("Kodelinje 1: `install.packages(\"ggplot2\")`, Kodelinje 2: `library(ggplot2)`", correct = TRUE),
     answer("Kodelinje 1: `install.packages(moments)`, Kodelinje 2: `library(moments)`"))
 )
 ```
 
-Kjør den riktige koden for å installere `ggplot` i Rstudio før du fortsetter.
+Kjør den riktige koden for å installere `ggplot2` i Rstudio før du fortsetter.
 
 ## Statistiske mål
 
