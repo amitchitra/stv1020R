@@ -96,14 +96,29 @@ library(haven)
 #    - Du kan kombinere koden fra forrige oppgave med which()
 #    - Du kan dele opp denne oppgaven i flere linjer kode. Du kan også bruke &, som betyr også i R.
 #    - Det finnes svært mange måter å løse denne oppgaven på. Du kan f.eks. bruke funksjonen subset i stedet for [].
+#    - Dersom du har tid til overs, forsøk å løse oppgave 8 ved å bruke funksjonen ifelse() i stedet for which()
+
 
 #### Oppgave 9 ####
 # 9. Gjenta oppgave 5 og oppgave 6 for det nye datasettet. Kommenter resultatene, er sammenhengen robust?
 
 
 
-#### Bonus: ####
-# Dersom du får tid til overs, forsøk å løse oppgave 8 ved å bruke funksjonen ifelse() i stedet for which()
-?ifelse
+#### Oppgave 10 ####
+# 10. Opprett en dummyvariabel som tar verdien 1 for kvinnelige ap-politikere. Lag deretter en tabell som viser hvor
+#     mange kvinnelige og mannlige ap-politikere som har mer enn 500 medietreff. 
+#     Gjør tilsvarende sammeligning for høyre (h).
+#     - Du kan bruke både which og ifelse, eller lage nytt datasett for å lage tabell, bruk av ny dummy er ikke påkrevd. 
+#     - Kvinner har verdien 1 på variabelen kjønn. 
+#     - Dersom ø'en i variabelnavnet kjønn er lest inn feil, fiks dette med colnames(personst)[8] <-  "kjønn"
 
 
+str(personst)
+personst$apkvinne <- ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0)
+with(subset(personst, personst$parti==ap), table(medietreff))
+table(personst[which(personst$parti == "ap" & personst$kjønn == 1),])
+summary(personst)
+names(personst)
+table(personst$kjønn)
+personst <- read.csv("https://raw.githubusercontent.com/langoergen/stv1020R/master/data/personstemmer.csv", 
+                     stringsAsFactors = F)

@@ -5,12 +5,6 @@ date: "February 25, 2018"
 output:
   html_document:
     keep_md: true
-    toc: true
-    toc_depth: 1
-    number_sections: true
-    toc_float:
-      collapsed: false
-      smooth_scroll: false
 ---
 
 ```{r setup, include=FALSE}
@@ -23,12 +17,13 @@ Først: Er det noen spørsmål/kommentarer til hjemmeoppgavene? Har alle forstå
 
 I dagens seminar skal vi dekke følgende emner:
 
-1. Organisering av arbeidet ditt i R
-2. Laste inn datasett
-3. Statistiske mål
-4. Grafikk 
-5. Tabulering
-6. Lagre output 
+1. [Organisering av arbeidet ditt i R](#organisering)
+2. [Laste inn datasett](#datasett)
+3. [Statistiske mål](#statistikk)
+4. [Grafikk](#grafikk) 
+5. [Tabulering](#tabulering)
+6. [Mer om logiske tester](#logisk)
+7. [Lagre output](#lagre) 
 
 Noen av disse emnene har dere allerede kjennskap til gjennom introduksjonen jeg lagde til seminaret. Jeg skal bruke de neste 10 minuttene på å gi dere litt utfyllende informasjon. Det er valgfritt å kode underveis, men jeg anbefaler dere å gjøre det så lange dere klarer å følge med.
 
@@ -36,7 +31,7 @@ Etter introduksjonen bruker vi 5 minutter på spørsmål om disse temaene i plen
 
 De siste minuttene bruker vi på å snakke om oppgavene og annet dere måtte lure på i plenum. Jeg skal også gå gjennom lagring av forskjellige typer output i R: plot, datasett og script.
 
-# Organisering av arbeid i R
+# [Organisering av arbeid i R](#organisering)
 
 Organisering av arbeid er viktig for å lykkes med **R**. Dersom du holder orden i scriptene dine, og koder fint og oversiktlig, med gode kommentarer, kommer du til å gjøre mindre feil. Det blir også lettere for fremtidsversjonen av deg, og for andre å få glede av koden din. Det er såpass mye å tjene på god organisering at vi skal bruke de neste minuttene på dette emnet. Denne tegneserien fra [xkcd](https://xkcd.com/) oppsummerer resultatet av dårlig organisering godt:
 
@@ -44,7 +39,7 @@ Organisering av arbeid er viktig for å lykkes med **R**. Dersom du holder orden
 knitr::include_graphics("../bilder/fixing_problems.png")
 ```
 
-## Organisering av script
+## Organisering av script 
 
 I første omgang skal vi fokusere på oppsett av `R-script`, dere skal få noen nyttige tips som vil gi dere gode vaner. Jeg rekker imidlertid ikke gjennom alle gode prinsipper, [her er noen flere forslag til hvordan du kan skrive god kode](https://google.github.io/styleguide/Rguide.xml). Jeg har lagt en [mal i mappen scripts](https://raw.githubusercontent.com/langoergen/stv1020R/master/scripts/seminar2.R) dere kan kopiere og bruke til dagens seminar, dere trenger derfor ikke å skrive alt jeg gjennomgår om oppsett av script. Dette scriptet, `seminar2.R` inneholder også oppgavene til dagen seminar.
 
@@ -140,7 +135,7 @@ R lar deg opprette **projects**, som gir mye nyttig funksjonalitet for arbeid me
 For å opprette et prosjekt trykker dere på `File` oppe til venstre i Rstudio. Deretter trykker dere på `New Project`. Dere kan nå lage et prosjekt i en ny eller i en eksisterende mappe. Velg ny mappe (new directory), sett type til default, og velg et navn på mappen prosjektet tar utgangspunkt i. Til slutt velger dere hvor på pcen den nye prosjektmappen skal lagre (f.eks. "Documents"). Når dere har opprettet et prosjekt i en ny mappe, kan dere lagre script i denne mappen. Dere kan også lage et mappesystem som starter i prosjkektmappen. Det kan for eksempel være fint med en mappe for data, en for script og en for bilder. 
 
 
-# Innlasting av data i R
+# [Laste inn datasett i R](#datasett)
 
 R lar deg laste inn datasett fra tekst, excel-filer, andre statistikkprogramm, internett og sikkert fra andre kilder også. Funksjoner for å laste inn datasett har stort sett alltid samme grunnleggende syntaks:
 
@@ -221,7 +216,7 @@ cor.test(mtcars$mpg, mtcars$cyl)
 I tillegg til å la deg bruke forskjellige korrelasjonskoeffisienter og metoder for å håndtere missing, gir `cor.test()` mulilgheten til å spesifisere andre 0 - hypoteser med argumentet `alternative =`. 
 
 
-# Grafikk
+# [Grafikk](#grafikk)
 
 Dette emnet skrve jeg om i dokumentet til forrige seminar, [som dere finner her](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md)
 Vi kommer stort sett bare til å bruke `ggplot()` funksjonen for plotting i seminarene.
@@ -237,13 +232,51 @@ knitr::include_graphics("../bilder/spredningsplot.png")
 
 
 
-# Tabulering
+# [Tabulering](#tabulering)
 
-Dette emnet har jeg også skrevet om i forrige seminar. Det viktigste er at dere forstår `table()` funksjonen.
+Dette emnet har jeg også skrevet om i [dokumentet til forrige seminar]((https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md)). Det viktigste er at dere forstår `table()` funksjonen.
 
-# Lagre output
+# [Mer om logiske tester](#logisk)
 
-Her gjennomgår jeg lagring av tre typer output: R-script, plot og datasett. Lagring av fine tabeller vil bli gjennomgått i et senere seminar.
+I andre time av dagens seminar skal dere få jobbe mer med logiske tester og indeksering. Forståelse for disse temaene er sentralt for å lykkes med den obligatoriske prøven, og for å kunne bruke R. Her er en oversikt over symbolene vi kan bruke til å lage logiske tester. 
+
+ Symbol | Betydning     
+--      |---
+`<`     | mindre enn     
+`<=`    | mindre eller lik     
+`>`     | større enn    
+`>=`    | større eller lik    
+`==`    | helt lik    
+`!=`    | ulik    
+`!x`    | forskjellig fra x  
+`is.na` | logisk test for missing 
+`x|y`   | x eller y (`|` betyr eller)    
+`x & y` | x og y (`&` betyr og)    
+   
+De to siste symbolene, `|` og `&`, brukest til å lage logiske tester med flere betingelser. De resterende symbolene er logiske tester, som forteller deg om noe er `TRUE` eller `FALSE`.
+
+Vi har brukt logiske tester i indeksering ved hjelp av `which()`. Det er imidlertid flere viktige funksjoner for utvelging av variabler, enheter, og omkoding av variabler, som bruker resultatet av logiske tester som input. Her er en særlig nyttig funksjon: `ifelse()`.
+
+Den generelle syntaksen til `ifelse()` er:
+```{r, eval = F}
+ifelse("logisk test", output hvis TRUE, output hvis FALSE)
+```
+
+Denne funksjonen kan gjøre mye av det samme som `which()`. Jeg foretrekker å bruke `ifelse()` til omkoding, mens jeg ofte bruker `which()` til ren indeksering. Her er et eksempel på opprettelse av en dummy variabel for biler med 8 sylindre ved hjelp av `ifelse()`:
+
+```{r}
+mtcars$eight <- ifelse(mtcars$cyl == 8, 1, 0)
+table(mtcars$eight)
+```
+
+
+Dersom dere får god tid, oppfordrer jeg dere til å forsøke å løse oppgaver der du må bruke logiske tester både med `ifelse()` og `which()`.
+
+
+
+# [Lagre output](#lagre)
+
+Her gjennomgår jeg lagring av tre typer output: R-script, plot og datasett. Lagring av fine tabeller vil bli gjennomgått i et senere seminar. Med lagring av output, referer jeg her til lagring av informasjon i filer på datamaskinen din, ikke som objekter i R.
 
 ### lagre et R-script
 
