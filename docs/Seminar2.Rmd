@@ -230,7 +230,12 @@ ggplot(mtcars, aes(x = mpg, y = cyl)) + geom_point()
 knitr::include_graphics("../bilder/spredningsplot.png")
 ```
 
+**Bonus:** Det finnes utrolig mange muligheter for å pynte på `ggplot`, her er to lenker som hjelper deg med å finne fine farger til plottene dine: 
 
+1. [Farger fra scener i filmene til Wes Anderson](http://blog.revolutionanalytics.com/2014/03/give-your-r-charts-that-wes-anderson-style.html)
+2. [De mest dominerende fargene i en jpeg fil](http://blog.revolutionanalytics.com/2015/03/color-extraction-with-r.html)
+
+For de som bare vil ha et fint plot i en fei, er det lurt å velge et tema. Pakken `ggthemes` inneholder [mange tileggstema](https://github.com/jrnold/ggthemes) til `ggplot()`.
 
 # [Tabulering](#tabulering)
 
