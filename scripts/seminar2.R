@@ -113,12 +113,5 @@ library(haven)
 #     - Dersom ø'en i variabelnavnet kjønn er lest inn feil, fiks dette med colnames(personst)[8] <-  "kjønn"
 
 
-str(personst)
-personst$apkvinne <- ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0)
-with(subset(personst, personst$parti==ap), table(medietreff))
-table(personst[which(personst$parti == "ap" & personst$kjønn == 1),])
-summary(personst)
-names(personst)
-table(personst$kjønn)
-personst <- read.csv("https://raw.githubusercontent.com/langoergen/stv1020R/master/data/personstemmer.csv", 
-                     stringsAsFactors = F)
+
+
