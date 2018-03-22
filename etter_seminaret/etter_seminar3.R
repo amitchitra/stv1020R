@@ -12,11 +12,13 @@
 #### Oppgave 1 ###########
 ##########################
 
-## a) Last inn datafilen aidgrowth.Rdata i Rstudio, og opprett et objekt som du kaller aidgrowth.
+## a) Last inn datafilen aidgrowth.Rdata i Rstudio (fra data-mappen på github), og opprett et objekt som du kaller aidgrowth.
 ## b) Finn ut mer om funksjonen subset med ?
 ## c) Lag et nytt datasett som kun inneholder land som har verdien 1 på variabelen sub_saharan_africa
 ## d) kjør en lineære regresjon med aid som uavhengig og gdp_growth som avhengig variabel i det nye datasettet og tolk.
 ## Du kan eventuelt bruke funksjonen filter fra dplyr-pakken i stedet for subset.
+## Du skal få samme resultat med subset som med aidgrowth[which(aidgrowth$sub_saharan_africa==1),]
+
 
 #########################
 #### Oppgave 2 ##########
@@ -59,7 +61,7 @@ ggplot(aidgrowth, aes(x = , y =)) +
 
 
 ###############################
-##### Oppgave 3 ###############
+##### Oppgave 4 ###############
 ###############################
   
 ## Les koden så raskt eller så grundig som du ønsker. Ved å se nøye på resultatene av koden
@@ -81,6 +83,7 @@ cor(aidgrowth$policy, aidgrowth$aid, use = "pairwise.complete.obs")
 ## Negativ korrelasjon
 cor(aidgrowth$policy, aidgrowth$gdp_growth, use = "pairwise.complete.obs")
 ## Positiv korrelasjon
+
 
 summary(lm(gdp_growth ~ aid + policy, data = aidgrowth))
 ## Negativ effekt, nå bare signifikant på 0.1 konfidensnivå. 
