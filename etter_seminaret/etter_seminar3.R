@@ -38,10 +38,14 @@ summary(aidgrowth$assasinations*aidgrowth$ethnic_frac)
 ## Du skal legge til ett nytt argument om gangen, for å se effekten av å legge til de ulike argumentene.
 ## Jeg har skrevet forklaringer av argumentene under.
 
-ggplot(aidgrowth, aes(x = , y =)) +
-  geom_point(aes(size = policy, col = region)) 
-  geom_smooth(method = lm)
-  facet_wrap(~region)
+## Oppretter variabelen region til plottet: (vi gjorde dette i seminar 3 også)
+aidgrowth$region <- ifelse(aidgrowth$sub_saharan_africa == 1, "Sub-saharan Africa",
+                           ifelse(aidgrowth$fast_growing_east_asia == 1, "East Asia", "Other"))
+library(ggplot2)
+ggplot(aidgrowth, aes(x = , y = )) 
+  geom_point(aes(size = policy, col = as.factor(region))) 
+  geom_smooth(method = "lm") +
+  facet_wrap(~period)
 
 ## Forklaring av nye argumenter:
 # size = er et av flere argumenter du kan bruke i aes for å visualisere mer enn to variabler i ett todimensjonalt plot.
