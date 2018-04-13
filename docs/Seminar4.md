@@ -15,7 +15,7 @@ Først, er det noen spørsmål om oppgaver?
  - For fredagsseminarene vil innleveringsmapper også være åpne på tirsdag. Dere må registrere når dere skal ta prøven på skjema.
  - Data til prøven vil legges på github
  - Med unntak av oppgaven der du skal laste inn data, vil det ikke være sjanse for følgefeil
- - Neste seminar vil kun innbefatte 
+ - Neste seminar vil nesten kun innbefatte prøveforberedelser
  - Prøver fra tidligere år er fin forberedelse, jeg skal legge ut flere datasett
  - Alle hjelpemidler, bortsett fra kommunikasjon med andre er lov.
  - Dersom du får tekniske problemer som ikke skyldes feilkoding (R henger seg opp e.l.) kan du få hjelp. Mer om dette neste uke
