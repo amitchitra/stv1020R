@@ -133,7 +133,7 @@ vif(bd)
 ### 6. Betydningsfulle observasjoner
 dev.off()
 influenceIndexPlot(bd, id.n = 5)
-dev.off() # nullstiller grafiske parametre, bruk dersom plot blir rare.
+dev.off() # nullstiller grafiske parametre, bruk dersom plot blir rare (tilsvarer rm(list=ls()) for plot).
 
 # Det er fint å se både på de største uteliggerne (studentized residuals), observasjonene med størst leverage (hat-values)
 # og observasjonene med høyest Cook's D.
@@ -177,8 +177,22 @@ ggplot(bd_data, aes(x = aid, y = gdp_growth, col = region)) + geom_point()
 summary(aidgrowth2) # er det store forskjeller? 
 summary(bd_data) 
 
+# Vi kan også se på korrelasjon mellom missing og verdi på avhengig variabel
+cor(aidgrowth2$gdp_growth, is.na(aidgrowth2$policy), use="pairwise.complete.obs")
+# Observasjoner som er utelatt av bd_data har lavere verdi på policy enn gjennomsnittet 
+# (TRUE får verdien 1 i automatisk dummy-omkoding i cor-funksjonen.)
+
+# Korrelasjon mellom missing på en uavhengig variabel i regresjon og avhengig variabel:
+cor(aidgrowth2$gdp_growth, complete.cases(aidgrowth2[,c("gdp_pr_capita", "ethnic_frac", 
+                             "assasinations", "institutional_quality" ,  "m2_gdp_lagged", "region", 
+                             "aid", "policy", "period")]), use = "pairwise.complete.obs")
+
+# observasjoner som har missing på en av de uavhengige variablene har gjennomsnittlig høyere verdi på økonomisk
+# vekst variabelen.
 
 # Det finnes en rekke andre metoder for å se nærmere på missingverdier, mange av dem er svært avanserte.
+# Det er imidlertid nyttig å se på univariat/bivariat statistikk for missing på uavhengige variabler opp
+# mot avhengig variabel.
 
 ### 9. Relasjonens form
 
