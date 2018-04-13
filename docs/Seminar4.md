@@ -195,7 +195,7 @@ I forrige seminar gjorde vi en god del uformell regresjonsdiagnostikk gjennom å
 4. Restleddene korrelerer med hverandre
 5. Fravær av sterk tendens til kolinearitet og multikolinearitet mellom de uavhengige variablene
 
-I tilegg nevner **Cristophersen** følgende:
+I tilegg nevner **Cristophersen** følgende trusler:
 
 6. Betydningsfulle observasjoner
 7. Sannsynlighetsutvalg fra populasjonen man vil undersøke

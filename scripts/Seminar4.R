@@ -91,8 +91,10 @@ plot(bd) # Gir 4 diagnostikkplot, inkludert qqplot
 ### 3. Homoskedastiske restledd
 
 # Plot for å sjekke heteroskedastisitet
-ggplot(bd_data, aes(x = bd_resid, y = bd_fitted)) + geom_point() 
+ggplot(bd_data, aes(x = bd_fitted, y = bd_resid)) + geom_point() +
+  geom_smooth()
 
+ncvTest(bd) # Ikke pensum- Breusch-Pagan test for heteroskedastistitet
 # Ser ut om det er noe heteroskedastisitet, da det er noen uteliggere i fordelingen.
 
 # Vi kan også se dette fra regresjonsplot med konfidensintervaller, som vi tidligere har laget med `geom_smooth`.
@@ -115,9 +117,15 @@ durbinWatsonTest(bd)
 ### 5. Fravær av sterk grad av kolinearitet og multikolinearitet mellom de uavhengige variablene
 
 # man kan få et inntrykk av multikolinearitet fra en korrelasjonsmatrise
-?vif
+# Vi kan lage en korrelasjonsmatrise av et datasett med bare numeric/integer-variabler
+cordata <- bd_data[,c("gdp_growth", "gdp_pr_capita", "ethnic_frac", "assasinations",
+  "institutional_quality", "m2_gdp_lagged", "sub_saharan_africa", "fast_growing_east_asia", "aid",
+  "policy", "period")]
+cor(cordata)
+# Man kan også se på vif (variance inflation factor). Kvadratroten av vif indikerer hvor mye konfidensintervallet
+# til estimatet av en variabels effekt øker på grunn av multikolinearitet.
 vif(bd)
-## GVIF er en versjon av VIF som tar hensyn til andregradspolynomer/sampspill/faktor-variabler. 
+## GVIF er en generalisert versjon av VIF som tar hensyn til andregradspolynomer/sampspill/faktor-variabler. 
 ## GVIF tolkes likt som VIF, og er helt lik dersom det ikke er andregradspolynomer/sampspill/faktor-variabler.  
 
 
@@ -178,5 +186,10 @@ summary(bd_data)
 ggplot(bd_data, aes(x = aid, y = gdp_growth)) + geom_point()
 
 ## Vi kan også bruke ceresPlots fra car, som tegner sammenhengen mellom to variabler i en regresjon
-## så godt den klarer
+## så godt den klarer. Den fungerer imidlertid ikke på modeller med samspill. CeresPlots er ikke pensum, men
+## en veldig god måte å teste for linearitet.
+
+ceresPlots(lm(formula = gdp_growth ~ log(gdp_pr_capita) + ethnic_frac + 
+                assasinations + institutional_quality + m2_gdp_lagged + region + 
+                aid + policy + as.factor(period), data = bd_data, na.action = "na.exclude"))  # Ikke pensum
 
