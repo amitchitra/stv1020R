@@ -179,7 +179,7 @@ summary(bd_data)
 
 # Vi kan også se på korrelasjon mellom missing og verdi på avhengig variabel
 cor(aidgrowth2$gdp_growth, is.na(aidgrowth2$policy), use="pairwise.complete.obs")
-# Observasjoner som er utelatt av bd_data har lavere verdi på policy enn gjennomsnittet 
+# Observasjoner som er utelatt av bd_data har lavere verdi på gdp_growth enn gjennomsnittet 
 # (TRUE får verdien 1 i automatisk dummy-omkoding i cor-funksjonen.)
 
 # Korrelasjon mellom missing på en uavhengig variabel i regresjon og avhengig variabel:
@@ -187,7 +187,7 @@ cor(aidgrowth2$gdp_growth, complete.cases(aidgrowth2[,c("gdp_pr_capita", "ethnic
                              "assasinations", "institutional_quality" ,  "m2_gdp_lagged", "region", 
                              "aid", "policy", "period")]), use = "pairwise.complete.obs")
 
-# observasjoner som har missing på en av de uavhengige variablene har gjennomsnittlig høyere verdi på økonomisk
+# observasjoner som ikke har missing på en av de uavhengige variablene har gjennomsnittlig høyere verdi på økonomisk
 # vekst variabelen.
 
 # Det finnes en rekke andre metoder for å se nærmere på missingverdier, mange av dem er svært avanserte.
