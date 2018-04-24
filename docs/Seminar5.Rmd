@@ -17,9 +17,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * Dagens seminar er en forsmak på prøven, dere har til og med mulighet til å laste opp oppgaven på fronnter i en innleveringsmappe som stenger to minutter etter klokken hel. Du skal kun levere et R-script.  
 * Jeg anbefaler alle å ta en titt på indeksering, `subset()`, `ifelse()`, logiske tester og innlasting av datasett, dersom dere ikke føler dere trygge på at dere kan dette. Disse emnene er grunnleggende, men samtidig ikke nødvendigvis de letteste.
+* Jeg har lagt ut et dokument med tips til feilsøking av problemer i R.
 * Jeg jobber med en fullstendig oversikt/forklaring av funksjoner som er aktuelle til prøven, den blir ferdig i løpet av kort tid. Den inneholder funksjonene vi har gått gjennom i seminarene, med unntak av noen få funksjoner vil alt vi har gjennomgått være pensum.
 * Andregangsprøve blir 25. mai. 
 * Prøvene på tirsdag kommer til å være helt fulle.
+* Treffetid på onsdag fra 16.00 - 17.00, PC rommet i kjelleren på Harriett Holters hus og på torsdag i samme rom fra 13.30-14.30
+
 
 ### Oppsamlingsheat
 
