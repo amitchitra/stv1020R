@@ -58,7 +58,8 @@ rm(et_objekt)
 sqrt(3) # kvadratrot
 exp(3)  # eksponentialfunksjon
 log(3)  # naturlig logaritme (kan endre grunntall med argumenter)
-
+sum(c(1,5))   # summerer tall  
+round(1.53)   # runder av til nærmeste heltall, kan styre antall desimaler med tilleggsargument
 
 ##### Opprette objekter #####
 
@@ -92,6 +93,11 @@ str(nedtelling_til_sommerferien)
 # as.character()
 # as.logical() - ikke pensum !!!!
 
+## factor er en spesiell klasse, vi har lært to funksjoner for å jobbe med factorer:
+# factor() - opprett en factor-variabel
+# levels() - se de ulike kategoriene på en variabel
+min_factor <- factor(c("liten", "liten", "stor", "medium", "liten"))
+levels(min_factor)
 ## Funksjoner som kan brukes til å lage vektorer:
 # ':'  - teller fra tall før kolon til tall etter kolon i heltall:
 10:1
@@ -152,8 +158,12 @@ complete.cases(data.frame(1:10, rep(c(NA,1), 5))) # test for missing hos observa
 # dim()
 # class()
 # names()
-# rownames
-# colnames
+# rownames()
+# colnames()
+# length()
+# View()
+# head()
+# tail()
 
 str(mtcars)
 dim(mtcars)
@@ -161,7 +171,10 @@ class(mtcars)
 names(mtcars)
 colnames(mtcars)
 rownames(mtcars)
-
+length(mtcars$mpg)
+# View(mtcars)
+head(mtcars)
+tail(mtcars)
 ## Vi kan enten indeksere ved å angi plasseringen/navnet til informasjonen vi er ute etter i objektet (rad, kolonne)
 ## eller ved å spesifisere et søk etter den informasjonen vi er ute etter ved hjelp av logiske tester
 
@@ -179,6 +192,7 @@ mtcars[1:5,] # Før komma i klammeparentes - indeksering av rader. Her indeksere
 mtcars[which(mtcars$cyl>4),] # Her indekserer jeg ved hjelp av en logisk test, jeg spesifiserer et søk
 subset(mtcars, cyl>4) # Her indekserer jeg ved hjelp av en logisk test i subset-funksjonen. 
 
+# which: angir plasseringen til elementer som får TRUE på en logisk test
 
 # Indeksere kolonner:
 mtcars[,1:3] # indekserer ut fra plassering
@@ -232,7 +246,7 @@ ggplot(mtcars, aes(x = disp, y = mpg)) +
 
 # enkelt barplot
 ggplot(mtcars, aes(x=factor(cyl), y = mpg)) +
-  geom_boxplot() 
+  geom_boxplot()  # legg merke til at x bør være en factor!
 
 # Mer avanserte plot - scatterploteksempel:
 
