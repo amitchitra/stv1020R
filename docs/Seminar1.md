@@ -1,6 +1,12 @@
-# Første R-Seminar
-Erlend Langørgen  
-12 februar 2018  
+---
+title: "Første R-Seminar"
+author: "Erlend Langørgen"
+date: "12 februar 2018"
+output:
+  html_document:
+    keep_md: TRUE
+    self_contained: no
+---
 
 
 
@@ -11,7 +17,7 @@ Erlend Langørgen
 
 # Seminaropplegg
 
-Det er seks seminarer, den 6. gangen blir det prøve. Dersom noen ikke får til den første prøven, blir det en ny sjanse. Datoen for andre sjanse blir snart tilgjengelig. Dere finner timeplanen for seminarene [her](http://www.uio.no/studier/emner/sv/statsvitenskap/STV1020/v18/timeplan/index.html). Følg med på oppdateringer.
+Det er seks undervisningsseminarer, 7. seminar blir det prøve. Dersom noen ikke får til den første prøven, blir det en ny sjanse. Datoen for andre sjanse blir snart tilgjengelig. Dere finner timeplanen for seminarene [her](http://www.uio.no/studier/emner/sv/statsvitenskap/STV1020/v19/timeplan/index.html). Følg med på oppdateringer.
 
 ## Nyttige lenker
 - [Last ned R](http://cran.uib.no/)
@@ -21,7 +27,7 @@ Det er seks seminarer, den 6. gangen blir det prøve. Dersom noen ikke får til 
 - [Bruke prosjekter i R](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 - [Mappestruktureringsforslag](https://nicercode.github.io/blog/2013-04-05-projects/)
 - [Guide til ggplot2](http://docs.ggplot2.org/current/)
-- [Facebookgruppe for R](https://www.facebook.com/groups/427792970608618/)
+- [Facebookgruppe for R statsvitenskap UiO](https://www.facebook.com/groups/427792970608618/)
 
 ## Om å lære R
 
@@ -32,10 +38,11 @@ For å få fullt utbytte av R som samfunnsvitere, trenger dere følgende ferdigh
 3. Forståelse av programmering
 4. Forståelse av grunnleggende konvensjoner i R, og evnen til finne og forstå koden dere trenger for å kunne gjøre som dere vil i R.
 
-Det kan være vanskelig å lære seg R i begynnelsen, særlig hvis man lærer R uten særlig forkunnskaper i R, statistikk, eller programmering. Da kan man havne i situasjoner der man ikke vet om man har gjort riktig, fordi det er flere ting man er usikker på om man har gjort riktig, og fordi man innser at andre ting kan være feil uten at du vet om det. Vi skal minimere antallet slike situasjoner i fellesskap. Dersom noen føler seg *lost*, er det viktig at dere gjør noe med det, både i form av egeninnsats, og ved å be om hjelp fra medstudenter og meg. Siden det er lett å falle av, er det viktig at du tar ansvar for både deg selv og dine medstudenter, hjelp hverandre uoppfordret. Dess bedre innsats dere gjør, dess større blir læringen og omfanget av ferdigheter dere får trent i seminarene.  
+Det kan være vanskelig å lære seg R i begynnelsen, særlig hvis man lærer R uten særlig forkunnskaper i R, statistikk, eller programmering. Da kan man havne i situasjoner der man ikke vet om man har gjort riktig, fordi det er flere ting man er usikker på om man har gjort riktig, og fordi man innser at andre ting kan være feil uten at du vet om det. Vi skal minimere antallet slike situasjoner i fellesskap. Dersom noen føler seg *lost*, er det viktig at dere gjør noe med det, både i form av egeninnsats, og ved å be om hjelp fra medstudenter og meg. Siden det er lett å falle av, er det viktig at du tar ansvar for både deg selv og dine medstudenter, hjelp hverandre med R! Dess bedre innsats dere gjør, dess større blir læringen og omfanget av ferdigheter dere får trent i seminarene.  
 
-Hvis dere gjør deres del, vil ferdighetene dere tilegner dere gjennom R-seminarene inngå i en symbiose med statistikk og metodekunnskaper, ved å bidra til at dere får en dypere forståelse av metode, statistikk og R, samt evnen til å gjennomføre deres egen statistiske analyse. 
+Hvis dere gjør deres del, vil ferdighetene dere tilegner dere gjennom R-seminarene gjøre det lettere for dere å forstå statistikk og metode, samt gjøre dere i stand til å gjøre deres egne statistiske analyser i senere emner.
 
+ 
 
 ## Undervisningsopplegg
 
@@ -46,26 +53,26 @@ Hvis dere gjør deres del, vil ferdighetene dere tilegner dere gjennom R-seminar
 * bruke SPSS eller R til databehandling og statistiske analyser
 
 Mitt mål er at dere skal klare å anvende disse ferdighetene selvsikkert og selvstendig.
-I tillegg ønsker jeg å lære dere hvordan dere kan tillegne dere ytterligere kunnskap i R. Dersom dere tilegner dere disse ferdighetene, vil dere kunne få stort utbytte av R. Dere vil også være i stand til å tilegne dere ytterligere kunnskaper om R og programmering, og bruke R som hjelpemiddel til å lære dere mer om statistikk.
+I tillegg ønsker jeg å lære dere hvordan dere kan tilegne dere ytterligere kunnskap i R på egenhånd. Dersom dere tilegner dere disse ferdighetene, vil dere kunne få stort utbytte av R. 
 
-For å nå disse målene i løpet av 6 seminarer, er vi nødt til å trekke sammen. 
+For å nå disse målene i løpet av 6 seminarer, er vi nødt til å jobbe sammen. Jeg anbefaler følgende opplegg: 
 
-* **Før seminaret:** Gjennomfør tutorial som blir lagt ut på internett. Les det jeg skriver i disse tutorialene grundig. Disse tutorialene vil la dere forsøke å kode selv, men dere vil få mye hjelp.
+* **Før seminaret:** Gjennomfør introduksjonsmodul til seminaret (Canvas). Les det jeg skriver, og jobb gjennom kode i disse tutorialene grundig. Introduksjonene er spesielt viktig å gjennomføre, for at du skal være i stand til å jobbe selvstendig med oppgaver i seminaret.
 * **I seminaret:** 
  + Kort introduksjon til dagens læringsmål
  + Arbeid med oppgaver sammen med naboen
  + Gjennomgang av oppgaver
-* **Etter seminaret:** Hjemmelekse - løs repetisjonsoppgaver. Disse oppgavene vil teste at du klarer å anvende kunnskapen fra seminaret selvstendig.
+* **Etter seminaret:** Løs repetisjonsoppgaver i modulen etter seminaret på Canvas. Disse oppgavene vil teste at du klarer å anvende kunnskapen fra seminaret selvstendig. Fasit blir også lenket til i samme modul, men jeg kommer også til å sette av tid til spørsmål om oppgavene ved starten av hvert seminar.
 
-Både oppgavene før og etter seminaret vil være korte, jeg krever ikke at dere bruker mye tid på hjemmelekser.
+Både oppgavene før og etter seminaret vil være korte, jeg kommer ikke til å kreve at dere bruker mye tid. For dem som vil lære seg mer R, kommer det til å bli noe bonusmateriale.
 
 
 ## Dagens seminar: R basics - en myk start
-Jeg håper alle har installert R og Rstudio. Dersom dere ikke har gjort dette, bruk en av de stasjonære pcene, eller [åpne Rstudio i kiosk](https://kiosk.uio.no). Dere kan installere Rstudio i pausen.   
+Jeg håper alle som har tenkt å bruke egen PC/mac har installert R og Rstudio. Dersom dere ikke har gjort dette, bruk en av de stasjonære pcene, eller [åpne Rstudio i kiosk](https://kiosk.uio.no). Dere kan installere Rstudio i pausen.   
 
 Dagens seminar er organisert som en **code-along**, jeg vil at dere skal teste all koden vi går gjennom underveis, dere vil også få noen småoppgaver.
 
-Dersom koden deres ikke virker i løpet av dagens seminar, start med å se etter **skrivefeil**. Sammenlign så koden din med naboens kode, se om hun/han/hen kan hjelpe deg. R er svært pirkete på skrivefeil, parenteser, komma og små/store bokstaver. Dersom koden fortsatt ikke virker, spør dere meg om hjelp. Ikke nøl med å spørre meg, jeg vil ikke at dere skal sitte og lete lenge etter løsningen på egenhånd i dagens seminar.    
+Dersom koden deres ikke virker i løpet av dagens seminar, start med å se etter **skrivefeil**. Sammenlign så koden din med naboens kode, se om hun/han/hen kan hjelpe deg (jeg har også laget et eget [feilsøkingsdokument](https://github.com/langoergen/stv1020R/blob/master/docs/Feils%C3%B8king.md)). R er svært pirkete på skrivefeil, parenteser, komma og små/store bokstaver. Dersom koden fortsatt ikke virker, spør dere meg om hjelp. Ikke nøl med å spørre meg, jeg vil ikke at dere skal sitte og lete lenge etter løsningen på egenhånd i dagens seminar.    
 
 Plan for i dag:
 
@@ -80,17 +87,17 @@ Plan for i dag:
 9. [Tabulere](#tabulere)
 
 ## [1. Åpne Rstudio](#Rstudio)
-Rstudio er en IDE (integrated development environment) til R. Rstudio gjør R mer brukervennlig, og har en del tilleggsfunksjonalitet som er nyttig. Derfor bruker vi Rstudio. Rstudio består av 3 vinduer første gang dere åpner det. Til venstre ser dere console. Her vises kode som vi kjører. Oppe til høyre er environment, hvor objekter vi har opprettet vises. Nede til høyre vises filer i mappen vi jobber fra. Fra menyen over vinduet nede til høyre, ser vi at "plot", "packages" og "Help" også vises i dette vinduet. Mer om dette i løpet av dagens seminar, dersom dere fortsatt har spørsmål om hvordan Rstudio virker etter seminaret, ber jeg om at dere ser på forklaringen jeg har lagt ut på [nett](https://github.com/langoergen/stv1020R/blob/master/for_seminaret/for_seminar1.md), eller sender meg et spørsmål på slack.
+Rstudio er en IDE (integrated development environment) til R. Rstudio gjør R mer brukervennlig, og har en del tilleggsfunksjonalitet som er nyttig. Derfor bruker vi Rstudio (i motsetning til Field). Rstudio består av 3 vinduer første gang dere åpner det. Til venstre ser dere console. Her vises kode som vi kjører. Oppe til høyre er environment, hvor objekter vi har opprettet vises. Nede til høyre vises filer i mappen vi jobber fra. Fra menyen over vinduet nede til høyre, ser vi at "plot", "packages" og "Help" også vises i dette vinduet. Mer om dette i løpet av dagens seminar, dersom dere fortsatt har spørsmål om hvordan Rstudio virker etter seminaret, ber jeg om at dere ser på forklaringen jeg har lagt ut på [nett](https://github.com/langoergen/stv1020R/blob/master/for_seminaret/for_seminar1.md), eller sender meg et spørsmål på slack.
 
 ![](../bilder/Rstudio1.PNG)
 
-Det viktigste vinduet må vi imidlertid opprette selv. Klikk på arket med en grønn sirkel med et plusstegn like under `File` øverst til venstre, og velg `R Script`. Vi har nå opprettet et R-script. Vi skriver all kode i R-script, fordi r-script lar oss skrive, redigere, kommentere og lagre kode. I tillegg hjelper R-studio oss med å rette og organisere kode som skrives i R-script. R-script hjelper oss med å gjøre arbeidet vårt **reproduserbart**. For å kjøre koden på en linje i et r-script, naviger til linjen og trykk `ctrl + enter` (`Cmd` i stedet for `Ctrl` for dem som bruker mac). forsøk med `1 + 1`. Når dere kjører kode, kjøres, enten koden dere har markert, eller koden på den linjen dere er.
+Det viktigste vinduet må vi imidlertid opprette selv. Klikk på arket med en grønn sirkel med et plusstegn like under `File` øverst til venstre, og velg `R Script`. Vi har nå opprettet et R-script. Vi skriver all kode i R-script, fordi r-script lar oss skrive, redigere, kommentere og lagre kode. I tillegg hjelper R-studio oss med å rette og organisere kode som skrives i R-script. R-script hjelper oss med å gjøre arbeidet vårt **reproduserbart**. For å kjøre koden på en linje i et r-script, naviger til linjen og trykk `ctrl + enter` (`Cmd` i stedet for `Ctrl` for dem som bruker mac). forsøk med `1 + 1`. Når dere kjører kode, kjøres all koden dere har markert. Dersom dere ikke har markert kode, kjøres koden på den linjen musepekeren er.
 
 ## [2. Script og Console som kalkulator](#kalkulator)
 
 
 ```r
-#UTREGNING:
+# UTREGNING:
 1 + 1
 ```
 
@@ -99,8 +106,8 @@ Det viktigste vinduet må vi imidlertid opprette selv. Klikk på arket med en gr
 ```
 
 ```r
-##  VI "SPØR" R OM VI HAR RIKTIG SVAR:
-##  HVIS 1 + 1 BLIR 2, VIL R SVARE TRUE, HVIS 1 + 1 IKKE BLIR 2, VIL DEN SVARE FALSE
+## VI 'SPØR' R OM VI HAR RIKTIG SVAR: HVIS 1 + 1 BLIR 2, VIL R SVARE TRUE, HVIS 1 + 1 IKKE
+## BLIR 2, VIL DEN SVARE FALSE
 1 + 1 == 2
 ```
 
@@ -117,8 +124,8 @@ Det viktigste vinduet må vi imidlertid opprette selv. Klikk på arket med en gr
 ```
 
 ```r
-##  KONSOLLEN EVALUERER IKKE TING SOM KOMMER ETTER "#"
-10 * 10 # + 10 * 3
+## KONSOLLEN EVALUERER IKKE TING SOM KOMMER ETTER '#'
+10 * 10  # + 10 * 3
 ```
 
 ```
@@ -161,7 +168,7 @@ navn <- 10
 Et objekt kan inneholde mange tall:
 
 ```r
-Vektor <- 1:10  # LEGG MERKE TIL AT ":" LAGER EN REKKE AV TALL FRA 1 TIL 10.
+Vektor <- 1:10  # LEGG MERKE TIL AT ':' LAGER EN REKKE AV TALL FRA 1 TIL 10.
 Vektor
 ```
 
@@ -209,7 +216,7 @@ Ti * Vektor
 ```
 
 ```r
-Ti / Vektor
+Ti/Vektor
 ```
 
 ```
@@ -237,7 +244,7 @@ Vektor^Ti
 Merk for øvrig at R er sensitivt til store og små bokstaver:
 
 ```r
-navn 
+navn
 ```
 
 ```
@@ -262,7 +269,7 @@ summary(navn)
 ```
 
 ```r
-#(Summary(navn)
+# (Summary(navn)
 ```
 
 
@@ -318,7 +325,7 @@ mean(x = Vektor2, na.rm = FALSE)
 ```
 
 ```r
-## VED Å SETTE na.rm=TRUE, FJERNER R ALLE "NA" FØR DEN BEREGNER GJENNOMSNITTET:
+## VED Å SETTE na.rm=TRUE, FJERNER R ALLE 'NA' FØR DEN BEREGNER GJENNOMSNITTET:
 mean(x = Vektor2, na.rm = TRUE)
 ```
 
@@ -409,7 +416,7 @@ Oppgave: Test om dere henger med på denne alternative måten å regne ut gjenno
 
 
 ```r
-sum(Vektor) / length(Vektor)
+sum(Vektor)/length(Vektor)
 ```
 
 ```
@@ -484,8 +491,8 @@ summary(NumeriskVektor)
 **TEKST (CHARACTER):**
 
 ```r
-TekstVektor <- c("kjøtt", "fisk", "vegetar", "vegetar", "fisk",
-                 "vegetar", "kjøtt", "kjøtt", "fisk", "vegetar")
+TekstVektor <- c("kjøtt", "fisk", "vegetar", "vegetar", "fisk", "vegetar", "kjøtt", "kjøtt", 
+    "fisk", "vegetar")
 class(TekstVektor)
 ```
 
@@ -515,11 +522,10 @@ table(TekstVektor)
 **FAKTOR, ELLER "KATEGORIER" (FACTOR):**
 
 ```r
-FaktorVektor <- c("Liten", "Middels", "Stor", "Liten",
-                  "Liten", "Stor", "Middels", "Stor",
-                  "Middels", "Liten")
+FaktorVektor <- c("Liten", "Middels", "Stor", "Liten", "Liten", "Stor", "Middels", "Stor", 
+    "Middels", "Liten")
 FaktorVektor <- factor(FaktorVektor)
-?factor
+`?`(factor)
 ```
 
 ```
@@ -527,9 +533,8 @@ FaktorVektor <- factor(FaktorVektor)
 ```
 
 ```r
-FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten",
-                         "Liten", "Stor", "Middels", "Stor",
-                         "Middels", "Liten"))
+FaktorVektor <- factor(c("Liten", "Middels", "Stor", "Liten", "Liten", "Stor", "Middels", "Stor", 
+    "Middels", "Liten"))
 
 class(FaktorVektor)
 ```
@@ -539,7 +544,7 @@ class(FaktorVektor)
 ```
 
 ```r
-levels(FaktorVektor) # LEGG MERKE TIL AT R HAR KATEGORISERT -- ALFABETISK
+levels(FaktorVektor)  # LEGG MERKE TIL AT R HAR KATEGORISERT -- ALFABETISK
 ```
 
 ```
@@ -559,8 +564,7 @@ summary(FaktorVektor)
 **LOGISKE, SOM BARE TAR VERDIEN TRUE ELLER FALSE, (LOGICAL):**
 
 ```r
-LogiskVektor <- c(TRUE, TRUE, FALSE, TRUE, FALSE,
-                  FALSE, TRUE, FALSE, FALSE, FALSE)
+LogiskVektor <- c(TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE)
 class(LogiskVektor)
 ```
 
@@ -583,7 +587,7 @@ class(eksempel1)
 ```
 
 ```r
-str(eksempel1) # str forteller oss også at eksempel1 er character, men forkorter til chr
+str(eksempel1)  # str forteller oss også at eksempel1 er character, men forkorter til chr
 ```
 
 ```
@@ -603,7 +607,7 @@ Oppgave: kjør koden under, hva kan du si om målenivået til "liste" og "ikkeli
 
 
 ```r
-liste <- list(c("tekst", 'tekst2'), 4, c(TRUE, FALSE))
+liste <- list(c("tekst", "tekst2"), 4, c(TRUE, FALSE))
 class(liste)
 ```
 
@@ -645,8 +649,8 @@ Unngå å blande målenivåer (med mindre det er en god grunn til å gjøre det)
 ## [6. Indeksering av vektorer](#indeksering)
 
 Hva betyr indeksering?
-Jo: hvis vi har en vektor med 10 elementer, men vil ha ut element nr. 5, må vi på en eller annen måte be R om gi oss element nr. 5.
-Da bruker vi `[]`.
+- hvis vi har en vektor med 10 elementer, men vil ha ut element nr. 5, må vi på en eller annen måte be R om gi oss element nr. 5.
+Da bruker vi `[]`. Indeksering går alså ut på å angi en oppskrift for å hente ut den informasjonen vi er interessert i.
 
 
 ```r
@@ -749,7 +753,7 @@ which(NumeriskVektor >= 8)
 ```
 
 ```r
-NumeriskVektor[9:10]                        ##  DISSE GIR ALTSÅ SAMME RESULTAT
+NumeriskVektor[9:10]  ##  DISSE GIR ALTSÅ SAMME RESULTAT
 ```
 
 ```
@@ -768,7 +772,7 @@ LogiskVektor
 ```
 
 ```r
-LogiskVektor == FALSE 
+LogiskVektor == FALSE
 ```
 
 ```
@@ -776,9 +780,10 @@ LogiskVektor == FALSE
 ```
 
 ```r
-##  HER SPØR VI PROGRAMMET: "ER ELEMENTET I LogiskVektor FALSE? SÅ GIR DEN OSS TRUE (JA DET ER FALSE),
+## HER SPØR VI PROGRAMMET: 'ER ELEMENTET I LogiskVektor FALSE? SÅ GIR DEN OSS TRUE (JA DET
+## ER FALSE),
 
-which(LogiskVektor == FALSE)   
+which(LogiskVektor == FALSE)
 ```
 
 ```
@@ -786,7 +791,8 @@ which(LogiskVektor == FALSE)
 ```
 
 ```r
-##  HER SPØR VI PROGRAMMET: "HVILKE ELEMENTER I LogiskVektor ER FALSE? SÅ GIR DEN OSS DE ELEMENTNUMRENE SOM HAR FALSE
+## HER SPØR VI PROGRAMMET: 'HVILKE ELEMENTER I LogiskVektor ER FALSE? SÅ GIR DEN OSS DE
+## ELEMENTNUMRENE SOM HAR FALSE
 ```
 
 
@@ -802,9 +808,8 @@ Vi kan lage et datasett av vektorene våre slik (legg merke til argumentet `stri
 
 
 ```r
-datasett <- data.frame(IntegerVektor, NumeriskVektor,
-                       TekstVektor, FaktorVektor, LogiskVektor,
-                       stringsAsFactors = FALSE)
+datasett <- data.frame(IntegerVektor, NumeriskVektor, TekstVektor, FaktorVektor, LogiskVektor, 
+    stringsAsFactors = FALSE)
 TekstVektor
 ```
 
@@ -840,7 +845,7 @@ datasett
 ```
 
 ```r
-?data.frame
+`?`(data.frame)
 ```
 
 
@@ -848,11 +853,8 @@ datasett
 For å gjøre det mer elegant kan vi spesifisere navn på kolonnene:
 
 ```r
-datasett2 <- data.frame(id = IntegerVektor,
-                        sovn = NumeriskVektor,
-                        middag = TekstVektor,
-                        mengde = FaktorVektor,
-                        stringsAsFactors = FALSE)
+datasett2 <- data.frame(id = IntegerVektor, sovn = NumeriskVektor, middag = TekstVektor, mengde = FaktorVektor, 
+    stringsAsFactors = FALSE)
 datasett2
 ```
 
@@ -934,9 +936,17 @@ datasett2
 ```
 
 
-Vi må ikke bruke `¤`. Vi kan også bruke `[]`. Når et objekt har flere dimensjoner (Datasett har 2, rader og kolonner), kan vi bruke komma i [,] til å skille mellom dimensjonene. For rader og kolonner i datasett gjør vi dette slik:
+Vi må ikke bruke `$`. Vi kan også bruke `[]`. Når et objekt har flere dimensjoner (Datasett har 2, rader og kolonner), kan vi bruke komma i [,] til å skille mellom dimensjonene. For rader og kolonner i datasett gjør vi dette slik:
 `[rad, kolonne]`
 
+
+```r
+dim(datasett)
+```
+
+```
+## [1] 10  5
+```
 
 ```r
 datasett[3, 4]
@@ -966,7 +976,7 @@ datasett2[c(1, 3), c(2, 3)]
 ```
 
 ```r
-##  HVIS DET ER TOMT PÅ ENTEN PLASSEN TIL RADER ELLER TIL KOLONNER, HENTER R ALLE:
+## HVIS DET ER TOMT PÅ ENTEN PLASSEN TIL RADER ELLER TIL KOLONNER, HENTER R ALLE:
 datasett2[2:5, ]
 ```
 
@@ -991,7 +1001,7 @@ datasett2[which(datasett2$sovn >= 5), ]
 ## 10 10  9.5 vegetar   Liten
 ```
 
-Vi kan også bruke navnene påp kolonnene:
+Vi kan også bruke navnene på kolonnene:
 
 ```r
 datasett[, "NumeriskVektor"]
@@ -1076,11 +1086,11 @@ plot(datasett$IntegerVektor, datasett$NumeriskVektor)
 
 ![](Seminar1_files/figure-html/unnamed-chunk-33-1.png)<!-- -->
 
-Vi kommer til å bruke funksjonen `ggplot()` fra pakken `ggplot2`, som er en annen måte å plotte på - ofte enklere enn `plot()`. Det finnes ekstremt mange pakker som inneholder funksjoner som ikke inngår i grunninnstallasjonen av R. For å bruke funksjoner fra pakker, må vi kjøre to linjer med kode:
+Vi kommer til å bruke funksjonen `ggplot()` fra pakken `ggplot2`, som er en annen måte å plotte på - ofte enklere enn `plot()` synes jeg. Det finnes ekstremt mange pakker som inneholder funksjoner som ikke inngår i grunninnstallasjonen av R. For å bruke funksjoner fra pakker, må vi kjøre to linjer med kode:
 
 ```r
-install.packages("ggplot2") # for installasjon: pakkenavn i ""
-library(ggplot2) # for å laste inn pakke: pakkenavn uten ""
+install.packages("ggplot2")  # for installasjon: pakkenavn i ''
+library(ggplot2)  # for å laste inn pakke: pakkenavn uten ''
 ```
 
 
@@ -1097,12 +1107,12 @@ prikkeplot
 
 
 
-![](../bilder/prikkeplot1.png)<!-- -->
+<img src="../bilder/prikkeplot1.png" width="2100" />
 
 
 
 ```r
-## VI MÅ LEGGE TIL EN "LAYER" FOR Å FÅ INN DATA
+## VI MÅ LEGGE TIL EN 'LAYER' FOR Å FÅ INN DATA
 prikkeplot + geom_point()
 ```
 
@@ -1117,11 +1127,12 @@ prikkeplot
 
 
 
-![](../bilder/prikkeplot2.png)<!-- -->
+<img src="../bilder/prikkeplot2.png" width="2100" />
 
 
 ```r
-##   (FULL OVERSIKT OVER PUNKTER FINNER DU HER: http://sape.inf.usi.ch/quick-reference/ggplot2/shape)
+## (FULL OVERSIKT OVER PUNKTER FINNER DU HER:
+## http://sape.inf.usi.ch/quick-reference/ggplot2/shape)
 prikkeplot + geom_point(shape = 1)
 ```
 
@@ -1130,11 +1141,11 @@ prikkeplot + geom_point(shape = 1)
 
 
 
-![](../bilder/prikkeplot3.png)<!-- -->
+<img src="../bilder/prikkeplot3.png" width="2100" />
 
 
 ```r
-##  VI KAN OGSÅ FARGELEGGE BASERT PÅ VERDIEN I EN ANNEN KOLONNE:
+## VI KAN OGSÅ FARGELEGGE BASERT PÅ VERDIEN I EN ANNEN KOLONNE:
 prikkeplot <- prikkeplot + geom_point(aes(color = TekstVektor))
 prikkeplot
 ```
@@ -1144,11 +1155,11 @@ prikkeplot
 
 
 
-![](../bilder/prikkeplot4.png)<!-- -->
+<img src="../bilder/prikkeplot4.png" width="2100" />
 
 
 ```r
-##  LA OSS SETTE NAVN PÅ X- OG Y-AKSEN
+## LA OSS SETTE NAVN PÅ X- OG Y-AKSEN
 prikkeplot <- prikkeplot + labs(x = "Antall øl drukket", y = "Hodepineindeks")
 prikkeplot
 ```
@@ -1158,20 +1169,16 @@ prikkeplot
 
 
 
-![](../bilder/prikkeplot5.png)<!-- -->
+<img src="../bilder/prikkeplot5.png" width="2100" />
 
 
 De som vil ha mer å bryne seg på, kan prøve å forstå alt som foregår her (bruk `?`):
 
 ```r
-ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
-  geom_point(aes(color = TekstVektor, size = as.numeric(FaktorVektor)), shape = 64) +
-  labs(x = "Antall øl drukket", y = "Hodepineindeks",
-       color = "Middag", size = "Kg mat konsumert",
-       title = "Tulleplot") +
-  theme_classic()+
-  theme(panel.grid.major.y = element_line(color = "gray", linetype = "dashed"),
-        axis.line = element_line(arrow = arrow()))
+ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) + geom_point(aes(color = TekstVektor, 
+    size = as.numeric(FaktorVektor)), shape = 64) + labs(x = "Antall øl drukket", y = "Hodepineindeks", 
+    color = "Middag", size = "Kg mat konsumert", title = "Tulleplot") + theme_classic() + theme(panel.grid.major.y = element_line(color = "gray", 
+    linetype = "dashed"), axis.line = element_line(arrow = arrow()))
 ```
 
 ![](Seminar1_files/figure-html/unnamed-chunk-51-1.png)<!-- -->
@@ -1179,7 +1186,7 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
 
 
 
-![](../bilder/prikkeplot6.png)<!-- -->
+<img src="../bilder/prikkeplot6.png" width="2100" />
 
 `ggplot()` gjør det lett å se mange variabler i sammenheng, men vi må ofte jobbe for å visualisere mye informasjon på en effektiv måte. Her er et forsøk på å gjøre forrige plot litt ryddigere:
 
@@ -1192,14 +1199,10 @@ library(ggthemes)
 
 
 ```r
-ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
-  geom_point(aes(color = TekstVektor, size = as.numeric(FaktorVektor)), shape = 1) +
-  labs(x = "Antall øl drukket", y = "Hodepineindeks",
-       color = "Middag", size = "Kg mat konsumert",
-       title = "Tulleplot") +
-  theme_tufte() +
-  theme(panel.grid.major.y = element_line(color = "gray", linetype = "dashed"),
-        axis.line = element_line(arrow = arrow()))
+ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) + geom_point(aes(color = TekstVektor, 
+    size = as.numeric(FaktorVektor)), shape = 1) + labs(x = "Antall øl drukket", y = "Hodepineindeks", 
+    color = "Middag", size = "Kg mat konsumert", title = "Tulleplot") + theme_tufte() + theme(panel.grid.major.y = element_line(color = "gray", 
+    linetype = "dashed"), axis.line = element_line(arrow = arrow()))
 ```
 
 ![](Seminar1_files/figure-html/unnamed-chunk-56-1.png)<!-- -->
@@ -1207,13 +1210,13 @@ ggplot(datasett, aes(x = IntegerVektor, y = NumeriskVektor)) +
 
 
 
-![](../bilder/prikkeplot7.png)<!-- -->
+<img src="../bilder/prikkeplot7.png" width="2100" />
 
 
 
 ## [9. Tabulere](#tabulere)
 
-Tabulering er en sentral del av pensum. For å lage tabeller og krysstabeller, bruker vi `table()` (de som ikke vet hvordan man leser krysstabeller, må lese seg opp til eksamen).
+Tabulering er en sentral del av pensum. For å lage tabeller og krysstabeller, bruker vi `table()`. For å forstå variabler på lave målenivå, er tabeller svært nyttig.
 
 
 ```r
@@ -1237,7 +1240,7 @@ table(datasett$LogiskVektor)
 ```
 
 ```r
-table(datasett$FaktorVektor)    ##  ALTSÅ: 4 ENHETER HAR VERDIEN "Liten"
+table(datasett$FaktorVektor)  ##  ALTSÅ: 4 ENHETER HAR VERDIEN 'Liten'
 ```
 
 ```
@@ -1247,7 +1250,7 @@ table(datasett$FaktorVektor)    ##  ALTSÅ: 4 ENHETER HAR VERDIEN "Liten"
 ```
 
 ```r
-table(datasett$FaktorVektor, datasett$LogiskVektor) ## 3 ENHETER HAR KOBINASJONEN "Stor" OG "FALSE"
+table(datasett$FaktorVektor, datasett$LogiskVektor)  ## 3 ENHETER HAR KOBINASJONEN 'Stor' OG 'FALSE'
 ```
 
 ```
@@ -1300,7 +1303,7 @@ I stedet for å få antall enheter, kan vi beregne andel enheter:
 
 
 ```r
-sum(tabell)                         ##  DET ER TI ENHETER. DELER VI HVER CELLE I TABELLEN PÅ DETTE, FÅR VI ANDEL.
+sum(tabell)  ##  DET ER TI ENHETER. DELER VI HVER CELLE I TABELLEN PÅ DETTE, FÅR VI ANDEL.
 ```
 
 ```
@@ -1308,7 +1311,7 @@ sum(tabell)                         ##  DET ER TI ENHETER. DELER VI HVER CELLE I
 ```
 
 ```r
-tabell / sum(tabell)                  ##  ANDEL
+tabell/sum(tabell)  ##  ANDEL
 ```
 
 ```
@@ -1332,32 +1335,17 @@ rm(list = ls())
 
 
 
-Lagre scriptet på pcen deres ved å trykke på `ctrl/cmd + s` (dere kan skifte working directory først). Kall filen for seminar1. Filen skal nå dukke opp under files i panelet nede til høyre som "seminar1.R".
+Lagre scriptet på pcen deres ved å trykke på `ctrl/cmd + s` (dere kan skifte working directory først). Jeg anbefaler at dere oppretter en egen mappe for R-seminarene. Kall filen for seminar1. Filen skal nå dukke opp under files i panelet nede til høyre som "seminar1.R". Du kan nå avslutte Rstudio. Du vil bli spurt om å lagre workspace image, takk nei til dette.
 
 ## Til neste gang...
 
 Før vi møtes neste gang, ber jeg om at dere:
 
 1. Forsøker å løse hjemmeoppgavene. 
-2. Melder dere inn i slack-gruppen (dere har fått invitasjon på email, send meg en mail hvis ikke). Still meg spørsmål dersom det er noe du ikke får til.
-3. Går gjennom introduksjonen til neste seminar. Dere åpner denne introduksjonen ved å åpne filen i Rstudio, og deretter trykke på `Run Document` 
-![](../bilder/Run_tutorial.PNG)<!-- -->
+2. Melder dere inn i slack-gruppen (dere har fått invitasjon på canvas, send meg en mail hvis ikke). Still meg spørsmål dersom det er noe du ikke får til.
+3. Går gjennom introduksjonen til neste seminar. 
+<img src="../bilder/Run_tutorial.PNG" width="1920" />
 
-Dersom du skal kjøre tutorial på en UiO-PC, må du trolig følge denne oppskriften først (dette vil ikke være nødvendig på egen datamaskin):
-
-1. Gå inn på `Computer` fra startmenyen til windows. Trykk deg inn på `C:/Users`, gå deretter inn på mappen som heter det samme som ditt brukernavn på uio. Høyreklikk, og opprett en ny mappe som du kaller `library`. Høyreklikk en gang til, og opprett mappen stv1020. 
-2. Du kan nå kjøre følgende kode:
-
-```r
-.libPaths("C:/Users/ditt_brukernavn_på_uio/library") 
-# bytt ut ditt_brukernavn_på_uio med ditt brukernavn på uio i filstien over
-install.packages("learnr") 
-library(learnr)
-setwd("C:/Users/ditt_brukernavn_på_uio/stv1020")
-# bytt ut ditt_brukernavn_på_uio med ditt brukernavn på uio i filstien over
-```
-
-3. Lagre tutorial i mappen `C:/Users/ditt_brukernavn_på_uio/stv1020`, åpne filen i Rstudio, og trykk på `Run Document`.
 
 ## Takk for i dag!
 
