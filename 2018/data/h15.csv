@@ -1,0 +1,1437 @@
+"","Trust_politicians","vote","happy","gender","house_income"
+"1",6,"Yes",6,"Male",6
+"2",6,"Yes",5,"Female",2
+"3",5,"Yes",10,"Female",2
+"4",4,"Yes",7,"Male",1
+"5",7,"Yes",7,"Male",3
+"6",5,"Yes",8,"Male",8
+"7",10,"Yes",8,"Female",3
+"8",7,"Not eligible to vote",9,"Male",4
+"9",7,"Yes",8,"Male",7
+"10",5,"Yes",8,"Female",1
+"11",2,"No",7,"Female",2
+"12",5,"Yes",10,"Female",7
+"13",5,"Yes",7,"Female",9
+"14",6,"Yes",9,"Male",9
+"15",5,"Yes",10,"Female",6
+"16",4,"Yes",7,"Male",6
+"17",9,"Yes",10,"Female",4
+"18",0,"Yes",8,"Female",2
+"19",5,"Yes",10,"Female",7
+"20",6,"No",10,"Male",2
+"21",5,"Yes",8,"Female",6
+"22",6,"No",8,"Male",5
+"23",6,"Not eligible to vote",7,"Female",NA
+"24",5,"No",7,"Female",1
+"25",6,"Yes",7,"Male",3
+"26",4,"Yes",8,"Male",3
+"27",7,"Not eligible to vote",5,"Male",1
+"28",6,"Yes",10,"Male",6
+"29",6,"Yes",8,"Male",3
+"30",7,"Yes",8,"Male",3
+"31",5,"Yes",8,"Female",10
+"32",6,"Yes",7,"Female",3
+"33",2,"Yes",9,"Female",3
+"34",4,"Yes",7,"Female",3
+"35",7,"Yes",9,"Female",1
+"36",6,"Yes",9,"Male",5
+"37",7,"No",8,"Male",8
+"38",2,"Not eligible to vote",7,"Male",2
+"39",8,"Yes",8,"Male",7
+"40",7,"No",7,"Female",3
+"41",5,"Yes",7,"Female",1
+"42",7,"Not eligible to vote",7,"Female",8
+"43",6,"Yes",8,"Male",6
+"44",6,"Yes",9,"Male",8
+"45",7,"Yes",9,"Male",6
+"46",8,"Yes",9,"Male",6
+"47",5,"Yes",5,"Female",6
+"48",4,"Yes",5,"Female",6
+"49",2,"Yes",10,"Male",2
+"50",8,"Yes",9,"Male",2
+"51",6,"Yes",10,"Male",10
+"52",8,"Yes",9,"Female",5
+"53",6,"Yes",7,"Female",2
+"54",6,"Yes",9,"Female",7
+"55",4,"Yes",8,"Female",8
+"56",5,"Yes",10,"Female",1
+"57",5,"Yes",8,"Male",1
+"58",5,"Yes",8,"Female",4
+"59",7,"Yes",9,"Female",8
+"60",5,"Yes",4,"Male",2
+"61",5,"Yes",9,"Female",4
+"62",6,"Yes",8,"Male",9
+"63",4,"Yes",10,"Female",4
+"64",6,"Yes",8,"Female",3
+"65",7,"Not eligible to vote",9,"Female",NA
+"66",3,"Yes",8,"Male",8
+"67",5,"Yes",9,"Female",10
+"68",0,"No",8,"Male",6
+"69",5,"No",7,"Male",2
+"70",5,"Yes",7,"Male",4
+"71",4,"Yes",5,"Female",1
+"72",8,"Yes",7,"Male",2
+"73",4,"No",8,"Male",5
+"74",6,"No",8,"Male",2
+"75",6,"Yes",6,"Female",2
+"76",7,"Yes",9,"Female",7
+"77",6,"Yes",7,"Male",3
+"78",5,"Yes",5,"Female",2
+"79",7,"No",5,"Female",2
+"80",6,"Yes",8,"Male",5
+"81",6,"Yes",10,"Female",3
+"82",5,"No",7,"Female",3
+"83",8,"Not eligible to vote",5,"Male",3
+"84",4,"Yes",9,"Male",3
+"85",5,"Yes",8,"Female",4
+"86",7,"Yes",9,"Female",8
+"87",4,"Yes",6,"Female",2
+"88",3,"Yes",10,"Female",4
+"89",7,"Yes",9,"Male",5
+"90",4,"Yes",8,"Male",2
+"91",6,"Not eligible to vote",10,"Male",4
+"92",7,"Not eligible to vote",9,"Female",6
+"93",6,"Yes",9,"Male",9
+"94",5,"Yes",8,"Female",3
+"95",3,"Yes",8,"Male",6
+"96",3,"No",8,"Female",NA
+"97",2,"Yes",8,"Female",4
+"98",4,"Not eligible to vote",7,"Male",5
+"99",1,"Yes",8,"Female",5
+"100",7,"Yes",8,"Female",9
+"101",6,"Yes",7,"Male",5
+"102",6,"Yes",6,"Female",3
+"103",2,"Yes",8,"Male",2
+"104",5,"Yes",8,"Female",3
+"105",2,"Yes",10,"Male",4
+"106",2,"Not eligible to vote",8,"Female",NA
+"107",4,"Yes",8,"Male",6
+"108",2,"No",6,"Female",1
+"109",6,"Yes",8,"Male",8
+"110",5,"Yes",8,"Male",4
+"111",3,"No",6,"Female",6
+"112",6,"Yes",10,"Female",3
+"113",2,"Not eligible to vote",7,"Female",2
+"114",5,"Yes",8,"Male",3
+"115",6,"Yes",10,"Male",5
+"116",3,"No",8,"Female",3
+"117",4,"Yes",9,"Male",8
+"118",3,"Yes",8,"Female",7
+"119",2,"No",2,"Male",1
+"120",4,"No",3,"Female",1
+"121",NA,"Not eligible to vote",8,"Male",3
+"122",3,"Yes",6,"Female",6
+"123",5,"Yes",9,"Male",5
+"124",2,"No",9,"Female",2
+"125",8,"Yes",7,"Male",10
+"126",8,"Yes",7,"Female",4
+"127",8,"Not eligible to vote",10,"Male",NA
+"128",4,"Yes",8,"Male",10
+"129",3,"Yes",8,"Female",3
+"130",9,"Yes",9,"Male",6
+"131",4,"Not eligible to vote",10,"Male",4
+"132",6,"Yes",9,"Male",8
+"133",9,"Yes",10,"Female",3
+"134",7,"Not eligible to vote",7,"Female",9
+"135",5,"Not eligible to vote",8,"Male",NA
+"136",5,"Yes",4,"Female",1
+"137",3,"Yes",8,"Male",7
+"138",6,"Yes",8,"Male",2
+"139",3,"Yes",4,"Female",2
+"140",2,"Yes",10,"Female",9
+"141",8,"Yes",8,"Female",1
+"142",8,"Yes",10,"Female",1
+"143",3,"Yes",10,"Male",5
+"144",2,"Yes",7,"Female",4
+"145",6,"Yes",7,"Male",8
+"146",5,"Yes",9,"Female",4
+"147",7,"Not eligible to vote",10,"Male",10
+"148",7,"Yes",10,"Female",6
+"149",6,"Yes",9,"Female",9
+"150",5,"Yes",10,"Male",10
+"151",5,"Yes",7,"Female",7
+"152",7,"Yes",7,"Male",5
+"153",7,"Not eligible to vote",9,"Female",3
+"154",7,"Yes",10,"Male",7
+"155",1,"Yes",10,"Female",8
+"156",6,"Yes",9,"Female",5
+"157",7,"Yes",10,"Female",10
+"158",3,"Yes",6,"Female",5
+"159",5,"Yes",9,"Male",8
+"160",8,"Yes",7,"Male",8
+"161",5,"Yes",9,"Female",10
+"162",7,"Yes",8,"Female",5
+"163",5,"Yes",10,"Female",2
+"164",7,"Yes",9,"Female",6
+"165",6,"Yes",10,"Female",8
+"166",7,"Yes",9,"Male",7
+"167",6,"Yes",9,"Male",4
+"168",4,"Yes",8,"Male",1
+"169",6,"No",7,"Male",8
+"170",6,"Yes",7,"Male",9
+"171",6,"Yes",6,"Male",6
+"172",8,"Yes",9,"Female",9
+"173",3,"Yes",8,"Male",8
+"174",5,"Yes",10,"Female",7
+"175",5,"Yes",9,"Female",9
+"176",6,"Yes",8,"Female",9
+"177",7,"Yes",9,"Male",9
+"178",8,"Yes",9,"Male",5
+"179",6,"Yes",8,"Female",9
+"180",4,"Yes",8,"Male",10
+"181",5,"Yes",8,"Male",9
+"182",4,"Yes",9,"Female",2
+"183",9,"No",8,"Female",10
+"184",6,"Yes",9,"Female",8
+"185",7,"Yes",9,"Male",5
+"186",6,"Yes",7,"Female",7
+"187",5,"Yes",5,"Male",3
+"188",6,"Yes",9,"Male",6
+"189",6,"Yes",10,"Male",4
+"190",7,"Yes",8,"Female",4
+"191",0,"Not eligible to vote",8,"Male",2
+"192",4,"Yes",8,"Male",9
+"193",6,"Yes",8,"Female",9
+"194",6,"Yes",8,"Male",9
+"195",6,"Yes",9,"Male",5
+"196",5,"Yes",10,"Female",4
+"197",5,"Yes",8,"Female",7
+"198",1,"Not eligible to vote",9,"Male",NA
+"199",8,"Not eligible to vote",9,"Male",3
+"200",8,"Yes",8,"Female",6
+"201",8,"Yes",10,"Female",7
+"202",7,"Yes",6,"Female",8
+"203",5,"Yes",8,"Male",3
+"204",5,"No",9,"Female",3
+"205",4,"Yes",9,"Male",4
+"206",6,"Yes",8,"Male",2
+"207",7,"Yes",9,"Male",10
+"208",4,"Yes",8,"Male",6
+"209",4,"Yes",6,"Female",3
+"210",8,"No",9,"Male",6
+"211",5,"Yes",7,"Male",7
+"212",4,"Yes",9,"Female",8
+"213",6,"Yes",8,"Female",1
+"214",2,"Yes",5,"Female",3
+"215",5,"Yes",8,"Female",8
+"216",5,"Yes",7,"Male",9
+"217",6,"Yes",8,"Female",7
+"218",1,"Yes",8,"Male",7
+"219",5,"Yes",10,"Female",NA
+"220",8,"Yes",10,"Male",6
+"221",2,"No",6,"Male",4
+"222",5,"Yes",8,"Male",8
+"223",7,"No",8,"Female",5
+"224",3,"No",8,"Male",1
+"225",5,"Yes",5,"Male",1
+"226",2,"Yes",10,"Female",3
+"227",4,"No",7,"Male",5
+"228",3,"Yes",8,"Male",4
+"229",7,"Yes",8,"Female",10
+"230",3,"Yes",8,"Female",3
+"231",7,"Yes",7,"Female",10
+"232",4,"Yes",8,"Female",2
+"233",4,"Yes",9,"Male",8
+"234",8,"Not eligible to vote",7,"Male",3
+"235",0,"Not eligible to vote",10,"Male",NA
+"236",6,"Yes",9,"Male",8
+"237",4,"No",9,"Male",NA
+"238",0,"No",5,"Male",NA
+"239",2,"No",4,"Male",3
+"240",6,"Yes",10,"Female",5
+"241",6,"Yes",6,"Male",4
+"242",3,"Yes",8,"Male",3
+"243",5,"Yes",8,"Female",NA
+"244",5,"Not eligible to vote",8,"Male",2
+"245",3,"Not eligible to vote",8,"Female",6
+"246",6,"Yes",8,"Female",8
+"247",8,"No",8,"Male",4
+"248",9,"Yes",4,"Male",5
+"249",0,"Yes",9,"Male",NA
+"250",2,"Yes",7,"Male",5
+"251",5,"Yes",8,"Male",6
+"252",7,"Not eligible to vote",8,"Female",5
+"253",6,"Yes",7,"Female",NA
+"254",5,"Not eligible to vote",8,"Male",3
+"255",7,"Yes",5,"Male",6
+"256",6,"Not eligible to vote",6,"Male",6
+"257",5,"Yes",8,"Male",3
+"258",7,"No",5,"Male",2
+"259",3,"Not eligible to vote",7,"Female",5
+"260",3,"Yes",8,"Female",2
+"261",4,"Yes",8,"Male",4
+"262",7,"No",9,"Male",5
+"263",6,"Yes",9,"Male",7
+"264",4,"Yes",9,"Female",9
+"265",3,"Yes",9,"Female",5
+"266",1,"Yes",6,"Male",4
+"267",5,"Yes",10,"Female",3
+"268",5,"Not eligible to vote",7,"Male",5
+"269",5,"Yes",7,"Male",7
+"270",6,"Yes",5,"Female",7
+"271",4,"Yes",9,"Female",2
+"272",4,"Yes",9,"Male",NA
+"273",7,"Not eligible to vote",10,"Female",5
+"274",5,"Yes",8,"Male",4
+"275",6,"No",9,"Female",8
+"276",6,"Yes",9,"Female",6
+"277",5,"Yes",5,"Male",7
+"278",5,"Not eligible to vote",7,"Male",2
+"279",5,"Yes",8,"Male",4
+"280",6,"Yes",8,"Male",10
+"281",6,"No",9,"Male",2
+"282",7,"Yes",7,"Male",1
+"283",6,"Yes",9,"Male",10
+"284",6,"Yes",9,"Female",1
+"285",0,"Not eligible to vote",9,"Female",1
+"286",3,"Yes",9,"Female",5
+"287",1,"Not eligible to vote",5,"Male",3
+"288",7,"Not eligible to vote",4,"Female",10
+"289",3,"Not eligible to vote",7,"Male",3
+"290",5,"Yes",7,"Male",3
+"291",6,"Yes",9,"Female",10
+"292",9,"Yes",10,"Male",8
+"293",7,"No",9,"Male",9
+"294",7,"Yes",9,"Female",10
+"295",7,"Yes",8,"Male",8
+"296",7,"Yes",8,"Female",2
+"297",8,"Yes",10,"Female",5
+"298",5,"Yes",7,"Female",4
+"299",7,"Yes",8,"Male",9
+"300",5,"Yes",10,"Female",NA
+"301",2,"Yes",7,"Female",9
+"302",8,"Yes",8,"Female",4
+"303",5,"Not eligible to vote",8,"Female",3
+"304",5,"Yes",7,"Female",5
+"305",8,"Not eligible to vote",7,"Male",8
+"306",4,"Yes",6,"Male",10
+"307",8,"Not eligible to vote",8,"Male",8
+"308",10,"Yes",3,"Male",5
+"309",6,"Yes",8,"Female",8
+"310",7,"Yes",9,"Female",10
+"311",7,"Yes",9,"Female",8
+"312",0,"Not eligible to vote",8,"Male",1
+"313",5,"No",7,"Female",1
+"314",6,"Not eligible to vote",7,"Female",10
+"315",6,"Yes",8,"Female",8
+"316",7,"No",9,"Female",10
+"317",3,"Yes",6,"Female",9
+"318",7,"Yes",7,"Male",4
+"319",6,"Yes",8,"Male",5
+"320",3,"Yes",10,"Male",4
+"321",5,"Yes",9,"Female",10
+"322",6,"Yes",9,"Female",10
+"323",5,"Yes",7,"Female",5
+"324",6,"Yes",8,"Male",9
+"325",2,"Yes",9,"Male",5
+"326",7,"Yes",8,"Female",10
+"327",5,"Not eligible to vote",8,"Female",9
+"328",4,"Not eligible to vote",9,"Male",4
+"329",6,"Yes",7,"Female",3
+"330",5,"Yes",10,"Female",4
+"331",7,"Yes",10,"Male",9
+"332",8,"Yes",8,"Female",8
+"333",5,"Yes",9,"Female",2
+"334",5,"Yes",7,"Female",2
+"335",4,"Yes",10,"Female",8
+"336",7,"Not eligible to vote",7,"Female",2
+"337",6,"Yes",4,"Male",8
+"338",NA,"Not eligible to vote",9,"Male",10
+"339",6,"Yes",7,"Male",3
+"340",5,"Yes",8,"Male",10
+"341",7,"Yes",7,"Female",3
+"342",7,"Yes",8,"Male",7
+"343",5,"Yes",8,"Male",2
+"344",5,"Yes",6,"Male",3
+"345",7,"Yes",8,"Male",7
+"346",4,"Yes",8,"Male",2
+"347",9,"Yes",7,"Male",2
+"348",7,"Not eligible to vote",7,"Male",2
+"349",8,"Not eligible to vote",8,"Male",2
+"350",7,"Yes",7,"Male",4
+"351",7,"Yes",8,"Female",NA
+"352",7,"No",9,"Male",9
+"353",6,"Yes",7,"Female",2
+"354",4,"Yes",8,"Female",10
+"355",7,"Yes",10,"Female",6
+"356",0,"No",10,"Male",7
+"357",9,"Yes",10,"Male",10
+"358",6,"Yes",7,"Female",6
+"359",8,"Yes",7,"Male",2
+"360",6,"Yes",8,"Male",7
+"361",4,"Yes",10,"Male",7
+"362",8,"Yes",9,"Female",5
+"363",3,"Not eligible to vote",4,"Male",10
+"364",5,"Yes",8,"Female",6
+"365",4,"Yes",9,"Male",7
+"366",6,"Yes",7,"Male",6
+"367",6,"Yes",8,"Female",10
+"368",8,"Not eligible to vote",10,"Male",10
+"369",4,"Yes",7,"Female",4
+"370",3,"Yes",7,"Male",8
+"371",7,"Yes",8,"Female",10
+"372",5,"Yes",9,"Female",7
+"373",5,"Yes",3,"Male",7
+"374",5,"Not eligible to vote",7,"Female",5
+"375",2,"Not eligible to vote",8,"Male",NA
+"376",4,"Yes",9,"Male",5
+"377",4,"No",6,"Female",3
+"378",6,"No",2,"Female",3
+"379",5,"Yes",7,"Male",5
+"380",4,"Yes",9,"Male",6
+"381",7,"No",8,"Female",6
+"382",6,"Yes",8,"Female",10
+"383",7,"Yes",9,"Female",2
+"384",6,"Yes",8,"Female",8
+"385",2,"Yes",7,"Male",1
+"386",8,"No",10,"Male",9
+"387",6,"No",9,"Female",10
+"388",6,"Yes",10,"Female",2
+"389",6,"Yes",4,"Male",5
+"390",4,"Yes",9,"Female",4
+"391",7,"Yes",10,"Female",6
+"392",7,"Yes",9,"Female",8
+"393",5,"Yes",8,"Female",3
+"394",7,"Yes",9,"Male",8
+"395",4,"Yes",8,"Female",8
+"396",7,"Yes",8,"Male",10
+"397",5,"Yes",7,"Male",9
+"398",6,"Yes",8,"Female",4
+"399",8,"Not eligible to vote",8,"Male",7
+"400",7,"Yes",8,"Male",3
+"401",6,"Not eligible to vote",10,"Female",7
+"402",6,"Yes",8,"Female",8
+"403",3,"Yes",8,"Female",7
+"404",8,"Yes",8,"Female",2
+"405",4,"Yes",7,"Male",3
+"406",5,"Yes",7,"Male",8
+"407",10,"Yes",10,"Male",2
+"408",6,"Yes",9,"Male",10
+"409",4,"Yes",10,"Female",8
+"410",5,"Yes",8,"Male",10
+"411",6,"Yes",8,"Female",7
+"412",2,"Yes",9,"Male",9
+"413",7,"Yes",9,"Female",2
+"414",6,"Yes",8,"Male",1
+"415",6,"Yes",10,"Female",4
+"416",5,"Yes",8,"Female",9
+"417",8,"Yes",7,"Female",3
+"418",4,"No",8,"Male",3
+"419",6,"Yes",5,"Male",2
+"420",6,"Yes",8,"Male",8
+"421",5,"Yes",8,"Male",8
+"422",6,"Yes",7,"Female",2
+"423",7,"Yes",8,"Female",5
+"424",8,"Yes",7,"Male",10
+"425",5,"Yes",10,"Female",4
+"426",9,"Yes",5,"Male",5
+"427",0,"Not eligible to vote",5,"Female",1
+"428",1,"Yes",7,"Female",9
+"429",7,"Yes",9,"Female",4
+"430",6,"Yes",5,"Male",2
+"431",4,"Yes",8,"Female",4
+"432",5,"Not eligible to vote",6,"Male",2
+"433",6,"Yes",9,"Female",6
+"434",5,"Yes",9,"Female",5
+"435",4,"Yes",6,"Female",6
+"436",5,"Yes",8,"Male",6
+"437",3,"Yes",7,"Male",6
+"438",5,"Not eligible to vote",5,"Male",10
+"439",6,"Yes",8,"Male",5
+"440",6,"Yes",9,"Male",10
+"441",7,"Yes",10,"Male",10
+"442",3,"Yes",9,"Male",9
+"443",5,"Not eligible to vote",8,"Male",5
+"444",7,"No",0,"Female",1
+"445",5,"Yes",5,"Female",NA
+"446",7,"Yes",6,"Male",2
+"447",4,"Yes",9,"Female",10
+"448",5,"Yes",10,"Female",2
+"449",8,"Yes",9,"Female",6
+"450",4,"Yes",6,"Male",5
+"451",5,"Yes",8,"Female",2
+"452",6,"Yes",9,"Male",3
+"453",5,"Yes",8,"Female",1
+"454",5,"Yes",4,"Female",NA
+"455",7,"Yes",8,"Female",7
+"456",4,"Yes",8,"Female",5
+"457",6,"Yes",8,"Male",6
+"458",6,"Yes",9,"Male",5
+"459",6,"Yes",10,"Male",10
+"460",8,"Yes",8,"Male",5
+"461",3,"No",8,"Female",5
+"462",8,"Not eligible to vote",8,"Female",NA
+"463",7,"Yes",9,"Male",6
+"464",3,"Yes",9,"Female",6
+"465",5,"No",10,"Male",4
+"466",4,"Yes",5,"Female",4
+"467",6,"Yes",10,"Female",5
+"468",3,"Yes",9,"Male",6
+"469",5,"Yes",8,"Female",4
+"470",2,"Yes",7,"Female",10
+"471",5,"Yes",7,"Male",2
+"472",5,"Yes",7,"Male",8
+"473",5,"Not eligible to vote",8,"Male",6
+"474",7,"Yes",9,"Female",9
+"475",4,"Yes",9,"Male",5
+"476",4,"Yes",9,"Female",4
+"477",6,"Yes",8,"Male",9
+"478",6,"No",8,"Female",4
+"479",7,"Yes",8,"Male",9
+"480",1,"Yes",8,"Male",6
+"481",2,"Yes",8,"Male",3
+"482",4,"Yes",9,"Female",3
+"483",1,"Yes",3,"Female",1
+"484",5,"Yes",8,"Male",1
+"485",3,"Yes",8,"Female",2
+"486",4,"Yes",9,"Male",8
+"487",6,"Yes",10,"Male",8
+"488",6,"Yes",9,"Female",2
+"489",5,"Yes",6,"Female",2
+"490",6,"Yes",6,"Female",4
+"491",5,"Yes",5,"Female",1
+"492",7,"Yes",9,"Male",4
+"493",6,"Yes",9,"Male",4
+"494",7,"Yes",5,"Female",6
+"495",5,"No",9,"Female",4
+"496",7,"Yes",9,"Male",7
+"497",5,"Not eligible to vote",8,"Male",7
+"498",4,"Yes",10,"Male",5
+"499",5,"Yes",6,"Male",2
+"500",3,"Yes",7,"Male",5
+"501",8,"Yes",10,"Female",4
+"502",7,"Yes",7,"Female",6
+"503",7,"Yes",8,"Female",6
+"504",5,"Yes",7,"Female",2
+"505",7,"Yes",8,"Female",8
+"506",3,"Yes",8,"Female",2
+"507",5,"Yes",8,"Male",3
+"508",6,"Yes",8,"Male",4
+"509",7,"Not eligible to vote",7,"Female",7
+"510",6,"Yes",8,"Female",2
+"511",4,"Yes",8,"Male",5
+"512",3,"Yes",9,"Male",10
+"513",6,"Yes",9,"Male",4
+"514",2,"Yes",8,"Male",2
+"515",5,"Yes",7,"Male",1
+"516",3,"Yes",8,"Female",2
+"517",3,"Yes",8,"Female",5
+"518",4,"Yes",9,"Female",6
+"519",6,"Yes",9,"Female",1
+"520",5,"Not eligible to vote",10,"Male",NA
+"521",8,"Yes",7,"Male",4
+"522",7,"Yes",8,"Male",3
+"523",5,"Yes",7,"Male",2
+"524",6,"Not eligible to vote",8,"Male",1
+"525",2,"Yes",5,"Male",8
+"526",7,"Yes",10,"Male",7
+"527",5,"No",7,"Female",4
+"528",5,"Yes",6,"Male",8
+"529",5,"Yes",8,"Male",2
+"530",6,"Yes",8,"Female",3
+"531",5,"Yes",5,"Male",1
+"532",6,"Yes",8,"Male",2
+"533",3,"Yes",7,"Female",5
+"534",5,"Yes",8,"Male",9
+"535",7,"Not eligible to vote",9,"Male",7
+"536",2,"Yes",9,"Female",4
+"537",7,"Yes",9,"Male",10
+"538",6,"Yes",5,"Female",3
+"539",8,"Yes",10,"Male",6
+"540",1,"Yes",10,"Male",4
+"541",2,"Yes",10,"Female",2
+"542",4,"Yes",9,"Male",8
+"543",2,"Yes",8,"Male",4
+"544",4,"Yes",9,"Male",4
+"545",6,"Yes",8,"Female",7
+"546",8,"Yes",10,"Male",6
+"547",5,"Yes",8,"Male",6
+"548",6,"No",9,"Female",6
+"549",5,"Not eligible to vote",10,"Male",6
+"550",7,"Not eligible to vote",8,"Female",10
+"551",5,"No",8,"Female",1
+"552",7,"Yes",8,"Female",1
+"553",6,"Yes",9,"Female",4
+"554",1,"No",7,"Male",3
+"555",6,"Yes",9,"Male",7
+"556",5,"Yes",8,"Female",3
+"557",8,"Yes",10,"Male",3
+"558",4,"Yes",8,"Male",9
+"559",6,"Yes",7,"Female",8
+"560",7,"Yes",8,"Male",10
+"561",4,"Yes",9,"Male",10
+"562",5,"Yes",8,"Female",6
+"563",5,"Not eligible to vote",10,"Female",3
+"564",2,"Yes",9,"Male",6
+"565",6,"Not eligible to vote",8,"Female",5
+"566",9,"Yes",10,"Male",8
+"567",8,"Not eligible to vote",9,"Female",6
+"568",4,"Yes",7,"Male",8
+"569",5,"Yes",7,"Female",7
+"570",7,"Yes",7,"Male",9
+"571",3,"Yes",10,"Male",9
+"572",7,"Yes",10,"Male",3
+"573",0,"Yes",9,"Female",3
+"574",2,"No",8,"Male",3
+"575",7,"Yes",8,"Female",6
+"576",6,"Yes",9,"Female",4
+"577",6,"Yes",10,"Male",6
+"578",8,"Not eligible to vote",6,"Female",2
+"579",5,"Yes",10,"Male",10
+"580",4,"Yes",7,"Male",3
+"581",3,"Yes",5,"Female",1
+"582",5,"Yes",8,"Male",8
+"583",4,"Yes",10,"Female",7
+"584",7,"Yes",9,"Female",6
+"585",8,"No",9,"Female",4
+"586",7,"Yes",8,"Male",7
+"587",4,"Yes",9,"Male",8
+"588",6,"Yes",9,"Male",3
+"589",5,"Yes",3,"Female",8
+"590",4,"Yes",8,"Female",1
+"591",5,"Yes",9,"Female",1
+"592",1,"Yes",7,"Female",4
+"593",1,"Yes",10,"Male",9
+"594",4,"Yes",4,"Female",6
+"595",8,"Not eligible to vote",9,"Female",3
+"596",7,"Yes",9,"Male",3
+"597",7,"Yes",8,"Female",4
+"598",4,"Yes",8,"Male",5
+"599",3,"Yes",8,"Male",4
+"600",1,"Yes",2,"Male",3
+"601",5,"Yes",10,"Male",10
+"602",3,"Yes",8,"Female",6
+"603",6,"Yes",8,"Male",6
+"604",3,"Yes",9,"Male",7
+"605",7,"Yes",7,"Male",4
+"606",7,"Yes",8,"Female",10
+"607",2,"Yes",5,"Male",1
+"608",8,"Yes",10,"Male",10
+"609",7,"Yes",10,"Female",9
+"610",5,"Yes",8,"Male",9
+"611",8,"Yes",10,"Female",10
+"612",6,"Yes",7,"Female",NA
+"613",8,"Not eligible to vote",10,"Male",3
+"614",6,"Yes",7,"Male",8
+"615",6,"Yes",10,"Female",1
+"616",5,"Yes",10,"Female",4
+"617",4,"Yes",8,"Female",2
+"618",5,"Yes",6,"Female",2
+"619",5,"Yes",6,"Female",7
+"620",4,"Yes",5,"Male",9
+"621",7,"Yes",8,"Female",4
+"622",5,"Yes",8,"Male",5
+"623",5,"Yes",9,"Male",7
+"624",2,"Yes",9,"Female",3
+"625",6,"Yes",8,"Male",8
+"626",8,"Yes",10,"Female",3
+"627",6,"No",10,"Male",6
+"628",6,"Yes",9,"Female",10
+"629",4,"Yes",9,"Female",NA
+"630",6,"Not eligible to vote",9,"Male",1
+"631",6,"Yes",7,"Female",9
+"632",2,"Yes",8,"Male",NA
+"633",6,"Not eligible to vote",5,"Male",2
+"634",6,"Yes",7,"Male",5
+"635",7,"Yes",7,"Male",NA
+"636",7,"Yes",10,"Male",6
+"637",7,"Yes",10,"Male",5
+"638",2,"Yes",3,"Male",1
+"639",5,"Yes",7,"Female",5
+"640",7,"Not eligible to vote",8,"Female",10
+"641",7,"Yes",8,"Male",6
+"642",5,"Yes",7,"Male",6
+"643",8,"Not eligible to vote",10,"Male",10
+"644",8,"Yes",9,"Male",3
+"645",7,"No",5,"Male",5
+"646",3,"Yes",9,"Female",5
+"647",4,"Yes",7,"Female",8
+"648",8,"No",10,"Male",NA
+"649",NA,"No",9,"Female",NA
+"650",7,"Yes",8,"Female",8
+"651",5,"Yes",9,"Male",2
+"652",7,"Not eligible to vote",5,"Female",4
+"653",4,"Yes",9,"Male",7
+"654",7,"No",7,"Male",NA
+"655",3,"Yes",7,"Male",7
+"656",6,"Yes",9,"Female",2
+"657",4,"Yes",10,"Female",9
+"658",3,"Yes",6,"Female",10
+"659",6,"Yes",9,"Male",7
+"660",7,"No",6,"Male",5
+"661",5,"Yes",7,"Female",10
+"662",5,"Yes",8,"Female",1
+"663",6,"Yes",6,"Male",8
+"664",6,"Yes",9,"Female",6
+"665",0,"No",6,"Female",1
+"666",4,"Yes",10,"Female",1
+"667",8,"Yes",7,"Male",10
+"668",0,"Yes",8,"Male",7
+"669",9,"Yes",9,"Female",4
+"670",5,"Yes",9,"Male",6
+"671",4,"Yes",7,"Male",7
+"672",8,"Yes",7,"Female",10
+"673",6,"Yes",8,"Male",1
+"674",5,"Yes",8,"Female",7
+"675",8,"Yes",10,"Male",1
+"676",7,"Yes",9,"Female",NA
+"677",8,"Yes",9,"Male",10
+"678",7,"Yes",8,"Female",10
+"679",6,"Yes",9,"Male",10
+"680",5,"Yes",6,"Male",6
+"681",2,"Yes",8,"Male",10
+"682",8,"Yes",10,"Female",9
+"683",5,"Yes",8,"Male",8
+"684",5,"Yes",9,"Female",4
+"685",5,"Not eligible to vote",10,"Female",7
+"686",5,"Yes",7,"Female",1
+"687",6,"Yes",10,"Male",3
+"688",5,"Yes",7,"Female",7
+"689",6,"Not eligible to vote",8,"Male",7
+"690",7,"Yes",7,"Female",10
+"691",4,"Yes",3,"Female",NA
+"692",6,"No",8,"Male",5
+"693",7,"No",7,"Female",2
+"694",7,"Yes",9,"Female",4
+"695",6,"Yes",8,"Female",8
+"696",7,"Yes",8,"Female",5
+"697",2,"Yes",7,"Female",6
+"698",5,"Yes",9,"Male",4
+"699",6,"Yes",8,"Female",1
+"700",8,"Yes",9,"Female",6
+"701",6,"Yes",7,"Female",8
+"702",4,"Yes",7,"Male",10
+"703",10,"Yes",9,"Male",10
+"704",5,"Yes",1,"Female",4
+"705",4,"No",7,"Male",6
+"706",5,"No",9,"Female",1
+"707",2,"Yes",10,"Female",2
+"708",0,"Yes",10,"Male",NA
+"709",7,"Yes",8,"Female",4
+"710",7,"Yes",9,"Female",5
+"711",7,"Yes",7,"Female",4
+"712",9,"Yes",9,"Male",9
+"713",4,"Yes",10,"Male",8
+"714",5,"Yes",7,"Male",6
+"715",7,"Yes",7,"Male",7
+"716",6,"Yes",10,"Male",8
+"717",3,"Yes",9,"Female",6
+"718",3,"Yes",8,"Female",9
+"719",6,"Yes",8,"Male",4
+"720",7,"Yes",9,"Male",4
+"721",4,"Yes",9,"Male",10
+"722",1,"Yes",7,"Male",4
+"723",5,"Yes",8,"Female",2
+"724",5,"Yes",9,"Male",3
+"725",5,"Yes",8,"Male",2
+"726",6,"Not eligible to vote",7,"Female",8
+"727",4,"Yes",7,"Male",7
+"728",3,"Yes",9,"Male",5
+"729",3,"Yes",10,"Male",8
+"730",5,"Yes",8,"Female",4
+"731",5,"Yes",10,"Male",2
+"732",5,"Yes",8,"Female",NA
+"733",7,"Yes",8,"Male",7
+"734",7,"Yes",6,"Male",6
+"735",5,"Yes",4,"Female",5
+"736",2,"No",5,"Male",4
+"737",7,"Yes",9,"Female",9
+"738",5,"Yes",9,"Male",9
+"739",8,"Yes",9,"Female",4
+"740",5,"Yes",9,"Female",3
+"741",3,"Yes",8,"Male",2
+"742",5,"Yes",9,"Female",1
+"743",7,"Yes",4,"Female",4
+"744",5,"Yes",8,"Male",2
+"745",2,"Not eligible to vote",9,"Male",3
+"746",5,"Yes",9,"Female",8
+"747",3,"Yes",8,"Male",2
+"748",5,"Yes",7,"Female",1
+"749",3,"Yes",10,"Female",9
+"750",3,"No",9,"Male",8
+"751",3,"Yes",8,"Female",4
+"752",7,"Yes",7,"Male",6
+"753",1,"Yes",9,"Female",1
+"754",3,"Yes",10,"Male",7
+"755",6,"Yes",8,"Female",5
+"756",4,"Yes",8,"Female",8
+"757",0,"Yes",10,"Female",1
+"758",2,"No",9,"Male",2
+"759",5,"Not eligible to vote",8,"Male",7
+"760",3,"Yes",6,"Male",4
+"761",6,"Yes",7,"Female",8
+"762",6,"Yes",9,"Male",4
+"763",5,"Yes",8,"Female",1
+"764",4,"Yes",10,"Female",4
+"765",2,"No",8,"Female",1
+"766",5,"No",9,"Male",4
+"767",1,"Yes",8,"Male",5
+"768",5,"Yes",7,"Female",7
+"769",7,"Not eligible to vote",9,"Female",NA
+"770",6,"Yes",8,"Male",6
+"771",5,"Yes",5,"Female",6
+"772",5,"Yes",8,"Female",2
+"773",5,"Yes",9,"Male",10
+"774",2,"No",7,"Female",5
+"775",7,"Yes",8,"Male",8
+"776",8,"No",8,"Male",2
+"777",4,"Yes",10,"Female",2
+"778",2,"Yes",10,"Male",4
+"779",6,"No",8,"Male",3
+"780",7,"Yes",8,"Male",8
+"781",3,"No",8,"Male",1
+"782",7,"Yes",8,"Male",5
+"783",9,"Not eligible to vote",10,"Male",10
+"784",7,"Yes",8,"Female",4
+"785",4,"Yes",9,"Female",3
+"786",4,"Yes",7,"Female",1
+"787",7,"Yes",6,"Male",10
+"788",3,"Yes",10,"Female",10
+"789",5,"Yes",9,"Male",3
+"790",6,"Yes",7,"Female",5
+"791",8,"No",9,"Male",2
+"792",2,"Not eligible to vote",9,"Male",2
+"793",2,"Yes",6,"Male",3
+"794",4,"Yes",8,"Male",6
+"795",4,"Yes",9,"Male",4
+"796",6,"No",9,"Male",1
+"797",3,"Yes",8,"Male",7
+"798",4,"Yes",7,"Male",4
+"799",2,"Yes",9,"Male",1
+"800",7,"Yes",8,"Male",8
+"801",8,"Yes",8,"Female",6
+"802",0,"Yes",2,"Female",4
+"803",5,"Yes",8,"Male",10
+"804",2,"Yes",8,"Male",6
+"805",8,"Yes",9,"Male",7
+"806",5,"Yes",10,"Male",10
+"807",3,"Yes",8,"Female",5
+"808",6,"Yes",8,"Female",2
+"809",4,"Yes",8,"Female",2
+"810",7,"Yes",9,"Female",7
+"811",2,"Yes",10,"Male",6
+"812",7,"Yes",10,"Female",10
+"813",4,"Yes",9,"Female",8
+"814",6,"Yes",6,"Male",10
+"815",5,"Yes",9,"Male",8
+"816",5,"No",8,"Female",4
+"817",5,"Yes",8,"Female",7
+"818",7,"Yes",8,"Male",6
+"819",8,"Yes",8,"Male",6
+"820",6,"Yes",10,"Female",5
+"821",6,"Not eligible to vote",8,"Female",9
+"822",5,"Not eligible to vote",7,"Female",NA
+"823",7,"No",6,"Male",4
+"824",4,"Not eligible to vote",9,"Male",6
+"825",3,"No",9,"Female",NA
+"826",8,"No",8,"Female",NA
+"827",7,"Yes",8,"Male",2
+"828",6,"Yes",9,"Female",8
+"829",5,"Yes",9,"Female",10
+"830",5,"Yes",10,"Female",8
+"831",7,"Yes",9,"Male",3
+"832",2,"Yes",9,"Male",10
+"833",5,"Yes",8,"Male",10
+"834",7,"No",7,"Female",5
+"835",7,"Yes",9,"Female",7
+"836",5,"Yes",8,"Female",8
+"837",7,"Yes",7,"Male",6
+"838",4,"Yes",7,"Male",8
+"839",7,"Yes",9,"Male",9
+"840",4,"Yes",7,"Male",10
+"841",5,"Not eligible to vote",9,"Male",6
+"842",5,"No",9,"Male",1
+"843",6,"Yes",7,"Male",10
+"844",3,"Yes",9,"Male",4
+"845",8,"Yes",6,"Female",5
+"846",5,"No",8,"Female",8
+"847",6,"Yes",8,"Female",9
+"848",6,"Yes",9,"Male",7
+"849",7,"Yes",7,"Female",3
+"850",5,"Yes",8,"Male",10
+"851",4,"No",6,"Female",7
+"852",4,"Not eligible to vote",1,"Female",NA
+"853",4,"Yes",8,"Female",10
+"854",4,"Yes",10,"Male",8
+"855",3,"Yes",8,"Male",7
+"856",6,"No",8,"Male",10
+"857",2,"No",8,"Male",6
+"858",6,"Yes",8,"Male",10
+"859",0,"Yes",8,"Female",NA
+"860",5,"Yes",8,"Male",6
+"861",5,"Yes",8,"Male",3
+"862",1,"Yes",8,"Male",4
+"863",6,"Not eligible to vote",9,"Male",10
+"864",3,"Yes",9,"Male",3
+"865",8,"No",7,"Male",2
+"866",8,"Yes",9,"Male",9
+"867",7,"Yes",10,"Female",3
+"868",8,"Yes",7,"Female",4
+"869",8,"No",8,"Female",9
+"870",5,"No",10,"Female",2
+"871",7,"Yes",8,"Female",2
+"872",2,"Yes",10,"Male",7
+"873",7,"Yes",8,"Female",5
+"874",8,"No",8,"Male",9
+"875",5,"Yes",9,"Female",3
+"876",6,"No",6,"Male",8
+"877",6,"Yes",9,"Male",9
+"878",7,"No",8,"Female",3
+"879",6,"Yes",6,"Male",3
+"880",6,"No",7,"Male",9
+"881",5,"Yes",7,"Male",5
+"882",10,"No",10,"Male",7
+"883",7,"Yes",9,"Male",9
+"884",5,"Yes",7,"Male",10
+"885",8,"Yes",9,"Male",9
+"886",2,"Yes",10,"Female",9
+"887",0,"Yes",0,"Male",1
+"888",9,"Not eligible to vote",8,"Male",9
+"889",5,"Yes",2,"Female",10
+"890",6,"Yes",8,"Male",9
+"891",7,"No",7,"Male",5
+"892",7,"Yes",9,"Female",7
+"893",6,"Yes",7,"Male",5
+"894",7,"Yes",8,"Male",9
+"895",9,"Yes",9,"Male",9
+"896",8,"Yes",8,"Female",NA
+"897",6,"Yes",7,"Female",8
+"898",4,"Yes",8,"Male",6
+"899",3,"Yes",6,"Male",10
+"900",7,"Yes",8,"Female",4
+"901",7,"Yes",7,"Male",6
+"902",7,"Yes",8,"Female",5
+"903",5,"Yes",8,"Female",1
+"904",10,"No",8,"Male",2
+"905",5,"Yes",9,"Male",10
+"906",2,"Yes",9,"Male",7
+"907",3,"Yes",7,"Male",4
+"908",4,"Yes",7,"Female",8
+"909",6,"Yes",10,"Female",5
+"910",7,"Yes",9,"Female",1
+"911",4,"No",8,"Female",9
+"912",1,"Yes",10,"Male",6
+"913",7,"Yes",8,"Male",3
+"914",10,"Not eligible to vote",8,"Male",2
+"915",6,"Yes",7,"Male",6
+"916",7,"Yes",9,"Female",8
+"917",4,"Yes",9,"Male",1
+"918",5,"Yes",10,"Female",3
+"919",7,"Yes",8,"Male",4
+"920",3,"Yes",9,"Male",1
+"921",4,"Yes",9,"Male",3
+"922",5,"No",6,"Male",10
+"923",4,"Yes",6,"Male",1
+"924",5,"Yes",8,"Female",10
+"925",6,"Yes",8,"Male",10
+"926",7,"Yes",9,"Male",7
+"927",5,"Yes",7,"Female",9
+"928",6,"No",9,"Male",6
+"929",3,"Yes",9,"Male",8
+"930",7,"Yes",8,"Female",7
+"931",1,"Yes",8,"Male",4
+"932",8,"Yes",8,"Female",3
+"933",8,"Yes",9,"Male",4
+"934",7,"Yes",8,"Male",10
+"935",2,"No",6,"Male",6
+"936",3,"Yes",9,"Male",9
+"937",5,"Yes",9,"Male",6
+"938",5,"Not eligible to vote",5,"Female",6
+"939",10,"Yes",10,"Female",NA
+"940",4,"Yes",6,"Female",8
+"941",6,"Yes",9,"Male",8
+"942",7,"Yes",8,"Male",9
+"943",4,"Yes",8,"Female",10
+"944",6,"Yes",10,"Female",3
+"945",6,"Not eligible to vote",6,"Female",5
+"946",5,"Yes",9,"Male",10
+"947",6,"Yes",8,"Female",4
+"948",7,"Yes",9,"Male",9
+"949",5,"Yes",9,"Male",4
+"950",6,"Yes",9,"Female",4
+"951",7,"Yes",8,"Female",6
+"952",8,"Yes",7,"Female",4
+"953",9,"Yes",7,"Male",9
+"954",3,"Yes",9,"Female",3
+"955",5,"Yes",8,"Male",9
+"956",6,"Yes",5,"Female",7
+"957",3,"Yes",6,"Female",1
+"958",7,"Yes",7,"Female",1
+"959",5,"Yes",9,"Female",7
+"960",7,"Yes",10,"Male",4
+"961",6,"Yes",9,"Female",8
+"962",0,"No",10,"Female",2
+"963",6,"Yes",3,"Female",1
+"964",5,"No",4,"Male",6
+"965",7,"Yes",8,"Female",9
+"966",6,"Yes",10,"Male",4
+"967",6,"Yes",8,"Male",3
+"968",5,"Yes",10,"Female",1
+"969",5,"Yes",8,"Female",5
+"970",2,"Yes",9,"Female",6
+"971",6,"Yes",8,"Male",7
+"972",4,"Yes",7,"Male",7
+"973",7,"Yes",8,"Female",5
+"974",4,"Yes",10,"Male",6
+"975",3,"Yes",5,"Female",2
+"976",8,"Yes",8,"Male",9
+"977",4,"Yes",10,"Male",4
+"978",5,"Yes",8,"Female",8
+"979",6,"Yes",8,"Female",10
+"980",5,"Yes",8,"Male",3
+"981",8,"Yes",10,"Male",7
+"982",6,"Yes",8,"Male",10
+"983",8,"Yes",9,"Female",10
+"984",4,"Yes",10,"Female",5
+"985",4,"Yes",10,"Female",5
+"986",6,"Yes",9,"Female",1
+"987",7,"No",9,"Male",3
+"988",7,"Yes",9,"Female",9
+"989",8,"Yes",8,"Male",4
+"990",6,"Yes",9,"Male",9
+"991",6,"No",9,"Female",10
+"992",5,"Yes",10,"Female",4
+"993",5,"Yes",8,"Male",3
+"994",5,"Yes",8,"Male",2
+"995",7,"No",9,"Male",9
+"996",1,"Yes",5,"Male",2
+"997",7,"Not eligible to vote",3,"Female",5
+"998",5,"Yes",10,"Male",3
+"999",5,"Yes",7,"Female",10
+"1000",3,"Yes",9,"Male",3
+"1001",5,"Yes",7,"Male",10
+"1002",4,"Yes",8,"Male",4
+"1003",2,"No",9,"Female",10
+"1004",5,"No",9,"Female",7
+"1005",8,"Yes",9,"Female",7
+"1006",4,"Not eligible to vote",8,"Male",4
+"1007",6,"Yes",7,"Female",2
+"1008",3,"Yes",8,"Male",8
+"1009",4,"Yes",9,"Male",3
+"1010",7,"Yes",9,"Male",6
+"1011",5,NA,7,"Female",1
+"1012",4,"Yes",10,"Male",4
+"1013",6,"Yes",10,"Female",8
+"1014",7,"Yes",10,"Female",1
+"1015",NA,"Not eligible to vote",8,"Female",1
+"1016",2,"Yes",NA,"Male",7
+"1017",7,"Not eligible to vote",10,"Male",4
+"1018",0,"Yes",8,"Male",3
+"1019",4,"Yes",9,"Female",3
+"1020",5,"No",10,"Female",4
+"1021",7,"Yes",8,"Female",6
+"1022",2,"No",4,"Female",10
+"1023",7,"Yes",8,"Male",3
+"1024",4,"Not eligible to vote",9,"Male",10
+"1025",6,"Yes",7,"Male",3
+"1026",1,"Yes",9,"Male",4
+"1027",5,"Yes",7,"Male",3
+"1028",5,"Yes",8,"Male",2
+"1029",5,"Yes",9,"Female",1
+"1030",8,"Not eligible to vote",8,"Female",1
+"1031",3,"Yes",7,"Female",7
+"1032",5,"Yes",7,"Male",5
+"1033",4,"Yes",5,"Female",6
+"1034",10,"Not eligible to vote",9,"Male",NA
+"1035",2,"Yes",5,"Female",3
+"1036",6,"Yes",9,"Male",9
+"1037",6,"Yes",9,"Male",4
+"1038",4,"No",8,"Male",5
+"1039",3,"Yes",7,"Female",4
+"1040",8,"Yes",6,"Female",4
+"1041",7,"Not eligible to vote",9,"Male",NA
+"1042",6,"Yes",8,"Male",2
+"1043",8,"Yes",7,"Male",2
+"1044",7,"Not eligible to vote",9,"Male",NA
+"1045",3,"Yes",7,"Female",6
+"1046",6,"Yes",9,"Male",7
+"1047",8,"Yes",7,"Male",4
+"1048",7,"Yes",8,"Male",3
+"1049",4,"Yes",7,"Male",3
+"1050",7,"Yes",7,"Male",1
+"1051",6,"Yes",7,"Female",9
+"1052",1,"No",9,"Male",8
+"1053",6,"No",8,"Male",4
+"1054",4,"Yes",8,"Male",4
+"1055",6,"Yes",9,"Male",7
+"1056",7,"Yes",8,"Female",7
+"1057",6,"Yes",6,"Male",4
+"1058",7,"Yes",8,"Female",7
+"1059",10,"No",10,"Female",NA
+"1060",7,"Yes",7,"Male",4
+"1061",4,"Yes",7,"Female",6
+"1062",5,"Yes",8,"Male",5
+"1063",5,"No",5,"Male",2
+"1064",5,"Yes",6,"Male",2
+"1065",6,"Yes",8,"Female",3
+"1066",6,"Not eligible to vote",7,"Male",1
+"1067",5,"Yes",9,"Male",2
+"1068",4,"Yes",9,"Male",3
+"1069",7,"Yes",7,"Male",9
+"1070",5,"Yes",6,"Male",2
+"1071",3,"Yes",10,"Male",2
+"1072",3,"Yes",9,"Female",7
+"1073",7,"Not eligible to vote",8,"Male",10
+"1074",7,"Yes",7,"Male",4
+"1075",8,"No",8,"Male",5
+"1076",7,"Yes",10,"Female",8
+"1077",4,"Yes",9,"Male",10
+"1078",1,"No",9,"Female",1
+"1079",8,"Not eligible to vote",10,"Female",1
+"1080",8,"Yes",9,"Female",2
+"1081",NA,"Yes",8,"Male",6
+"1082",0,"Not eligible to vote",8,"Male",10
+"1083",5,"Yes",9,"Female",NA
+"1084",8,"Yes",7,"Female",1
+"1085",6,"Yes",9,"Male",6
+"1086",5,"Yes",8,"Female",5
+"1087",6,"Yes",10,"Female",2
+"1088",5,"Not eligible to vote",10,"Female",1
+"1089",5,"Yes",4,"Male",1
+"1090",7,"Yes",9,"Male",7
+"1091",6,"Not eligible to vote",9,"Male",4
+"1092",7,"No",8,"Male",1
+"1093",7,"Yes",9,"Female",7
+"1094",3,"Yes",8,"Male",7
+"1095",7,"Not eligible to vote",8,"Female",4
+"1096",8,"Not eligible to vote",10,"Male",NA
+"1097",7,"Yes",9,"Female",9
+"1098",5,"No",10,"Female",1
+"1099",5,"Yes",9,"Male",3
+"1100",2,"Yes",3,"Male",7
+"1101",7,"Not eligible to vote",7,"Male",1
+"1102",6,"Yes",10,"Male",4
+"1103",7,"Yes",10,"Female",8
+"1104",7,"Not eligible to vote",8,"Male",10
+"1105",4,"Yes",6,"Female",5
+"1106",3,"Yes",9,"Male",9
+"1107",8,"Yes",8,"Male",9
+"1108",3,"Yes",10,"Female",2
+"1109",4,"Yes",9,"Male",9
+"1110",6,"Yes",6,"Male",9
+"1111",6,"Yes",8,"Male",10
+"1112",8,"Yes",10,"Female",3
+"1113",5,"No",10,"Female",5
+"1114",4,"Yes",5,"Female",3
+"1115",8,"Yes",8,"Female",1
+"1116",5,"Yes",7,"Male",7
+"1117",3,"No",7,"Female",6
+"1118",2,"Yes",7,"Male",6
+"1119",5,"Yes",8,"Male",2
+"1120",5,"Yes",6,"Female",10
+"1121",3,"Not eligible to vote",8,"Male",3
+"1122",3,"Yes",10,"Male",10
+"1123",7,"Yes",8,"Male",6
+"1124",7,"Not eligible to vote",8,"Male",10
+"1125",5,"Yes",8,"Male",6
+"1126",4,"No",9,"Female",8
+"1127",7,"Yes",6,"Female",9
+"1128",7,"No",8,"Male",5
+"1129",5,"Not eligible to vote",8,"Female",1
+"1130",6,"Yes",9,"Female",1
+"1131",4,"Yes",7,"Male",5
+"1132",8,"Yes",8,"Male",1
+"1133",0,"Yes",7,"Male",1
+"1134",5,"Yes",7,"Male",5
+"1135",8,"No",10,"Female",5
+"1136",0,"No",10,"Male",9
+"1137",5,"Yes",9,"Female",4
+"1138",5,"Yes",8,"Male",2
+"1139",5,"Yes",9,"Female",3
+"1140",5,"Yes",8,"Female",7
+"1141",8,"Not eligible to vote",8,"Male",4
+"1142",3,"No",7,"Male",9
+"1143",6,"Yes",8,"Male",5
+"1144",6,"Yes",8,"Female",5
+"1145",4,"Yes",7,"Female",3
+"1146",8,"Not eligible to vote",9,"Male",9
+"1147",8,"Yes",9,"Female",NA
+"1148",4,"Yes",6,"Female",3
+"1149",4,"Yes",10,"Male",8
+"1150",7,"Yes",10,"Female",7
+"1151",5,"No",3,"Male",1
+"1152",NA,"No",6,"Male",2
+"1153",7,"Yes",7,"Female",2
+"1154",4,"Yes",7,"Male",4
+"1155",3,"No",3,"Female",10
+"1156",6,"Yes",8,"Male",5
+"1157",6,"Yes",5,"Male",3
+"1158",5,"Yes",8,"Female",2
+"1159",8,"Yes",10,"Male",5
+"1160",7,"Yes",9,"Male",4
+"1161",5,"Yes",8,"Female",7
+"1162",6,"Yes",9,"Female",10
+"1163",7,"Yes",7,"Female",2
+"1164",4,"Yes",7,"Female",7
+"1165",6,"No",8,"Male",9
+"1166",7,"Not eligible to vote",9,"Male",4
+"1167",7,"Yes",4,"Male",7
+"1168",2,"Yes",6,"Male",8
+"1169",5,"Yes",7,"Male",9
+"1170",6,"Yes",8,"Male",10
+"1171",3,"Yes",7,"Female",6
+"1172",5,"Yes",8,"Male",7
+"1173",6,"Not eligible to vote",10,"Female",4
+"1174",3,"Yes",2,"Female",1
+"1175",3,"Yes",10,"Female",1
+"1176",4,"Yes",9,"Male",5
+"1177",6,"Yes",8,"Female",7
+"1178",7,"No",10,"Male",6
+"1179",3,"Yes",8,"Female",7
+"1180",0,"Yes",9,"Male",5
+"1181",6,"Yes",8,"Male",9
+"1182",7,"Yes",8,"Female",1
+"1183",7,"Yes",9,"Female",8
+"1184",7,"Yes",9,"Male",8
+"1185",4,"Not eligible to vote",8,"Male",NA
+"1186",4,"Not eligible to vote",7,"Female",NA
+"1187",7,"Not eligible to vote",8,"Female",2
+"1188",0,"No",3,"Female",1
+"1189",6,"Yes",8,"Female",2
+"1190",5,"Yes",6,"Male",2
+"1191",5,"Yes",10,"Male",9
+"1192",3,"Yes",9,"Male",3
+"1193",4,"No",9,"Male",6
+"1194",7,"Yes",10,"Male",5
+"1195",7,"Not eligible to vote",9,"Female",4
+"1196",7,"Yes",7,"Female",6
+"1197",4,"Yes",9,"Female",8
+"1198",6,"Yes",9,"Male",7
+"1199",7,"Yes",9,"Male",5
+"1200",5,"Yes",7,"Male",3
+"1201",8,"Yes",7,"Female",8
+"1202",5,"Yes",6,"Female",NA
+"1203",7,"Yes",9,"Female",8
+"1204",6,"Yes",9,"Male",1
+"1205",6,"Yes",7,"Male",3
+"1206",3,"Yes",9,"Female",10
+"1207",6,"Yes",8,"Male",5
+"1208",4,"No",10,"Male",2
+"1209",6,"Yes",10,"Female",9
+"1210",7,"Yes",7,"Female",9
+"1211",6,"Yes",10,"Male",10
+"1212",6,"Yes",8,"Male",2
+"1213",4,"Yes",9,"Female",4
+"1214",4,"Yes",5,"Female",1
+"1215",4,"Yes",8,"Female",2
+"1216",5,"Not eligible to vote",7,"Male",4
+"1217",8,"Yes",7,"Male",8
+"1218",4,"Yes",5,"Female",8
+"1219",5,"Yes",9,"Female",7
+"1220",0,"Yes",10,"Male",2
+"1221",7,"Yes",9,"Male",8
+"1222",6,"Yes",7,"Female",2
+"1223",8,"Yes",9,"Male",7
+"1224",5,"Yes",9,"Female",9
+"1225",4,"No",4,"Female",4
+"1226",7,"Yes",9,"Female",4
+"1227",4,"Yes",7,"Female",3
+"1228",5,"Yes",8,"Male",8
+"1229",5,"Yes",7,"Male",2
+"1230",2,"Yes",6,"Male",6
+"1231",6,"Yes",9,"Female",4
+"1232",7,"Yes",9,"Female",9
+"1233",8,"Yes",10,"Female",8
+"1234",6,"Yes",9,"Male",3
+"1235",6,"No",7,"Male",8
+"1236",6,"Yes",10,"Female",9
+"1237",7,"Yes",7,"Male",9
+"1238",7,"Yes",8,"Female",1
+"1239",7,"Yes",8,"Male",4
+"1240",7,"Not eligible to vote",8,"Female",NA
+"1241",0,"Yes",8,"Female",2
+"1242",5,"Yes",9,"Female",2
+"1243",5,"Yes",8,"Male",5
+"1244",3,"Yes",6,"Female",1
+"1245",5,"No",8,"Female",3
+"1246",6,"Yes",10,"Female",2
+"1247",7,"Yes",10,"Male",7
+"1248",5,"Yes",8,"Male",2
+"1249",4,"Yes",7,"Male",7
+"1250",8,"Yes",10,"Female",10
+"1251",7,"Yes",8,"Male",3
+"1252",7,"Yes",7,"Male",NA
+"1253",6,"No",6,"Male",5
+"1254",5,"Yes",9,"Female",4
+"1255",5,"Yes",8,"Male",8
+"1256",7,"Yes",8,"Female",4
+"1257",6,"Yes",9,"Male",10
+"1258",6,"Yes",10,"Male",4
+"1259",6,"Yes",9,"Male",5
+"1260",6,"Yes",8,"Male",8
+"1261",6,"Yes",8,"Male",1
+"1262",5,"Yes",9,"Female",4
+"1263",4,"Yes",6,"Male",4
+"1264",5,"Not eligible to vote",9,"Male",9
+"1265",1,"Yes",3,"Male",1
+"1266",0,"Not eligible to vote",8,"Male",1
+"1267",6,"Yes",6,"Male",7
+"1268",6,"Yes",5,"Female",4
+"1269",3,"Yes",9,"Male",3
+"1270",6,"Yes",8,"Male",8
+"1271",5,"Yes",8,"Male",10
+"1272",6,"Yes",8,"Female",2
+"1273",4,"Yes",9,"Female",5
+"1274",6,"Yes",7,"Male",5
+"1275",7,"Yes",8,"Female",2
+"1276",7,"Yes",10,"Male",8
+"1277",6,"Yes",9,"Female",2
+"1278",9,"Not eligible to vote",8,"Male",7
+"1279",9,"Yes",8,"Female",6
+"1280",6,"Not eligible to vote",8,"Male",1
+"1281",6,"Yes",9,"Male",4
+"1282",2,"Yes",8,"Male",3
+"1283",2,"Yes",8,"Female",2
+"1284",6,"Yes",9,"Male",4
+"1285",6,"Yes",9,"Female",3
+"1286",7,"Yes",7,"Male",1
+"1287",6,"No",9,"Female",5
+"1288",8,"Yes",9,"Male",5
+"1289",6,"Yes",8,"Male",3
+"1290",3,"Yes",6,"Female",2
+"1291",5,"Yes",7,"Male",3
+"1292",8,"Yes",8,"Female",6
+"1293",6,"Yes",9,"Male",5
+"1294",5,"No",10,"Male",2
+"1295",4,"Yes",7,"Female",10
+"1296",6,"Not eligible to vote",8,"Male",NA
+"1297",6,"Yes",8,"Female",6
+"1298",6,"Yes",9,"Male",5
+"1299",3,"Yes",8,"Female",10
+"1300",6,"Yes",9,"Female",8
+"1301",9,"Yes",9,"Female",4
+"1302",6,"Yes",8,"Female",8
+"1303",5,"Yes",10,"Male",6
+"1304",5,"Yes",8,"Male",2
+"1305",5,"Yes",10,"Male",1
+"1306",4,"Yes",9,"Male",10
+"1307",5,"Yes",7,"Female",3
+"1308",6,"Yes",10,"Female",6
+"1309",5,"Yes",6,"Male",7
+"1310",4,"Yes",8,"Male",5
+"1311",7,"Yes",8,"Female",2
+"1312",8,"Yes",9,"Female",NA
+"1313",5,"Yes",10,"Female",10
+"1314",4,"Yes",8,"Male",10
+"1315",7,"Yes",9,"Female",4
+"1316",5,"Yes",7,"Female",10
+"1317",5,"Yes",7,"Male",6
+"1318",5,"No",7,"Male",3
+"1319",10,"Not eligible to vote",8,"Female",NA
+"1320",5,"Yes",10,"Female",NA
+"1321",4,"No",8,"Male",3
+"1322",NA,"No",6,"Male",1
+"1323",7,"Yes",5,"Female",NA
+"1324",3,"Yes",9,"Female",NA
+"1325",7,"Yes",8,"Female",10
+"1326",6,"Yes",8,"Male",2
+"1327",8,"Yes",8,"Male",5
+"1328",3,"Not eligible to vote",10,"Female",2
+"1329",2,"Yes",8,"Male",4
+"1330",6,"Yes",8,"Female",4
+"1331",6,"Yes",9,"Male",10
+"1332",5,"No",10,"Male",4
+"1333",4,"Yes",8,"Male",1
+"1334",6,"Yes",8,"Female",5
+"1335",6,"Yes",9,"Female",9
+"1336",7,"Yes",9,"Male",6
+"1337",7,"Yes",3,"Female",2
+"1338",5,"Yes",3,"Female",2
+"1339",5,"Not eligible to vote",10,"Male",8
+"1340",7,"Yes",9,"Female",5
+"1341",7,"Yes",10,"Male",7
+"1342",2,"No",5,"Female",6
+"1343",5,"Not eligible to vote",9,"Male",2
+"1344",2,"Not eligible to vote",4,"Female",3
+"1345",2,"Yes",5,"Female",2
+"1346",3,"Yes",8,"Male",1
+"1347",4,"Yes",8,"Male",3
+"1348",0,"Yes",10,"Male",6
+"1349",6,"Yes",7,"Female",5
+"1350",2,"Yes",5,"Male",6
+"1351",4,"Yes",6,"Female",5
+"1352",3,"Not eligible to vote",9,"Male",7
+"1353",2,"Yes",10,"Male",7
+"1354",7,"Yes",9,"Male",4
+"1355",6,"Yes",9,"Male",5
+"1356",7,"Yes",10,"Female",4
+"1357",4,"Yes",10,"Female",4
+"1358",5,"Yes",9,"Male",8
+"1359",3,"Yes",5,"Male",8
+"1360",2,"Yes",7,"Male",5
+"1361",5,"Yes",9,"Female",3
+"1362",5,"Yes",9,"Female",4
+"1363",6,"Not eligible to vote",9,"Male",2
+"1364",5,"No",9,"Female",2
+"1365",1,"Yes",3,"Female",4
+"1366",5,"Yes",8,"Male",1
+"1367",2,"No",5,"Female",1
+"1368",6,"Yes",9,"Male",5
+"1369",4,"No",10,"Female",2
+"1370",6,"No",6,"Male",1
+"1371",2,"Yes",8,"Female",1
+"1372",7,"Not eligible to vote",8,"Male",1
+"1373",5,"Yes",8,"Male",4
+"1374",5,"Not eligible to vote",9,"Male",4
+"1375",5,"Yes",8,"Male",5
+"1376",7,"Yes",9,"Female",6
+"1377",6,"Yes",8,"Female",4
+"1378",3,"No",4,"Male",2
+"1379",5,"Yes",7,"Female",7
+"1380",5,"Yes",9,"Female",10
+"1381",3,"Yes",7,"Female",3
+"1382",5,"No",10,"Female",1
+"1383",5,"Yes",7,"Female",1
+"1384",1,"Yes",5,"Male",3
+"1385",0,"Yes",10,"Male",2
+"1386",6,"Not eligible to vote",8,"Female",1
+"1387",6,"Yes",7,"Male",3
+"1388",4,"Yes",8,"Female",8
+"1389",1,"Yes",9,"Male",8
+"1390",4,"Yes",8,"Female",9
+"1391",5,"Not eligible to vote",10,"Male",10
+"1392",8,"Yes",10,"Male",3
+"1393",6,"Yes",8,"Female",9
+"1394",3,"Yes",5,"Female",4
+"1395",5,"Yes",8,"Female",2
+"1396",6,"Yes",1,"Female",6
+"1397",5,"Yes",7,"Female",4
+"1398",4,"Yes",8,"Male",2
+"1399",8,"Yes",8,"Female",1
+"1400",5,"Yes",9,"Male",5
+"1401",7,"Not eligible to vote",8,"Male",NA
+"1402",1,"Yes",10,"Female",9
+"1403",4,"Yes",10,"Female",NA
+"1404",4,"Yes",7,"Female",1
+"1405",5,"No",10,"Male",6
+"1406",7,"Yes",8,"Female",8
+"1407",3,"No",7,"Female",4
+"1408",8,"Yes",7,"Female",4
+"1409",3,"Yes",9,"Female",4
+"1410",2,"Yes",10,"Female",10
+"1411",5,"No",6,"Female",2
+"1412",6,"Not eligible to vote",8,"Male",NA
+"1413",8,"Yes",10,"Male",8
+"1414",6,"Yes",8,"Male",8
+"1415",7,"Yes",8,"Male",6
+"1416",4,"Not eligible to vote",9,"Male",5
+"1417",4,"Yes",8,"Female",8
+"1418",6,"Yes",7,"Female",8
+"1419",4,"Not eligible to vote",5,"Male",NA
+"1420",3,"Yes",6,"Female",2
+"1421",5,"No",7,"Male",7
+"1422",3,"Yes",8,"Male",3
+"1423",5,"Yes",9,"Female",4
+"1424",0,"No",9,"Male",1
+"1425",4,"Yes",6,"Female",2
+"1426",3,"Yes",10,"Male",5
+"1427",5,"Yes",5,"Male",NA
+"1428",7,"Not eligible to vote",9,"Male",8
+"1429",5,"Yes",8,"Male",NA
+"1430",6,"Not eligible to vote",6,"Female",9
+"1431",9,"Yes",10,"Female",5
+"1432",7,"Yes",8,"Female",3
+"1433",7,"Yes",9,"Female",10
+"1434",8,"Yes",8,"Male",3
+"1435",2,"Yes",8,"Male",8
+"1436",6,"Yes",8,"Male",8

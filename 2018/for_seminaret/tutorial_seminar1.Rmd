@@ -1,0 +1,81 @@
+---
+title: "Introduksjon til 1. seminar"
+author: "Erlend Langørgen"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Velkommen til R-seminar i STV 1020!
+
+Velkommen til R-undervisningen i STV 1020! Jeg setter stor pris på at du tar deg tid til å gjennomføre denne introduksjonen før første seminar. Jeg lover at det ikke tar mer enn ca. et kvarter. Dersom du lurer på noe er det bare å spørre. Gi meg gjerne tilbakemeldinger på erlend.langorgen@stv.uio.no. 
+
+Det går fint å bruke egen laptop i seminarene. Da må dere imidlertid intallere [Rstudio](https://www.rstudio.com/products/rstudio/download/) og [R](https://cloud.r-project.org/) på forhånd. Dersom dere får problemer, ber jeg om at dere kommer innom kontoret mitt i 7., så skal dere få hjelp med installasjonen.  
+
+P.S. Dersom noe står skrevet på `denne` måten, er det R-kode eller deler av R-kode (med unntak av `denne`). 
+
+### Min første R-kode
+
+R er et fleksibelt og kraftfullt statistisk programm, som kan gjøre alle slags tenkelige og utenkelige operasjoner i dataanalyse. I tillegg til å gjennomføre statistisk analyse, kan R brukes til en rekke andre ting, som å laste ned og strukturere data fra nettsider, lage interaktive plot, og å effektivisere alle slags repetitive oppgaver. 
+
+For deres første R-kode, skal dere imidlertid få starte enklere. R kan brukes som kalkulator. I vinduet under kan du skrive inn mattestykker og få R til å løse dem, ved å trykke på **run code** på toppen av vinduet (du kan evt. trykke ctrl/cmd + enter). Når du trykker på **run code**, vil R løse mattestykkene, og rapportere svaret under vinduet. Forsøk å regne ut `2 + 2`, `4 - 2`, `4/2` og `2*2` i vinduet. Dersom noe går galt, kan du trykke på **start over**.  
+
+```{r kalkulator, exercise=TRUE}
+
+```
+
+Gratulerer, du har nå kjørt din første R-kode!
+
+### Enheter, variabler og verdier
+
+Du klarer mattestykkene over uten R. Men klarer du å gjøre slike mattestykker for en rekke *enheter* samtidig? R kan gjøre dette for deg. La oss lage noen enheter og se. Funksjonen `c()` lar oss binde sammen verdier (vi skiller mellom verdier med `,`). Dette er nyttig for å binde sammen informasjon om en enhet (noen vil kanskje gjenkjenne de ordnede listene vi oppretter med `c()` som vektorer). Vi kan lagre verdiene som navngitte enheter eller andre typer objekter (f.eks. variabler) ved hjelp av `<-`. Vi kan velge alle mulige slags navn, men merk at R er sensitivt til store og små bokstaver! Rettskriving er enda viktigere enn i norsk, fordi en liten feil får koden din til å slutte å virke.
+
+Jeg har laget et eksempel under, basert på slopestyle-konkurransen i snowboard under OL. Her er navnene til enhetene  de tre medaljevinnerne, Gerrard (gull), Parrot (sølv) og McMorris (bronse). Snowboardkonkurransen bestod av tre runder. Jeg bruker disse rundene som variabler i eksempelet under. Første verdi er poengsummen fra første runde, andre verdi er for andre runde, og tredje verdi er fra tredje runde. Kjør koden jeg har lagt inn under og forsøk å forstå hva som skjer. Når du har tenkt litt, kan du ta quizen under, som tester forståelsen din av koden.
+
+Merk at når vi oppretter objekter med `<-`, gir vi input til R, vi får ikke output. Det er altså bare de fem siste linjene i koden under som produserer output. Når vi kjører et objekt, som `Gerrard` forteller imidlertid R oss hva objektet (her: enheten) inneholder.
+
+
+```{r enheter, exercise=TRUE, exercise.lines = 8}
+Gerrard <- c(43.33, 46.40, 87.16)
+Parrot <- c(45.13, 49.48, 86.00)
+McMorris <- c(75.3, 85.2, 60.68)
+Gerrard + Parrot + McMorris
+Gerrard
+sum(Gerrard)
+sum(Parrot)
+sum(McMorris)
+```
+
+Her er noen spørsmål som tester forståelsen din av koden over:
+
+```{r enhetsquiz}
+quiz(
+  question("Hva tror du funksjonen `sum` gjør over?",
+    answer("Legger sammen den gjennomsnittlig poengsummen til alle enhetene"),
+    answer("Finner den gjennomsnittlige poengsummen til enhetene"),
+    answer("Legger sammen tallverdier, her den totale poengsummen til enhetene fra alle rundene ", correct = TRUE)
+    ),
+  question("Hvilken R-kode oppretter et objekt som heter gull, som inneholder den høyeste poengsummen fra snowboardkonkurransen i OL?",
+    answer("gull <. 87.16 "),
+    answer("sølv <- 86.0"),
+    answer("85.2 <- gull"),
+    answer("gull <- 87.16", correct = TRUE)
+  ),
+    question("I hvilken omgang var summen av poengsummene til medaljevinnerne høyest?",
+    answer("I første omgang - 181.08 poeng"),
+    answer("I andre omgang - 221.18 poeng"),
+    answer("I tredje omgang - 233.84 poeng", correct = TRUE)
+  )
+)
+```
+
+
+På seminaret skal vi lære mer om hvordan R fungerer. Blant annet skal vi lære mer mer hvordan vi kan jobbe med enheter, variabler  verdier, og hvordan vi kan opprette datasett. Vel møtt!
+
+
+
+
