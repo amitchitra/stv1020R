@@ -12,12 +12,16 @@ Dette korte dokumentet går gjennom installasjon av R og Rstudio. Det forteller 
 #### **Egen datamaskin**
 I selve seminarene har dere valget mellom å bruke maskinene som står i seminarrommet via deres UiO-bruker (R er forhåndsinstallert på alle maskinene) eller dere kan bruke egen bærbar PC/Mac. Hvis dere bruker egen maskin forventer jeg at dere har installert både R og RStudio før det første seminaret. 
 
+## **Canvas**
+
+Undervisningsmateriale til hvert seminar vil bli lenket til gjennom moduler på canvas. Disse kommer for det meste til å lenke til github, samt oppgi referanse til relevante sider i Field.
+
 ## **Slack**
 Jeg har satt opp et Slack-team som vi kommer til å bruke gjennom seminarrekka, se invitasjon på canvas. Hensikten med slack er å tilrettelegge for en platform der dere kan hjelpe hverandre på tvers av seminargrupper. Jeg kommer også til å svare på spørsmål jevnlig. Ingen spørsmål er for dumme
 
 
 ## **Filtyper**
-Dere vil finne flere forskjellige filtyper i mappene, her er en kort guide:
+Dere vil finne flere forskjellige filtyper i mappene på githuv, her er en kort guide:
 
 1. R-script: slutter med `.R`, disse filene kan du laste ned og åpne i R.
 2. Markdown-dokumenter: disse filene slutter med `.md`, og vil inneholde mer tekst og utdypende forklaring enn R-script. Dersom du ikke forstår en forklaring i en slik fil, gi beskjed til meg.
