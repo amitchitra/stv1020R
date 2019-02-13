@@ -111,4 +111,4 @@ Ofte ligger mapper inne i andre mapper, under en harddisk (for eksempel C:). Map
 Bonus
 -----
 
-Dersom du vil prøve deg på litt mer R-kode før seminaret, anbefaler jeg kapittel 1 av denne [interaktive introduksjonen](https://www.datacamp.com/courses/introduction-to-the-tidyverse), eller at du jobber deg gjennom seksjon 3.5 i Field kapittel 3.
+Dersom du vil prøve deg på litt mer R-kode før seminaret, anbefaler jeg kapittel 1 av denne [interaktive introduksjonen](https://www.datacamp.com/courses/introduction-to-the-tidyverse), eller at du jobber deg gjennom [første seminar](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md).
