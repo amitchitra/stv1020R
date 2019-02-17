@@ -278,7 +278,9 @@ Oppgave: Lag et objekt med samme navn som fornavnet ditt, som inneholder alderen
 
 ## [4. Kort om funksjoner](#funksjoner)
 
-Dersom vi ønsker å gjøre noe i r, får vi som regel en funksjon til å gjøre jobben for oss. En funksjon er en kodesnutt hvor vi leverer input noe og får ut noe annet etter at funksjonen har omarbeidet input. Hoveddelen av det vi skal gjøre i disse seminarene, er å lære massevis av funksjoner og hvordan man bruker dem. Funksjoner gjør enkle ting, som å finne gjennomsnitt. og de gjør avanserte ting, som å spå sannsynligheten for borgerkrig.
+Dersom vi ønsker å gjøre noe i r, får vi som regel en funksjon til å gjøre jobben for oss. En funksjon er en kodesnutt hvor vi spesifiserer input (informasjon av et eller annet slag, f.eks. variabler) som funksjonen omarbeider og deretter returnerer (referes til som value i hjelpefiler i R).
+
+Hoveddelen av det vi skal gjøre i disse seminarene, er å lære massevis av funksjoner og hvordan man bruker dem. Funksjoner kan gjøre enkle ting, som å finne gjennomsnitt. Funksjoner kan også brukes til avanserte ting, som å kjøre hundrevis av regresjonsanalyser.
 
 Alle funksjoner har samme struktur:
 
@@ -412,7 +414,7 @@ length(Vektor)
 ## [1] 10
 ```
 
-Oppgave: Test om dere henger med på denne alternative måten å regne ut gjennomsnittet av `Vektor` (vi kunne brukt `mean()`) 
+Oppgave: Test om dere henger med på disse alternative måtene å regne ut gjennomsnittet av `Vektor` (vi kunne brukt `mean()`). Den siste delen av koden oppretter en funksjon som beregner gjennomsnitt. Se om du klarer å modifisere denne funksjonen slik at den returnerer gjennomsnitt det dobbelte av gjennomsnittet.
 
 
 ```r
@@ -422,6 +424,19 @@ sum(Vektor)/length(Vektor)
 ```
 ## [1] 5.5
 ```
+
+```r
+gj_snitt <- function(x) {
+    sum(x)/length(x)
+}
+gj_snitt(Vektor)
+```
+
+```
+## [1] 5.5
+```
+
+
 
 
 

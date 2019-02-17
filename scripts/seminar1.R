@@ -152,6 +152,13 @@ length(Vektor)
 # TEST PÅ OM DERE FØLGER MED: HVORDAN KUNNE VI REGNET GJENNOMSNITT AV "Vektor" PÅ EGENHÅND? (Uten å bruke `mean()`)
 sum(Vektor) / length(Vektor)
 
+# VI KAN OGSÅ LAGE VÅR EGEN FUNKSJON AV KODEN OVER  (SOM VI DERETTER KAN BRUKE)-
+# FORSØK Å ENDRE FUNKSJONEN UNDER SLIK AT DEN RETURNERER DET DOBBELTE AV GJENNOMSNITTET  
+gj_snitt <- function(x){
+  sum(x)/length(x)
+}
+gj_snitt(Vektor)
+
 ###################################################################
 #####                                                         #####
 #####                                                         #####
