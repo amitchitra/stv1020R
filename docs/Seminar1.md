@@ -269,7 +269,7 @@ summary(navn)
 ```
 
 ```r
-# (Summary(navn)
+# Summary(navn)
 ```
 
 

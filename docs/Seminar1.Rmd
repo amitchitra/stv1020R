@@ -163,7 +163,7 @@ Merk for øvrig at R er sensitivt til store og små bokstaver:
 navn 
 Navn
 summary(navn)
-#(Summary(navn)
+#Summary(navn)
 ```
 
 
