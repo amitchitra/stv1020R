@@ -95,7 +95,7 @@ library(haven)
 #    personstemmer. Lag et nytt datasett bestående av disse enhetene.
 #    - Du kan kombinere koden fra forrige oppgave med which()
 #    - Du kan dele opp denne oppgaven i flere linjer kode. Du kan også bruke &, som betyr også i R.
-#    - Det finnes svært mange måter å løse denne oppgaven på. Du kan f.eks. bruke funksjonen subset i stedet for [].
+#    - Det finnes svært mange måter å løse denne oppgaven på. Du kan f.eks. bruke funksjonen subset i stedet for [] eller filter().
 #    - Dersom du har tid til overs, forsøk å løse oppgave 8 ved å bruke funksjonen ifelse() i stedet for which()
 
 

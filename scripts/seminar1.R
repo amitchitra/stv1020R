@@ -483,21 +483,20 @@ rm(list = ls())
 
 ##### FØR NESTE SEMINAR #####
 
-##  ETTER HVERT SEMINAR LEGGER JEG UT OPPGAVER OG EN INTRODUKSJON TIL NESTE SEMINAR PÅ GITHUB. 
+##  ETTER HVERT SEMINAR LEGGER JEG UT OPPGAVER OG EN INTRODUKSJON TIL NESTE SEMINAR PÅ GITHUB, JEG LENKER TIL DETTE GJENNOM CANVAS. 
 ##  JEG TAR I MOT SPØRSMÅL OM OPPGAVENE PÅ STARTEN AV NESTE SEMINAR, JEG GIR OGSÅ GJERNE MER DETALJERTE
 ##  TILBAKEMELDINGER PÅ SLACK. 
 
-##  FØLG MED PÅ INFORMASJONSKANALENE (FRONTER + SLACK) OG https://github.com/langoergen/stv1020R !
-
+##  FØLG MED PÅ INFORMASJONSKANALENE (CANVAS + SLACK) OG https://github.com/langoergen/stv1020R !
+##  ALL VIKTIG INFORMASJON KOMMER GJENNOM CANVAS.
 
 ##### NESTE GANG #####
 
 # 1. Kort gjennomgang av hjemmeoppgaver
-# 2. Prosjekter i R-studio
+# 2. Organisering av arbeid i R-studio
 # 3. Laste inn data
 # 4. Tabulering
 # 5. Deskriptiv statistikk
 # 6. Enkel omkoding
 # 7. Boxplot
-# 8. Kjikvadrattesten
-# 9. Arbeid med seminaroppgaver
+# 9. Arbeid med oppgaver

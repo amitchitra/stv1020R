@@ -951,7 +951,7 @@ datasett2
 ```
 
 
-Vi må ikke bruke `$`. Vi kan også bruke `[]`. Når et objekt har flere dimensjoner (Datasett har 2, rader og kolonner), kan vi bruke komma i [,] til å skille mellom dimensjonene. For rader og kolonner i datasett gjør vi dette slik:
+Vi må ikke bruke `$`. Vi kan også bruke `[]`, eller såkalte pipelines (mer om pipelines i neste seminar). Når et objekt har flere dimensjoner (Datasett har 2, rader og kolonner), kan vi bruke komma i [,] til å skille mellom dimensjonene. For rader og kolonner i datasett gjør vi dette slik:
 `[rad, kolonne]`
 
 
@@ -1090,6 +1090,7 @@ datasett
 
 Oppgave: Lag tekstvektoren `tekst`, som består av de to verdiene `"to"` og `"tre"` (altså av ordene som tekst).
 Lag også tallvektoren `tall` bestående av tallene fra 1 til 10. Opprett deretter et datasett bestående av de to variablene ved hjelp av `data.frame()`. Inspiser data, og diskuter hva som skjer med sidemannen.
+
 
 ## [8. Grafikk](#grafikk)
 
