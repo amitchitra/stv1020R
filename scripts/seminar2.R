@@ -112,6 +112,16 @@ library(haven)
 #     - Kvinner har verdien 1 på variabelen kjønn. 
 #     - Dersom ø'en i variabelnavnet kjønn er lest inn feil, fiks dette med colnames(personst)[8] <-  "kjønn"
 
+table(personst$parti, personst$kjønn)
 
-
-
+#### Oppgave 11 (Bonusoppgave for spesielt interesserte) ####
+# 11. Lag 4 nye datasett, et for dem som har parti == "ap", "krf", "sv" og "h".   
+# Lag deretter din egen funksjon som returnerer verdien TRUE dersom det
+# er sant at en høyere andel menn enn kvinner har blitt kummulert, FALSE hvis ikke.
+# Anvend denne funksjonen på de fire datasettene du nettopp opprettet.
+# Husk fra seminar 1: du oppretter en funksjon med:
+# funksjonsnavn <- function(argumentnavn) {
+# "det din funksjon skal gjøre her"
+#}
+# Løs oppgaven ved å først skrive kode for å test om det menn har høyere gj.snitt
+# enn kvinner, jobb deretter med å flytte koden inn i en funksjon.

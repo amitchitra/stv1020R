@@ -297,4 +297,122 @@ table(ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0) == personst$ap
 personst$apkvinne <- ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0)
 
 
-## For dem som synes dplyr er kult, er det mulig å bruke funksjonen mutate()
+## For dem som synes dplyr er kult, er det mulig å bruke funksjonen mutate() sammen med ifelse()
+names(personst)
+personst <- personst %>%
+  mutate(apkvinne = ifelse(parti == "ap" & kjønn == 1, 1, 0))
+
+# I dette eksempelet er det ikke et stort poeng å bruke dplyr.
+# Dersom vi imidlertid skulle kodet om mange variabler samtidig, 
+# ville det vært et større poeng, la meg illustrere:
+
+
+personst <- personst %>%
+  mutate(apkvinne = ifelse(parti == "ap" & kjønn == 1, 1, 0),
+         apmann = ifelse(parti == "ap" & kjønn == 0, 1, 0) 
+         )
+
+# Man kan kode om mange variabler inne i mutate, det gir god organisering
+# og kortere kode ved mange omkodinger.
+
+
+#### Oppgave 11 (Bonusoppgave for spesielt interesserte) ####
+# 11. Lag 4 nye datasett, et for dem som har parti == "ap", "krf", "sv" og "h".   
+# Lag deretter din egen funksjon som returnerer verdien TRUE dersom det
+# er sant at en høyere andel menn enn kvinner har blitt kummulert, FALSE hvis ikke.
+# Anvend denne funksjonen på de fire datasettene du nettopp opprettet.
+# Husk fra seminar 1: du oppretter en funksjon med:
+# funksjonsnavn <- function(argumentnavn) {
+# "det din funksjon skal gjøre her"
+#}
+# Løs oppgaven ved å først skrive kode for å test om det menn har høyere gj.snitt
+# enn kvinner, jobb deretter med å flytte koden inn i en funksjon.
+
+
+# Oppretter datasett
+ap <- personst %>%
+  filter(parti == "ap")
+krf <- personst %>%
+  filter(parti == "krf")
+sv <- personst %>%
+  filter(parti == "sv")
+h <- personst %>%
+  filter(parti == "h")
+
+
+# Hvordan teste om en større andel menn har blitt kummulert?
+# Vi må indeksere oss frem til menn og kvinner, deretter beregne andeler kummulerte, før vi sammenligner
+apmenn <- ap %>%
+  filter(kjønn==0)
+# andel - dette kan gjøres penere, men her bruker jeg omtrent bare kode dere
+# har lært så langt
+
+# dummy for om du er kummulert eller ikke
+apmenn$kumm_d <- ifelse(apmenn$kummulert == "Ja", 1, 0) 
+
+sum(apmenn$kumm_d) # antall kummulerte apmenn
+
+sum(apmenn$kumm_d)/nrow(apmenn) # antall kummulerte delt på totalt antall
+
+# nrow teller antall observasjoner i et datasett
+
+# samme for kvinner
+apkvinner <- ap %>%
+  filter(kjønn==1)
+
+apkvinner$kumm_d <- ifelse(apkvinner$kummulert == "Ja", 1, 0) 
+
+sum(apkvinner$kumm_d) # antall kummulerte apkvinner
+
+sum(apkvinner$kumm_d)/nrow(apkvinner) # antall
+
+## Sammenligning:
+
+sum(apmenn$kumm_d)/nrow(apmenn)>sum(apkvinner$kumm_d)/nrow(apkvinner)
+
+
+## Lager funksjon - nøkkelen er å se at alt er 
+## copy-paste for hvert datasett, bortsett fra navn på datasett.
+## Dermed må vi spesifisere datasettnavn som et funksjonsargument,
+## ellers kan vi bare putte resten av koden over rett inn i en funksjon:
+
+mannsdominans <- function(parti){
+  
+  menn <- parti %>%
+    filter(kjønn==0)
+  # andel - dette kan gjøres penere, men her bruker jeg omtrent bare kode dere
+  # har lært så langt
+  
+  # dummy for om du er kummulert eller ikke
+  menn$kumm_d <- ifelse(menn$kummulert == "Ja", 1, 0) 
+  
+  sum(menn$kumm_d) # antall kummulerte apmenn
+  
+  sum(menn$kumm_d)/nrow(menn) # antall kummulerte delt på totalt antall
+  
+  # nrow teller antall observasjoner i et datasett
+  
+  # samme for kvinner
+  kvinner <- parti %>%
+    filter(kjønn==1)
+  
+  kvinner$kumm_d <- ifelse(kvinner$kummulert == "Ja", 1, 0) 
+  
+  sum(kvinner$kumm_d) # antall kummulerte apkvinner
+  
+  sum(kvinner$kumm_d)/nrow(kvinner) # antall
+  
+  ## Sammenligning:
+  
+  sum(menn$kumm_d)/nrow(menn)>sum(kvinner$kumm_d)/nrow(kvinner)
+}
+mannsdominans(h)
+mannsdominans(sv)
+mannsdominans(krf)
+mannsdominans(ap)
+
+# Dersom du har kommet så langt, kan du forsøke å videreutvikle funksjonen,
+# slik at den lar seg anvende for alle partier i datasettet personst
+# Hint: sett inn koden for å opprette partibaserte datasett i starten
+# av funksjonen.
+
