@@ -1,6 +1,11 @@
-# Seminar 2
-Erlend Langørgen  
-February 25, 2018  
+---
+title: "Seminar 2"
+author: "Erlend Langørgen"
+date: "February 25, 2018"
+output:
+  html_document:
+    keep_md: true
+---
 
 
 
@@ -20,7 +25,7 @@ I dagens seminar skal vi dekke følgende emner:
 
 Noen av disse emnene har dere allerede kjennskap til gjennom introduksjonen jeg lagde til seminaret. Jeg skal bruke de neste 10 minuttene på å gi dere litt utfyllende informasjon. Det er valgfritt å kode underveis, men jeg anbefaler dere å gjøre det så lange dere klarer å følge med.
 
-Etter introduksjonen bruker vi 5 minutter på spørsmål om disse temaene i plenum. Oppgavene gir dere mer informasjon, og muligheten til å øve på å tilegne dere mer kunnskap om R delvis på egenhånd, en sentral ferdighet for å lykkes med R senere. Dersom mange får problemer med samme oppgave, gir jeg mer ytdypende forklaring i plenum. Ellers finner dere mer informasjon om tabulering og grafikk i [dokumentet til forrige seminar](https://github.com/langoergen/stv1020R/docs/Seminar1.md), og mer om de andre emnene lengre ned i dette dokumentet. Oppgavene til dagens seminar finner dere [her](publiser oppgavene under docs). 
+Etter introduksjonen bruker vi 5 minutter på spørsmål om disse temaene i plenum. Oppgavene gir dere mer informasjon, og muligheten til å øve på å tilegne dere mer kunnskap om R delvis på egenhånd, en sentral ferdighet for å lykkes med R senere. Dersom mange får problemer med samme oppgave, gir jeg mer ytdypende forklaring i plenum. Ellers finner dere mer informasjon om tabulering og grafikk i [dokumentet til forrige seminar](https://github.com/langoergen/stv1020R/docs/Seminar1.md), og mer om de andre emnene lengre ned i dette dokumentet.  
 
 De siste minuttene bruker vi på å snakke om oppgavene og annet dere måtte lure på i plenum. Jeg skal også gå gjennom lagring av forskjellige typer output i R: plot, datasett og script.
 
@@ -28,7 +33,7 @@ De siste minuttene bruker vi på å snakke om oppgavene og annet dere måtte lur
 
 Organisering av arbeid er viktig for å lykkes med **R**. Dersom du holder orden i scriptene dine, og koder fint og oversiktlig, med gode kommentarer, kommer du til å gjøre mindre feil. Det blir også lettere for fremtidsversjonen av deg, og for andre å få glede av koden din. Det er såpass mye å tjene på god organisering at vi skal bruke de neste minuttene på dette emnet. Denne tegneserien fra [xkcd](https://xkcd.com/) oppsummerer resultatet av dårlig organisering godt:
 
-![](../bilder/fixing_problems.png)<!-- -->
+<img src="../bilder/fixing_problems.png" width="312" />
 
 ## Organisering av script 
 
@@ -111,7 +116,7 @@ library(haven)
 
 Denne organiseringen hjelper deg og andre med å finne frem i scriptet ditt, samt å oppdage feil. Her er en illustrasjon av hva god organiserte og kommenterte script kan gjøre for deg:
 
-![](../bilder/future_self.png)<!-- -->
+<img src="../bilder/future_self.png" width="280" />
 
 
 
@@ -391,7 +396,7 @@ I tillegg til å la deg bruke forskjellige korrelasjonskoeffisienter og metoder 
 
 # [Grafikk](#grafikk)
 
-Dette emnet skrve jeg om i dokumentet til forrige seminar, [som dere finner her](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md)
+Dette emnet skriver jeg om i dokumentet til forrige seminar, [som dere finner her](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md)
 Vi kommer stort sett bare til å bruke `ggplot()` funksjonen for plotting i seminarene.
 
 Her viser jeg hvordan vi lager et spredningsplot ved hjelp av argumentet `geom_point()`.
@@ -405,7 +410,7 @@ ggplot(mtcars, aes(x = mpg, y = cyl)) + geom_point()
 knitr::include_graphics("../bilder/spredningsplot.png")
 ```
 
-![](../bilder/spredningsplot.png)<!-- -->
+<img src="../bilder/spredningsplot.png" width="638" />
 
 **Bonus:** Det finnes utrolig mange muligheter for å pynte på `ggplot`, her er to lenker som hjelper deg med å finne fine farger til plottene dine: 
 
@@ -510,7 +515,7 @@ I mange sammenhenger er det forøvrig ønskelig å bruke argumentet `row.names =
 * Oppgaver blir lagt ut senere i dag, tutorial kommer til helgen. 
 * Jeg håper dere innser viktigheten av å organisere scriptene deres pent. Denne stripen fra xkcd oppsummerer tilbakemeldingen jeg fikk fra en informatikervenn som skulle hjelpe meg når jeg hadde holdt på med R i noen måneder. Han hadde rett.
 
-![](../bilder/code_quality.png)<!-- -->
+<img src="../bilder/code_quality.png" width="740" />
 
 
 

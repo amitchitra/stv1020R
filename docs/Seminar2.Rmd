@@ -27,7 +27,7 @@ I dagens seminar skal vi dekke følgende emner:
 
 Noen av disse emnene har dere allerede kjennskap til gjennom introduksjonen jeg lagde til seminaret. Jeg skal bruke de neste 10 minuttene på å gi dere litt utfyllende informasjon. Det er valgfritt å kode underveis, men jeg anbefaler dere å gjøre det så lange dere klarer å følge med.
 
-Etter introduksjonen bruker vi 5 minutter på spørsmål om disse temaene i plenum. Oppgavene gir dere mer informasjon, og muligheten til å øve på å tilegne dere mer kunnskap om R delvis på egenhånd, en sentral ferdighet for å lykkes med R senere. Dersom mange får problemer med samme oppgave, gir jeg mer ytdypende forklaring i plenum. Ellers finner dere mer informasjon om tabulering og grafikk i [dokumentet til forrige seminar](https://github.com/langoergen/stv1020R/docs/Seminar1.md), og mer om de andre emnene lengre ned i dette dokumentet. Oppgavene til dagens seminar finner dere [her](publiser oppgavene under docs). 
+Etter introduksjonen bruker vi 5 minutter på spørsmål om disse temaene i plenum. Oppgavene gir dere mer informasjon, og muligheten til å øve på å tilegne dere mer kunnskap om R delvis på egenhånd, en sentral ferdighet for å lykkes med R senere. Dersom mange får problemer med samme oppgave, gir jeg mer ytdypende forklaring i plenum. Ellers finner dere mer informasjon om tabulering og grafikk i [dokumentet til forrige seminar](https://github.com/langoergen/stv1020R/docs/Seminar1.md), og mer om de andre emnene lengre ned i dette dokumentet.  
 
 De siste minuttene bruker vi på å snakke om oppgavene og annet dere måtte lure på i plenum. Jeg skal også gå gjennom lagring av forskjellige typer output i R: plot, datasett og script.
 
@@ -218,7 +218,7 @@ I tillegg til å la deg bruke forskjellige korrelasjonskoeffisienter og metoder 
 
 # [Grafikk](#grafikk)
 
-Dette emnet skrve jeg om i dokumentet til forrige seminar, [som dere finner her](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md)
+Dette emnet skriver jeg om i dokumentet til forrige seminar, [som dere finner her](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar1.md)
 Vi kommer stort sett bare til å bruke `ggplot()` funksjonen for plotting i seminarene.
 
 Her viser jeg hvordan vi lager et spredningsplot ved hjelp av argumentet `geom_point()`.
