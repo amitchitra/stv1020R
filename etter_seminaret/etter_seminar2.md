@@ -40,9 +40,7 @@ Du finner funksjonene du trenger i [dokumentet til seminar 2](https://github.com
 Filer av typen `.sav` er vanlig i SPSS, mens filer av typen `.dta` er vanlig i stata. Funksjonene for å håndtere disse filtypene stammer fra `haven` pakken skrevet av Hadley Wickham.
 
 **P.S.:** 
-1. For å lagre datasettet som en `.dta` fil må du bytte navn på variabelen kjønn til kjonn, her er hjelp: 
-`colnames(personst)[] <- " "`, fyll inn koden som mangler.
-2. For å lagre datasettet som en `.Rdata` fil må du spesifisere `file = ""` inne i funksjonen, se `?save`
+1. For å lagre datasettet som en `.Rdata` fil må du spesifisere `file = ""` inne i funksjonen, se `?save`
 
 Datasettene ligger også i data-mappen på github.
 
