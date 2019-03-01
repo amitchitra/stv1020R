@@ -146,7 +146,7 @@ funksjonsnavn("Filsti (på pc eller url).filtype")
 For ulike filtyper (e.g. `.csv`, `.txt` eller `.Rdata`), finnes det egne funksjoner. Under har jeg lagt inn noen eksempler (her antas det at **working directory** er satt til mappen filen er lagret i). I denne koden lagres datasettet **"datasett"**, som er lagret som en fil på pcen din, som objektet `data` i R.
 
 ```{r, eval = F}
-data <- load("datasett.Rdata") # .Rdata er R sitt eget filformat
+load("datasett.Rdata") # .Rdata er R sitt eget filformat - merk: load oppretter objekt direkte
 data <- read.csv("datasett.csv") # .csv er en filtype som brukes mye, og som stammer fra excel.
 data <- read.table("datasett.txt") # Beslektet med read.csv. Har argumenter for å angi strukturen til tabeller
 data <- read_spss("datasett.sav")  # Leser .sav og .por filer fra SPSS, funksjonen stammer fra pakken haven

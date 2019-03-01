@@ -255,20 +255,20 @@ ggplot(nydata, aes(x = medietreff, y = personstemmer)) +
 #     mange kvinnelige og mannlige ap-politikere som har mer enn 500 medietreff. 
 #     Gjør tilsvarende sammeligning for høyre (h).
 #     - Du kan bruke både which og ifelse, eller lage nytt datasett for å lage tabell, bruk av ny dummy er ikke påkrevd. 
-#     - Kvinner har verdien 1 på variabelen kjønn. 
-#     - Dersom ø'en i variabelnavnet kjønn er lest inn feil, fiks dette med colnames(personst)[8] <-  "kjønn"
+#     - Kvinner har verdien 1 på variabelen kjonn. 
+#     - Dersom ø'en i variabelnavnet kjonn er lest inn feil, fiks dette med colnames(personst)[8] <-  "kjonn"
 
-names(personst) # vi er interessert i variablene kjønn og parti
+names(personst) # vi er interessert i variablene kjonn og parti
 table(personst$parti) # vi er interessert i enheter med verdien ap
-table(personst$kjønn) # kvinner har verdien 1 på dummy-variabelen for kjønn, menn har verdien 0
+table(personst$kjonn) # kvinner har verdien 1 på dummy-variabelen for kjonn, menn har verdien 0
 
 # logiske test:
-table(personst$parti == "ap" & personst$kjønn == 1) 
+table(personst$parti == "ap" & personst$kjonn == 1) 
 # tabellen lar oss se hvor mange enheter som skal ha verdien 1 på dummy-variabelen vi oppretter
 
 
 ## Fremgangsmåte 1: bruker which
-which(personst$parti == "ap" & personst$kjønn == 1) 
+which(personst$parti == "ap" & personst$kjonn == 1) 
 
 # kaller den nye variabelen apkvinne, setter alle verdier til 0
 personst$apkvinne <- 0
@@ -276,10 +276,10 @@ personst$apkvinne <- 0
 table(personst$apkvinne) # ser at alle enheter har verdien 0
 
 ## Kode for å indeksere apkvinner
-personst[which(personst$parti == "ap" & personst$kjønn == 1), "apkvinne"] 
+personst[which(personst$parti == "ap" & personst$kjonn == 1), "apkvinne"] 
 
 ## Vi kan bruke assigment operatoren til å endre verdien til apkvinner
-personst[which(personst$parti == "ap" & personst$kjønn == 1), "apkvinne"] <- 1
+personst[which(personst$parti == "ap" & personst$kjonn == 1), "apkvinne"] <- 1
 table(personst$apkvinne) # Vi ser at koden virket
 
 ## Fremgangsmåte 2: bruker ifelse()
@@ -287,20 +287,20 @@ table(personst$apkvinne) # Vi ser at koden virket
 ## Forklaring av syntaks til ifelse():
 # ifelse("logisk test", output hvis TRUE, output hvis FALSE)
 
-ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0) # koden returnerer 1 og 0
-table(ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0)) # koden returnerer forventet antall apkvinner (1ere)
+ifelse(personst$parti == "ap" & personst$kjonn == 1, 1, 0) # koden returnerer 1 og 0
+table(ifelse(personst$parti == "ap" & personst$kjonn == 1, 1, 0)) # koden returnerer forventet antall apkvinner (1ere)
 
 # Logisk test av at de to fremgangsmåtene returnerer samme resultat:
-table(ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0) == personst$apkvinne) # fremgangsmåtene gir samme resultat!
+table(ifelse(personst$parti == "ap" & personst$kjonn == 1, 1, 0) == personst$apkvinne) # fremgangsmåtene gir samme resultat!
 
 # overskriver variabel:
-personst$apkvinne <- ifelse(personst$parti == "ap" & personst$kjønn == 1, 1, 0)
+personst$apkvinne <- ifelse(personst$parti == "ap" & personst$kjonn == 1, 1, 0)
 
 
 ## For dem som synes dplyr er kult, er det mulig å bruke funksjonen mutate() sammen med ifelse()
 names(personst)
 personst <- personst %>%
-  mutate(apkvinne = ifelse(parti == "ap" & kjønn == 1, 1, 0))
+  mutate(apkvinne = ifelse(parti == "ap" & kjonn == 1, 1, 0))
 
 # I dette eksempelet er det ikke et stort poeng å bruke dplyr.
 # Dersom vi imidlertid skulle kodet om mange variabler samtidig, 
@@ -308,8 +308,8 @@ personst <- personst %>%
 
 
 personst <- personst %>%
-  mutate(apkvinne = ifelse(parti == "ap" & kjønn == 1, 1, 0),
-         apmann = ifelse(parti == "ap" & kjønn == 0, 1, 0) 
+  mutate(apkvinne = ifelse(parti == "ap" & kjonn == 1, 1, 0),
+         apmann = ifelse(parti == "ap" & kjonn == 0, 1, 0) 
          )
 
 # Man kan kode om mange variabler inne i mutate, det gir god organisering
@@ -343,7 +343,7 @@ h <- personst %>%
 # Hvordan teste om en større andel menn har blitt kummulert?
 # Vi må indeksere oss frem til menn og kvinner, deretter beregne andeler kummulerte, før vi sammenligner
 apmenn <- ap %>%
-  filter(kjønn==0)
+  filter(kjonn==0)
 # andel - dette kan gjøres penere, men her bruker jeg omtrent bare kode dere
 # har lært så langt
 
@@ -358,7 +358,7 @@ sum(apmenn$kumm_d)/nrow(apmenn) # antall kummulerte delt på totalt antall
 
 # samme for kvinner
 apkvinner <- ap %>%
-  filter(kjønn==1)
+  filter(kjonn==1)
 
 apkvinner$kumm_d <- ifelse(apkvinner$kummulert == "Ja", 1, 0) 
 
@@ -379,7 +379,7 @@ sum(apmenn$kumm_d)/nrow(apmenn)>sum(apkvinner$kumm_d)/nrow(apkvinner)
 mannsdominans <- function(parti){
   
   menn <- parti %>%
-    filter(kjønn==0)
+    filter(kjonn==0)
   # andel - dette kan gjøres penere, men her bruker jeg omtrent bare kode dere
   # har lært så langt
   
@@ -394,7 +394,7 @@ mannsdominans <- function(parti){
   
   # samme for kvinner
   kvinner <- parti %>%
-    filter(kjønn==1)
+    filter(kjonn==1)
   
   kvinner$kumm_d <- ifelse(kvinner$kummulert == "Ja", 1, 0) 
   

@@ -145,7 +145,7 @@ For ulike filtyper (e.g. `.csv`, `.txt` eller `.Rdata`), finnes det egne funksjo
 
 
 ```r
-data <- load("datasett.Rdata") # .Rdata er R sitt eget filformat
+load("datasett.Rdata") # .Rdata er R sitt eget filformat - merk: load oppretter objekt direkte
 data <- read.csv("datasett.csv") # .csv er en filtype som brukes mye, og som stammer fra excel.
 data <- read.table("datasett.txt") # Beslektet med read.csv. Har argumenter for å angi strukturen til tabeller
 data <- read_spss("datasett.sav")  # Leser .sav og .por filer fra SPSS, funksjonen stammer fra pakken haven
@@ -178,10 +178,10 @@ names(personst) # Gir deg navn i et objekt, for datasett er dette variabelnavn.
 ```
 
 ```
-##  [1] "id"                 "valg"               "parti"             
-##  [4] "rangering_original" "rangering"          "valgt"             
-##  [7] "kummulert"          "kjønn"              "personstemmer"     
-## [10] "medietreff"
+##  [1] "X"                  "id"                 "valg"              
+##  [4] "parti"              "rangering_original" "rangering"         
+##  [7] "valgt"              "kummulert"          "kjonn"             
+## [10] "personstemmer"      "medietreff"
 ```
 
 ```r
@@ -189,7 +189,8 @@ str(personst)   # Denne koden gir deg en oversikt over innholdet og strukturen t
 ```
 
 ```
-## 'data.frame':	659 obs. of  10 variables:
+## 'data.frame':	659 obs. of  11 variables:
+##  $ X                 : int  1 2 3 4 5 6 7 8 9 10 ...
 ##  $ id                : chr  "kandidat165" "kandidat166" "kandidat167" "kandidat168" ...
 ##  $ valg              : int  2015 2015 2015 2015 2015 2015 2015 2015 2015 2015 ...
 ##  $ parti             : chr  "ap" "ap" "ap" "ap" ...
@@ -197,7 +198,7 @@ str(personst)   # Denne koden gir deg en oversikt over innholdet og strukturen t
 ##  $ rangering         : int  21 15 1 50 61 4 9 39 43 10 ...
 ##  $ valgt             : chr  "Vara" "Valgt" "Valgt" "Ikke valgt" ...
 ##  $ kummulert         : chr  "Nei" "Nei" "Ja" "Nei" ...
-##  $ kjønn             : int  1 0 0 1 0 0 0 0 1 0 ...
+##  $ kjonn             : int  1 0 0 1 0 0 0 0 1 0 ...
 ##  $ personstemmer     : int  2722 3796 23311 748 528 3131 2144 1137 992 1607 ...
 ##  $ medietreff        : int  2509 728 21379 31 87 562 2582 747 0 39 ...
 ```
@@ -207,20 +208,20 @@ head(personst)  # Denne koden printer de øverste radene i datasettet i Console
 ```
 
 ```
-##            id valg parti rangering_original rangering      valgt kummulert
-## 1 kandidat165 2015    ap                 24        21       Vara       Nei
-## 2 kandidat166 2015    ap                 13        15      Valgt       Nei
-## 3 kandidat167 2015    ap                  1         1      Valgt        Ja
-## 4 kandidat168 2015    ap                 48        50 Ikke valgt       Nei
-## 5 kandidat169 2015    ap                 59        61 Ikke valgt       Nei
-## 6 kandidat170 2015    ap                  5         4      Valgt        Ja
-##   kjønn personstemmer medietreff
-## 1     1          2722       2509
-## 2     0          3796        728
-## 3     0         23311      21379
-## 4     1           748         31
-## 5     0           528         87
-## 6     0          3131        562
+##   X          id valg parti rangering_original rangering      valgt
+## 1 1 kandidat165 2015    ap                 24        21       Vara
+## 2 2 kandidat166 2015    ap                 13        15      Valgt
+## 3 3 kandidat167 2015    ap                  1         1      Valgt
+## 4 4 kandidat168 2015    ap                 48        50 Ikke valgt
+## 5 5 kandidat169 2015    ap                 59        61 Ikke valgt
+## 6 6 kandidat170 2015    ap                  5         4      Valgt
+##   kummulert kjonn personstemmer medietreff
+## 1       Nei     1          2722       2509
+## 2       Nei     0          3796        728
+## 3        Ja     0         23311      21379
+## 4       Nei     1           748         31
+## 5       Nei     0           528         87
+## 6        Ja     0          3131        562
 ```
 
 ```r
@@ -228,14 +229,14 @@ tail(personst)  # Denne koden printer de nederste radene i datasettet i Console
 ```
 
 ```
-##               id valg parti rangering_original rangering      valgt
-## 654 kandidat2765 2015     v                 58        62 Ikke valgt
-## 655 kandidat2766 2015     v                 62        63 Ikke valgt
-## 656 kandidat2767 2015     v                 18        27 Ikke valgt
-## 657 kandidat2768 2015     v                 56        64 Ikke valgt
-## 658 kandidat2769 2015     v                 11         8       Vara
-## 659 kandidat2770 2015     v                  7        11       Vara
-##     kummulert kjønn personstemmer medietreff
+##       X           id valg parti rangering_original rangering      valgt
+## 654 654 kandidat2765 2015     v                 58        62 Ikke valgt
+## 655 655 kandidat2766 2015     v                 62        63 Ikke valgt
+## 656 656 kandidat2767 2015     v                 18        27 Ikke valgt
+## 657 657 kandidat2768 2015     v                 56        64 Ikke valgt
+## 658 658 kandidat2769 2015     v                 11         8       Vara
+## 659 659 kandidat2770 2015     v                  7        11       Vara
+##     kummulert kjonn personstemmer medietreff
 ## 654       Nei     1            63         60
 ## 655       Nei     0            58         14
 ## 656       Nei     0           181          2
@@ -249,10 +250,10 @@ names(personst2)
 ```
 
 ```
-##  [1] "id"                 "valg"               "parti"             
-##  [4] "rangering_original" "rangering"          "valgt"             
-##  [7] "kummulert"          "kjønn"              "personstemmer"     
-## [10] "medietreff"
+##  [1] "X"                  "id"                 "valg"              
+##  [4] "parti"              "rangering_original" "rangering"         
+##  [7] "valgt"              "kummulert"          "kjonn"             
+## [10] "personstemmer"      "medietreff"
 ```
 
 ```r
@@ -260,7 +261,8 @@ str(personst2)
 ```
 
 ```
-## 'data.frame':	659 obs. of  10 variables:
+## 'data.frame':	659 obs. of  11 variables:
+##  $ X                 : int  1 2 3 4 5 6 7 8 9 10 ...
 ##  $ id                : chr  "kandidat165" "kandidat166" "kandidat167" "kandidat168" ...
 ##  $ valg              : int  2015 2015 2015 2015 2015 2015 2015 2015 2015 2015 ...
 ##  $ parti             : chr  "ap" "ap" "ap" "ap" ...
@@ -268,7 +270,7 @@ str(personst2)
 ##  $ rangering         : int  21 15 1 50 61 4 9 39 43 10 ...
 ##  $ valgt             : chr  "Vara" "Valgt" "Valgt" "Ikke valgt" ...
 ##  $ kummulert         : chr  "Nei" "Nei" "Ja" "Nei" ...
-##  $ kjønn             : int  1 0 0 1 0 0 0 0 1 0 ...
+##  $ kjonn             : int  1 0 0 1 0 0 0 0 1 0 ...
 ##  $ personstemmer     : int  2722 3796 23311 748 528 3131 2144 1137 992 1607 ...
 ##  $ medietreff        : int  2509 728 21379 31 87 562 2582 747 0 39 ...
 ```
@@ -278,20 +280,20 @@ head(personst2)
 ```
 
 ```
-##            id valg parti rangering_original rangering      valgt kummulert
-## 1 kandidat165 2015    ap                 24        21       Vara       Nei
-## 2 kandidat166 2015    ap                 13        15      Valgt       Nei
-## 3 kandidat167 2015    ap                  1         1      Valgt        Ja
-## 4 kandidat168 2015    ap                 48        50 Ikke valgt       Nei
-## 5 kandidat169 2015    ap                 59        61 Ikke valgt       Nei
-## 6 kandidat170 2015    ap                  5         4      Valgt        Ja
-##   kjønn personstemmer medietreff
-## 1     1          2722       2509
-## 2     0          3796        728
-## 3     0         23311      21379
-## 4     1           748         31
-## 5     0           528         87
-## 6     0          3131        562
+##   X          id valg parti rangering_original rangering      valgt
+## 1 1 kandidat165 2015    ap                 24        21       Vara
+## 2 2 kandidat166 2015    ap                 13        15      Valgt
+## 3 3 kandidat167 2015    ap                  1         1      Valgt
+## 4 4 kandidat168 2015    ap                 48        50 Ikke valgt
+## 5 5 kandidat169 2015    ap                 59        61 Ikke valgt
+## 6 6 kandidat170 2015    ap                  5         4      Valgt
+##   kummulert kjonn personstemmer medietreff
+## 1       Nei     1          2722       2509
+## 2       Nei     0          3796        728
+## 3        Ja     0         23311      21379
+## 4       Nei     1           748         31
+## 5       Nei     0           528         87
+## 6        Ja     0          3131        562
 ```
 
 ```r
@@ -299,14 +301,14 @@ tail(personst2)
 ```
 
 ```
-##               id valg parti rangering_original rangering      valgt
-## 654 kandidat2765 2015     v                 58        62 Ikke valgt
-## 655 kandidat2766 2015     v                 62        63 Ikke valgt
-## 656 kandidat2767 2015     v                 18        27 Ikke valgt
-## 657 kandidat2768 2015     v                 56        64 Ikke valgt
-## 658 kandidat2769 2015     v                 11         8       Vara
-## 659 kandidat2770 2015     v                  7        11       Vara
-##     kummulert kjønn personstemmer medietreff
+##       X           id valg parti rangering_original rangering      valgt
+## 654 654 kandidat2765 2015     v                 58        62 Ikke valgt
+## 655 655 kandidat2766 2015     v                 62        63 Ikke valgt
+## 656 656 kandidat2767 2015     v                 18        27 Ikke valgt
+## 657 657 kandidat2768 2015     v                 56        64 Ikke valgt
+## 658 658 kandidat2769 2015     v                 11         8       Vara
+## 659 659 kandidat2770 2015     v                  7        11       Vara
+##     kummulert kjonn personstemmer medietreff
 ## 654       Nei     1            63         60
 ## 655       Nei     0            58         14
 ## 656       Nei     0           181          2
@@ -322,7 +324,7 @@ table(personst==personst2) # tester om alle radene i de to datasettene har likt 
 ```
 ## 
 ## TRUE 
-## 6588
+## 7247
 ```
 
 

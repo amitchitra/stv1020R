@@ -47,10 +47,10 @@ library(paletter)
 #### Oppgave 2 ########
 #######################
 
-str(personst) # ser at kjønn er integer, ikke character, men kan omkode til factor allikevel 
+str(personst) # ser at kjonn er integer, ikke character, men kan omkode til factor allikevel 
 
 
-personst$kjønn <- as.factor(personst$kjønn)
+personst$kjonn <- as.factor(personst$kjonn)
 personst$parti <- as.factor(personst$parti)
 
 str(personst) # ser at variablene er blitt factors
@@ -68,7 +68,7 @@ my_cols <- create_palette("bilder/NikolaiAstrupPaintingNorway2.jpg",
                           number_of_colors = 17)
 
 # plot (fjern scale_colors_manual om du ikke har laget farger)
-ggplot(personst, aes(x = rangering, y = rangering_original, col = parti, shape = kjønn)) +
+ggplot(personst, aes(x = rangering, y = rangering_original, col = parti, shape = kjonn)) +
   geom_point() +
   theme_tufte() +
   labs(x = "Rangering",  y = "Opprinnelig rangering", title = "Sammenheng mellom 4 variabler") +

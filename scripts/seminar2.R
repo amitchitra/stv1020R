@@ -24,9 +24,9 @@ rm(list=ls())
 setwd("C:/Users/Navn/R/der/du/vil/jobbe/fra")
 
 ## Installerer pakker (fjerne '#' og kjør dersom en pakke ikke er installert)
-# install.packages(ggplot2)
-# install.packages(dplyr)
-# install.packages(haven)
+# install.packages("ggplot2")
+# install.packages("dplyr")
+# install.packages("haven")
 
 ## Laster inn pakker:
 library(ggplot2)
