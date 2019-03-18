@@ -282,7 +282,7 @@ heterogenitet <- rnorm(n = 56, mean = 0, sd = 0.5)
 
 ## Definerer sann verdi for økonomisk vekst uten bistand, for alle land. Denne effekten er i utgangspunktet 2.5 for alle land, men varierer litt +/- heterogeniteten. Legger også til vekst_kontroll, fordi veksten som kommer av behandling kommer på toppen av effekten i kontrollgruppen.
 
-vekst_behandling <- 2.5*bistand + heterogenitet + vekst_kontroll
+vekst_behandling <- 2.5 + heterogenitet + vekst_kontroll
 
 # Den sanne effekten for hvert land, er differansen mellom vekst med bistand og uten bistand
 effekt_bistand <- vekst_behandling - vekst_kontroll
@@ -302,8 +302,8 @@ summary(utvikling$effekt_bistand) # den ekte effekten
 ```
 
 ```
-##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-## -0.72830  0.02858  1.28668  1.21138  2.42763  3.00169
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   1.530   2.107   2.370   2.486   2.883   3.820
 ```
 
 ```r
@@ -337,7 +337,7 @@ gj_effekt$snitt[2] - gj_effekt$snitt[1]
 ```
 
 ```
-## [1] 4.378113
+## [1] 1.651646
 ```
 
 
