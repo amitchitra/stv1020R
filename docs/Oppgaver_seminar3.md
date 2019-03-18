@@ -8,29 +8,30 @@ Du skal lage et fint og ryddig R-script med svar på oppgavene! Vi skal se på s
 
 ### Oppgave 1:
 
-Last inn `aidgrowth.csv` eller `aidgrowth.Rdata` i R (inneholder samme datasett). Datasettene ligger på github for STV 1020 i data mappen. Du kan lagre filene i working directory, eller laste direkte inn fra url. Vi skal jobbe med dette datasettet i hele dagens seminar.
+Last inn `aidgrowth.csv` eller `aidgrowth.Rdata` i R (samme datasett lagret på forskjellige måter). Datasettene er lenket til på canvas. Du kan lagre filene i working directory, eller laste direkte inn fra url. Vi skal jobbe med dette datasettet i hele dagens seminar.
 
 ### Oppgave 2:
 
 Lag et scatterplot mellom bistand (`aid`) og økonomisk vekst (`gdp_growth`). Tegn deretter regresjonslinjen for den bivariate regresjonen mellom bistand og vekst med argumentet `geom_smooth(method = "lm")`.
 
-Gjør deretter en hypotese-test der du sjekker om korrelasjonen mellom variablene er signifikant. 
+Gjør deretter en hypotese-test der du sjekker om korrelasjonen mellom variablene er signifikant, med funksjonen `cor.test()`. 
 
-Kjør til slutt den bivariate regresjonen som du tegnet inn i plottet. 
 
 ### Oppgave 3:
 
-Se nærmere på univariat deskrpitiv statistikk for `policy`, `aid` og `growth`. Du bør i hvertfall se nærmere på standardavvik, maksimums- og minimumsverdier, samt ulike mål for sentraltendens.
+Se nærmere på univariat deskrpitiv statistikk for `policy`, `aid` og `growth`. Du bør i hvertfall se nærmere på standardavvik, maksimums- og minimumsverdier, samt ulike mål for sentraltendens (median, gj.snitt...).
 
 Lag deretter histogram for de tre variablene. Kommenter til slutt fordelingen til variablene.
 
 ### Oppgave 4: 
 
-Gjenta oppgave 2 for sammenhengen mellom `policy` og `gdp_growth`, og `aid` og `policy`. Kommenter plottene. 
+Gjenta oppgave 2 for sammenhengen mellom `policy` og `gdp_growth`, og `aid` og `policy`. Kommenter plottene og korrelasjonene. 
 
 ### Oppgave 5:
 
 Fjern de fem observasjonene med høyest verdi på `gdp_growth`, og de fem observasjonene med høyest verdi på `aid`. Gjennomfør oppgave 2 på nytt.
+
+Merk: Ved å fjerne så mange observasjoner har vi ikke lenger særlig godt grunnlag for å kritisere robusthet, dette er mer en trening i R-ferdigheter. Tips: bruk `arrange()`
 
 ### Oppgave 6: 
 
@@ -39,7 +40,9 @@ Lag en ny variabel, `policy2` ved å omkode variabelen `policy` som følger:
 * Observasjoner med lavere verdi enn `0` og verdi større eller lik `-2` skal få verdien `1`
 * Observasjoner med lavere verdi enn `2` og verdi større eller lik `0` skal få verdien `2`
 * Observasjoner med lavere verdi enn `4` og verdi større eller lik `2` skal få verdien `3`
-* Observasjoner med høuere verdi enn `4` skal få verdien `4`
+* Observasjoner med høyere verdi enn `4` skal få verdien `4`
+
+Hint: `ifelse(aidgrowth$policy < 0 & aidgrowth$policy >= (-2), 1, aidgrowth$policy2)` - dette er et triks du kan bruke når du skal omkode variabler med mer enn 2 kategorier ved hjelp av `ifelse()`
 
 ### Oppgave 7:
 
@@ -47,16 +50,16 @@ Lag et plot med `aid` på x-aksen, `gdp_growth` på y-aksen, og farge (`col =`) 
 
 ### Oppgave 8:
 
-Opprett nye variabler ved hjelp av matematisk transformasjoner av `policy`. Bruk `sqrt()`, `exp()` og `log()`. Kjør bivariate regresjoner mellom `policy()` og `gdp_growth()`. Endres resultatene?
+Opprett nye variabler ved hjelp av matematisk transformasjoner av `policy`. Bruk `sqrt()`, `exp()` og `log()`. Lag spredningsplot mellom `policy()` og `gdp_growth()`, og tegn på regresjonslinjer. Endres resultatene?
 
 ### Oppgave 9:
 
-Lag nye datasett for 3 perioder (definert i variabelen `period`). Du kan bruke `subset()` til dette formålet. Gjenta oppgave 2 for disse datasettene, hvordan ser sammenhengen ut nå? Kommenter både plot og regresjon.  
+Lag nye datasett for 3 perioder (definert i variabelen `period`). Du kan bruke `subset()` eller `dplyr` med `filter()` til dette formålet. Gjenta oppgave 2 for disse datasettene, hvordan ser sammenhengen ut nå? Kommenter plot.  
 
 
 
 ### Oppgave 10:
-Skriv en kort oppsummering av funnene dine, beskriv sammenhengen mellom variablene `aid`, `policy` og `gdp_growth` nærmere. Holder sammenhengene dersom man ser på ulike deler av datasettet? Dersom du har god tid, kan du fortsette å utforske sammenhengene på egenhånd, for eksempel ved å velge ut deler av datasettet basert på variablene i regresjonsmodell 5., regioner, enkeltland, m.m.
+Skriv en kort oppsummering av funnene dine, beskriv sammenhengen mellom variablene `aid`, `policy` og `gdp_growth` nærmere. Holder sammenhengene dersom man ser på ulike deler av datasettet? Dersom du har god tid, kan du fortsette å utforske sammenhengene på egenhånd, for eksempel ved å velge ut deler av datasettet basert på variablene i regresjonsmodell 5., regioner, enkeltland, m.m. Du kan også fortsette å tenke på eksperimentell logikk, og utforske koden for statistisk simulering nærmere.
 
 
 

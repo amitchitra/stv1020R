@@ -38,8 +38,7 @@ ggplot(aidgrowth, aes(x = aid, y = gdp_growth)) +
 cor.test(aidgrowth$aid, aidgrowth$gdp_growth) # negativ, signifikant korrelasjon
 
 
-#Kjør til slutt den bivariate regresjonen som du tegnet inn i plottet. 
-summary(m1 <- lm(gdp_growth ~ aid, data = aidgrowth))
+
 
 #####################
 ### Oppgave 3:  #####
@@ -103,8 +102,7 @@ ggplot(aidgrowth, aes(x = policy, y = gdp_growth)) +
 cor.test(aidgrowth$policy, aidgrowth$gdp_growth) # negativ, signifikant korrelasjon
 
 
-#Kjør til slutt den bivariate regresjonen som du tegnet inn i plottet. 
-summary(m2 <- lm(gdp_growth ~ policy, data = aidgrowth))
+
 
 ### Aid og policy
 
@@ -120,8 +118,7 @@ ggplot(aidgrowth, aes(x = aid, y = policy)) +
 cor.test(aidgrowth$aid, aidgrowth$policy) # negativ, signifikant korrelasjon
 
 
-#Kjør til slutt den bivariate regresjonen som du tegnet inn i plottet. 
-summary(m3 <- lm(policy ~ aid, data = aidgrowth))
+
 
 
 
@@ -132,7 +129,21 @@ summary(m3 <- lm(policy ~ aid, data = aidgrowth))
 #Fjern de fem observasjonene med høyest verdi på `gdp_growth`, og de fem observasjonene med høyest verdi på `aid`. 
 #Gjennomfør oppgave 2 på nytt.
 
-## Denne oppgaven kan løses iterativt ved hjelp av indeksering av to tabeller:
+# Løsning 1:
+# desc fra dplyr, indeksering og filter() fra dplyr
+
+aid2 <- aidgrowth %>%
+  arrange(desc(aid)) 
+aid2[5, "aid"] # cut-off verdi for aid
+aid3 <- aidgrowth %>%
+  arrange(desc(gdp_growth)) 
+aid3[5, "gdp_growth"]
+new_aid <- aidgrowth %>%
+  filter(aid < aid2[5, "aid"] | 
+                    gdp_growth < aid3[5, "gdp_growth"])
+
+## Denne oppgaven kan også løses iterativt ved hjelp av indeksering av to tabeller:
+## Dette er mye mer tungvint, og viser hvor bra dplyr kan være
 
 table(aidgrowth$aid)
 table(aidgrowth$gdp_growth)
@@ -175,14 +186,9 @@ ggplot(nydata, aes(x = aid, y = gdp_growth)) +
 cor.test(nydata$aid, nydata$gdp_growth) # negativ, signifikant korrelasjon
 
 
-#Kjør til slutt den bivariate regresjonen som du tegnet inn i plottet. 
-summary(m1b <- lm(gdp_growth ~ aid, data = nydata)) 
-# Navngivning av modeller: Jeg følger en konvensjon der så lenge avh.var er konstant, endres ikke grunnbokstav 
-# mellom modeller (her m). Nye variabler gir nytt nummer (m1, m2 osv.), mens andre endringer til en modell, som 
-# fjerning av observasjoner gir en ekstra bokstav til en modell (m1 blir m1b)
 
-summary(m1)
-summary(m1b) 
+
+
 # Vi ser at den negative sammenhengen mellom bistand og vekst ble mye sterkere nå vi fjernet de 5 ekstremobservasjonene. 
 # La oss se hva dette kan skyldes vå å indeksere observasjonene vi fjernet:
 aidgrowth[(aidgrowth$aid >= 7.778758 | aidgrowth$gdp_growth >= 9.5358124),] # Bruker eller, |, for å finne observasjonene
@@ -197,9 +203,7 @@ aidgrowth[(aidgrowth$aid >= 7.778758 | aidgrowth$gdp_growth >= 9.5358124),] # Br
 ## 2. Det er nyttig å se hvor mye en observasjon med ekstremverdi både på avhengig og uavhengig variabel
 ## kan påvirke regresjonslinjen.
 
-## Bonus: effekten av å bare fjerne Botswana-observasjonen:
-summary(m1c <-lm(gdp_growth ~ aid, data = subset(aidgrowth, aidgrowth$aid!=10.3594999)))
- 
+
 ### Oppgave 6: 
 
 #Lag en ny variabel, `policy2` ved å omkode variabelen `policy` som følger:
@@ -245,25 +249,24 @@ ggplot(aidgrowth, aes(x = aid, y = gdp_growth, col = as.factor(policy2))) + geom
 
 ### Oppgave 8:
 
-#Opprett nye variabler ved hjelp av matematisk transformasjoner av `policy`. Bruk `sqrt()`, `exp()` og `log()`. Kjør 
-#bivariate regresjoner mellom `policy()` og `gdp_growth()`. Endres resultatene med ulike versjoner av variabelen?
+#Opprett nye variabler ved hjelp av matematisk transformasjoner av `policy`. Bruk `sqrt()`, `exp()` og `log()`. Lag spredningsplot 
+# og tegn på bivariate regresjoner mellom `policy()` og `gdp_growth()`. Endres resultatene med ulike versjoner av variabelen?
 
 aidgrowth$policy_sqrt <- sqrt(aidgrowth$policy)
 aidgrowth$policy_e <- exp(aidgrowth$policy)
 aidgrowth$policy_log <- log(aidgrowth$policy)
 
-summary(lm(gdp_growth ~ policy, data = aidgrowth))      # positiv signifikant sammenheng
-summary(lm(gdp_growth ~ policy_sqrt, data = aidgrowth)) # positiv signifikant sammenheng
-summary(lm(gdp_growth ~ policy_e, data = aidgrowth))    # positiv signifikant sammenheng 
-summary(lm(gdp_growth ~ policy_log, data = aidgrowth))  # positiv signifikant sammenheng
-
 ## De matematiske transformasjonene gir variablene nye substansielle tolkninger, men 
 ## Vi ser at i alle tilfeller forblir den forventede effekten av bedre policy en økning i vekst. 
+
+ggplot(aidgrowth, aes(x = policy_sqrt, y = gdp_growth)) + geom_point() +
+  geom_smooth()
+
 
 ### Oppgave 9:
 
 #Lag nye datasett for 3 perioder (definert i variabelen `period`). Du kan bruke `subset()` til dette formålet. Gjenta 
-#oppgave 2 for disse datasettene, hvordan ser sammenhengen ut nå? Kommenter både plot og regresjon.  
+#oppgave 2 for disse datasettene, hvordan ser sammenhengen ut nå? Kommenter både plot, korrelasjon og regresjonslinje.  
 table(aidgrowth$period) # finner verdiene til periodevariabelen
 periode2 <- subset(aidgrowth, aidgrowth$period == 2)
 periode4 <- subset(aidgrowth, aidgrowth$period == 4)
@@ -308,8 +311,7 @@ ggplot(periode7, aes(x = aid, y = gdp_growth)) +
 cor.test(periode7$aid, periode7$gdp_growth) # negativ, signifikant korrelasjon
 
 
-#Kjør til slutt den bivariate regresjonen som du tegnet inn i plottet. 
-summary(m1f <- lm(gdp_growth ~ aid, data = periode7)) # negativ, signifikant effekt
+
 
 ### Oppgave 10:
 
@@ -322,7 +324,7 @@ summary(m1f <- lm(gdp_growth ~ aid, data = periode7)) # negativ, signifikant eff
 ## Svar:
 ## Vi starter med følgende sammenhenger: negativ sammenheng mellom bistand og vekst, negativ sammenheng mellom 
 ## bistand og makroøkonomisk politikk og positiv sammenheng mellom økonomisk politikk og vekst.
-## Vi ser at små endringer i regresjonsspessifikasjon kan få store utslag på resultatene våre. Særlig sammenhengen
+## Vi ser at små endringer kan få store utslag på resultatene våre. Særlig sammenhengen
 ## mellom bistand og vekst endret seg mye. I noen perioder er det ikke en negativ signikant sammenheng,
 ## mens sammenhengen samlet sett blir mye sterke negativ dersom du fjerner en observasjon av Botswana.
 ## De store endringene i effekten av aid gjør at man kan stille spørsmål ved hvorvidt data har nok informasjon

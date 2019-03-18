@@ -1,55 +1,61 @@
-# Seminar3
+---
+title: "Seminar3"
+output: 
+  html_document:
+    keep_md: TRUE
+---
 
 
 
 # Velkommen til 3. Seminar!
 
-FÃ¸rst: Er det noen spÃ¸rsmÃ¥l/kommentarer til hjemmeoppgavene?
+Først: Er det noen spørsmål/kommentarer til hjemmeoppgavene?
 
-I dagens seminar skal vi dekke fÃ¸lgende emner:
+I dagens seminar skal vi dekke følgende emner:
 
 1. [Dataanalyse i praksis](#praksis)
-2. [Regresjonsanalyse](#regresjon)
-3. [Omkoding](#omkoding)
-4. [Repetisjon](#repetisjon)
+2. [Omkoding](#omkoding)
+3. [Eksperimentell logikk](#eksperiment)
+4. [Aggregering og arrangering av data med dplyr](#dplyr)
+
 
 ## Dataanalyse i praksis
 
-I dette, og neste seminar, skal vi gjÃ¸re ekte forskning (riktignok forskning andre har gjort fÃ¸r oss). Vi skal jobbe med replikasjon av en publisert forskningsartikkel: 
+I dette, og neste seminar, skal vi gjøre ekte forskning (riktignok forskning andre har gjort før oss). Vi skal jobbe med replikasjon av en publisert forskningsartikkel: 
 *Burnside, C., & Dollar, D. (2000). Aid, policies, and growth. American economic review, 90(4), 847-868.*
 
-Valget av denne artikkelen er ikke tilfeldig, den er svÃ¦rt godt egnet til Ã¥ lÃ¦re dataanalyse med lineÃ¦r regresjon. Videre er datasettetsom ble brukt i artikkelen offentlig tilgjengelig.
+Valget av denne artikkelen er ikke tilfeldig, den er svært godt egnet til å lære dataanalyse med lineær regresjon. Videre er datasettetsom ble brukt i artikkelen offentlig tilgjengelig.
 
-Vi skal se nÃ¦rmere pÃ¥ en av hypotesene til **Burnside og Dollar (2000)**: *Effekten av bistand pÃ¥ Ã¸konomisk utvikling avhenger av den makroÃ¸konomiske politikken som fÃ¸res i landet som fÃ¥r bistand*.  
-Denne hypotesen testes i regresjonsmodell 5 fra tabell 4 pÃ¥ s. 856. Vi skal se pÃ¥ den fÃ¸rste spesifikasjonen av denne modellen (kolonnen **OLS**), som er en multivariat, lineÃ¦r regresjon med samspill. 
+Vi skal se nærmere på en av hypotesene til **Burnside og Dollar (2000)**: *Effekten av bistand på økonomisk utvikling avhenger av den makroøkonomiske politikken som føres i landet som får bistand*.  
+Denne hypotesen testes i regresjonsmodell 5 fra tabell 4 på s. 856. Vi skal se på den første spesifikasjonen av denne modellen (kolonnen **OLS**), som er en multivariat, lineær regresjon med samspill. 
 
-I dagens seminar, skal vi jobbe med Ã¥ forstÃ¥ grunnlaget for slutningene regresjonsmodell 5 gir oss. Vi kan skille mellom 2 fremgangsmÃ¥ter Ã¥ gjÃ¸re dette pÃ¥:
+I dagens seminar, skal vi jobbe med å forstå grunnlaget for slutningene regresjonsmodell 5 gir oss, uten å gjøre selve regresjonsanalysen. Vi kan skille mellom 2 fremgangsmåter å gjøre dette på:
 
-1. **Teoretisk**: les artikkel og kodebok (i dette tilfellet i artikkelen), og tenk gjennom grunnlaget for slutningene. Dette innebÃ¦rer Ã¥ stille spÃ¸rsmÃ¥l som dette: Hvilke valg (f.eks. spesifikasjon av variabler) tar forfatterne for Ã¥ kunne teste hypotesen sin? Hvilke andre valg kunne forfatterne tatt? GjÃ¸r forfatterne noen implisitte antagelser gjennom valgene sine? Er begrunnelsene for valgene forfatterne tar gode? Dersom du fikk tilgang pÃ¥ all informasjon du hadde lyst pÃ¥, og kunne lage et eksperiment, hvordan ville du godt frem? Hvordan skiller den faktiske analysen seg fra den ideelle analysen? 
-2. **Vurdering av den empiriske slutningen (ved hjelp av R)**: Vi kan bruke deskriptiv statistikk, plotting og regresjonsdiagnostikk til Ã¥ Ã¸ke forstÃ¥elsen vÃ¥r av datagrunnlaget for slutningen fra modell 5. Ved Ã¥ studere data nÃ¦rmere, kan vi fÃ¥ et inntrykk av om sammenhengen virker robust. Videre kan vi teste konsekvensen av Ã¥ gjÃ¸re andre valg enn det forfatterne av en artikkel gjorde, for eksempel ved Ã¥ legge inn eller fjerne kontrollvariabler, eller kode variabler pÃ¥ andre mÃ¥ter enn det forfatterne gjorde. Dersom vi synes at kodingen av en variabel er vilkÃ¥rlig fordi den mangler en god begrunnelse,  kan vi teste om slutningene regresjonsmodellen gir er robust til omkoding av variabelen. 
+1. **Teoretisk**: les artikkel og kodebok (i dette tilfellet i artikkelen), og tenk gjennom grunnlaget for slutningene. Dette innebærer å stille spørsmål som dette: Hvilke valg (f.eks. spesifikasjon av variabler) tar forfatterne for å kunne teste hypotesen sin? Hvilke andre valg kunne forfatterne tatt? Gjør forfatterne noen implisitte antagelser gjennom valgene sine? Er begrunnelsene for valgene forfatterne tar gode? Dersom du fikk tilgang på all informasjon du hadde lyst på, og kunne lage et eksperiment, hvordan ville du godt frem? Hvordan skiller den faktiske analysen seg fra den ideelle analysen? 
+2. **Vurdering av den empiriske slutningen (ved hjelp av R)**: Vi kan bruke deskriptiv statistikk, plotting og regresjonsdiagnostikk til å øke forståelsen vår av datagrunnlaget for slutningen fra modell 5. Ved å studere data og statistikker for regresjon nærmere, kan vi få et inntrykk av om sammenhengen virker robust. Videre kan vi teste konsekvensen av å gjøre andre valg enn det forfatterne av en artikkel gjorde, for eksempel ved å legge inn eller fjerne kontrollvariabler, eller kode variabler på andre måter enn det forfatterne gjorde. Dersom vi synes at kodingen av en variabel er vilkårlig fordi den mangler en god begrunnelse,  kan vi teste om slutningene regresjonsmodellen gir er robust til omkoding av variabelen. 
 
-En god vurdering av den empiriske stÃ¸tten for en statistisk modell bÃ¸r inneholde bÃ¥de en vurdering av det teoretiske grunnlaget for slutningen, og en vurdering av den faktiske empiriske slutningen. Selv om vi ofte fÃ¥r informasjon som gir oss noe grunnlag for Ã¥ vurdere den empiriske slutningen, er det stort sett alltid mer Ã¥ hente ved Ã¥ undersÃ¸ke grunnlaget for den statistiske slutningen selv.
+En god vurdering av den empiriske støtten for en statistisk modell bør inneholde både en vurdering av det teoretiske grunnlaget for slutningen, og en vurdering av den faktiske empiriske slutningen. Selv om vi ofte får informasjon som gir oss noe grunnlag for å vurdere den empiriske slutningen, er det stort sett alltid mer å hente ved å undersøke grunnlaget for den statistiske slutningen selv. 
 
-I oppgavene til dagens seminar skal vi fÃ¸rst og fremst se pÃ¥ univariate og bivariate sammenhenger, men det er ogsÃ¥ noen multivariate slutninger. Det viktigste med tanke pÃ¥ R-prÃ¸ven, er Ã¥ forstÃ¥ hvordan koden fungerer, dere trenger ikke henge dere altfor mye opp i det empiriske grunnlaget for slutningen i modell 5 om dere ikke har lyst. Jeg vil likevel pÃ¥stÃ¥ at det er vel verdt Ã¥ bruke tid pÃ¥ Ã¥ forstÃ¥ dataanalysene vi gjennomfÃ¸rer i dette og neste seminar, da det kan gi dere en Ã¸kt forstÃ¥else av regresjonsanalyse, og dataanalyse generelt. 
+I oppgavene til dagens seminar skal vi først og fremst se på univariate og bivariate sammenhenger, men det er også noen multivariate slutninger. Det viktigste med tanke på R-prøven, er å forstå hvordan koden fungerer, dere trenger ikke henge dere altfor mye opp i det empiriske grunnlaget for slutningen i modell 5 om dere ikke har lyst. Jeg vil likevel påstå at det er vel verdt å bruke tid på å forstå dataanalysene vi gjennomfører i dette og neste seminar, da det kan gi dere en økt forståelse av regresjonsanalyse, og dataanalyse generelt. 
 
 ## Omkoding av variabler
 
-For Ã¥ spesifisere regresjonsmodell 5 hos **Burnside og Dollar (2000)**, mÃ¥ vi fÃ¸rst gjÃ¸re noen omkodinger. Dersom dere leser artikkelen, vil dere se at nÃ¸dvendigheten av alle disse omkodingene ikke fremgÃ¥r av beskrivelsen av modellen. Det burde det ha gjort. Dersom vi ikke helt vet hvordan en regresjon er spesifisert, kan vi ikke vurdere alle forutsetningene for slutningene modellen gir. Heldigvis muliggjÃ¸r omkoding av variabler i datasettet som fÃ¸lger med artikkelen replikasjon av modell 5. Jeg skal nÃ¥ vise disse omkodingene. Jeg har gjemt koden for Ã¥ laste inn datasettet, siden det er den fÃ¸rste oppgaven til dagens seminar. Jeg har kalt datasettet for **aidgrowth**
+For å spesifisere regresjonsmodell 5 hos **Burnside og Dollar (2000)**, må vi først gjøre noen omkodinger. Dersom dere leser artikkelen, vil dere se at nødvendigheten av alle disse omkodingene ikke fremgår av beskrivelsen av modellen. Det burde de ha gjort. Dersom vi ikke helt vet hvordan en regresjon er spesifisert, kan vi ikke vurdere alle forutsetningene for slutningene modellen gir. Heldigvis muliggjør omkoding av variabler i datasettet som følger med artikkelen replikasjon av modell 5. Jeg skal nå vise disse omkodingene. Jeg har gjemt koden for å laste inn datasettet, siden det er den første oppgaven til dagens seminar. Jeg har kalt datasettet for **aidgrowth**
 
 
 
 
-Vi skal se pÃ¥ eksempler pÃ¥ tre forskjellige typer omkodinger. Jeg legger ut en mer komplett liste over funksjoner for omkodinger i et oversiktsdokument.
+Vi skal se på eksempler på tre forskjellige typer omkodinger. Jeg legger ut en mer komplett liste over funksjoner for omkodinger i et oversiktsdokument.
 
 ### Omkoding av variabler med matematiske transformasjoner
 
-NÃ¥r vi omkoder variabler i et datasett, har vi lyst til Ã¥ opprette en ny variabel. Dersom vi ikke gjÃ¸r dette, erstatter vi informasjonen i den opprinnelige variabelen. Informasjonen i den opprinnelige variabelen er uunvÃ¦rlig for Ã¥ teste at omkodingen har fungert som vi Ã¸nsker. Den er enda mer uunvÃ¦rlig dersom vi har gjort en feil som vi ikke kan rette opp uten den opprinnelige variabelen (dette hender). Derfor er syntaksen for Ã¥ omkode en variabel som fÃ¸lger:
+Når vi omkoder variabler i et datasett, har vi lyst til å opprette en ny variabel. Dersom vi ikke gjør dette, erstatter vi informasjonen i den opprinnelige variabelen. Informasjonen i den opprinnelige variabelen er uunværlig for å teste at omkodingen har fungert som vi ønsker. Den er enda mer uunværlig dersom vi har gjort en feil som vi ikke kan rette opp uten den opprinnelige variabelen (dette hender). Derfor er syntaksen for å omkode en variabel som følger:
 
 ```r
 data$ny_omkodet_variabel <- funksjon_for_omkoding(data$gammel_variabel)
 ```
 
-Den fÃ¸rste omkodingen vi skal gjÃ¸re er en matematisk transformasjon av en variabel. Her skal vi gjÃ¸re en logtransformasjon av BNP per capita (GDP er engelsk for BNP):
+Den første omkodingen vi skal gjøre er en matematisk transformasjon av en variabel. Her skal vi gjøre en logtransformasjon av BNP per capita (GDP er engelsk for BNP):
 
 
 ```r
@@ -57,7 +63,7 @@ aidgrowth$gdp_pr_capita_log <- log(aidgrowth$gdp_pr_capita)
 # lager ny variabel, som er en logtransformasjon av eksisterende variabel i datasettet
 ```
 
-NÃ¥r du har omkodet en variabel, er det lurt Ã¥ sjekke at du har gjort riktig. Vi kan gjÃ¸re dette med en tabell. Dersom vi ikke spesifiserer et tilleggsargument, gir funksjonen `log()` den naturlige logaritmen til en variabel. Vi kan dermed sjekke om antilogaritmen til den omkodede variabelen som vi fÃ¥r med `exp()`, er lik den opprinnelige variabelen:
+Når du har omkodet en variabel, er det lurt å sjekke at du har gjort riktig. Vi kan gjøre dette med en tabell. Dersom vi ikke spesifiserer et tilleggsargument, gir funksjonen `log()` den naturlige logaritmen til en variabel. Vi kan dermed sjekke om antilogaritmen til den omkodede variabelen som vi får med `exp()`, er lik den opprinnelige variabelen:
 
 
 ```r
@@ -81,7 +87,7 @@ table(exp(aidgrowth$gdp_pr_capita_log) == aidgrowth$gdp_pr_capita)
 ##   266    58
 ```
 
-Vi kunne ogsÃ¥ gjort testet omkodingen pÃ¥ andre mÃ¥ter. NÃ¥r man gjÃ¸r helt enkle omkodinger er det viktigste gjerne Ã¥ sjekke om det har skjedd noe rart i R. Her ser vi at det kan ha skjedd noe rart, det fremgÃ¥r ogsÃ¥ i koden som viser logikken til testen. La oss se nÃ¦rmere pÃ¥ hva som skjer:
+Vi kunne også gjort testet omkodingen på andre måter. Når man gjør helt enkle omkodinger er det viktigste gjerne å sjekke om det har skjedd noe rart i R. Her ser vi at det kan ha skjedd noe rart, det fremgår også i koden som viser logikken til testen. La oss se nærmere på hva som skjer:
 
 
 ```r
@@ -108,7 +114,7 @@ round(exp(1.098612)) == 3
 ## [1] TRUE
 ```
 
-Her har det skjedd en avrundingsfeil, 3 blir til `2.99999`. La oss spesifisere testen  pÃ¥ nytt, med avrunding:
+Her har det skjedd en avrundingsfeil, 3 blir til `2.99999`. La oss spesifisere testen  på nytt, med avrunding:
 
 ```r
 ## Ny teste av omkoding
@@ -121,12 +127,12 @@ table(round(exp(aidgrowth$gdp_pr_capita_log)) == aidgrowth$gdp_pr_capita)
 ##  324
 ```
 
-Heldigvis se det ut som om onkodingen vÃ¥r virket! Denne testen viser viktigheten av Ã¥ holde tungen bent i munnen, og av Ã¥ forstÃ¥ hva som skjer bÃ¥de i R og i testen. PÃ¥ prÃ¸ven kommer jeg ikke til Ã¥ be om tester av omkodinger med denne typen R-komplikasjoner, men det er viktig Ã¥ vite om at slike tilfeller kan forekomme.
+Heldigvis se det ut som om onkodingen vår virket! Denne testen viser viktigheten av å holde tungen bent i munnen, og av å forstå hva som skjer både i R og i testen. På prøven kommer jeg ikke til å be om tester av omkodinger med denne typen R-komplikasjoner, men det er viktig å vite om at slike tilfeller kan forekomme.
 
 
 ### Omkoding med ifelse()
 
-En svÃ¦rt nyttig funksjon til omkoding, er `ifelse()`. Denne funksjonen har fÃ¸lgende syntaks: 
+En svært nyttig funksjon til omkoding, er `ifelse()`. Denne funksjonen har følgende syntaks: 
 
 ```r
 data$ny_omkodet_variabel <- ifelse(data$gammel_variabel == "logisk test", output hvis resultat av logisk test er TRUE, output hvis resultat av logisk test er FALSE)
@@ -134,7 +140,7 @@ data$ny_omkodet_variabel <- ifelse(data$gammel_variabel == "logisk test", output
 # Man kan spesifisere alle slags logiske tester med gammel_variabel)
 ```
 
-Vi skal lage en variabel for regioner, basert pÃ¥ regionsdummyene `sub_saharan_africa` og `fast_growing_east_asia`:
+Vi skal lage en variabel for regioner, basert på regionsdummyene `sub_saharan_africa` og `fast_growing_east_asia`:
 
 
 ```r
@@ -180,7 +186,7 @@ table(aidgrowth$regions, aidgrowth$fast_growing_east_asia)
 ```
 
 ### Omkoding av klasse 
-Vi har lyst til at R automatisk skal lage dummyer av regionsvariabelen vÃ¥r nÃ¥r vi gjÃ¸r regresjonsanalyse. Da mÃ¥ den vÃ¦re av klassen `factor`. La oss teste om variabelen har denne klassen:
+Vi har lyst til at R automatisk skal lage dummyer av regionsvariabelen vår når vi gjør regresjonsanalyse. Da må den være av klassen `factor`. La oss teste om variabelen har denne klassen:
 
 ```r
 class(aidgrowth$regions)
@@ -189,7 +195,7 @@ class(aidgrowth$regions)
 ```
 ## [1] "character"
 ```
-Vi ser at variabelen har klassen `character`. Vi kan endre klasse pÃ¥ en variabel med funksjoner som heter `as.klassenavn`. Her trenger vi funksjonen `as.factor`. La oss lage en ny variabel med denne omkodingen:
+Vi ser at variabelen har klassen `character`. Vi kan endre klasse på en variabel med funksjoner som heter `as.klassenavn`. Her trenger vi funksjonen `as.factor`. La oss lage en ny variabel med denne omkodingen:
 
 
 ```r
@@ -221,119 +227,239 @@ levels(aidgrowth$regions_f)
 ## [1] "Other"              "East Asia"          "Sub-Saharan Africa"
 ```
 
-Vi har nÃ¥ gjennomfÃ¸rt omkodingene som er nÃ¸dvendig for Ã¥ spesifisere regresjonsmodell 5 i artikkelen til Burnside og Dollar 2000.
+Vi har nå gjennomført omkodingene som er nødvendig for å spesifisere regresjonsmodell 5 i artikkelen til Burnside og Dollar 2000.
 
 
-## Regresjonsanalyse
+## Eksperimentell logikk
 
-Syntaksen for regresjonsanalyse er som fÃ¸lger:
+Forestill deg at du kunne gjøre akkurat hva du ville. Hvordan ville du da ha testet følgende hypotese: *bistand fører til økt økonomisk utvikling*?
 
+Fra forelsningen til Tore - oppskrift for kausalitet:
 
-```r
-lm(avh.var ~ uavh.var1, data = datasett) # bivariat
-lm(avh.var ~ uavh.var1 + uavh.var2, data = datasett) # multivariat
-lm(avh.var ~ uavh.var1 * uavh.var2, data = datasett) # samspill
-lm(avh.var ~ uavh.var1 + I(uavh.var1^2) , data = datasett) # andregradsledd
-```
-
-Funksjonen for lineÃ¦r regresjon er `lm`, avhengig variabel spesifiseres fÃ¸rst, deretter kommer `~`. etterfulgt av de uavhengige variablene. Til slutt har jeg lagt inn et argument som lar oss spesifisere datasett, slik at vi slipper Ã¥ indeksere alle variablene i regresjonsligningen. Det finnes ogsÃ¥ flere argumenter, blant annet for missing data. Sjekk med `?lm()`  
+1. Mekanisme - Bistand gjør at land kan investere mer i produksjonsmidler, folkehelse, utdanning og andre vekstfremmende tiltak. Land vil velge å gjennomføre vekstfremmende tiltak med mer penger.
+2. Motsatt kausalitet: Vi gjennomfører et eksperiment, der vi tilfeldig velger om land skal få bistand eller ikke. Vi bestemmer også at veksten land opplever ikke skal bestemme hvor mye bistandspenger de får (dvs. at det bare er vi som får gi bistand).
+3. Korrelasjon - Vi skal undersøke korrelasjonen i et eksperiment
+4. Andre variable kan forklare sammenhengen - Fordi vi som forskere skal randomisere hvem som får bistand, er det ingen sammenheng mellom bistand og andre variabler som kan påvirke økonomisk vekst.
 
 
-Vi har ofte lyst til Ã¥ lagre output fra regresjonsanalyser som objekter. Regresjonsobjekter er en egen type objekt, men generiske funksjoner, som `summary()`, `names()` og `str()` virker ogsÃ¥ pÃ¥ denne typen objekter. Her er syntaks for Ã¥ lage og jobbe med regresjonsobjekter:
+Vi kan tenke oss flere forskjellige varianter av et eksperiment, vi kunne for eksempel delt land inn i grupper som fikk ulik mengde bistand. Her skal vi tenke oss et svært enkelt eksperiment - vi tar landene i utvalget til Burnside og Dollar. Tenk dere at disse landene er et tilfeldig utvalg, selv om de ikke er det. Del landene i en kontrollgruppe og en behandlingsgruppe. Landene i behandlingsgruppen får bistand, mens landene i kontrollgruppen får ingen bistand (heller ikke av andre). 
+
 
 
 ```r
-## For Ã¥ lagre som objekt:
-modell1 <- lm(avh.var ~ uavh.var1, data = datasett)
+## Eksperiment:
+land <- unique(aidgrowth$country) # unique() henter ut alle unike verdier i en variabel
 
-## For Ã¥ hente ut resultatene:
-summary(modell1)
-## For Ã¥ se nÃ¦rmere pÃ¥ innholdet i et regresjonsobjekt:
-str(modell1)
-names(modell1)
-plot(modell1)
+# Randomisering
+
+bistand <- rnorm(n = 56) # rnorm trekker n verdier tilfeldig fra en normalfordeling
+
+# Vi bestemmer at alle land som har verdi høyere enn medianen til denne tilfeldige variabelen skal få bistand, mens andre land ikke skal få det. Denne randomiseringen gir oss en behandlingsgruppe, og en kontrollgruppe:
+bistand <- ifelse(bistand> median(bistand), 1, 0)
+table(bistand) 
 ```
 
-La oss nÃ¥ fÃ¸rst spesifisere en bivariat regresjon mellom bistand og Ã¸konomisk vekst, fÃ¸r vi ser pÃ¥ modell 5 fra **Burnside og Dollar (2000)**:
+```
+## bistand
+##  0  1 
+## 28 28
+```
+
+Simulering - statisk simulering innebærer at vi forestiller oss en prosess med elementer av sannsynlighet, og bruker et statistikkprogramm til å undersøke resultatet av prosessen. R lar oss gjennomføre statistisk simulering. Vi kan ikke gjennomføre eksperimentet vi tenkte oss over fordi vi ikke har blitt enerådende verdensherskere enda, og fordi det er totalt uetisk. Vi kan imidlertid bruke simulering til å tenke oss hva som hadde skjedd dersom vi gjennomførte et slikt eksperiment.  Selv om Burnside og Dollar umulig kunne ha gjennomført dette eksperimentet, er det nyttig å sammenligne det vi ideelt sett skulle ha gjort for å estimere kausaleffekter med et eksperiment, med det som faktisk gjøres. Alle vesentlige forskjeller kan bidra til å gjøre det mindre plausiblet at den ikke-eksperimentelle metoden ikke estimerer kausaleffekter korrekt.
+
+I den statiske simuleringen er vi allmektige, vi må definere den probabilistiske prosessen som ligger til grunn for kausaleffekten av bistand på økonomisk vekst. La oss bestemme at effekten av bistand på vekst er sterkt positiv i gjennomsnitt, men at effekten av bistand varierer noe mellom land - effekten er heterogen. Dette fører til probabilistisk kausalitet (jf. Tore sin forelesning). Jeg legger også til enda et probabilistisk komponent, ved å la vekst uten bistand variere tilfeldig.
 
 
 ```r
-m1 <- lm(gdp_growth ~ aid, data = aidgrowth)
-summary(m1)
+## Definerer sann verdi for økonomisk vekst uten bistand, for alle land
+
+vekst_kontroll <- rnorm(n = 56, 
+                        mean= mean(aidgrowth$gdp_growth, na.rm = T),
+                        sd(aidgrowth$gdp_growth, na.rm = T)) # standard normalfordeling, vekst er helt tilfeldig fordelt, men har gjennomsnitt og standardavvik som i det faktiske utvalget til Burnside og Dollar
+
+##Introduserer kausal heterogenitet - effekten land får av bistand varierer mellom land, men standardavviket er bare på 0.5
+heterogenitet <- rnorm(n = 56, mean = 0, sd = 0.5)
+
+## Definerer sann verdi for økonomisk vekst uten bistand, for alle land. Denne effekten er i utgangspunktet 2.5 for alle land, men varierer litt +/- heterogeniteten. Legger også til vekst_kontroll, fordi veksten som kommer av behandling kommer på toppen av effekten i kontrollgruppen.
+
+vekst_behandling <- 2.5*bistand + heterogenitet + vekst_kontroll
+
+# Den sanne effekten for hvert land, er differansen mellom vekst med bistand og uten bistand
+effekt_bistand <- vekst_behandling - vekst_kontroll
+
+# Vi kan imidlertid bare observere et av utfallene for hvert land, samme land kan ikke både være i kontrollgruppe og behandlingsgruppe. Definerer derfor den veksten vi faktisk ser
+
+observert_vekst <- ifelse(bistand == 1, vekst_behandling, vekst_kontroll)
+
+utvikling <- data.frame(land, bistand, vekst_behandling, vekst_kontroll, effekt_bistand, observert_vekst)
+rm(land, bistand, vekst_behandling, vekst_kontroll, effekt_bistand, observert_vekst)
+```
+
+
+```r
+# Ser på resultater:
+summary(utvikling$effekt_bistand) # den ekte effekten 
 ```
 
 ```
-## 
-## Call:
-## lm(formula = gdp_growth ~ aid, data = aidgrowth)
-## 
-## Residuals:
-##     Min      1Q  Median      3Q     Max 
-## -12.813  -2.181   0.144   2.153  15.443 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(>|t|)    
-## (Intercept)   1.5570     0.2730   5.704 2.64e-08 ***
-## aid          -0.2993     0.1036  -2.889  0.00412 ** 
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## Residual standard error: 3.711 on 323 degrees of freedom
-##   (6 observations deleted due to missingness)
-## Multiple R-squared:  0.02519,	Adjusted R-squared:  0.02218 
-## F-statistic: 8.348 on 1 and 323 DF,  p-value: 0.004122
+##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -0.72830  0.02858  1.28668  1.21138  2.42763  3.00169
 ```
 
 ```r
-m5 <- lm(gdp_growth ~ gdp_pr_capita_log + ethnic_frac * assasinations +
-               institutional_quality + m2_gdp_lagged + regions + policy * aid +
-               as.factor(period),
-             data = aidgrowth, na.action = "na.exclude") 
-# Argumentet na.action = "na.exclude" spesifiserer at missing-verdier skal ekskluderes.
-summary(m5)
+library(dplyr)
 ```
 
 ```
 ## 
-## Call:
-## lm(formula = gdp_growth ~ gdp_pr_capita_log + ethnic_frac * assasinations + 
-##     institutional_quality + m2_gdp_lagged + regions + policy * 
-##     aid + as.factor(period), data = aidgrowth, na.action = "na.exclude")
-## 
-## Residuals:
-##      Min       1Q   Median       3Q      Max 
-## -10.7213  -1.6078  -0.1369   1.5895  12.0507 
-## 
-## Coefficients:
-##                           Estimate Std. Error t value Pr(>|t|)    
-## (Intercept)                4.69849    3.02355   1.554 0.121443    
-## gdp_pr_capita_log         -0.59961    0.39262  -1.527 0.127965    
-## ethnic_frac               -0.42359    0.81009  -0.523 0.601507    
-## assasinations             -0.44895    0.30119  -1.491 0.137311    
-## institutional_quality      0.68684    0.17452   3.936 0.000107 ***
-## m2_gdp_lagged              0.01222    0.01627   0.751 0.453130    
-## regionsOther              -1.30739    0.73063  -1.789 0.074747 .  
-## regionsSub-Saharan Africa -3.17987    0.88895  -3.577 0.000416 ***
-## policy                     0.71245    0.24359   2.925 0.003760 ** 
-## aid                       -0.02078    0.17808  -0.117 0.907182    
-## as.factor(period)3        -0.01252    0.61994  -0.020 0.983901    
-## as.factor(period)4        -1.41449    0.62920  -2.248 0.025434 *  
-## as.factor(period)5        -3.46987    0.64085  -5.415 1.43e-07 ***
-## as.factor(period)6        -2.01030    0.66149  -3.039 0.002622 ** 
-## as.factor(period)7        -2.25625    0.70848  -3.185 0.001631 ** 
-## ethnic_frac:assasinations  0.79154    0.62031   1.276 0.203111    
-## policy:aid                 0.18622    0.10113   1.841 0.066752 .  
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## Residual standard error: 2.873 on 253 degrees of freedom
-##   (61 observations deleted due to missingness)
-## Multiple R-squared:  0.3944,	Adjusted R-squared:  0.3561 
-## F-statistic:  10.3 on 16 and 253 DF,  p-value: < 2.2e-16
+## Attaching package: 'dplyr'
 ```
 
-I dagens seminar trenger dere ikke Ã¥ forstÃ¥ denne regresjonen, men dere skal jobbe med variablene fra regresjonsmodellen.
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
+# group_by() fra dplyr lar oss aggregere - se neste seksjon!
+gj_effekt <- utvikling %>% 
+  group_by(bistand) %>%
+  summarise(snitt = mean(observert_vekst))
+# Den observerte gjennomsnittseffekten: Gjennomsnittseffekten finner vi ved å ta  differansen mellom gjennomsnittsvekst for kontroll- og behandlingsgruppe 
+gj_effekt$snitt[2] - gj_effekt$snitt[1]
+```
+
+```
+## [1] 4.378113
+```
+
+
+
+
+```r
+# ser på resultater med plot, geom_boxplot
+library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.5.2
+```
+
+```r
+utvikling$bistand <- as.factor(utvikling$bistand)
+ggplot(utvikling, aes(x = bistand, y = observert_vekst)) + geom_boxplot()
+```
+
+![](Seminar3_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+
+
+
+<img src="../bilder/sem3.png" width="2100" />
+
+Merk: den observerte gjennomsnittseffekten og den sanne gjennomsnittseffekten blir likere dess større utvalg vi har i eksperimentet vårt. Test dette selv, ved å lage en ny simulering med flere land (du kan f.eks. starte fra `land <- 1:200`), og husk å endre på n i `rnorm()`! 
+
+
 
  
+## Aggregering og arrangering av data med dplyr
+
+I [introduksjonen til seminar 2](https://github.com/langoergen/stv1020R/blob/master/for_seminaret/Introduksjon_seminar2.md) viste jeg hvordan du kan indeksere data med dplpyr pipelines, og funksjonene `select()` og `filter()`. Her viser jeg noen flere nyttige teknikker som kan brukes i `dplyr()` pipelines.
+
+### Aggregering av data
+
+Aggregering av data betyr at vi grupperer data med utgangspunkt i variabelverdier (med `group_by`), og deretter bruker ulike statistikker for hver gruppe(til dette bruker vi `summarise()`, som vi setter andre funksjoner, f.eks. `median()` inn i).
+
+Her viser jeg hvordan vi kan gruppere bilene i `mtcars` etter antall sylindre, og regne ut gjennomsnittlig bruk av drivstoff (mpg - miles per gallon) for hver gruppe:
+
+
+```r
+library(dplyr)
+mtcars %>%
+  group_by(cyl) %>%
+  summarise(mpg_snitt = mean(mpg),
+            mpg_median = median(mpg)) 
+```
+
+```
+## # A tibble: 3 x 3
+##     cyl mpg_snitt mpg_median
+##   <dbl>     <dbl>      <dbl>
+## 1     4      26.7       26  
+## 2     6      19.7       19.7
+## 3     8      15.1       15.2
+```
+
+Når vi aggregerer, produserer vi et nytt datasett, på gruppenivå. Vi bestemmer hvilke informasjon vi vil ta med oss, ved å definere variabler med `varnavn = funksjon(gammel_var)` inn i `summarise`. Her er `funksjon(gammel_var)` en funksjon som lar oss oppsummere informasjon om hver gruppe i et enkelt tall, f.eks. `sum()` eller `mean()`.
+
+
+### Arrangering av data
+
+`arrange()` lar deg ordne et datasett etter verdier på angitte variabler. Denne funksjonen stammer også fra `dplyr`, men her trenger vi ikke `%>%`, fordi vi bare utfører en operasjon. Ved å sette inn `desc(var)`, angir vi at vi skal sortere på variabelen i synkende rekkefølge, default er stigende.
+
+
+```r
+mtcars
+```
+
+```
+##                      mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+## Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+## Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+## Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+## Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+## Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+## Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+## Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+## Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+## Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+## Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+## Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+## Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+## Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+## Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+## Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+## Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+## Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+## AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+## Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+## Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+## Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+## Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+## Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+## Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+## Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+```
+
+```r
+biler  <- arrange(mtcars, cyl, disp)
+biler2 <- arrange(mtcars, desc(disp))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
