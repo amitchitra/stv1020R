@@ -3,7 +3,7 @@
 ########################################
 
 ## I dette scriptet lærer du to nye argumenter til ggplot, samt funksjonen subset.
-## Du får også repetert ifelse() og lm()
+## Du får også repetert ifelse() og og sett lm() i praksis (lm er beskrevet i introduksjonen til seminar 4). 
 ## Dersom du har lyst, kan du også lære mer om hvordan en regresjonsanalyse fungerer,
 ## både visuelt og statistisk, i oppgave 4. Denne oppgaven er imidlertid valgfri 
 

@@ -1,0 +1,79 @@
+---
+title: "Før seminar 4"
+author: "Erlend Langørgen"
+date: "March 28, 2019"
+output: 
+  html_document:
+    keep_md: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Regresjonsanalyse
+
+I denne introduksjonen, forklarer jeg lineær regresjonsanalyse med R. 
+
+Syntaksen for regresjonsanalyse er som følger:
+
+```{r, eval = F}
+lm(avh.var ~ uavh.var1, data = datasett) # bivariat
+lm(avh.var ~ uavh.var1 + uavh.var2, data = datasett) # multivariat
+lm(avh.var ~ uavh.var1 * uavh.var2, data = datasett) # samspill
+lm(avh.var ~ uavh.var1 + I(uavh.var1^2) , data = datasett) # andregradsledd
+```
+
+Funksjonen for lineær regresjon er `lm`, avhengig variabel spesifiseres først, deretter kommer `~`. etterfulgt av de uavhengige variablene. Til slutt har jeg lagt inn et argument som lar oss spesifisere datasett, slik at vi slipper å indeksere alle variablene i regresjonsligningen. Det finnes også flere argumenter, blant annet for missing data. Sjekk med `?lm()`  
+
+
+Vi har ofte lyst til å lagre output fra regresjonsanalyser som objekter. Regresjonsobjekter er en egen type objekt, men generiske funksjoner, som `summary()`, `names()` og `str()` virker også på denne typen objekter. Her er syntaks for å lage og jobbe med regresjonsobjekter:
+
+```{r, eval = F}
+## For å lagre som objekt:
+modell1 <- lm(avh.var ~ uavh.var1, data = datasett)
+
+## For å hente ut resultatene:
+summary(modell1)
+
+## Begge deler samtidig:
+summary(modell1 <- lm(avh.var ~ uavh.var1, data = datasett))
+
+## For å se nærmere på innholdet i et regresjonsobjekt:
+str(modell1)
+names(modell1)
+plot(modell1)
+```
+
+La oss nå først spesifisere en bivariat regresjon mellom bistand og økonomisk vekst, før vi ser på modell 5 fra **Burnside og Dollar (2000)**:
+
+```{r}
+# Last inn "aidgrowth2.csv" eller "aidgrowth2.Rdata" -
+# I disse datasettene har jeg lagret region-variabelen vi opprettet 
+# forrige seminar
+aidgrowth <- read.csv("https://raw.githubusercontent.com/langoergen/stv1020R/master/data/aidgrowth2.csv",
+                      stringsAsFactors = F) # Dette argumentet gjør at variabler som ser ut som tekst lese inn med klassen character i stedet for factor.
+
+# Bivariat regresjon
+
+m1 <- lm(gdp_growth ~ aid, data = aidgrowth)
+summary(m1)
+
+# Multivariat regresjon
+
+# Må gjøre en omkoding for å kunne kjøre modellen:
+aidgrowth$gdp_pr_capita_log <- log(aidgrowth$gdp_pr_capita)
+
+m5 <- lm(gdp_growth ~ gdp_pr_capita_log + ethnic_frac * assasinations +
+               institutional_quality + m2_gdp_lagged + region + policy * aid +
+               as.factor(period),
+             data = aidgrowth, na.action = "na.exclude") 
+# Argumentet na.action = "na.exclude" spesifiserer at missing-verdier skal ekskluderes.
+summary(m5)
+```
+
+I seminar 4 trenger dere ikke å forstå alt som foregår i denne regresjonen, men dere skal jobbe med variablene fra regresjonsmodellen.
+
+ 
+
+

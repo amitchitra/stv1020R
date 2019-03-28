@@ -3,7 +3,7 @@
 ########################################
 
 ## I dette scriptet lærer du to nye argumenter til ggplot, samt funksjonen subset.
-## Du får også repetert ifelse() og lm()
+## Du får også repetert ifelse() og sett lm() i praksis (lm er beskrevet i introduksjonen til seminar 4). 
 ## Dersom du har lyst, kan du også lære mer om hvordan en regresjonsanalyse fungerer,
 ## både visuelt og statistisk, i oppgave 4. Denne oppgaven er imidlertid valgfri 
 
@@ -83,6 +83,8 @@ ggplot(aidgrowth, aes(x = aid, y = gdp_growth)) +
 ##### Oppgave 4 ###############
 ###############################
   
+## Se introduksjon til seminar 4 før du løser denne oppgaven, der forklares lm()
+
 ## Les koden så raskt eller så grundig som du ønsker. Ved å se nøye på resultatene av koden
 ## kan du få økt forståelse av hva kontrollvariabler gjør i lineær regresjon.  
   
