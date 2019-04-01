@@ -231,6 +231,9 @@ aidgrowth2$reg_miss <- aidgrowth2 %>%
 ```
 
 
+**Oppgave:** lag et spredningsplot basert på `aidgrowth2`, med `aid` på x-aksen, og `gdp_growth` på y-aksen. Fargelegg punktene ut fra verdi på variabelen `reg_miss`. Du kan også forsøke å inkludere `size = policy` i aes().
+
+
 For å se hva som finnes av output i regresjonsobjektet, kan vi bruke `str()` eller `names()`. Merk at vi nå har et objekt av en ny klasse. Legg også merke til at det er forskjell på informasjonen i selve regresjonsobjektet, og i summary av regresjonsobjektet.
 
 ```{r}
@@ -251,17 +254,25 @@ Vi har tidligere brukt `cor()` funksjonen til å se på korrelasjon (Pearsons' R
 cor(aidgrowth2[,3:13], use = "pairwise.complete.obs")
 ```
 
+**Oppgave:** Lag en korrelasjonsmatrise lik matrisen over, bortsett fra at du setter `use = complete.obs`. Sammenlign resultatet med en korrelasjonsmatrise du lager med utgangspunkt i `reg_data` (opprettet over, men du må indeksere bort ikke-numeriske variabler) der du setter `use = "everything"`. Diskuter med naboen. 
 
 
+## Oppgave:
+
+Kjør den bivariate regresjonen mellom `aid` og `gdp_growth` og den samme regresjonsanalysen som Burnside og Dollar separat for de ulike kategoriene på `region` (ikke kontroller for region). Bruk gjerne `dplyr` med `filter()` for å opprette nye datasett. Bruk deretter `group_by()` og `summarise()`, gjennomgått [her](https://github.com/langoergen/stv1020R/blob/master/docs/Seminar3.md) til å aggregere alle de numeriske variablene til regions-nivå.
+
+Gjør deretter tilsvarende øvelse for variabelen `period`.
 
 ## Bonus:
+
+Dersom du får tid til overs:
 
 vi kan bruke `predict()` til å finne predikerte verdier på avhengig variabel, gitt verdier på uavhengige variabler og en estimert regresjonsanalyse. I [dette dokumentet](https://github.com/martigso/stv4020aR/blob/master/Gruppe%201/docs/Regresjonsplot.md) viser jeg hvordan vi kan bruke `predict()` til å lage fine `ggplot()` for å illustrere effektene i regresjonsanalyser. Merk at dette er nødvendig i multivariat regresjon, da `geom_smooth(method = "lm")` bare plotter bivariat regresjon mellom variabel på x-akse og y-akse
 
 
 
-## Oppgave:
 
-Kjør den samme regresjonsanalysen som Burnside og Dollar separat for land sør for sahara, ikke kontroller for region. Bruk gjerne `dplyr` med `filter()` for å opprette nye datasett.
+
+
 
 
