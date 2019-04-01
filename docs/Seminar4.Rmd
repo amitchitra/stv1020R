@@ -5,7 +5,9 @@ output:
     keep_md: TRUE
 ---
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 
 ## Velkommen til 4. R-seminar!
@@ -36,8 +38,7 @@ I introduksjonen til dagens seminar gikk dere gjennom regresjonsanalyse. Her fø
 
 ### Bivariat regresjon
 
-
-```r
+```{r}
 aidgrowth2 <- read.csv("https://raw.githubusercontent.com/langoergen/stv1020R/master/data/aidgrowth2.csv", 
                       stringsAsFactors = F)
 ```
@@ -195,8 +196,7 @@ summary(m4 <- lm(gdp_growth ~ log(gdp_pr_capita) +  institutional_quality + m2_g
 
 Sentrering er et eksempel på en aktuell omkoding som krever mer enn en enkel transformasjon:
 
-
-```r
+```{r}
 aidgrowth2$policy_cent <- aidgrowth2$policy - mean(aidgrowth2$policy, na.rm = T)
 ```
 
@@ -204,32 +204,9 @@ aidgrowth2$policy_cent <- aidgrowth2$policy - mean(aidgrowth2$policy, na.rm = T)
 
 Vi starter som regel med summary, da dette gir enkel og grei tolkning. 
 
-
-```r
+```{r}
 m1 <- lm(gdp_growth ~ aid, data = aidgrowth2)
 summary(m1)
-```
-
-```
-## 
-## Call:
-## lm(formula = gdp_growth ~ aid, data = aidgrowth2)
-## 
-## Residuals:
-##     Min      1Q  Median      3Q     Max 
-## -12.813  -2.181   0.144   2.153  15.443 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(>|t|)    
-## (Intercept)   1.5570     0.2730   5.704 2.64e-08 ***
-## aid          -0.2993     0.1036  -2.889  0.00412 ** 
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## Residual standard error: 3.711 on 323 degrees of freedom
-##   (6 observations deleted due to missingness)
-## Multiple R-squared:  0.02519,	Adjusted R-squared:  0.02218 
-## F-statistic: 8.348 on 1 and 323 DF,  p-value: 0.004122
 ```
 
 Legg merke til `summary()` forteller oss at 6 observasjoner ble fjernet på grunn av "missingness". Dette forteller oss at `lm()` fjerner manglende informasjon som default. For å forstå hva som foregår i en regresjonsanalyse, er det nyttig å opprette et nytt datasett, der vi fjerner observasjoner som har missing på noen av variablene vi er interessert i. Dette kan også gjøre det lettere å jobbe med ulike typer regresjonsoutput. 
@@ -237,33 +214,8 @@ Legg merke til `summary()` forteller oss at 6 observasjoner ble fjernet på grun
 Vi kan lage et slikt datasett med `na.omit()`. For å sammenligne modeller med ulike kontrollvariabler, bør man estimere modellen på det samme datasettet. Derfor fjerner vi missing på alle variablene i modell 4 over. Deretter reestimerer jeg `m1` på det nye datasettet.
 
 
-
-```r
+```{r}
 library(dplyr)
-```
-
-```
-## Warning: package 'dplyr' was built under R version 3.5.2
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 reg_data <- aidgrowth2 %>%
   select(gdp_growth, gdp_pr_capita, institutional_quality, m2_gdp_lagged, region, aid, policy, period) %>%
   na.omit()
@@ -272,8 +224,7 @@ m1 <- lm(gdp_growth ~ aid, data = reg_data)
 
 **Merk:** det er også viktig å se nærmere på hvilke observasjoner som har manglende informasjon, dette trenger ikke å være tilfeldig. Vi kan opprette en variabel i `aidgrowth2` datasettet for å se om en observasjon har missing på en av variablene som inngår i regresjonsanalysen. Til dette bruker jeg funksjonen `complete.cases()`, som er en logisk test av missing på observasjoner.
 
-
-```r
+```{r}
 aidgrowth2$reg_miss <- aidgrowth2 %>%
   select(gdp_growth, gdp_pr_capita, institutional_quality, m2_gdp_lagged, region, aid, policy, period) %>%
  complete.cases()
@@ -282,33 +233,10 @@ aidgrowth2$reg_miss <- aidgrowth2 %>%
 
 For å se hva som finnes av output i regresjonsobjektet, kan vi bruke `str()` eller `names()`. Merk at vi nå har et objekt av en ny klasse. Legg også merke til at det er forskjell på informasjonen i selve regresjonsobjektet, og i summary av regresjonsobjektet.
 
-
-```r
+```{r}
 class(m1)
-```
-
-```
-## [1] "lm"
-```
-
-```r
 names(m1)
-```
-
-```
-##  [1] "coefficients"  "residuals"     "effects"       "rank"         
-##  [5] "fitted.values" "assign"        "qr"            "df.residual"  
-##  [9] "xlevels"       "call"          "terms"         "model"
-```
-
-```r
 names(summary(m1))
-```
-
-```
-##  [1] "call"          "terms"         "residuals"     "coefficients" 
-##  [5] "aliased"       "sigma"         "df"            "r.squared"    
-##  [9] "adj.r.squared" "fstatistic"    "cov.unscaled"
 ```
 
 **Oppgave:** Indekser deg frem til `fitted.values` i modell-objektet.
@@ -319,60 +247,8 @@ Legg disse verdiene til datasettet `aidgrowth` som en ny variabel.  Plot derette
 
 Vi har tidligere brukt `cor()` funksjonen til å se på korrelasjon (Pearsons' R) mellom to variabler. Vi kan også bruke Pearsons' R til å se på de bivariate korrelasjonene mellom mange variabler samtidig i en korrelasjonsmatrise. Dette er nyttig for å forstå sammenhengen mellom bivariate korrelasjoner og regresjon. Når vi bruker `cor()` til å lage en korrelasjonsmatrise, er første argument et datasett som kun består av variabeler av klassen `numeric` eller `integer`. Argumentet `use` bestemmer hvordan de bivariate korrelasjonene skal beregnes, sjekk `?cor`
 
-
-```r
+```{r}
 cor(aidgrowth2[,3:13], use = "pairwise.complete.obs")
-```
-
-```
-##                               period  gdp_growth        aid      policy
-## period                  1.0000000000 -0.27112913  0.1414084  0.14146969
-## gdp_growth             -0.2711291305  1.00000000 -0.1587284  0.45346637
-## aid                     0.1414084467 -0.15872840  1.0000000 -0.14758229
-## policy                  0.1414696885  0.45346637 -0.1475823  1.00000000
-## gdp_pr_capita           0.1215467714  0.04361142 -0.4892737  0.07114461
-## ethnic_frac            -0.0006755442 -0.12464188  0.2857391 -0.05375693
-## assasinations           0.0714324232 -0.06381011 -0.1537210 -0.01143047
-## sub_saharan_africa     -0.0002440557 -0.24092665  0.6343521 -0.18138537
-## fast_growing_east_asia  0.0058915431  0.29124012 -0.2310245  0.46324560
-## institutional_quality   0.0099406333  0.25364737 -0.0867613  0.26236235
-## m2_gdp_lagged           0.3399973121  0.04156672 -0.1109513  0.05582412
-##                        gdp_pr_capita   ethnic_frac assasinations
-## period                    0.12154677 -0.0006755442    0.07143242
-## gdp_growth                0.04361142 -0.1246418822   -0.06381011
-## aid                      -0.48927369  0.2857390547   -0.15372098
-## policy                    0.07114461 -0.0537569312   -0.01143047
-## gdp_pr_capita             1.00000000 -0.3635439612    0.10118860
-## ethnic_frac              -0.36354396  1.0000000000   -0.08658713
-## assasinations             0.10118860 -0.0865871279    1.00000000
-## sub_saharan_africa       -0.48984383  0.5464936308   -0.22131292
-## fast_growing_east_asia    0.04651834  0.1068686704   -0.02892082
-## institutional_quality     0.33032535 -0.0180701236   -0.17814046
-## m2_gdp_lagged             0.20212861 -0.1373697483   -0.01518115
-##                        sub_saharan_africa fast_growing_east_asia
-## period                      -0.0002440557            0.005891543
-## gdp_growth                  -0.2409266493            0.291240117
-## aid                          0.6343520628           -0.231024519
-## policy                      -0.1813853663            0.463245602
-## gdp_pr_capita               -0.4898438322            0.046518343
-## ethnic_frac                  0.5464936308            0.106868670
-## assasinations               -0.2213129159           -0.028920820
-## sub_saharan_africa           1.0000000000           -0.244344771
-## fast_growing_east_asia      -0.2443447709            1.000000000
-## institutional_quality        0.0753295878            0.162581771
-## m2_gdp_lagged               -0.3132726427            0.106094571
-##                        institutional_quality m2_gdp_lagged
-## period                           0.009940633    0.33999731
-## gdp_growth                       0.253647370    0.04156672
-## aid                             -0.086761301   -0.11095127
-## policy                           0.262362352    0.05582412
-## gdp_pr_capita                    0.330325354    0.20212861
-## ethnic_frac                     -0.018070124   -0.13736975
-## assasinations                   -0.178140455   -0.01518115
-## sub_saharan_africa               0.075329588   -0.31327264
-## fast_growing_east_asia           0.162581771    0.10609457
-## institutional_quality            1.000000000    0.08670519
-## m2_gdp_lagged                    0.086705188    1.00000000
 ```
 
 
