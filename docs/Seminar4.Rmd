@@ -243,7 +243,7 @@ names(summary(m1))
 ```
 
 **Oppgave:** Indekser deg frem til `fitted.values` i modell-objektet.
-Legg disse verdiene til datasettet `aidgrowth` som en ny variabel.  Plot deretter den ny variabelen mot `gdp_growth` i et spredningsplot. Til slutt, forsøk å finne ut hvilken observasjon som har størst residual i regresjonsmodellen med utgangspunkt i disse to variablene?
+Legg disse verdiene til datasettet `reg_data` som en ny variabel.  Plot deretter den ny variabelen mot `gdp_growth` i et spredningsplot. Til slutt, forsøk å finne ut hvilken observasjon som har størst residual i regresjonsmodellen med utgangspunkt i disse to variablene?
 
 
 ## Korrelasjonsmatriser
