@@ -1,6 +1,11 @@
-# Seminar 5
-Erlend Langørgen  
-April 24, 2018  
+---
+title: "Seminar 5"
+author: "Erlend Langørgen"
+date: "April 24, 2018"
+output: 
+    html_document:
+      keep_md: true
+---
 
 
 
@@ -8,13 +13,11 @@ April 24, 2018
 
 ### Om prøven: 
 
-* Dagens seminar er en forsmak på prøven, dere har til og med mulighet til å laste opp oppgaven på fronnter i en innleveringsmappe som stenger to minutter etter klokken hel. Du skal kun levere et R-script.  
-* Jeg anbefaler alle å ta en titt på indeksering, `subset()`, `ifelse()`, logiske tester og innlasting av datasett, dersom dere ikke føler dere trygge på at dere kan dette. Disse emnene er grunnleggende, men samtidig ikke nødvendigvis de letteste.
+* Vi skal gjennomgå noen få ting på starten av dagens seminar. Resten av seminaret er en forsmak på prøven.   
+* Jeg anbefaler alle å ta en titt på indeksering, enten med `dplyr`, eller med `[,]` `subset()`. Alle bør i tillegg kjenne til `$`, `ifelse()`, logiske tester og innlasting av datasett `lm` og `cor`. Disse emnene er grunnleggende, men samtidig ikke nødvendigvis de letteste.
 * Jeg har lagt ut et dokument med tips til feilsøking av problemer i R.
-* Jeg jobber med en fullstendig oversikt/forklaring av funksjoner som er aktuelle til prøven, den blir ferdig i løpet av kort tid. Den inneholder funksjonene vi har gått gjennom i seminarene, med unntak av noen få funksjoner vil alt vi har gjennomgått være pensum.
-* Andregangsprøve blir 25. mai. 
-* Prøvene på tirsdag kommer til å være helt fulle.
-* Treffetid på onsdag fra 16.00 - 17.00, PC rommet i kjelleren på Harriett Holters hus og på torsdag i samme rom fra 13.30-14.30
+* Jeg legger ut en oversikt med funksjoner som er aktuelle til prøven før neste seminar. Med unntak av noen få funksjoner vil alt vi har gjennomgått være pensum.
+
 
 
 ### Oppsamlingsheat
@@ -22,6 +25,7 @@ April 24, 2018
 Det er noen funksjoner som jeg ikke har gått grundig gjennom tidligere i seminarrekken, som jeg skal gjennomgå i dag, da de vil være pensum til prøven:
 
 1. Boxplot
+2. `facet_wrap()`
 2. funksjoner for missing data
 3. Korrelasjonsmatrise
 
@@ -40,9 +44,24 @@ ggplot(mtcars, aes(as.factor(cyl), mpg)) + geom_boxplot() + labs(x = "Sylindre",
 
 
 
-![](../bilder/boxplot1.png)<!-- -->
+<img src="../bilder/boxplot1.png" width="2100" />
 
 
+### `facet_wrap()`
+
+Med `facet_wrap()`, kan vi lage mange plot på en gang med `ggplot`, basert på verdien til en variabel:
+
+
+
+```r
+library(ggplot2)
+ggplot(mtcars, aes(as.factor(cyl), mpg)) + geom_boxplot() + labs(x = "Sylindre", y = "Miles per gallon") + facet_wrap(~ am) # am - 0 = automatgir, 1 manuell
+```
+
+
+
+
+<img src="../bilder/boxplot1_facet.png" width="2100" />
 
 ### Funksjoner for missing data
 
