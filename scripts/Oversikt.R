@@ -3,7 +3,7 @@
 ### STV 1020 Våren 2018       ###
 #################################
 
-## Merk: jeg viser ikke alle aktuelle anvendelser av alle funksjonene. Det kan være at du blir spurt om å burke en funksjon
+## Merk: jeg viser ikke alle aktuelle anvendelser av alle funksjonene. Det kan være at du blir spurt om å bruke en funksjon
 ## på en måte som ikke er beskrevet i dette scriptet. Følg også med på oppdateringer av scriptet. Se også docs/scripts til seminarene
 ## på github, der har jeg vist flere anvendelser av noen av funksjonene her.
 
@@ -38,7 +38,7 @@ install.packages("moments")
 ## din nåværende R-sesjon. Må kjøres på nytt for hver R-sesjon.
 library(moments)
 
-## Relevante pakker: car, ggplot2, haven, moments
+## Relevante pakker: car, ggplot2, haven, moments, dplyr
 
 ## Rydde opp: 
 # rm() fjerner objekter, rm(list = ls()) fjerner alle objekter
@@ -68,7 +68,7 @@ round(1.53)   # runder av til nærmeste heltall, kan styre antall desimaler med 
 # '<-' er en assignment operator. Informasjonen som kommer etter denne blir lagret lokalt i R,
 # slik at du kan hente ut informasjonen når du ønsker. Det er også mulig å bruke '=', men vi skal
 # kun bruke '=' til å styre argumenter inne i funksjoner. 
-# mitt_objekt er et vilkårlig navn du kan velge fritt, men det er lurt å velge nanv som ikke fører til skrivefeil.
+# mitt_objekt er et vilkårlig navn du kan velge fritt, men det er lurt å velge navn som minimerer sjansen for skrivefeil.
 
 dager_til_sommerferie <- 31 + 30 + 6 # tallobjekt
 
@@ -127,7 +127,7 @@ colnames(data) <- c("var1", "var2", "var3")
 
 ## Informasjon i en ekstern data-fil
 
-#data <- load("datasett.Rdata") # .Rdata er R sitt eget filformat
+#load("datasett.Rdata") # .Rdata er R sitt eget filformat, merk at du ikke skal skrive 'objektnavn <-' før load()
 #data <- read.csv("datasett.csv") # .csv er en filtype som brukes mye, og som stammer fra excel.
 #data <- read.table("datasett.txt") # Beslektet med read.csv. Har argumenter for å angi strukturen til tabeller
 #data <- read_spss("datasett.sav")  # Leser .sav og .por filer fra SPSS, funksjonen stammer fra pakken haven
@@ -194,12 +194,56 @@ subset(mtcars, cyl>4) # Her indekserer jeg ved hjelp av en logisk test i subset-
 
 # which: angir plasseringen til elementer som får TRUE på en logisk test
 
+## med dplyr:
+library(dplyr)
+mtcars %>%
+  filter(cyl>4)
+
+
 # Indeksere kolonner:
 mtcars[,1:3] # indekserer ut fra plassering
 mtcars[,c("mpg", "cyl", "disp")] # indekserer ut fra navn
 
 # kolonnene har ikke tallverdier, vi har ikke lært logiske tester for tekst. Dersom vi skulle indeksert kolonner ved å søke etter informasjon
 # måtte vi gjort dette (det er mulig, og nyttig for datasett med svært mange observasjoner).
+
+## med dplyr:
+
+mtcars %>%
+  select(mpg, cyl, disp)
+
+mtcars %>%
+  select(1:3)
+
+#### Aggregering av data ####
+
+# Til aggregering av data bruker vi group_by() og summarise() fra dplyr
+
+mtcars %>%
+  group_by(cyl) %>% # grupperer ut fra variabelverdier på cyl 
+  summarise(forbruk = mean(mpg),
+            kraft = median(hp),
+            vekt = mean(wt))
+
+
+#### Skriv din egen funksjon ####
+
+# Vi kan skrive egne funksjoner i stedet for å copy-paste samme kode ørten ganger
+# til dette bruker vi function(). Vi oppretter alltid funksjoner som objekter. 
+# Mellom {} spesifiserer vi hva funksjonen skal gjøre. 
+# Her bruker jeg x som argumentnavn - hver gang innmaten i funksjonen referer til x vil funksjonen bruke argumentet
+# vi spesifiserer
+
+standardiserings_func <- function(x) {
+  min_var <- (x - mean(x, na.rm = T))/sd(x, na.rm = T) # formel for å standardisere en normalfordeling
+  return(min_var)
+}
+
+standardiserings_func()
+
+# Legg merke til skala på x-aksen
+plot(density(mtcars$mpg))
+plot(density(standardiserings_func(mtcars$mpg)))
 
 ###### Omkoding     ######
 
@@ -215,7 +259,8 @@ mtcars$mpg_cat <- ifelse(mtcars$mpg<15, "low", mtcars$mpg_cat)
 mtcars$mpg_cat <- ifelse(mtcars$mpg>=15 & mtcars$mpg < 18.5, "medium", mtcars$mpg_cat)
 mtcars$mpg_cat <- ifelse(mtcars$mpg>=18.5, "high", mtcars$mpg_cat)
 
-
+## Det er også mulig å bruke andre funksjoner til omkoding, f.eks. en matematisk transformasjon
+mtcars$mpg_ln <- log(mtcars$mpg)
 
 ###### plot  ######
 ## Vi har først og fremst brukt ggplot() fra pakken ggplot2(), 
@@ -245,8 +290,8 @@ ggplot(mtcars, aes(x = disp, y = mpg)) +
   geom_smooth(method= "lm") 
 
 # enkelt barplot
-ggplot(mtcars, aes(x=factor(cyl), y = mpg)) +
-  geom_boxplot()  # legg merke til at x bør være en factor!
+ggplot(mtcars, aes(x=as.factor(cyl), y = mpg)) +
+  geom_boxplot()  # legg merke til at x bør være en factor, mens y bør være kontinuerlig!
 
 # Mer avanserte plot - scatterploteksempel:
 
@@ -300,8 +345,9 @@ kurtosis(mtcars$mpg)
 cor.test(mtcars$mpg, mtcars$disp)
 cor(mtcars$mpg, mtcars$disp) # bivariate korrelasjoner mellom to variabler.
 
-cor(mtcars[,3:8], use = "complete.obs") # korrelasjonsmatrise, krever numerisk data.frame, missing håndteres ved å sette use =, her listwise deletion
-cor(mtcars[,3:8], use = "pairwise.complete.obs") # korrelasjonsmatrise, pairwise deletion av missing
+cor(mtcars[,3:8], use = "complete.obs") # korrelasjonsmatrise, krever numerisk data.frame, missing håndteres ved å sette use =,
+# med complete.obs fjernes alle observasjoner som har manglende informasjon på en eller flere av variab lene som inngår i matrisen (samme oppførsel som lm()) 
+cor(mtcars[,3:8], use = "pairwise.complete.obs") # korrelasjonsmatrise, pairwise deletion av missing - fjerner bare missing for variablene som inngår i de enekelte bivariate korrelasjonene
 
 ###### Regresjonsanalyse ######
 # Vi bruker lm funksjonen til å kjøre regresjon, spesifiser regresjonsformel først, deretter data =.
@@ -339,4 +385,4 @@ mtcars_reg$fv <- m2$fitted.values
 
 
 
-######  Regresjonsdiagnostikk: se seminar4.R under scripts på github ####
+######  Regresjonsdiagnostikk: se regresjonsdiagnostikk.R under scripts på github ####
