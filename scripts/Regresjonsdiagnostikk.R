@@ -15,8 +15,10 @@ setwd()
 library(car)
 library(ggplot2)
 library(moments)
+library(plm)
 
 ### Last inn data på egenhånd :), kall det for aidgrowth2
+
 
 
 ## Dersom det er missingverdier i noen av variablene vi bruker i en regresjonsanalyse, 
@@ -108,9 +110,31 @@ ncvTest(bd) # Ikke pensum- Breusch-Pagan test for heteroskedastistitet
 # Restledd kan korrelere med hverandre av flere grunner, for eksempel fordi verdien til en observasjon
 # på avhengig variabel endres inkrementelt fra en periode til den neste. Korrelasjon over tid kalles
 # autokorrelasjon. Vi tester for korrelasjon mellom restleddene med Durbin-Watson testen. 
-# Pass på at observasjonene er organisert slik at alle observasjoner av en enhet kommer etterhverandre kronologisk.
+# Siden vi har panel-data (gjentatte observasjoner av mange enheter over tid), må vi bruke en egen pakke - plm
+# Dersom vi hadde en tidsserie kunne vi brukt dwt() fra car. 
+names(bd_data)
+library(plm)
 
-durbinWatsonTest(bd)
+# Først må vi estimere lm-modellen vår med plm-funksjonen. Eneste nyheter er argumentene index og model.
+# Med index angir vi strukturen til datasettet (vi har observasjoner av land-perioder), mens model angir type modell.
+# Dette er ikke pensum, hverken til eksamen eller R-prøven.
+
+# Jeg fjerner kontroll for tidsdummyer, da dette håndterer autokorrelasjon allerede
+
+bd_plm <- plm(gdp_growth ~ log(gdp_pr_capita) + ethnic_frac * 
+  assasinations + institutional_quality + m2_gdp_lagged + region + 
+  aid * policy, index = c("country", "period"), model = "pooling", data = bd_data)
+
+# Her kjører jeg en first-difference modell, som tar hensyn til trender over tid, i motsetning til "pooling"
+bd_plm2 <- plm(gdp_growth ~ log(gdp_pr_capita) + ethnic_frac * 
+                assasinations + institutional_quality + m2_gdp_lagged + region + 
+                aid * policy, index = c("country", "period"), model = "fd", data = bd_data)
+
+pdwtest(bd_plm)
+pdwtest(bd_plm2)
+
+# Hvis du noen gang trenger å teste for autkorrelasjon, sjekk denne (særlig s. 30-35): http://user.keio.ac.jp/~nagakura/R/plm.pdf
+# For korte paneler som vi har her, burde vi nok ha brukt en annen modell
 
 # Ingen autokorrelasjon, da dw statistikken ikke er signifikant forskjellig fra 2. Se Cristophersen for detaljer 
 

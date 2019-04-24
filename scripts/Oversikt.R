@@ -38,7 +38,7 @@ install.packages("moments")
 ## din nåværende R-sesjon. Må kjøres på nytt for hver R-sesjon.
 library(moments)
 
-## Relevante pakker: car, ggplot2, haven, moments, dplyr
+## Relevante pakker: car, ggplot2, haven, moments, dplyr, plm
 
 ## Rydde opp: 
 # rm() fjerner objekter, rm(list = ls()) fjerner alle objekter
