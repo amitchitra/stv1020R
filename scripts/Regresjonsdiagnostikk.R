@@ -79,8 +79,8 @@ summary(bd) # påvirker ikke konklusjonene våre om aid og policy nevneverdig.
 ## Formell statstikk for skjevhet og kurtose:
 
 library(moments)
-skewness(bd$residuals) # skjev fordeling?
-kurtosis(bd$residuals) # tjukke haler?
+skewness(bd$residuals, na.rm = T) # skjev fordeling?
+kurtosis(bd$residuals, na.rm = T) # tjukke haler?
 
 # Lite skjevhet, men mye lengre haler enn en normalfordeling.
 

@@ -1,6 +1,6 @@
 #################################
 ### Oversikt over funksjoner  ###
-### STV 1020 Våren 2018       ###
+### STV 1020 Våren 2019       ###
 #################################
 
 ## Merk: jeg viser ikke alle aktuelle anvendelser av alle funksjonene. Det kan være at du blir spurt om å bruke en funksjon
@@ -354,6 +354,12 @@ cor(mtcars$mpg, mtcars$disp) # bivariate korrelasjoner mellom to variabler.
 cor(mtcars[,3:8], use = "complete.obs") # korrelasjonsmatrise, krever numerisk data.frame, missing håndteres ved å sette use =,
 # med complete.obs fjernes alle observasjoner som har manglende informasjon på en eller flere av variab lene som inngår i matrisen (samme oppførsel som lm()) 
 cor(mtcars[,3:8], use = "pairwise.complete.obs") # korrelasjonsmatrise, pairwise deletion av missing - fjerner bare missing for variablene som inngår i de enekelte bivariate korrelasjonene
+
+# table kan også brukes til å lage bivariate frekvenstabeller:
+table(mtcars$am, mtcars$cyl)
+
+# ikke pensum: dersom du vil ha prosentfordeling, bruk prop.table() på table():
+prop.table(table(mtcars$am, mtcars$cyl))
 
 ###### Regresjonsanalyse ######
 # Vi bruker lm funksjonen til å kjøre regresjon, spesifiser regresjonsformel først, deretter data =.
