@@ -2,6 +2,10 @@
 #### Seminar 4 - regresjonsdiagnostikk ####
 ###########################################
 
+# Nye funksjoner i dette scriptet som er aktuelle til prøve:
+#vif(), skewness(), kurtosis(), influenceIndexPlot(), qqplot()
+
+
 #### Forberedelser: ####
 
 rm(list=ls())
