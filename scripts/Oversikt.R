@@ -300,6 +300,9 @@ ggplot(mtcars, aes(x = disp, y = mpg)) +
   geom_point() +
   geom_smooth(method="lm")
 
+# legger til separate paneler, basert på verdien til en variabel
+ggplot(mtcars, aes(x = disp, y = mpg)) + facet_wrap(~cyl) + geom_point()
+
 # legger til farge og form:
 ggplot(mtcars, aes(x = disp, y = mpg)) +
   geom_point(aes(col=hp, shape = factor(cyl))) +
@@ -312,6 +315,9 @@ ggplot(mtcars, aes(x = disp, y = mpg)) +
   theme_bw() +
   labs(x = "et nytt navn", y = "miles per gallon") +
   ggtitle("Et eksempelplot")
+
+
+
 
 
 ###### Statistikk #######
