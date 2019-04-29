@@ -3,7 +3,7 @@
 ###########################################
 
 # Nye funksjoner i dette scriptet som er aktuelle til prøve:
-#vif(), skewness(), kurtosis(), influenceIndexPlot(), qqplot()
+#vif(), skewness(), kurtosis(), influenceIndexPlot(), qqPlot()
 
 
 #### Forberedelser: ####
