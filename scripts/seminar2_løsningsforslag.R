@@ -224,6 +224,13 @@ nydata <- personst %>%
          personstemmer < sd(personstemmer) + mean(personstemmer))
 
 
+## ifelse og dplyr
+
+personst$filtrering <- ifelse(personst$medietreff < sd(personst$medietreff) + mean(personst$medietreff), 1, 0)
+personst$filtrering2 <- ifelse(personst$personstemmer < sd(personst$personstemmer) + mean(personst$personstemmer), 1, 0)
+
+personst %>%
+  filter(filtrering==1 & filtrering2==1)
 
 #### Oppgave 9 ####
 # 9. Gjenta oppgave 5 og oppgave 6 for det nye datasettet. Kommenter resultatene, er sammenhengen robust?
