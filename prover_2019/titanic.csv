@@ -1,0 +1,1314 @@
+"Name","PClass","Age","Sex","Survived","SexCode","surv_prob"
+"Abbing, Mr Anthony","3rd",42,"male",0,0,0.0457148159942311
+"Abbott, Master Eugene Joseph","3rd",13,"male",0,0,0.129835672712403
+"Abbott, Mr Rossmore Edward","3rd",16,"male",0,0,0.117124892590941
+"Abbott, Mrs Stanton (Rosa)","3rd",35,"female",1,1,0.466812472845295
+"Abelseth, Miss Anna Karen","3rd",16,"female",1,1,0.648263266308095
+"Abelseth, Mr Olaus","3rd",25,"male",1,0,0.0852912170639251
+"Abelson, Mr Samuel","2nd",30,"male",0,0,0.207680877776629
+"Abelson, Mrs Samuel (Anna)","2nd",28,"female",1,1,0.79750111978482
+"Abraham, Mrs Joseph (Sophie Easu)","3rd",18,"female",1,1,0.630196590168165
+"Abrahamsson, Mr August","3rd",20,"male",1,0,0.101866994290146
+"Adahl, Mr Mauritz Nils Martin","3rd",30,"male",0,0,0.0711988279391841
+"Adams, Mr John","3rd",26,"male",0,0,0.082284016676387
+"Ahlin, Mrs Johanna Persdotter","3rd",40,"female",0,1,0.418525414430871
+"Ahmed, Mr Ali","3rd",24,"male",0,0,0.0883977341284923
+"Aijo-Nirva, Mr Isak","3rd",41,"male",0,0,0.0474546454344017
+"Aks, Master Philip","3rd",0.83,"male",1,0,0.193780393771056
+"Aks, Mrs Sam (Leah Rosen)","3rd",18,"female",1,1,0.630196590168165
+"Aldworth, Mr Charles Augustus","2nd",30,"male",0,0,0.207680877776629
+"Alexander, Mr William","3rd",23,"male",0,0,0.0916060668015756
+"Alhomaki, Mr Ilmari Rudolf","3rd",20,"male",0,0,0.101866994290146
+"Ali, Mr William","3rd",25,"male",0,0,0.0852912170639251
+"Allen, Miss Elisabeth Walton","1st",29,"female",1,1,0.932360945003765
+"Allen, Mr William Henry","3rd",35,"male",0,0,0.0592839677615253
+"Allison, Master Hudson Trevor","1st",0.92,"male",1,0,0.748807543822839
+"Allison, Miss Helen Loraine","1st",2,"female",0,1,0.975428951652518
+"Allison, Mr Hudson Joshua Creighton","1st",30,"male",0,0,0.488252366679562
+"Allison, Mrs Hudson JC (Bessie Waldo Daniels)","1st",25,"female",0,1,0.941598738567765
+"Allum, Mr Owen George","3rd",17,"male",0,0,0.11313412061774
+"Andersen, Mr Albert Karvin","3rd",32,"male",0,0,0.0661882466142254
+"Andersen, Mr Thor Olsvigen","3rd",20,"male",0,0,0.101866994290146
+"Anderson, Mr Harry","1st",47,"male",1,0,0.328935177105907
+"Andersson, Master Sigvard Harald Elias","3rd",4,"male",0,0,0.175112101715354
+"Andersson, Miss Ebba Iris","3rd",6,"female",0,1,0.731683749153468
+"Andersson, Miss Ellis Anna Maria","3rd",2,"female",0,1,0.76131260286519
+"Andersson, Miss Erna","3rd",17,"female",1,1,0.639279212487891
+"Andersson, Miss Ida Augusta Margareta","3rd",38,"female",0,1,0.437706337695586
+"Andersson, Miss Ingeborg Constancia","3rd",9,"female",0,1,0.70799200386176
+"Andersson, Miss Sigrid Elizabeth","3rd",11,"female",0,1,0.691533422337816
+"Andersson, Mr Anders Johan","3rd",39,"male",0,0,0.0511246986322604
+"Andersson, Mr Johan Samuel","3rd",26,"male",0,0,0.082284016676387
+"Andersson, Mrs Anders Johan (Alfrida K Brogren)","3rd",39,"female",0,1,0.42808886079621
+"Andreasson, Mr Paul Edvin","3rd",20,"male",0,0,0.101866994290146
+"Andrew, Mr Edgar Samuel","2nd",18,"male",0,0,0.2954957722059
+"Andrew, Mr Frank","2nd",NA,"male",0,0,NA
+"Andrews, Miss Kornelia Theodosia","1st",63,"female",1,1,0.784404820197597
+"Andrews, Mr Thomas, jr","1st",39,"male",0,0,0.401410726404243
+"Angheloff, Mr Minko","3rd",26,"male",0,0,0.082284016676387
+"Angle, Mr William A","2nd",34,"male",0,0,0.183072389299544
+"Angle, Mrs William A (Florence)","2nd",32,"female",1,1,0.771013286170696
+"Appleton, Mrs Edward Dale (Charlotte Lamson)","1st",58,"female",1,1,0.815688733285377
+"Arnold, Mr Josef","3rd",25,"male",0,0,0.0852912170639251
+"Arnold, Mrs Josef (Josephine Frank)","3rd",18,"female",0,1,0.630196590168165
+"Aronsson, Mr Ernst Axel Algot","3rd",24,"male",0,0,0.0883977341284923
+"Artagaveytia, Mr Ramon","1st",71,"male",0,0,0.160670375655676
+"Ashby, Mr John","2nd",57,"male",0,0,0.0834219632578131
+"Asim, Mr Adola","3rd",35,"male",0,0,0.0592839677615253
+"Aspland, Master Edvin Rojj Felix","3rd",3,"male",1,0,0.180843322934633
+"Asplund, Master Carl Edgar","3rd",5,"male",0,0,0.169524923488462
+"Asplund, Master Clarence Gustaf Hugo","3rd",9,"male",0,0,0.148589714385518
+"Asplund, Master Filip Oscar","3rd",13,"male",0,0,0.129835672712403
+"Asplund, Miss Lillian Gertrud","3rd",5,"female",1,1,0.73930489583781
+"Asplund, Mr Carl Oscar Vilhelm Gustafsson","3rd",40,"male",0,0,0.0492572720582684
+"Asplund, Mr John Charles","3rd",23,"male",1,0,0.0916060668015756
+"Asplund, Mrs Carl Oscar (Selma Augusta Johansson)","3rd",38,"female",1,1,0.437706337695586
+"Assaf, Mr Gerios","3rd",NA,"male",0,0,NA
+"Assaf, Mrs Mariana","3rd",45,"female",1,1,0.371750669283926
+"Assam, Mr Ali","3rd",23,"male",0,0,0.0916060668015756
+"Astor, Colonel John Jacob","1st",47,"male",0,0,0.328935177105907
+"Astor, Mrs John Jacob (Madeleine Talmadge Force)","1st",19,"female",1,1,0.953260679761645
+"Attala (Kalil), Mr Solomon","3rd",27,"male",0,0,0.0793736437015634
+"Attalah, Miss Malaka","3rd",17,"female",0,1,0.639279212487891
+"Aubert, Mrs Leontine Pauline","1st",NA,"female",1,1,NA
+"Augustsson, Mr Albert","3rd",23,"male",0,0,0.0916060668015756
+"Baccos, Mr Rafoul","3rd",20,"male",0,0,0.101866994290146
+"Backstrom, Mr Karl Alfred","3rd",32,"male",0,0,0.0661882466142254
+"Backstrom, Mrs Karl Alfred (Maria Mathilda Gustafsson)","3rd",33,"female",1,1,0.486355402134291
+"Baclini, Miss Eugenie","3rd",3,"female",1,1,0.754120854627905
+"Baclini, Miss Helene","3rd",NA,"female",1,1,NA
+"Baclini, Miss Maria","3rd",NA,"female",1,1,NA
+"Baclini, Mrs Solomon (Latifa)","3rd",NA,"female",1,1,NA
+"Badman, Miss Emily Louisa","3rd",18,"female",1,1,0.630196590168165
+"Badt, Mr Mohamed","3rd",40,"male",0,0,0.0492572720582684
+"Bailey, Mr Percy Andrew","2nd",18,"male",0,0,0.2954957722059
+"Baimbrigge, Mr Charles R","2nd",23,"male",0,0,0.256407750931386
+"Balkic, Mr Cerin","3rd",26,"male",0,0,0.082284016676387
+"Balls, Mrs Ada E Hall","2nd",36,"female",1,1,0.742180809004211
+"Banfield, Mr Frederick J","2nd",28,"male",0,0,0.220869254298734
+"Banoura, Miss Ayout","3rd",15,"female",1,1,0.657143568597217
+"Barbara, Miss Saude","3rd",18,"female",0,1,0.630196590168165
+"Barbara, Mrs Catherine","3rd",45,"female",0,1,0.371750669283926
+"Barber, Ms ","1st",NA,"female",1,1,NA
+"Barkworth, Mr Algernon H","1st",NA,"male",1,0,NA
+"Barry, Miss Julia","3rd",27,"female",0,1,0.544995181455537
+"Barton, Mr David","3rd",22,"male",0,0,0.0949187191112233
+"Bateman, Rev Robert James","2nd",51,"male",0,0,0.103245295385562
+"Baumann, Mr John D","1st",NA,"male",0,0,NA
+"Baxter, Mr Quigg Edmond","1st",24,"male",0,0,0.546877348057637
+"Baxter, Mrs James (Helene DeLaudeniere Chaput)","1st",50,"female",1,1,0.858248888378257
+"Bazzani, Ms Albina","1st",NA,"female",1,1,NA
+"Beane, Mr Edward","2nd",32,"male",1,0,0.195082818613641
+"Beane, Mrs Edward (Ethel Clarke)","2nd",19,"female",1,1,0.848558577245473
+"Beattie, Mr Thomson","1st",36,"male",0,0,0.429948794322079
+"Beauchamp, Mr Henry James","2nd",28,"male",0,0,0.220869254298734
+"Beavan, Mr William Thomas","3rd",19,"male",0,0,0.105507604483475
+"Becker, Master Richard F","2nd",1,"male",1,0,0.449464653018495
+"Becker, Miss Marion Louise","2nd",4,"female",1,1,0.909783345654726
+"Becker, Miss Ruth Elizabeth","2nd",12,"female",1,1,0.880542540648394
+"Becker, Mrs Allen Oliver (Nellie E Baumgardner)","2nd",36,"female",1,1,0.742180809004211
+"Beckwith, Mr Richard Leonard","1st",37,"male",1,0,0.420374338459657
+"Beckwith, Mrs Richard Leonard (Sallie Monypeny)","1st",47,"female",1,1,0.871954524919876
+"Beesley, Mr Lawrence","2nd",34,"male",1,0,0.183072389299544
+"Behr, Mr Karl Howell","1st",26,"male",1,0,0.527399543350564
+"Bengtsson, Mr John Viktor","3rd",26,"male",0,0,0.082284016676387
+"Bentham, Miss Lilian W","2nd",19,"female",1,1,0.848558577245473
+"Berglund, Mr Karl Ivar Sven","3rd",22,"male",0,0,0.0949187191112233
+"Berriman, Mr William S","2nd",23,"male",0,0,0.256407750931386
+"Betros, Mr Tannous","3rd",20,"male",0,0,0.101866994290146
+"Bidois, Miss Rosalie","1st",NA,"female",1,1,NA
+"Bing, Mr Lee","3rd",32,"male",1,0,0.0661882466142254
+"Bird, Ms Ellen","1st",NA,"female",1,1,NA
+"Birkeland, Mr Hans","3rd",21,"male",0,0,0.0983381952525841
+"Birnbaum, Mr Jakob","1st",25,"male",0,0,0.537152619070997
+"Bishop, Mr Dickinson H","1st",25,"male",1,0,0.537152619070997
+"Bishop, Mrs Dickinson H (Helen Walton)","1st",19,"female",1,1,0.953260679761645
+"Bissetti, Ms Amelia","1st",NA,"female",1,1,NA
+"Bjorklund, Ernst Herbert","3rd",18,"male",0,0,0.109262497229707
+"Bjornstrm-Steffansson, Mr Mauritz Hakan","1st",28,"male",1,0,0.507837969662763
+"Blackwell, Mr Stephen Weart","1st",45,"male",0,0,0.346456594736672
+"Blank, Mr Henry","1st",39,"male",1,0,0.401410726404243
+"Bonnell, Miss Caroline","1st",30,"female",1,1,0.929848054563956
+"Bonnell, Miss Elizabeth","1st",58,"female",1,1,0.815688733285377
+"Borebank, Mr John James","1st",NA,"male",0,0,NA
+"Bostandyeff, Mr Guentcho","3rd",26,"male",0,0,0.082284016676387
+"Botsford, Mr William Hull","2nd",26,"male",0,0,0.234647105126899
+"Boulos, Master Akar","3rd",6,"male",0,0,0.164080552039393
+"Boulos, Miss Laura","3rd",9,"female",0,1,0.70799200386176
+"Boulos, Mr Hanna","3rd",NA,"male",0,0,NA
+"Boulos, Mrs Joseph (Sultana)","3rd",NA,"female",0,1,NA
+"Bourke, Miss Mary","3rd",NA,"female",0,1,NA
+"Bourke, Mr John","3rd",40,"male",0,0,0.0492572720582684
+"Bourke, Mrs John (Catherine)","3rd",32,"female",0,1,0.496146293630627
+"Bowen, Miss Grace Scott","1st",45,"female",1,1,0.880450734780513
+"Bowen, Mr David","3rd",26,"male",0,0,0.082284016676387
+"Bowenur, Mr Solomon","2nd",NA,"male",0,0,NA
+"Bowerman, Miss Elsie Edith","1st",22,"female",1,1,0.947736197476459
+"Bracken, Mr James H","2nd",27,"male",0,0,0.227684694980432
+"Bradley, Miss Bridget Delia","3rd",18,"female",1,1,0.630196590168165
+"Bradley, Mr George","1st",NA,"male",1,0,NA
+"Brady, Mr John Bertram","1st",41,"male",0,0,0.382737702218232
+"Braf, Miss Elin Ester Maria","3rd",20,"female",0,1,0.611757697423503
+"Brahim, Mr Youssef","3rd",NA,"male",0,0,NA
+"Brandeis, Mr Emil","1st",48,"male",0,0,0.320346072084277
+"Braund, Mr Lewis Richard","3rd",29,"male",0,0,0.0738334962653884
+"Braund, Mr Owen Harris","3rd",22,"male",0,0,0.0949187191112233
+"Brewe, Dr Arthur Jackson","1st",NA,"male",0,0,NA
+"Brobek, Mr Karl Rudolf","3rd",22,"male",0,0,0.0949187191112233
+"Brocklebank, Mr William Alfred","3rd",35,"male",0,0,0.0592839677615253
+"Brown, Miss Edith E","2nd",15,"female",1,1,0.867616579638125
+"Brown, Miss Mildred","2nd",24,"female",1,1,0.821633812494155
+"Brown, Mr Thomas William Solomon","2nd",45,"male",0,0,0.127125854370423
+"Brown, Mrs James Joseph (Margaret Molly"" Tobin)""","1st",44,"female",1,1,0.884513306522527
+"Brown, Mrs John Murray (Caroline Lane Lamson)","1st",59,"female",1,1,0.809725882503742
+"Brown, Mrs Thomas William Solomon (Elizabeth C)","2nd",40,"female",1,1,0.711078355298247
+"Bryhl, Miss Dagmar","2nd",20,"female",1,1,0.843455047404011
+"Bryhl, Mr Kurt Arnold Gottfrid","2nd",25,"male",0,0,0.241755775030206
+"Buckley, Miss Katherine","3rd",20,"female",0,1,0.611757697423503
+"Buckley, Mr Daniel","3rd",21,"male",1,0,0.0983381952525841
+"Bucknell, Mrs William Robert (Emma Eliza Ward)","1st",60,"female",1,1,0.803616565887262
+"Burke, Mr Jeremiah","3rd",19,"male",0,0,0.105507604483475
+"Burns, Miss Mary Delia","3rd",18,"female",0,1,0.630196590168165
+"Burns, Ms Elizabeth Margaret","1st",NA,"female",1,1,NA
+"Buss, Miss Kate","2nd",36,"female",1,1,0.742180809004211
+"Butler, Mr Reginald Fenton","2nd",25,"male",0,0,0.241755775030206
+"Butt, Major Archibald Willingham","1st",45,"male",0,0,0.346456594736672
+"Byles, Rev Thomas Roussel D","2nd",NA,"male",0,0,NA
+"Bystrom, Mrs Carolina","2nd",42,"female",1,1,0.694718721970104
+"Cacic, Mr Grego","3rd",18,"male",0,0,0.109262497229707
+"Cacic, Mr Luka","3rd",38,"male",0,0,0.0530589714591196
+"Cacic, Mr Manda","3rd",NA,"male",0,0,NA
+"Cacic, Mr Maria","3rd",30,"male",0,0,0.0711988279391841
+"Calderhead, Mr Edward P","1st",NA,"male",1,0,NA
+"Caldwell, Master Alden Gates","2nd",0.83,"male",1,0,0.451113207813375
+"Caldwell, Mr Albert Francis","2nd",26,"male",1,0,0.234647105126899
+"Caldwell, Mrs Albert Francis (Sylvia Mae Harbaugh)","2nd",26,"female",1,1,0.809860271279583
+"Calic, Mr Peter","3rd",17,"male",0,0,0.11313412061774
+"Cameron, Miss Clear","2nd",31,"female",1,1,0.777856490789817
+"Campbell, Mr William","2nd",NA,"male",0,0,NA
+"Canavan, Miss Mary","3rd",21,"female",0,1,0.602413085142407
+"Canavan, Mr Patrick","3rd",21,"male",0,0,0.0983381952525841
+"Candee, Mrs Edward (Helen Churchill Hungerford)","1st",53,"female",1,1,0.843339809917377
+"Cann, Mr Ernest","3rd",21,"male",0,0,0.0983381952525841
+"Caram (Kareem), Mr Joseph","3rd",NA,"male",0,0,NA
+"Caram (Kareem), Mrs Joseph (Maria Elias)","3rd",NA,"female",0,1,NA
+"Carbines, Mr William","2nd",19,"male",0,0,0.287405869965149
+"Cardeza, Mr Thomas Drake Martinez","1st",36,"male",1,0,0.429948794322079
+"Cardeza, Mrs James Warburton Martinez (Charlotte Wardle Drake)","1st",58,"female",1,1,0.815688733285377
+"Carlsson, Mr August Sigfrid","3rd",28,"male",0,0,0.0765576227645893
+"Carlsson, Mr Carl Robert","3rd",24,"male",0,0,0.0883977341284923
+"Carlsson, Mr Frans Olof","1st",33,"male",0,0,0.45896013041765
+"Carlsson, Mr Frans Olof","3rd",33,"male",0,0,0.0638075955156743
+"Carlsson, Mr Julius","3rd",33,"male",0,0,0.0638075955156743
+"Carr, Miss Helen","3rd",16,"female",1,1,0.648263266308095
+"Carr, Miss Jeannie","3rd",37,"female",0,1,0.447370865679246
+"Carrau, Mr Francisco M","1st",NA,"male",0,0,NA
+"Carrau, Mr Jose Pedro","1st",NA,"male",0,0,NA
+"Carter, Master William T II","1st",11,"male",1,0,0.667602257466432
+"Carter, Miss Lucile Polk","1st",14,"female",1,1,0.961253088765231
+"Carter, Mr William Ernest","1st",36,"male",1,0,0.429948794322079
+"Carter, Mrs Ernest Courtenay (Lillian Hughes)","2nd",44,"female",0,1,0.677852422474351
+"Carter, Mrs William Ernest (Lucile Polk)","1st",36,"female",1,1,0.912878314231112
+"Carter, Rev Ernest Courtenay","2nd",54,"male",0,0,0.0928598878416603
+"Carver, Mr Alfred John","3rd",28,"male",0,0,0.0765576227645893
+"Case, Mr Howard Brown","1st",49,"male",0,0,0.311877011660929
+"Cassebeer, Mrs Henry Arthur jr (Genevieve Fosdick)","1st",NA,"female",1,1,NA
+"Cassem, Mr Nassef Belmenly","3rd",NA,"male",1,0,NA
+"Cavendish, Mr Tyrell William","1st",36,"male",0,0,0.429948794322079
+"Cavendish, Mrs Tyrell William Julia Florence Siegel","1st",NA,"female",1,1,NA
+"Celotti, Mr Francesco","3rd",24,"male",0,0,0.0883977341284923
+"Chaffee, Mr Herbert Fuller","1st",46,"male",0,0,0.337640168447024
+"Chaffee, Mrs Herbert Fuller (Carrie Constance Toogood)","1st",47,"female",1,1,0.871954524919876
+"Chambers, Mr Norman Campbell","1st",27,"male",1,0,0.517625509387015
+"Chambers, Mrs Norman Campbell (Bertha Griggs)","1st",31,"female",1,1,0.9272490911161
+"Chapman, Mr Charles Henry","2nd",52,"male",0,0,0.0996740491061387
+"Chapman, Mr John Henry","2nd",30,"male",0,0,0.207680877776629
+"Chapman, Mrs John Henry (Elizabeth Lawry)","2nd",30,"female",0,1,0.784552334507812
+"Chartens, Mr David","3rd",21,"male",0,0,0.0983381952525841
+"Chaudanson, Ms         Victorine","1st",NA,"female",1,1,NA
+"Chebab, Mr Emir Farres","3rd",NA,"male",0,0,NA
+"Cherry, Miss Gladys","1st",NA,"female",1,1,NA
+"Chevre, Mr Paul","1st",NA,"male",1,0,NA
+"Chibnall (Bowerman), Mrs Edith Martha","1st",NA,"female",1,1,NA
+"Chip, Mr Chang","3rd",32,"male",0,0,0.0661882466142254
+"Chisholm, Mr Roderick Robert","1st",NA,"male",0,0,NA
+"Christmann, Mr Emil","3rd",29,"male",0,0,0.0738334962653884
+"Christy, Miss Julie","2nd",NA,"female",1,1,NA
+"Christy, Mrs Alice Frances","2nd",NA,"female",1,1,NA
+"Chronopoulos, Mr Apostolos","3rd",26,"male",0,0,0.082284016676387
+"Chronopoulos, Mr Demetrios","3rd",18,"male",0,0,0.109262497229707
+"Clark, Mr Walter Miller","1st",27,"male",0,0,0.517625509387015
+"Clark, Mrs Walter Miller (Virginia McDowell)","1st",26,"female",1,1,0.939406741664421
+"Clarke, Mr Charles V","2nd",29,"male",0,0,0.214201242430529
+"Clarke, Mrs Charles V (Ada Maria)","2nd",NA,"female",1,1,NA
+"Cleaver, Ms Alice","1st",NA,"female",1,1,NA
+"Clifford, Mr George Quincy","1st",NA,"male",0,0,NA
+"Coelho, Mr Domingos Fernandes","3rd",20,"male",0,0,0.101866994290146
+"Cohen, Mr Gurshon (Gus)","3rd",19,"male",1,0,0.105507604483475
+"Colbert, Mr Patrick","3rd",24,"male",0,0,0.0883977341284923
+"Coleff, Mr Fotio","3rd",24,"male",0,0,0.0883977341284923
+"Coleff, Mr Peyo","3rd",36,"male",0,0,0.0571364544299869
+"Coleridge, Mr Reginald Charles","2nd",29,"male",0,0,0.214201242430529
+"Collander, Mr Erik","2nd",27,"male",0,0,0.227684694980432
+"Collett, Mr Sidney C Stuart","2nd",24,"male",1,0,0.24900973575974
+"Colley, Mr Edward Pomeroy","1st",NA,"male",0,0,NA
+"Collyer, Miss Marjorie","2nd",8,"female",1,1,0.896068532493528
+"Collyer, Mr Harvey","2nd",35,"male",0,0,0.177285814160676
+"Collyer, Mrs Harvey (Charlotte Tate)","2nd",31,"female",1,1,0.777856490789817
+"Compton, Miss Sara Rebecca","1st",39,"female",1,1,0.903066088522221
+"Compton, Mr Alexander Taylor, Jr","1st",37,"male",0,0,0.420374338459657
+"Compton, Mrs Alexander Taylor (Mary Eliza Ingersoll)","1st",64,"female",1,1,0.777705690904394
+"Conlin, Mr Thomas Henry","3rd",31,"male",0,0,0.068651206104855
+"Connaghton, Mr Michael","3rd",31,"male",0,0,0.068651206104855
+"Connolly, Miss Kate","3rd",22,"female",1,1,0.592993195206513
+"Connolly, Miss Kate","3rd",30,"female",0,1,0.515729432792362
+"Connors, Mr Patrick","3rd",NA,"male",0,0,NA
+"Cook, Mr Jacob","3rd",43,"male",0,0,0.0440358250461949
+"Cook, Mrs Selena Rogers","2nd",22,"female",0,1,0.832828815325489
+"Cor, Mr Bartol","3rd",35,"male",0,0,0.0592839677615253
+"Cor, Mr Ivan","3rd",27,"male",0,0,0.0793736437015634
+"Cor, Mr Ludovik","3rd",19,"male",0,0,0.105507604483475
+"Corbett, Mrs Walter H (Irene Colvin)","2nd",30,"female",0,1,0.784552334507812
+"Corey, Mrs Percy C (Mary Phyllis Elizabeth Miller)","2nd",NA,"female",0,1,NA
+"Corn, Mr Harry","3rd",30,"male",0,0,0.0711988279391841
+"Cornell, Mrs Robert Clifford (Malvina Helen Lamson)","1st",55,"female",1,1,0.832707307037392
+"Cotterill, Mr Harry","2nd",20,"male",0,0,0.279449595403504
+"Coutts, Master Neville","3rd",3,"male",1,0,0.180843322934633
+"Coutts, Master William Leslie","3rd",9,"male",1,0,0.148589714385518
+"Coutts, Mrs William (Minnie)","3rd",36,"female",1,1,0.457075324343236
+"Coxon, Mr Daniel","3rd",59,"male",0,0,0.0240202182066913
+"Crafton, Mr John Bertram","1st",NA,"male",0,0,NA
+"Crease, Mr Ernest James","3rd",19,"male",0,0,0.105507604483475
+"Cribb, Miss Laura Alice","3rd",17,"female",1,1,0.639279212487891
+"Cribb, Mr John Hatfield","3rd",44,"male",0,0,0.0424157583675875
+"Crosby, Captain Edward Gifford","1st",70,"male",0,0,0.166024067412937
+"Crosby, Miss Harriet R","1st",36,"female",1,1,0.912878314231112
+"Crosby, Mrs Edward Gifford (Catherine Elizabeth Halstead)","1st",69,"female",1,1,0.742013823280251
+"Cumings, Mr John Bradley","1st",39,"male",0,0,0.401410726404243
+"Cumings, Mrs John Bradley (Florence Briggs Thayer)","1st",38,"female",1,1,0.90644180080623
+"Cunningham, Mr Alfred Fleming","2nd",NA,"male",0,0,NA
+"Daher, Mr Tannous","3rd",NA,"male",0,0,NA
+"Dahl, Mr Charles Edward","3rd",45,"male",1,0,0.0408527464648178
+"Dahlberg, Miss Gerda Ulrika","3rd",22,"female",0,1,0.592993195206513
+"Dakic, Mr Branko","3rd",19,"male",0,0,0.105507604483475
+"Daly, Miss Marcella","3rd",30,"female",1,1,0.515729432792362
+"Daly, Mr Eugene","3rd",29,"male",1,0,0.0738334962653884
+"Daly, Mr Peter Denis ","1st",NA,"male",1,0,NA
+"Danbom, Master Gilbert Sigvard Emanuel","3rd",0.33,"male",0,0,0.196859050344605
+"Danbom, Mr Ernst Gilbert","3rd",34,"male",0,0,0.0615069314456223
+"Danbom, Mrs Ernst Gilbert (Anna Sigrid Maria Brogren)","3rd",28,"female",0,1,0.535264385193281
+"Daniel, Mr Robert Williams","1st",27,"male",1,0,0.517625509387015
+"Daniels, Ms Sarah","1st",NA,"female",1,1,NA
+"Danoff, Mr Yoto","3rd",27,"male",0,0,0.0793736437015634
+"Dantchoff, Mr Khristo","3rd",25,"male",0,0,0.0852912170639251
+"Davidson, Mr Thornton","1st",31,"male",0,0,0.478469323341342
+"Davidson, Mrs Thornton (Orian Hays)","1st",27,"female",1,1,0.937137964330525
+"Davies, Mr Alfred","3rd",24,"male",0,0,0.0883977341284923
+"Davies, Mr Charles Henry","2nd",21,"male",0,0,0.271629617525617
+"Davies, Mr Evan","3rd",22,"male",0,0,0.0949187191112233
+"Davies, Mr John","3rd",21,"male",0,0,0.0983381952525841
+"Davies, Mr Joseph","3rd",17,"male",0,0,0.11313412061774
+"Davis, Master John Morgan","2nd",8,"male",1,0,0.382943849701467
+"Davis, Miss Mary","2nd",28,"female",1,1,0.79750111978482
+"Davis, Mrs Agnes","2nd",49,"female",1,1,0.633679754115972
+"Davison, Mr Thomas Henry","3rd",NA,"male",0,0,NA
+"Davison, Mrs Thomas Henry (Mary Finck)","3rd",NA,"female",1,1,NA
+"de Brito, Mr Jose Joaquim","2nd",NA,"male",0,0,NA
+"De Messemaeker, Mr William Joseph","3rd",36,"male",1,0,0.0571364544299869
+"De Messemaeker, Mrs William Joseph (Anna)","3rd",36,"female",1,1,0.457075324343236
+"De Mulder, Mr Theo","3rd",30,"male",1,0,0.0711988279391841
+"de Villiers, Madame Berthe","1st",NA,"female",1,1,NA
+"Deacon, Mr Percy","2nd",18,"male",0,0,0.2954957722059
+"Dean, Master Bertram Vere","3rd",1,"male",1,0,0.192742017348221
+"Dean, Miss Elizabeth Gladys (Millvena)","3rd",0.17,"female",1,1,0.77409549695035
+"Dean, Mr Bertram","3rd",26,"male",0,0,0.082284016676387
+"Dean, Mrs Bertram (Eva)","3rd",33,"female",1,1,0.486355402134291
+"del Carlo, Mr Sebastiano","2nd",28,"male",0,0,0.220869254298734
+"del Carlo, Mrs Sebastiano (Argenia Genovese)","2nd",22,"female",1,1,0.832828815325489
+"Delalic, Mr Regyo","3rd",25,"male",0,0,0.0852912170639251
+"Denbury, Mr Herbert","2nd",25,"male",0,0,0.241755775030206
+"Denkoff, Mr Mito","3rd",NA,"male",0,0,NA
+"Dennis, Mr Samuel","3rd",23,"male",0,0,0.0916060668015756
+"Dennis, Mr William","3rd",26,"male",0,0,0.082284016676387
+"Devaney, Miss Margaret","3rd",19,"female",1,1,0.621020849550457
+"Dewan, Mr Frank","3rd",65,"male",0,0,0.0190845556423579
+"Dibden, Mr William","2nd",18,"male",0,0,0.2954957722059
+"Dibo, Mr Elias","3rd",NA,"male",0,0,NA
+"Dick, Mr Albert Adrian","1st",31,"male",1,0,0.478469323341342
+"Dick, Mrs Albert Adrian Vera Gillespie","1st",17,"female",1,1,0.956630311691071
+"Dimic, Mr Jovan","3rd",42,"male",0,0,0.0457148159942311
+"Dintcheff, Mr Valtcho","3rd",43,"male",0,0,0.0440358250461949
+"Dodge, Dr Washington","1st",NA,"male",1,0,NA
+"Dodge, Master Washington","1st",4,"male",1,0,0.725437899778352
+"Dodge, Mrs Washington (Ruth Vidaver)","1st",NA,"female",1,1,NA
+"Doling, Miss Elsie","2nd",18,"female",1,1,0.853524620473269
+"Doling, Mrs Ada","2nd",32,"female",1,1,0.771013286170696
+"Dooley, Mr Patrick","3rd",32,"male",0,0,0.0661882466142254
+"Dorkings, Mr Edward Arthur","3rd",19,"male",1,0,0.105507604483475
+"Douglas, Mr Walter Donald","1st",50,"male",0,0,0.303531857154776
+"Douglas, Mrs Frederick Charles (Suzette Baxter)","1st",27,"female",1,1,0.937137964330525
+"Douglas, Mrs Walter Donald (Mahala Dutton)","1st",48,"female",1,1,0.867516334489281
+"Dowdell, Miss Elizabeth","3rd",30,"female",1,1,0.515729432792362
+"Downton (?Douton), Mr William James","2nd",NA,"male",0,0,NA
+"Doyle, Miss Elizabeth","3rd",24,"female",0,1,0.573953378160072
+"Drapkin, Miss Jennie","3rd",23,"female",1,1,0.583504426485971
+"Drazonovic, Mr Josef","3rd",NA,"male",0,0,NA
+"Drew, Master Marshall Brines","2nd",8,"male",1,0,0.382943849701467
+"Drew, Mr James Vivian","2nd",42,"male",0,0,0.14074894617693
+"Drew, Mrs James Vivian (Lulu Thorne Christian)","2nd",34,"female",1,1,0.75688706977126
+"Driscoll, Miss Bridget","3rd",24,"female",1,1,0.573953378160072
+"Duff Gordon, Lady (Lucille Wallace Sutherland)","1st",48,"female",1,1,0.867516334489281
+"Duff Gordon, Sir Cosmo Edmund","1st",49,"male",1,0,0.311877011660929
+"Dulles, Mr William Crothers","1st",39,"male",0,0,0.401410726404243
+"Duquemin, Mr Joseph","3rd",24,"male",1,0,0.0883977341284923
+"Duran y More, Miss Asuncion","2nd",NA,"female",1,1,NA
+"Duran y More, Miss Florentina","2nd",NA,"female",1,1,NA
+"Dyker, Mr Adolf Fredrik","3rd",23,"male",0,0,0.0916060668015756
+"Dyker, Mrs Adolf Fredrik (Anna Elizabeth Judith Andersson)","3rd",22,"female",1,1,0.592993195206513
+"Earnshaw, Mrs Boulton (Olive Potter)","1st",23,"female",1,1,0.945761290813874
+"Econovic, Mr Joso","3rd",NA,"male",0,0,NA
+"Edvardsson, Mr Gustaf Hjalmar","3rd",18,"male",0,0,0.109262497229707
+"Eitemiller, Mr George Floyd","2nd",23,"male",0,0,0.256407750931386
+"Eklund, Mr Hans Linus","3rd",16,"male",0,0,0.117124892590941
+"Ekstrom, Mr Johan","3rd",45,"male",0,0,0.0408527464648178
+"Elias, Mr Elias","3rd",NA,"male",0,0,NA
+"Elias, Mr John","3rd",NA,"male",0,0,NA
+"Elias, Mr Joseph","3rd",NA,"male",0,0,NA
+"Elsbury, Mr James","3rd",47,"male",0,0,0.0378906333660509
+"Emanuel, Miss Virginia Ethel","3rd",5,"female",1,1,0.73930489583781
+"Emmeth, Mr Thomas","3rd",NA,"male",0,0,NA
+"Enander, Mr Ingvar","2nd",21,"male",0,0,0.271629617525617
+"Endres, Miss Caroline Louise","1st",NA,"female",1,1,NA
+"Eustis, Miss Elizabeth Mussey","1st",53,"female",1,1,0.843339809917377
+"Evans, Miss Edith Corse","1st",36,"female",0,1,0.912878314231112
+"Everett, Thomas James","3rd",NA,"male",0,0,NA
+"Fahlstrom, Mr Arne Jonas","2nd",19,"male",0,0,0.287405869965149
+"Farrell, Mr James","3rd",NA,"male",0,0,NA
+"Farthing, Mr John","1st",NA,"male",0,0,NA
+"Faunthorpe, Mr Harry","2nd",NA,"male",0,0,NA
+"Faunthorpe, Mrs Lizzie (see Wilkinson, E)","2nd",NA,"female",1,1,NA
+"Fillbrook, Mr Charles","2nd",NA,"male",0,0,NA
+"Finoli, Mr Luigi","3rd",NA,"male",1,0,NA
+"Fischer, Mr Eberhard Telander","3rd",NA,"male",0,0,NA
+"Flegenheim, Mrs Alfred (Antoinette)","1st",NA,"female",1,1,NA
+"Fleming, Ms Margaret","1st",NA,"female",0,1,NA
+"Flynn, Mr James","3rd",NA,"male",0,0,NA
+"Flynn, Mr John","3rd",NA,"male",0,0,NA
+"Flynn, Mr John Irving","1st",NA,"male",1,0,NA
+"Foley, Mr Joseph","3rd",NA,"male",0,0,NA
+"Foley, Mr William","3rd",NA,"male",0,0,NA
+"Foo, Mr Choong","3rd",NA,"male",1,0,NA
+"Ford, Miss Doolina Margaret","3rd",21,"female",0,1,0.602413085142407
+"Ford, Miss Maggie","3rd",9,"female",0,1,0.70799200386176
+"Ford, Mr Arthur","3rd",NA,"male",0,0,NA
+"Ford, Mr Edward Watson","3rd",18,"male",0,0,0.109262497229707
+"Ford, Mr Neil Watson","3rd",16,"male",0,0,0.117124892590941
+"Ford, Mrs Edward (Margaret Ann)","3rd",48,"female",0,1,0.344739417955094
+"Foreman, Mr Benjamin Laventall","1st",30,"male",0,0,0.488252366679562
+"Fortune, Miss Alice Elizabeth","1st",24,"female",1,1,0.943716189692524
+"Fortune, Miss Ethel Flora","1st",28,"female",1,1,0.93479013460375
+"Fortune, Miss Mabel","1st",23,"female",1,1,0.945761290813874
+"Fortune, Mr Charles Alexander","1st",19,"male",0,0,0.594824423943106
+"Fortune, Mr Mark","1st",64,"male",0,0,0.201167901806749
+"Fortune, Mrs Mark (Mary McDougald)","1st",60,"female",1,1,0.803616565887262
+"Fox, Mr Patrick","3rd",NA,"male",0,0,NA
+"Fox, Mr Stanley H","2nd",38,"male",0,0,0.160788071075947
+"Francatelli, Ms Laura Mabel","1st",NA,"female",1,1,NA
+"Franklin, Mr Charles","3rd",NA,"male",0,0,NA
+"Franklin, Mr Thomas Parham","1st",NA,"male",0,0,NA
+"Frauenthal, Dr Henry William","1st",49,"male",1,0,0.311877011660929
+"Frauenthal, Mr Isaac Gerald","1st",44,"male",1,0,0.355379716823008
+"Frauenthal, Mrs Henry William (Clara Heinsheimer)","1st",NA,"female",1,1,NA
+"Frolicher-Stehli, Mr Maxmillian","1st",60,"male",1,0,0.227531308207097
+"Frolicher-Stehli, Mrs Maxmillian (Margaretha Emerentia Stehli)","1st",48,"female",1,1,0.867516334489281
+"Frolicher, Miss Marguerite","1st",22,"female",1,1,0.947736197476459
+"Frost, Mr Anthony (Archie) W","2nd",NA,"male",0,0,NA
+"Fry, Mr Richard","1st",NA,"male",0,0,NA
+"Funk, Miss Annie C","2nd",38,"female",0,1,0.726905924538166
+"Futrelle, Mr Jacques","1st",37,"male",0,0,0.420374338459657
+"Futrelle, Mrs Jacques (May Peel)","1st",35,"female",1,1,0.915944122646097
+"Fynney, Mr Joseph J","2nd",35,"male",0,0,0.177285814160676
+"Gale, Mr Harry","2nd",35,"male",0,0,0.177285814160676
+"Gale, Mr Shadrach","2nd",38,"male",0,0,0.160788071075947
+"Gallagher, Mr Martin","3rd",25,"male",0,0,0.0852912170639251
+"Garfirth, Mr John","3rd",NA,"male",0,0,NA
+"Garside, Miss Ethel","2nd",24,"female",1,1,0.821633812494155
+"Gaskell, Mr Alfred","2nd",16,"male",0,0,0.312064288178782
+"Gavey, Mr Lawrence","2nd",26,"male",0,0,0.234647105126899
+"Gee, Mr Arthur H","1st",47,"male",0,0,0.328935177105907
+"Geiger, Miss Emily ","1st",NA,"female",1,1,NA
+"Georges, Mrs Shahini Weappi","3rd",38,"female",1,1,0.437706337695586
+"Gibson, Miss Dorothy","1st",22,"female",1,1,0.947736197476459
+"Gibson, Mrs Leonard (Pauline C Boeson)","1st",45,"female",1,1,0.880450734780513
+"Giglio, Mr Victor","1st",NA,"male",0,0,NA
+"Gilbert, Mr William","2nd",45,"male",0,0,0.127125854370423
+"Giles, Mr Edgar","2nd",24,"male",0,0,0.24900973575974
+"Giles, Mr Frederick","2nd",21,"male",0,0,0.271629617525617
+"Giles, Mr Ralph","2nd",22,"male",0,0,0.263948309194979
+"Gilinski, Mr Leslie","3rd",22,"male",0,0,0.0949187191112233
+"Gill, Mr John W","2nd",NA,"male",0,0,NA
+"Gillespie, Mr William","2nd",34,"male",0,0,0.183072389299544
+"Gilnagh, Miss Katie","3rd",16,"female",1,1,0.648263266308095
+"Givard, Mr Hans Christensen","2nd",30,"male",0,0,0.207680877776629
+"Glynn, Miss Mary Agatha","3rd",NA,"female",1,1,NA
+"Goldenberg, Mr Samuel L","1st",49,"male",1,0,0.311877011660929
+"Goldenberg, Mrs Samuel L (Edwiga Grabowsko)","1st",NA,"female",1,1,NA
+"Goldschmidt, Mr George B","1st",71,"male",0,0,0.160670375655676
+"Goldsmith, Master Frank John William","3rd",9,"male",1,0,0.148589714385518
+"Goldsmith, Mr Frank John","3rd",33,"male",0,0,0.0638075955156743
+"Goldsmith, Mr Nathan","3rd",41,"male",0,0,0.0474546454344017
+"Goldsmith, Mrs Frank John (Emily A Brown)","3rd",NA,"female",1,1,NA
+"Goncalves, Mr Manuel Estanslas","3rd",38,"male",0,0,0.0530589714591196
+"Goodwin, Master Harold V","3rd",9,"male",0,0,0.148589714385518
+"Goodwin, Master Sidney L","3rd",6,"male",0,0,0.164080552039393
+"Goodwin, Master William F","3rd",11,"male",0,0,0.138947555422432
+"Goodwin, Miss Jessie A","3rd",10,"female",0,1,0.699827128608158
+"Goodwin, Miss Lillian A","3rd",16,"female",0,1,0.648263266308095
+"Goodwin, Mr Charles E","3rd",14,"male",0,0,0.12547335956873
+"Goodwin, Mr Frederick","3rd",40,"male",0,0,0.0492572720582684
+"Goodwin, Mrs Frederick (Augusta)","3rd",43,"female",0,1,0.390226533671703
+"Gracie, Colonel Archibald IV","1st",54,"male",1,0,0.271457031558701
+"Graham, Miss Margaret Edith","1st",19,"female",1,1,0.953260679761645
+"Graham, Mr George Edward","1st",38,"male",0,0,0.410859423887632
+"Graham, Mrs William Thompson (Edith Junkins)","1st",58,"female",1,1,0.815688733285377
+"Green, Mr George","3rd",40,"male",0,0,0.0492572720582684
+"Greenberg, Mr Samuel","2nd",50,"male",0,0,0.106929299854817
+"Greenfield, Mr William Bertram","1st",23,"male",1,0,0.556566428042773
+"Greenfield, Mrs Leo David (Blanche Strouse)","1st",45,"female",1,1,0.880450734780513
+"Gronnestad, Mr Daniel Danielsen","3rd",32,"male",0,0,0.0661882466142254
+"Guest, Mr Robert","3rd",NA,"male",0,0,NA
+"Guggenheim, Mr Benjamin","1st",46,"male",0,0,0.337640168447024
+"Gustafsson, Mr Alfred Ossian","3rd",20,"male",0,0,0.101866994290146
+"Gustafsson, Mr Anders Vilhelm","3rd",37,"male",0,0,0.0550621796834955
+"Gustafsson, Mr Johan Birger","3rd",28,"male",0,0,0.0765576227645893
+"Gustafsson, Mr Karl Gideon","3rd",19,"male",0,0,0.105507604483475
+"Haas, Miss Aloisia","3rd",24,"female",0,1,0.573953378160072
+"Hagardon, Miss Kate","3rd",17,"female",0,1,0.639279212487891
+"Hagland, Mr Ingvald Olsen","3rd",NA,"male",0,0,NA
+"Hagland, Mr Konrad Mathias Reiersen","3rd",NA,"male",0,0,NA
+"Hakkarainen, Mr Pekko Pietari","3rd",28,"male",0,0,0.0765576227645893
+"Hakkarainen, Mrs Pekko Pietari","3rd",24,"female",1,1,0.573953378160072
+"Hale, Mr Reginald","2nd",30,"male",0,0,0.207680877776629
+"Hamalainen, Master Viljo","2nd",1,"male",1,0,0.449464653018495
+"Hamalainen, Mrs William (Anna)","2nd",23,"female",1,1,0.827303079768793
+"Hampe, Mr Leon","3rd",20,"male",0,0,0.101866994290146
+"Hansen, Mr Claus Peter","3rd",41,"male",0,0,0.0474546454344017
+"Hansen, Mr Henrik Juul","3rd",26,"male",0,0,0.082284016676387
+"Hansen, Mr Henry Damsgaard","3rd",21,"male",0,0,0.0983381952525841
+"Hansen, Mrs Claus Peter","3rd",45,"female",1,1,0.371750669283926
+"Harbeck, Mr William H","2nd",44,"male",0,0,0.131536978225853
+"Harder, Mr George Achilles","1st",25,"male",1,0,0.537152619070997
+"Harder, Mrs George Achilles (Dorothy Annan)","1st",21,"female",1,1,0.949643023840328
+"Harknett, Miss Alice","3rd",NA,"female",0,1,NA
+"Harmer, Mr Abraham","3rd",NA,"male",0,0,NA
+"Harper, Miss Nina","2nd",6,"female",1,1,0.903142437842429
+"Harper, Mr Henry Sleeper","1st",48,"male",1,0,0.320346072084277
+"Harper, Mrs Henry Sleeper (Myna Haxtun)","1st",49,"female",1,1,0.862948490684604
+"Harper, Rev John","2nd",28,"male",0,0,0.220869254298734
+"Harrington, Mr Charles","1st",NA,"male",0,0,NA
+"Harris, Mr George","2nd",30,"male",1,0,0.207680877776629
+"Harris, Mr Henry Birkhardt","1st",45,"male",0,0,0.346456594736672
+"Harris, Mr Walter","2nd",NA,"male",0,0,NA
+"Harris, Mrs Henry Birkhardt (Irene Wallach)","1st",36,"female",1,1,0.912878314231112
+"Harrison, Mr William   Henry","1st",40,"male",0,0,0.392034728385069
+"Hart, Miss Eva Miriam","2nd",7,"female",1,1,0.899660857708335
+"Hart, Mr Benjamin","2nd",43,"male",0,0,0.136077301555548
+"Hart, Mr Henry","3rd",NA,"male",0,0,NA
+"Hart, Mrs Benjamin (Esther)","2nd",45,"female",1,1,0.669238522240572
+"Hassah, Mr Hamad","1st",NA,"male",0,0,NA
+"Hassan, Mr M Houssein","3rd",NA,"male",0,0,NA
+"Hawksford, Mr Walter James","1st",NA,"male",1,0,NA
+"Hays, Miss Margaret Bechstein","1st",24,"female",1,1,0.943716189692524
+"Hays, Mr Charles Melville","1st",55,"male",0,0,0.263778836252869
+"Hays, Mrs Charles Melville (Clara Jennings Gregg)","1st",52,"female",1,1,0.848446421581739
+"Head, Mr Christopher","1st",NA,"male",0,0,NA
+"Healy, Miss Nora","3rd",NA,"female",0,1,NA
+"Hedman, Mr Oscar","3rd",27,"male",1,0,0.0793736437015634
+"Hee, Mr Ling","3rd",NA,"male",0,0,NA
+"Hegarty, Miss Nora","3rd",18,"female",0,1,0.630196590168165
+"Heikkinen, Miss Laina","3rd",26,"female",1,1,0.554691736186551
+"Heininen, Miss Wendla Maria","3rd",23,"female",0,1,0.583504426485971
+"Hellstrom, Hilda Maria","3rd",22,"female",1,1,0.592993195206513
+"Hemming, Miss Nora","3rd",NA,"female",0,1,NA
+"Hendekovic, Mr Ignaz","3rd",NA,"male",0,0,NA
+"Henery, Delia","3rd",NA,"female",0,1,NA
+"Henriksson, Jenny Lovisa","3rd",28,"female",0,1,0.535264385193281
+"Herman, Miss Alice","2nd",24,"female",1,1,0.821633812494155
+"Herman, Miss Kate","2nd",24,"female",1,1,0.821633812494155
+"Herman, Mr Samuel","2nd",49,"male",0,0,0.110728525783668
+"Herman, Mrs Samuel (Jane Laver)","2nd",48,"female",1,1,0.642725327424144
+"Hewlett, Mrs Mary D","2nd",NA,"female",1,1,NA
+"Hickman, Mr Leonard Mark","2nd",34,"male",0,0,0.183072389299544
+"Hickman, Mr Lewis","2nd",32,"male",0,0,0.195082818613641
+"Hickman, Mr Stanley George","2nd",21,"male",0,0,0.271629617525617
+"Hilliard, Mr Herbert Henry","1st",NA,"male",0,0,NA
+"Hiltunen, Miss Marta","2nd",18,"female",0,1,0.853524620473269
+"Hipkins, Mr William Edward","1st",NA,"male",0,0,NA
+"Hippach, Miss Jean Gertrude","1st",16,"female",1,1,0.958226942260238
+"Hippach, Mrs Louis Albert (Ida Sophia Fischer)","1st",44,"female",1,1,0.884513306522527
+"Hirvonen, Miss Hildur E","3rd",2,"female",0,1,0.76131260286519
+"Hirvonen, Mrs Alexander","3rd",22,"female",1,1,0.592993195206513
+"Hocking, Miss Ellen (Nellie)","2nd",21,"female",1,1,0.838212321582717
+"Hocking, Mr George","2nd",23,"male",0,0,0.256407750931386
+"Hocking, Mr Samuel James","2nd",NA,"male",0,0,NA
+"Hocking, Mrs Elizabeth","2nd",53,"female",1,1,0.59660246951818
+"Hodges, Mr Henry Price","2nd",52,"male",0,0,0.0996740491061387
+"Hogeboom, Mrs John C (Anna Andrews)","1st",51,"female",1,1,0.853415507279335
+"Hold, Mr Stephen","2nd",42,"male",0,0,0.14074894617693
+"Hold, Mrs Stephen (Annie Margaret)","2nd",36,"female",1,1,0.742180809004211
+"Holm, Mr John Frederik Alexander","3rd",43,"male",0,0,0.0440358250461949
+"Holthen, Mr Johan Martin","3rd",NA,"male",0,0,NA
+"Holverson, Mr Alexander Oskar","1st",42,"male",0,0,0.373525694998496
+"Holverson, Mrs Alexander Oskar (Mary Aline Towner)","1st",35,"female",1,1,0.915944122646097
+"Homer, Mr Harry","1st",35,"male",1,0,0.439575939996752
+"Honkanen, Miss Eluna","3rd",27,"female",1,1,0.544995181455537
+"Hood, Mr Ambrose, Jr","2nd",21,"male",0,0,0.271629617525617
+"Horgan, Mr John","3rd",NA,"male",0,0,NA
+"Hosono, Mr Masafumi","2nd",41,"male",1,0,0.145553951064238
+"Howard, Miss May","3rd",NA,"female",1,1,NA
+"Howard, Mr Benjamin","2nd",NA,"male",0,0,NA
+"Howard, Mrs Benjamin (Ellen Truelove)","2nd",NA,"female",0,1,NA
+"Hoyt, Mr Frederick Maxfield","1st",38,"male",1,0,0.410859423887632
+"Hoyt, Mr William F","1st",NA,"male",0,0,NA
+"Hoyt, Mrs Frederick Maxfield (Jane Anne Forby)","1st",35,"female",1,1,0.915944122646097
+"Humblin, Mr Adolf Mathias Nicolai Olsen","3rd",42,"male",0,0,0.0457148159942311
+"Hunt, Mr George Henry","2nd",33,"male",0,0,0.189004446887408
+"Hyman, Mr Abraham","3rd",NA,"male",1,0,NA
+"Icabad (Icabod), Ms","1st",NA,"female",1,1,NA
+"Ilett, Miss Bertha","2nd",17,"female",1,1,0.858355000891812
+"Ilieff, Mr Ylio","3rd",NA,"male",0,0,NA
+"Ilmakangas, Miss Ida Livija","3rd",27,"female",0,1,0.544995181455537
+"Ilmakangas, Miss Pieta Sofia","3rd",25,"female",0,1,0.564346832443194
+"Isham, Miss Anne Elizabeth","1st",50,"female",0,1,0.858248888378257
+"Ismay, Mr Joseph Bruce","1st",49,"male",1,0,0.311877011660929
+"Ivanoff, Mr Konio","3rd",NA,"male",0,0,NA
+"Jacobsohn Mr Samuel","*",NA,"male",0,0,NA
+"Jacobsohn, Mrs Sidney Samuel (Amy Frances Christy)","2nd",NA,"female",1,1,NA
+"Jansen, Mr Carl Olof","3rd",27,"male",1,0,0.0793736437015634
+"Jardin, Mr Jose Netto","3rd",NA,"male",0,0,NA
+"Jarvis, Mr John Denzil","2nd",NA,"male",0,0,NA
+"Jefferys, Mr Clifford","2nd",NA,"male",0,0,NA
+"Jefferys, Mr Ernest","2nd",NA,"male",0,0,NA
+"Jenkin, Mr Stephen Curnow","2nd",NA,"male",0,0,NA
+"Jensen, Miss Carla Christine","3rd",19,"female",1,1,0.621020849550457
+"Jensen, Mr Hans Peder","3rd",20,"male",0,0,0.101866994290146
+"Jensen, Mr Niels Peder","3rd",48,"male",0,0,0.0364880175029884
+"Jensen, Mr Svend Lauritz","3rd",17,"male",0,0,0.11313412061774
+"Jermyn, Miss Annie","3rd",NA,"female",1,1,NA
+"Jerwan, Mrs Amin S (Marie Thuillard)","2nd",23,"female",1,1,0.827303079768793
+"Johannesen-Bratthammer, Mr Bernt","3rd",NA,"male",0,0,NA
+"Johanson, Mr Jakob Alfred","3rd",34,"male",0,0,0.0615069314456223
+"Johansson, Mr Erik","3rd",22,"male",0,0,0.0949187191112233
+"Johansson, Mr Gustaff Joel","3rd",33,"male",0,0,0.0638075955156743
+"Johansson, Mr Karl Johan","3rd",32,"male",1,0,0.0661882466142254
+"Johansson, Mr Nils","3rd",29,"male",0,0,0.0738334962653884
+"Johansson, Oscar L","3rd",26,"male",1,0,0.082284016676387
+"Johnson, Master Harold Theodor","3rd",4,"male",1,0,0.175112101715354
+"Johnson, Miss Eleanor Ileen","3rd",1,"female",1,1,0.768358612187211
+"Johnson, Mr Alfred","3rd",49,"male",0,0,0.0351354268256775
+"Johnson, Mr Malkolm Joackim","3rd",33,"male",0,0,0.0638075955156743
+"Johnson, Mr William Cahoone Jr","3rd",19,"male",0,0,0.105507604483475
+"Johnson, Mrs Oscar W","3rd",24,"female",0,1,0.573953378160072
+"Johnston, Master William A","3rd",NA,"male",0,0,NA
+"Johnston, Miss Catherine H","3rd",NA,"female",0,1,NA
+"Johnston, Mr Andrew G","3rd",NA,"male",0,0,NA
+"Johnston, Mrs Andrew G","3rd",NA,"female",0,1,NA
+"Jones, Mr Charles Cresson","1st",46,"male",0,0,0.337640168447024
+"Jonkoff, Mr Lazor","3rd",NA,"male",0,0,NA
+"Jonsson, Mr Carl","3rd",32,"male",1,0,0.0661882466142254
+"Jonsson, Nils Hilding","3rd",27,"male",0,0,0.0793736437015634
+"Julian, Mr Henry Forbes","1st",NA,"male",0,0,NA
+"Jussila, Miss Aina Maria","3rd",21,"female",0,1,0.602413085142407
+"Jussila, Miss Katriina","3rd",20,"female",0,1,0.611757697423503
+"Jussila, Mr Erik","3rd",32,"male",1,0,0.0661882466142254
+"Kallio, Mr Nikolai Erland","3rd",17,"male",0,0,0.11313412061774
+"Kalvig, Mr Johannes K Halverson","3rd",21,"male",0,0,0.0983381952525841
+"Kantor, Mr Sinai","2nd",34,"male",0,0,0.183072389299544
+"Kantor, Mrs Sinai (Miriam Sternim)","2nd",NA,"female",1,1,NA
+"Karajic, Mr Milan","3rd",30,"male",0,0,0.0711988279391841
+"Karlsson, Mr Einar Gervasius","3rd",21,"male",1,0,0.0983381952525841
+"Karlsson, Mr Julius Konrad Eugen","3rd",23,"male",0,0,0.0916060668015756
+"Karlsson, Mr Nils August","3rd",22,"male",0,0,0.0949187191112233
+"Karnes, Mrs J Frank (Claire Bennett)","2nd",22,"female",0,1,0.832828815325489
+"Karun, Miss Anna Mary","3rd",4,"female",1,1,0.746784488123998
+"Karun, Mr Franz","3rd",39,"male",0,0,0.0511246986322604
+"Kassem, Mr Fared","3rd",NA,"male",0,0,NA
+"Keane, Miss Nora A","2nd",NA,"female",1,1,NA
+"Keane, Mr Andrew","3rd",20,"male",0,0,0.101866994290146
+"Keane, Mr Daniel","2nd",NA,"male",0,0,NA
+"Keefe, Mr Arthur","3rd",NA,"male",0,0,NA
+"Keeping, Mr Edwin","1st",32,"male",0,0,0.468702768045985
+"Kekic, Mr Tido","3rd",NA,"male",0,0,NA
+"Kelly, Miss Anna Kate","3rd",21,"female",1,1,0.602413085142407
+"Kelly, Miss Mary","3rd",21,"female",1,1,0.602413085142407
+"Kelly, Mr James","3rd",42,"male",0,0,0.0457148159942311
+"Kelly, Mr James","3rd",44,"male",0,0,0.0424157583675875
+"Kelly, Mrs Florence (Fannie)","2nd",45,"female",1,1,0.669238522240572
+"Kenchen, Ms Amelia","1st",NA,"female",1,1,NA
+"Kennedy, Mr John","3rd",24,"male",0,0,0.0883977341284923
+"Kent, Mr Edward Austin","1st",58,"male",0,0,0.241595874195375
+"Kenyon, Mr Frederick R","1st",41,"male",0,0,0.382737702218232
+"Kenyon, Mrs Frederick R (Marion)","1st",NA,"female",1,1,NA
+"Khalil, Mr Betros","3rd",NA,"male",0,0,NA
+"Khalil, Mr Saad","3rd",NA,"male",0,0,NA
+"Khalil, Mrs Betros","3rd",NA,"female",0,1,NA
+"Kiernan, Mr John","3rd",25,"male",0,0,0.0852912170639251
+"Kiernan, Mr Philip","3rd",22,"male",0,0,0.0949187191112233
+"Kilgannon, Mr Thomas","3rd",22,"male",0,0,0.0949187191112233
+"Kimball, Mr Edwin Nelson Jr","1st",42,"male",1,0,0.373525694998496
+"Kimball, Mrs Edwin Nelson Jr (Gertrude Parsons)","1st",40,"female",1,1,0.899582069126923
+"Kink, Miss Louise Gretchen","3rd",4,"female",1,1,0.746784488123998
+"Kink, Miss Maria","3rd",22,"female",0,1,0.592993195206513
+"Kink, Mr Anton","3rd",39,"male",1,0,0.0511246986322604
+"Kink, Mr Vincenz","3rd",26,"male",0,0,0.082284016676387
+"Kink, Mrs Anton (Louise Heilmann)","3rd",26,"female",0,1,0.554691736186551
+"Kirkland, Rev Charles Leonard","2nd",NA,"male",0,0,NA
+"Klaber, Mr Herman","1st",NA,"male",0,0,NA
+"Klasen, Miss Gertrud Emilia","3rd",1.5,"female",0,1,0.764853884521836
+"Klasen, Mr Klas Albin","3rd",18,"male",0,0,0.109262497229707
+"Klasen, Mrs Hulda Kristina","3rd",36,"female",0,1,0.457075324343236
+"Knight, Mr Robert","2nd",NA,"male",0,0,NA
+"Kraeff, Mr Theodor","3rd",NA,"male",0,0,NA
+"Krekorian, Mr Neshan","3rd",25,"male",1,0,0.0852912170639251
+"Kvillner, Mr Johan Henrik Johannesson","2nd",31,"male",0,0,0.201308147665738
+"Lahowd, Mr Sarkis","3rd",NA,"male",0,0,NA
+"Lahtinen, Mrs William (Anna Sylvan)","2nd",26,"female",0,1,0.809860271279583
+"Lahtinen, Rev William","2nd",30,"male",0,0,0.207680877776629
+"Laitinen, Miss Kritina Sofia","3rd",37,"female",0,1,0.447370865679246
+"Laleff, Mr Kristo","3rd",NA,"male",0,0,NA
+"Lam, Mr Ali","3rd",NA,"male",1,0,NA
+"Lam, Mr Len","3rd",NA,"male",0,0,NA
+"Lamb, Mr John James","2nd",NA,"male",0,0,NA
+"Landegren, Miss Aurora Adelia","3rd",22,"female",1,1,0.592993195206513
+"Lane, Mr Patrick","3rd",20,"male",0,0,0.101866994290146
+"Lang, Mr Fang","3rd",26,"male",1,0,0.082284016676387
+"LaRoche, Miss Louise","2nd",1,"female",1,1,0.918976617025983
+"LaRoche, Miss Simonne","2nd",3,"female",1,1,0.912947680022674
+"LaRoche, Mr Joseph","2nd",26,"male",0,0,0.234647105126899
+"LaRoche, Mrs Joseph (Juliet)","2nd",22,"female",1,1,0.832828815325489
+"Larsson-Rondberg, Mr Edvard","3rd",22,"male",0,0,0.0949187191112233
+"Larsson, Mr August Viktor","3rd",29,"male",0,0,0.0738334962653884
+"Larsson, Mr Bengt Edvin","3rd",29,"male",0,0,0.0738334962653884
+"Leader, Dr Alice Farnham","1st",NA,"female",1,1,NA
+"Leeni, Mr Fahim","3rd",NA,"male",1,0,NA
+"Lefebre, Master Henry","3rd",NA,"male",0,0,NA
+"Lefebre, Miss Ida","3rd",NA,"female",0,1,NA
+"Lefebre, Miss Jeannie","3rd",NA,"female",0,1,NA
+"Lefebre, Miss Mathilde","3rd",NA,"female",0,1,NA
+"Lefebre, Mrs Frank","3rd",NA,"female",0,1,NA
+"Lehmann, Miss Bertha","2nd",NA,"female",1,1,NA
+"Leinonen, Mr Antti Gustaf","3rd",32,"male",0,0,0.0661882466142254
+"Leitch, Miss Jessie","2nd",NA,"female",1,1,NA
+"Lemberopolous, Mr Peter L","3rd",NA,"male",0,0,NA
+"Lemom, Mr Denis","3rd",21,"male",0,0,0.0983381952525841
+"Lemon, Miss Mary","3rd",21,"female",0,1,0.602413085142407
+"Lemore, Mrs Amelia","2nd",34,"female",1,1,0.75688706977126
+"Leonard, Mr Lionel","3rd",36,"male",0,0,0.0571364544299869
+"LeRoy, Miss Berthe","1st",NA,"female",1,1,NA
+"Lesneur, Mr Gustave","1st",NA,"male",0,0,NA
+"Lester, Mr James","3rd",39,"male",0,0,0.0511246986322604
+"Levy, Mr Rene Jacques","2nd",NA,"male",0,0,NA
+"Lewy, Mr Ervin G","1st",NA,"male",0,0,NA
+"Leyson, Mr Robert William Norman","2nd",25,"male",0,0,0.241755775030206
+"Lievens, Mr Rene","3rd",24,"male",0,0,0.0883977341284923
+"Lindahl, Miss Agda V","3rd",25,"female",0,1,0.564346832443194
+"Lindblom, Miss Augusta Charlotta","3rd",45,"female",0,1,0.371750669283926
+"Lindeberg-Lind, Mr Erik Gustaf","1st",42,"male",0,0,0.373525694998496
+"Lindell, Mr Edvard Bengtsson","3rd",36,"male",0,0,0.0571364544299869
+"Lindell, Mrs Edvard Bengtsson","3rd",30,"female",0,1,0.515729432792362
+"Lindqvist, Eino William","3rd",20,"male",1,0,0.101866994290146
+"Lindstrom, Mrs Carl Johan (Sigrid Posse)","1st",55,"female",1,1,0.832707307037392
+"Linehan, Mr Michael","3rd",NA,"male",0,0,NA
+"Lines, Miss Mary Conover","1st",16,"female",1,1,0.958226942260238
+"Lines, Mrs Ernest H (Elizabeth Lindsey James)","1st",50,"female",1,1,0.858248888378257
+"Ling, Mr Lee","3rd",NA,"male",0,0,NA
+"Lingan, Mr John","2nd",NA,"male",0,0,NA
+"Lingrey, Mr Edward","1st",NA,"male",0,0,NA
+"Lithman, Mr Simon","3rd",NA,"male",0,0,NA
+"Lobb, Mr William Arthur","3rd",NA,"male",0,0,NA
+"Lobb, Mrs William Arthur","3rd",NA,"female",0,1,NA
+"Lockyer, Mr Edward","3rd",NA,"male",0,0,NA
+"Long, Mr Milton Clyde","1st",29,"male",0,0,0.498044418006566
+"Longley, Miss Gretchen Fiske","1st",21,"female",1,1,0.949643023840328
+"Loring, Mr Joseph Holland","1st",30,"male",0,0,0.488252366679562
+"Louch, Mr Charles Alexander","2nd",48,"male",0,0,0.114645410566384
+"Louch, Mrs Charles Alexander (Alice Adelaide)","2nd",NA,"female",1,1,NA
+"Lovell, Mr John","3rd",NA,"male",0,0,NA
+"Lulich, Mr Nicola","3rd",NA,"male",1,0,NA
+"Lundahl, Mr Johan","3rd",NA,"male",0,0,NA
+"Lundin, Miss Olga Elida","3rd",NA,"female",1,1,NA
+"Lundstrom, Mr Thure Edvin","3rd",NA,"male",0,0,NA
+"Lyntakoff, Mr Stanko","3rd",NA,"male",0,0,NA
+"Mack, Mrs Mary","2nd",57,"female",0,1,0.558387717655539
+"MacKay, Mr George William","3rd",NA,"male",0,0,NA
+"Madigan, Miss Margaret","3rd",NA,"female",1,1,NA
+"Madill, Miss Georgette Alexandra","1st",15,"female",1,1,0.959767265831377
+"Madsen, Mr Frithiof","3rd",NA,"male",0,0,NA
+"Maenpaa, Mr Matti Alexanteri","3rd",NA,"male",0,0,NA
+"Maguire, Mr John Edward","1st",30,"male",0,0,0.488252366679562
+"Mahon, Miss Delia","3rd",NA,"female",0,1,NA
+"Maisner, Mr Simon","3rd",NA,"male",0,0,NA
+"Makinen, Mr Kalle Edvard","3rd",NA,"male",0,0,NA
+"Malachard, Mr Noel","2nd",NA,"male",0,0,NA
+"Mallet, Master Andre","2nd",2,"male",1,0,0.439790889372101
+"Mallet, Mr Albert","2nd",NA,"male",0,0,NA
+"Mallet, Mrs Albert (Antoinette)","2nd",NA,"female",1,1,NA
+"Maloney, Ms","1st",NA,"female",1,1,NA
+"Mamee, Mr Hanna","3rd",NA,"male",1,0,NA
+"Mangan, Miss Mary","3rd",NA,"female",0,1,NA
+"Mangiavacchi, Mr Serafino Emilio","2nd",NA,"male",0,0,NA
+"Mannion, Miss Margareth","3rd",NA,"female",1,1,NA
+"Mansour, Mr Hanna","3rd",NA,"male",0,0,NA
+"Mantvila, Rev Joseph","2nd",27,"male",0,0,0.227684694980432
+"Mardirosian, Mr Sarkis","3rd",NA,"male",0,0,NA
+"Marechal, Mr Pierre","1st",NA,"male",1,0,NA
+"Marinko, Mr Dmitri","3rd",NA,"male",0,0,NA
+"Markim, Mr Johann","3rd",NA,"male",0,0,NA
+"Markoff, Mr Marin","3rd",NA,"male",0,0,NA
+"Marshall, Mrs Kate Louise Phillips","2nd",19,"female",1,1,0.848558577245473
+"Marvin, Mr Daniel Warner","1st",NA,"male",0,0,NA
+"Marvin, Mrs Daniel Warner (Mary Graham Carmichael Farquarson)","1st",NA,"female",1,1,NA
+"Masselmany, Mrs Fatima","3rd",NA,"female",1,1,NA
+"Matinoff, Mr Nicola","3rd",NA,"male",0,0,NA
+"Matthews, Mr William John","2nd",30,"male",0,0,0.207680877776629
+"Maybery, Mr Frank H","2nd",20,"male",0,0,0.279449595403504
+"McCaffry, Mr Thomas Francis","1st",46,"male",0,0,0.337640168447024
+"McCarthy, Miss Katie","3rd",NA,"female",1,1,NA
+"McCarthy, Mr Timothy J","1st",54,"male",0,0,0.271457031558701
+"McCormack, Mr Thomas J","3rd",NA,"male",0,0,NA
+"McCoy, Miss Agnes","3rd",NA,"female",0,1,NA
+"McCoy, Miss Alice","3rd",NA,"female",0,1,NA
+"McCoy, Mr Bernard","3rd",NA,"male",0,0,NA
+"McCrae, Mr Arthur Gordon","2nd",45,"male",0,0,0.127125854370423
+"McCrie, Mr James Matthew","2nd",NA,"male",0,0,NA
+"McDermott, Miss Delia","3rd",NA,"female",0,1,NA
+"McElroy, Mr Michael","3rd",NA,"male",0,0,NA
+"McGough, Mr James R","1st",36,"male",1,0,0.429948794322079
+"McGovern, Mrs Hugh","3rd",NA,"female",1,1,NA
+"McGowan, Miss Anna","3rd",NA,"female",0,1,NA
+"McGowan, Miss Katherine","3rd",NA,"female",0,1,NA
+"McKane, Mr Peter D","2nd",46,"male",0,0,0.122841734576762
+"McMahon, Mr Martin","3rd",NA,"male",0,0,NA
+"McNamee, Mr Neal","3rd",NA,"male",0,0,NA
+"McNamee, Mrs Neal","3rd",NA,"female",0,1,NA
+"Meanwell, Miss Marion Ogden","3rd",NA,"female",0,1,NA
+"Mechen, Mr John","3rd",NA,"male",0,0,NA
+"Meek, Mrs Thomas","3rd",NA,"female",0,1,NA
+"Melkebuk, Mrs Philemon","3rd",23,"female",0,1,0.583504426485971
+"Mellenger, Miss Madeleine Violet","2nd",13,"female",1,1,0.876359811305987
+"Mellenger, Mrs Elizabeth Anne","2nd",41,"female",1,1,0.702963571853071
+"Mellor, Mr William John","2nd",19,"male",1,0,0.287405869965149
+"Meo, Mr Alfonso","3rd",NA,"male",0,0,NA
+"Meyer, Mr August","2nd",30,"male",0,0,0.207680877776629
+"Meyer, Mr Edgar Joseph","1st",28,"male",0,0,0.507837969662763
+"Meyer, Mrs Edgar Joseph (Leila Saks)","1st",NA,"female",1,1,NA
+"Midtsjo, Mr Karl Albert","3rd",NA,"male",1,0,NA
+"Mihoff, Mr Stoytcho","3rd",NA,"male",0,0,NA
+"Miles, Mr Frank","3rd",NA,"male",0,0,NA
+"Millet, Mr Francis Davis","1st",65,"male",0,0,0.194945851185436
+"Milling, Mr Jacob Christian","2nd",48,"male",0,0,0.114645410566384
+"Minahan, Dr William Edward","1st",44,"male",0,0,0.355379716823008
+"Minahan, Miss Daisy E","1st",33,"female",1,1,0.921783316103005
+"Minahan, Mrs William Edward (Lillian E Thorpe)","1st",37,"female",1,1,0.909711707794073
+"Mineff, Mr Ivan","3rd",NA,"male",0,0,NA
+"Minkoff, Mr Lazar","3rd",NA,"male",0,0,NA
+"Mirko, Mr Dika","3rd",NA,"male",0,0,NA
+"Mitchell, Mr Henry Michael","2nd",71,"male",0,0,0.0499633419052415
+"Mitkoff, Mr Mito","3rd",NA,"male",0,0,NA
+"Mock, Mr Philip E","1st",NA,"male",1,0,NA
+"Mocklare, Miss Helen Mary","3rd",NA,"female",1,1,NA
+"Moen, Mr Sigurd H","3rd",NA,"male",0,0,NA
+"Molson, Mr Harry Markland","1st",55,"male",0,0,0.263778836252869
+"Moor, Master Meier","3rd",NA,"male",0,0,NA
+"Moor, Mrs Beila","3rd",NA,"female",1,1,NA
+"Moore, Mr Clarence Bloomfield","1st",47,"male",0,0,0.328935177105907
+"Moore, Mr Leonard Charles","3rd",NA,"male",0,0,NA
+"Moran, Miss Bertha","3rd",NA,"female",1,1,NA
+"Moran, Mr Daniel J","3rd",NA,"male",0,0,NA
+"Moran, Mr James","3rd",NA,"male",0,0,NA
+"Moraweck, Dr Ernest","2nd",54,"male",0,0,0.0928598878416603
+"Morley, Mr Henry Samuel","3rd",NA,"male",0,0,NA
+"Morley, Mr William","2nd",NA,"male",0,0,NA
+"Morrow, Mr Thomas Rowan","3rd",NA,"male",0,0,NA
+"Moss, Albert Johan","3rd",NA,"male",0,0,NA
+"Moubarek (Borak), Mr Hanna (John)","3rd",NA,"male",1,0,NA
+"Moubarek, Master George","3rd",NA,"male",0,0,NA
+"Moubarek, Master William George","3rd",NA,"male",0,0,NA
+"Moubarek, Mrs George","3rd",NA,"female",0,1,NA
+"Moussa, Mrs Mantoura Baloics","3rd",NA,"female",0,1,NA
+"Moutal, Mr Rahamin","3rd",NA,"male",0,0,NA
+"Mudd, Mr Thomas C","2nd",NA,"male",0,0,NA
+"Mullins, Miss Katie","3rd",NA,"female",1,1,NA
+"Mulvihill, Miss Bertha E","3rd",NA,"female",0,1,NA
+"Murdlin, Mr Joseph","3rd",NA,"male",0,0,NA
+"Murphy, Miss Katherine","3rd",NA,"female",0,1,NA
+"Murphy, Miss Margaret","3rd",NA,"female",0,1,NA
+"Murphy, Miss Nora","3rd",NA,"female",0,1,NA
+"Myhrman, Mr Pehr Fabian Oliver Malkolm","3rd",NA,"male",0,0,NA
+"Myles, Mr Thomas Francis","2nd",64,"male",0,0,0.0647080391377818
+"Nackid, Miss Maria","3rd",NA,"female",1,1,NA
+"Nackid, Mr Said","3rd",NA,"male",0,0,NA
+"Nackid, Mrs Said","3rd",NA,"female",0,1,NA
+"Nahill, Mr Toufik","3rd",NA,"male",0,0,NA
+"Naidenoff, Mr Penko","3rd",NA,"male",0,0,NA
+"Najib, Miss Adele Kiamie","3rd",NA,"female",1,1,NA
+"Nancarrow, Mr William Henry","3rd",NA,"male",0,0,NA
+"Nancarrow, W H","3rd",NA,"male",0,0,NA
+"Nankoff, Mr Minko","3rd",NA,"male",0,0,NA
+"Nasr, Mr Mustafa","3rd",NA,"male",0,0,NA
+"Nasser (Nasrallah), Mr Nicholas","2nd",32,"male",0,0,0.195082818613641
+"Nasser (Nasrallah), Mrs Nicholas","2nd",18,"female",1,1,0.853524620473269
+"Nassr, Mr Saade Jean","3rd",NA,"male",0,0,NA
+"Natsch, Mr Charles H","1st",36,"male",0,0,0.429948794322079
+"Naughton, Miss Hannah","3rd",NA,"female",0,1,NA
+"Navratil, Master Edmond Roger","2nd",2,"male",1,0,0.439790889372101
+"Navratil, Master Michel M","2nd",3,"male",1,0,0.430162649492109
+"Navratil, Mr Michel","2nd",32,"male",0,0,0.195082818613641
+"Nemaugh, Mr Robert","3rd",NA,"male",0,0,NA
+"Nenkoff, Mr Christo","3rd",NA,"male",0,0,NA
+"Nesson, Mr Israel","2nd",26,"male",0,0,0.234647105126899
+"Newell, Miss Madeleine","1st",31,"female",1,1,0.9272490911161
+"Newell, Miss Marjorie","1st",23,"female",1,1,0.945761290813874
+"Newell, Mr Arthur Webster","1st",58,"male",0,0,0.241595874195375
+"Newsom, Miss Helen Monypeny","1st",19,"female",1,1,0.953260679761645
+"Nicholls, Mr Joseph Charles","2nd",19,"male",0,0,0.287405869965149
+"Nicholson, Mr Arthur Ernest","1st",64,"male",0,0,0.201167901806749
+"Nicola-Yarred, Master Elias","3rd",NA,"male",0,0,NA
+"Nicola-Yarred, Miss Jamila","3rd",NA,"female",1,1,NA
+"Nieminen, Miss Manta Josefina","3rd",NA,"female",0,1,NA
+"Niklasen, Sander","3rd",NA,"male",0,0,NA
+"Niklasson, Mr Samuel","3rd",NA,"male",0,0,NA
+"Nilsson, Miss Berta Olivia","3rd",NA,"female",1,1,NA
+"Nilsson, Miss Helmina Josefina","3rd",NA,"female",0,1,NA
+"Nilsson, Mr August Ferdinand","3rd",NA,"male",0,0,NA
+"Niskanen, Mr Johan","3rd",NA,"male",0,0,NA
+"Norman, Mr Robert Douglas","2nd",NA,"male",0,0,NA
+"Nosworthy, Mr Richard Cater","3rd",NA,"male",0,0,NA
+"Nosworthy, Richard C","3rd",NA,"male",0,0,NA
+"Nourney, Mr Alfred (aka Baron von Drachstedt)","2nd",20,"male",1,0,0.279449595403504
+"Novel, Mansouer","3rd",NA,"male",1,0,NA
+"Nye, Mrs Elizabeth Ramell","2nd",29,"female",1,1,0.79110055421912
+"Nysten, Miss Anna","3rd",NA,"female",0,1,NA
+"Nysveen, Mr Johan H","3rd",NA,"male",0,0,NA
+"O'Brien, Mr Denis","3rd",NA,"male",0,0,NA
+"O'Brien, Mr Thomas","3rd",NA,"male",0,0,NA
+"O'Brien, Mrs Thomas","3rd",NA,"female",1,1,NA
+"O'Connell, Mr Patrick D","3rd",NA,"male",0,0,NA
+"O'Connor, Mr Maurice","3rd",NA,"male",0,0,NA
+"O'Connor, Mr Patrick","3rd",NA,"male",0,0,NA
+"O'Dwyer, Miss Nellie","3rd",NA,"female",0,1,NA
+"O'Keefe, Mr Patrick","3rd",NA,"male",0,0,NA
+"O'Neill, Miss Bridget","3rd",NA,"female",0,1,NA
+"O'Sullivan, Miss Bridget","3rd",NA,"female",0,1,NA
+"Odahl, Mr Nils Martin","3rd",NA,"male",1,0,NA
+"Ohman, Miss Velin","3rd",NA,"female",0,1,NA
+"OLeary, Miss Norah","3rd",NA,"female",0,1,NA
+"Oliva, Mlle","1st",NA,"female",0,1,NA
+"Olsen, Master Arthur","3rd",NA,"male",0,0,NA
+"Olsen, Mr Charlie (Carl)","3rd",NA,"male",0,0,NA
+"Olsen, Mr Henry Margido","3rd",NA,"male",0,0,NA
+"Olsen, Mr Ole M","3rd",NA,"male",0,0,NA
+"Olsson, Miss Elida","3rd",NA,"female",0,1,NA
+"Olsson, Mr Nils Johan","3rd",NA,"male",0,0,NA
+"Olsson, Mr Oscar Johansson","3rd",NA,"male",1,0,NA
+"Omont, Mr A Fernand","1st",NA,"male",1,0,NA
+"Oreskovic, Mr Jeko","3rd",NA,"male",0,0,NA
+"Oreskovic, Mr Luka","3rd",NA,"male",0,0,NA
+"Oreskovic, Mr Maria","3rd",NA,"male",0,0,NA
+"Osen, Mr Olof Elon","3rd",NA,"male",0,0,NA
+"Osman, Miss Maria","3rd",NA,"female",1,1,NA
+"Ostby, Miss Helen Raghnild","1st",22,"female",1,1,0.947736197476459
+"Ostby, Mr Engelhart Cornelius","1st",64,"male",0,0,0.201167901806749
+"Otter, Mr Richard","2nd",39,"male",0,0,0.155571725523132
+"Ovies y Rodriguez, Mr Servando","1st",28,"male",0,0,0.507837969662763
+"Oxenham, Mr Percy Thomas","2nd",22,"male",1,0,0.263948309194979
+"Padro y Manent, Mr Julian","2nd",NA,"male",1,0,NA
+"Pain, Dr Alfred","2nd",24,"male",0,0,0.24900973575974
+"Pallas y Castello, Mr Emilio","2nd",NA,"male",1,0,NA
+"Panula, Master Juha Niilo","3rd",NA,"male",0,0,NA
+"Panula, Master Urho Abraham","3rd",NA,"male",0,0,NA
+"Panula, Master William","3rd",NA,"male",0,0,NA
+"Panula, Mr Ernesti Arvid","3rd",NA,"male",0,0,NA
+"Panula, Mr Jaako Arnold","3rd",NA,"male",0,0,NA
+"Panula, Mrs John","3rd",NA,"female",0,1,NA
+"Parker, Mr Clifford R","2nd",28,"male",0,0,0.220869254298734
+"Parkes, Mr Francis (Frank)","2nd",NA,"male",0,0,NA
+"Parr, Mr William Henry Marsh","1st",NA,"male",0,0,NA
+"Parrish, Mrs Lutie Davis","2nd",50,"female",1,1,0.624538948246891
+"Partner, Mr Austin","1st",NA,"male",0,0,NA
+"Pasic, Mr Jakob","3rd",NA,"male",0,0,NA
+"Paulner, Mr Uscher","3rd",NA,"male",0,0,NA
+"Paulsson, Master Gosta Leonard","3rd",NA,"male",0,0,NA
+"Paulsson, Master Paul Folke","3rd",NA,"male",0,0,NA
+"Paulsson, Miss Stina Viola","3rd",NA,"female",0,1,NA
+"Paulsson, Miss Torborg Danira","3rd",NA,"female",0,1,NA
+"Paulsson, Mrs Nils","3rd",NA,"female",0,1,NA
+"Pavlovic, Mr Stefo","3rd",NA,"male",0,0,NA
+"Payne, Mr Vivian Ponsonby","1st",22,"male",0,0,0.5662126646577
+"Peacock, Master Alfred Edward","3rd",NA,"male",0,0,NA
+"Peacock, Miss Treasteall","3rd",NA,"female",0,1,NA
+"Peacock, Mrs Benjamin","3rd",NA,"female",0,1,NA
+"Pearce, Mr Ernest","3rd",NA,"male",0,0,NA
+"Pears, Mr Thomas","1st",NA,"male",0,0,NA
+"Pears, Mrs Thomas (Edith)","1st",NA,"female",1,1,NA
+"Pecruic, Mr Mate","3rd",NA,"male",0,0,NA
+"Pecruic, Mr Tome","3rd",NA,"male",0,0,NA
+"Pedersen, Mr Olaf","3rd",NA,"male",0,0,NA
+"Peduzzi, Mr Joseph","3rd",NA,"male",0,0,NA
+"Pekoniemi, Mr Edvard","3rd",NA,"male",1,0,NA
+"Peltomaki, Nikolai Johannes","3rd",NA,"male",0,0,NA
+"Penasco, Mr Victor de Satode","1st",18,"male",0,0,0.604230217891252
+"Penasco, Mrs Victor de Satode (Josefa de Soto)","1st",17,"female",1,1,0.956630311691071
+"Pengelly, Mr Frederick","2nd",20,"male",0,0,0.279449595403504
+"Pericault, Ms","1st",NA,"female",1,1,NA
+"Perkin, Mr John Henry","3rd",NA,"male",0,0,NA
+"Pernot, Mr Rene","2nd",NA,"male",0,0,NA
+"Persson, Mr Ernst Ulrik","3rd",NA,"male",1,0,NA
+"Peruschitz, Rev Joseph M","2nd",40,"male",0,0,0.150494262767817
+"Peter (Joseph), Master Michael J","3rd",NA,"male",0,0,NA
+"Peter (Joseph), Miss Mary","3rd",NA,"female",0,1,NA
+"Peter (Joseph), Mrs Catherine","3rd",NA,"female",0,1,NA
+"Peters, Miss Katie","3rd",NA,"female",0,1,NA
+"Petersen, Mr Marius","3rd",NA,"male",0,0,NA
+"Peterson, Mr Johan Emil","3rd",NA,"male",0,0,NA
+"Petranec, Miss Matilda","3rd",NA,"female",0,1,NA
+"Petroff, Mr Nedeca","3rd",NA,"male",0,0,NA
+"Petroff, Mr Pentcho","3rd",NA,"male",0,0,NA
+"Pettersson, Miss Ellen Natalia","3rd",NA,"female",0,1,NA
+"Peuchen, Major Arthur Godfrey","1st",52,"male",1,0,0.287227213008673
+"Phillips, Miss Alice","2nd",42,"female",1,1,0.694718721970104
+"Phillips, Mr Robert","2nd",21,"male",0,0,0.271629617525617
+"Pickard (Trembisky), Mr Berk","3rd",NA,"male",1,0,NA
+"Pinsky, Miss Rosa","2nd",32,"female",1,1,0.771013286170696
+"Plotcharsky, Mr Vasil","3rd",NA,"male",0,0,NA
+"Ponesell, Mr Martin","2nd",34,"male",0,0,0.183072389299544
+"Portaluppi, Mr Emilio","2nd",NA,"male",1,0,NA
+"Porter, Mr Walter Chamberlain","1st",46,"male",0,0,0.337640168447024
+"Potchett, Mr George","3rd",NA,"male",0,0,NA
+"Potter, Mrs Thomas, Jr (Lily Alexenia Wilson)","1st",56,"female",1,1,0.827178388547585
+"Pulbaum, Mr Frank","2nd",NA,"male",0,0,NA
+"Quick, Miss Phyllis May","2nd",2,"female",1,1,0.916011272038987
+"Quick, Miss Winifred Vera","2nd",8,"female",1,1,0.896068532493528
+"Quick, Mrs Frederick C (Jane Richards)","2nd",33,"female",1,1,0.764023226517117
+"Radeff, Mr Alexander","3rd",NA,"male",0,0,NA
+"Raibid, Mr Razi","3rd",NA,"male",0,0,NA
+"Reed, Mr James George","3rd",NA,"male",0,0,NA
+"Reeves, Mr David","2nd",36,"male",0,0,0.171643712323427
+"Renouf, Mr Peter Henry","2nd",34,"male",0,0,0.183072389299544
+"Renouf, Mrs Peter Henry (Lillian Jefferys)","2nd",30,"female",1,1,0.784552334507812
+"Reuchlin, Jonkheer John George","1st",NA,"male",0,0,NA
+"Reynaldo, Mrs Encarnacion","2nd",28,"female",1,1,0.79750111978482
+"Reynolds, Mr Harold","3rd",NA,"male",0,0,NA
+"Rheims, Mr George Lucien","1st",NA,"male",1,0,NA
+"Rice, Master Albert","3rd",NA,"male",0,0,NA
+"Rice, Master Arthur","3rd",NA,"male",0,0,NA
+"Rice, Master Eric","3rd",NA,"male",0,0,NA
+"Rice, Master Eugene","3rd",NA,"male",0,0,NA
+"Rice, Master George","3rd",NA,"male",0,0,NA
+"Rice, Mrs William","3rd",NA,"female",0,1,NA
+"Richard, Mr Emil","2nd",23,"male",0,0,0.256407750931386
+"Richards, Master George Sidney","2nd",0.8,"male",1,0,0.4514042417323
+"Richards, Master William Rowe","2nd",3,"male",1,0,0.430162649492109
+"Richards, Mrs Sidney (Emily Hocking)","2nd",25,"female",1,1,0.815819868505265
+"Ridsdale, Miss Lucy","2nd",50,"female",1,1,0.624538948246891
+"Riihiivouri, Miss Sanni","3rd",NA,"female",0,1,NA
+"Ringhini, Mr Sante","1st",33,"male",0,0,0.45896013041765
+"Rintamaki, Mr Matti","3rd",NA,"male",0,0,NA
+"Riordan, Miss Hannah","3rd",NA,"female",1,1,NA
+"Risien, Mr Samuel","3rd",NA,"male",0,0,NA
+"Risien, Mrs Samuel","3rd",NA,"female",0,1,NA
+"Robbins, Mr Victor","1st",NA,"male",0,0,NA
+"Robert, Mrs Edward Scott (Elisabeth Walton McMillan)","1st",43,"female",1,1,0.888455312670034
+"Robins, Mr Alexander A","3rd",NA,"male",0,0,NA
+"Robins, Mrs Alexander A","3rd",NA,"female",0,1,NA
+"Roebling, Mr Washington Augustus 2nd","1st",31,"male",0,0,0.478469323341342
+"Rogers, Mr Harry","2nd",NA,"male",0,0,NA
+"Rogers, Mr William John","3rd",NA,"male",0,0,NA
+"Romaine, Mr Charles Hallace","1st",NA,"male",1,0,NA
+"Rommetvedt, Mr Karl Kristian Knut","3rd",NA,"male",0,0,NA
+"Rood, Mr Hugh R","1st",NA,"male",0,0,NA
+"Rosblom, Miss Salli Helena","3rd",NA,"female",0,1,NA
+"Rosblom, Mr Viktor Rickard","3rd",NA,"male",0,0,NA
+"Rosblom, Mrs Viktor","3rd",NA,"female",0,1,NA
+"Rosenbaum (Russell), Miss Edith Louise","1st",33,"female",1,1,0.921783316103005
+"Ross, Mr John Hugo","1st",NA,"male",0,0,NA
+"Roth, Miss Sarah","3rd",NA,"female",1,1,NA
+"Rothes, the Countess of (Noel Lucy Martha Dyer-Edwardes)","1st",27,"female",1,1,0.937137964330525
+"Rothschild, Mr Martin","1st",55,"male",0,0,0.263778836252869
+"Rothschild, Mrs Martin (Elizabeth L Barrett)","1st",54,"female",1,1,0.838093965587053
+"Rouse, Mr Richard Henry","3rd",NA,"male",0,0,NA
+"Rowe, Mr Alfred G","1st",NA,"male",0,0,NA
+"Rugg, Miss Emily","2nd",21,"female",1,1,0.838212321582717
+"Rush, Mr Alfred George John","3rd",NA,"male",0,0,NA
+"Ryan, Mr Edward Ryan","3rd",NA,"male",1,0,NA
+"Ryan, Mr Patrick","3rd",NA,"male",0,0,NA
+"Ryerson, Master John Borie","1st",13,"male",1,0,0.649992597875242
+"Ryerson, Miss Emily Borie","1st",18,"female",1,1,0.954975522874406
+"Ryerson, Miss Susan (Suzette) Parker","1st",21,"female",1,1,0.949643023840328
+"Ryerson, Mr Arthur Larned","1st",61,"male",0,0,0.220719146776003
+"Ryerson, Mrs Arthur Larned (Emily Maria Borie)","1st",48,"female",1,1,0.867516334489281
+"Saad, Khalil","3rd",NA,"male",1,0,NA
+"Saad, Mr Amin","3rd",NA,"male",0,0,NA
+"Saalfeld, Mr Adolphe","1st",NA,"male",1,0,NA
+"Sadlier, Mr Matthew","3rd",NA,"male",0,0,NA
+"Sadowitz, Mr Harry","3rd",NA,"male",0,0,NA
+"Sage, Master William","3rd",NA,"male",0,0,NA
+"Sage, Miss Ada","3rd",NA,"female",0,1,NA
+"Sage, Miss Constance","3rd",NA,"female",0,1,NA
+"Sage, Miss Dorothy","3rd",NA,"female",0,1,NA
+"Sage, Miss Stella","3rd",NA,"female",0,1,NA
+"Sage, Mr Douglas","3rd",NA,"male",0,0,NA
+"Sage, Mr Frederick","3rd",NA,"male",0,0,NA
+"Sage, Mr George","3rd",NA,"male",0,0,NA
+"Sage, Mr John","3rd",NA,"male",0,0,NA
+"Sage, Mrs John","3rd",NA,"female",0,1,NA
+"Sage, Thomas (child)","3rd",NA,"male",0,0,NA
+"Salander, Mr Karl Johan","3rd",21,"male",0,0,0.0983381952525841
+"Salkjelsvik, Miss Anna","3rd",NA,"female",1,1,NA
+"Salomon, Mr Abraham L","1st",NA,"male",1,0,NA
+"Salonen, Mr Johan Werner","3rd",NA,"male",0,0,NA
+"Samaan, Mr Elias","3rd",NA,"male",0,0,NA
+"Samaan, Mr Hanna","3rd",NA,"male",0,0,NA
+"Samaan, Mr Youssef","3rd",NA,"male",0,0,NA
+"Sandstrom, Miss Beatrice Irene","3rd",1.5,"female",0,1,0.764853884521836
+"Sandstrom, Miss Hjalmar","3rd",NA,"female",1,1,NA
+"Sandstrom, Miss Marguerite Rut","3rd",NA,"female",0,1,NA
+"Sather, Simon Sivertsen","3rd",NA,"male",0,0,NA
+"Saundercock, William Henry","3rd",NA,"male",0,0,NA
+"Sawyer, Mr Frederick","3rd",NA,"male",0,0,NA
+"Scanlan, Mr James","3rd",NA,"male",0,0,NA
+"Schabert, Mrs Paul (Emma Mock)","1st",NA,"female",1,1,NA
+"Sdycoff, Mr Todor","3rd",NA,"male",0,0,NA
+"Sedgwick, Mr Charles Frederick Waddington","2nd",NA,"male",0,0,NA
+"Segesser, Mlle Emma","1st",NA,"female",1,1,NA
+"Seman Master Betros","3rd",NA,"male",0,0,NA
+"Seredeca, Ms","1st",NA,"female",0,1,NA
+"Serota, Mr Maurice","3rd",NA,"male",0,0,NA
+"Seward, Mr Frederic Kimber","1st",34,"male",1,0,0.449248767153335
+"Sharp, Mr Percival","2nd",NA,"male",0,0,NA
+"Shaughnesay, Mr Patrick","3rd",NA,"male",0,0,NA
+"Shedid (Sitik), Mr Daher (Docart)","3rd",NA,"male",0,0,NA
+"Sheerlinck, Mr Jean","3rd",NA,"male",1,0,NA
+"Shellard, Mr Frederick B","3rd",NA,"male",0,0,NA
+"Shelley, Mrs William (Imanita)","2nd",25,"female",1,1,0.815819868505265
+"Shine, Miss Ellen","3rd",NA,"female",1,1,NA
+"Sholt, Mr Peter Andreas Lauritz Andersen","3rd",NA,"male",0,0,NA
+"Shorney, Mr Charles","3rd",NA,"male",0,0,NA
+"Shutes, Miss Elizabeth W","1st",40,"female",1,1,0.899582069126923
+"Silven, Miss Lyyli","2nd",18,"female",1,1,0.853524620473269
+"Silverthorne, Mr Spencer Victor","1st",36,"male",1,0,0.429948794322079
+"Silvey, Mr William Baird","1st",50,"male",0,0,0.303531857154776
+"Silvey, Mrs William Baird (Alice Munger)","1st",39,"female",1,1,0.903066088522221
+"Simmons, Mr John","3rd",NA,"male",0,0,NA
+"Simonius-Blumer, Col Alfons","1st",56,"male",1,0,0.256241434056154
+"Sincock, Miss Maude","2nd",20,"female",1,1,0.843455047404011
+"Sirayanian, Mr Arsun","3rd",NA,"male",0,0,NA
+"Siukonnen, Miss Anna","2nd",30,"female",1,1,0.784552334507812
+"Sivic, Mr Husen","3rd",NA,"male",0,0,NA
+"Sivola, Mr Antti","3rd",NA,"male",0,0,NA
+"Sjoblom, Miss Anna Sofia","3rd",NA,"female",1,1,NA
+"Sjostedt, Mr Ernst Adolf","2nd",59,"male",0,0,0.0776230745830063
+"Skinner, Mr Henry John","3rd",NA,"male",0,0,NA
+"Skoog, Master Harald","3rd",NA,"male",0,0,NA
+"Skoog, Master Karl","3rd",NA,"male",0,0,NA
+"Skoog, Miss Mabel","3rd",NA,"female",0,1,NA
+"Skoog, Miss Margit","3rd",NA,"female",0,1,NA
+"Skoog, Mr William","3rd",NA,"male",0,0,NA
+"Skoog, Mrs William","3rd",NA,"female",0,1,NA
+"Slabenoff, Mr Petco","3rd",NA,"male",0,0,NA
+"Slayter, Miss Hilda Mary","2nd",30,"female",1,1,0.784552334507812
+"Slemen, Mr Richard James","2nd",35,"male",0,0,0.177285814160676
+"Slocovski, Mr Selman","3rd",NA,"male",0,0,NA
+"Sloper, Mr William Thompson","1st",28,"male",1,0,0.507837969662763
+"Smart, Mr John Montgomery","1st",56,"male",0,0,0.256241434056154
+"Smiljanovic, Mr Mile","3rd",NA,"male",0,0,NA
+"Smith (Schmidt), Mr Augustus","2nd",22,"male",0,0,0.263948309194979
+"Smith, Miss Marion","2nd",NA,"female",1,1,NA
+"Smith, Mr James Clinch","1st",56,"male",0,0,0.256241434056154
+"Smith, Mr Lucien Philip","1st",24,"male",0,0,0.546877348057637
+"Smith, Mr Richard William","1st",NA,"male",0,0,NA
+"Smith, Mrs Lucien Philip (Mary Eloise Hughes","1st",18,"female",1,1,0.954975522874406
+"Smyth, Miss Julia","3rd",NA,"female",1,1,NA
+"Snyder, Mr John Pillsbury","1st",24,"male",1,0,0.546877348057637
+"Snyder, Mrs John Pillsbury (Nelle Stevenson)","1st",23,"female",1,1,0.945761290813874
+"Sobey, Mr Hayden","2nd",25,"male",0,0,0.241755775030206
+"Solvang, Mrs Lena Jacobsen","3rd",NA,"female",0,1,NA
+"Somerton, Mr Francis William","3rd",NA,"male",0,0,NA
+"Sop, Mr Jules","3rd",NA,"male",1,0,NA
+"Spector, Mr Woolf","3rd",NA,"male",0,0,NA
+"Spedden, Master Robert Douglas","1st",6,"male",1,0,0.709559243972917
+"Spedden, Mr Frederick Oakley","1st",45,"male",1,0,0.346456594736672
+"Spedden, Mrs Frederick Oakley (Margaretta Corning Stone)","1st",40,"female",1,1,0.899582069126923
+"Spencer, Mr William Augustus","1st",57,"male",0,0,0.248846611653555
+"Spencer, Mrs William Augustus (Marie Eugenie)","1st",NA,"female",1,1,NA
+"Staehlin, Dr Max","1st",32,"male",1,0,0.468702768045985
+"Staneff, Mr Ivan","3rd",NA,"male",0,0,NA
+"Stankovic, Mr Jovan","3rd",NA,"male",0,0,NA
+"Stanley, Miss Amy Zilla Elsie","3rd",NA,"female",1,1,NA
+"Stanley, Mr Edward Roland","3rd",NA,"male",0,0,NA
+"Stanton, Mr Samuel Ward","2nd",41,"male",0,0,0.145553951064238
+"Stead, Mr William Thomas","1st",62,"male",0,0,0.214054421609772
+"Stengel, Mr Charles Emil Henry","1st",54,"male",1,0,0.271457031558701
+"Stengel, Mrs Charles Emil Henry (Annie May Morris)","1st",43,"female",1,1,0.888455312670034
+"Stephenson, Mrs Walter Bertram (Martha Eustis)","1st",52,"female",1,1,0.848446421581739
+"Stewart, Mr Albert A","1st",NA,"male",0,0,NA
+"Stokes, Mr Philip Joseph","2nd",25,"male",0,0,0.241755775030206
+"Stone, Mrs George Nelson (Martha E)","1st",62,"female",1,1,0.790956328770137
+"Storey, Mr Thomas","3rd",NA,"male",0,0,NA
+"Stoyehoff, Mr Ilia","3rd",NA,"male",0,0,NA
+"Strandberg, Miss Ida Sofia","3rd",NA,"female",0,1,NA
+"Stranden, Mr Juho","3rd",NA,"male",1,0,NA
+"Straus, Mr Isidor","1st",67,"male",0,0,0.182941937835878
+"Straus, Mrs Isidor (Ida Blun)","1st",63,"female",0,1,0.784404820197597
+"Strilic, Mr Ivan","3rd",NA,"male",0,0,NA
+"Strom, Miss Telma (Selma) Matilda","3rd",NA,"female",0,1,NA
+"Strom, Mrs Wilhelm","3rd",NA,"female",0,1,NA
+"Sunderland, Mr Victor Francis","3rd",NA,"male",1,0,NA
+"Sundman, Mr Johan Julian","3rd",NA,"male",0,0,NA
+"Sutehall, Mr Henry, Jr","3rd",NA,"male",0,0,NA
+"Sutton, Mr Frederick","1st",61,"male",0,0,0.220719146776003
+"Svensson, Mr Johan","3rd",NA,"male",0,0,NA
+"Svensson, Mr Johan Cervin","3rd",NA,"male",1,0,NA
+"Svensson, Mr Olof","3rd",NA,"male",0,0,NA
+"Swane, Mr George","2nd",18,"male",0,0,0.2954957722059
+"Sweet, Mr George","2nd",14,"male",0,0,0.329127797481002
+"Swift, Mrs Frederick Joel (Margaret Welles Barron)","1st",46,"female",1,1,0.87626524262074
+"Tannous, Mr Thomas","3rd",NA,"male",0,0,NA
+"Taussig, Miss Ruth","1st",18,"female",1,1,0.954975522874406
+"Taussig, Mr Emil","1st",52,"male",0,0,0.287227213008673
+"Taussig, Mrs Emil (Tillie Mandelbaum)","1st",39,"female",1,1,0.903066088522221
+"Taylor, Mr Elmer Zebley","1st",48,"male",1,0,0.320346072084277
+"Taylor, Mrs Elmer Zebley (Juliet Cummins Wright)","1st",NA,"female",1,1,NA
+"Tenglin, Mr Gunnar Isidor","3rd",NA,"male",1,0,NA
+"Thayer, Mr John Borland","1st",49,"male",0,0,0.311877011660929
+"Thayer, Mr John Borland, jr","1st",17,"male",1,0,0.613559518588152
+"Thayer, Mrs John Borland (Marian Longstreth Morris)","1st",39,"female",1,1,0.903066088522221
+"Theobald, Mr Thomas Leonard","3rd",NA,"male",0,0,NA
+"Thomas, Master Assad Alexander","3rd",NA,"male",0,0,NA
+"Thomas, Mr Charles","3rd",NA,"male",0,0,NA
+"Thomas, Mr John (? 1st/2nd class)","3rd",NA,"male",0,0,NA
+"Thomas, Mr John, Jr","3rd",NA,"male",0,0,NA
+"Thomas, Mrs Alexander","3rd",NA,"female",1,1,NA
+"Thomson, Mr Alexander","3rd",NA,"male",0,0,NA
+"Thorne, Mr George (alias of: Mr George Rosenshine)","1st",46,"male",0,0,0.337640168447024
+"Thorne, Mrs Gertrude Maybelle","1st",NA,"female",1,1,NA
+"Thorneycroft, Mr Percival","3rd",NA,"male",0,0,NA
+"Thorneycroft, Mrs Percival","3rd",NA,"female",1,1,NA
+"Tikkanen, Mr Juho","3rd",NA,"male",0,0,NA
+"Tobin, Mr Roger","3rd",NA,"male",0,0,NA
+"Todoroff, Mr Lalio","3rd",NA,"male",0,0,NA
+"Toerber, Mr Ernest William","3rd",NA,"male",0,0,NA
+"Tomlin, Mr Ernest Portage","3rd",NA,"male",0,0,NA
+"Toomey, Miss Ellen","2nd",50,"female",1,1,0.624538948246891
+"Torfa, Mr Assad","3rd",NA,"male",0,0,NA
+"Tornquist, Mr William Henry","3rd",25,"male",1,0,0.0852912170639251
+"Touma (Thomas), Master George","3rd",NA,"male",0,0,NA
+"Touma (Thomas), Miss Hannah","3rd",NA,"female",0,1,NA
+"Touma (Thomas), Mrs Darwin","3rd",NA,"female",0,1,NA
+"Troupiansky, Mr Moses Aaron","2nd",22,"male",0,0,0.263948309194979
+"Trout, Mrs William H (Jessie L)","2nd",NA,"female",1,1,NA
+"Troutt, Miss Edwina Celia","2nd",27,"female",1,1,0.803754223839671
+"Tucker, Mr Gilbert Milligan, jr","1st",31,"male",1,0,0.478469323341342
+"Turcin, Mr Stefan","3rd",NA,"male",0,0,NA
+"Turja, Miss Anna Sofia","3rd",18,"female",1,1,0.630196590168165
+"Turkula, Mrs Hedvig","3rd",63,"female",1,1,0.226199559547521
+"Turpin, Mr William John","2nd",29,"male",0,0,0.214201242430529
+"Turpin, Mrs William John (Dorothy Anne Wonnacott)","2nd",27,"female",0,1,0.803754223839671
+"Uruchurtu, Mr Manuel E","1st",NA,"male",0,0,NA
+"Uzelas, Mr Joso","3rd",NA,"male",0,0,NA
+"Van Billiard, Master James William","3rd",NA,"male",0,0,NA
+"Van Billiard, Master Walter John","3rd",NA,"male",0,0,NA
+"Van Billiard, Mr Austin Blyler","3rd",NA,"male",0,0,NA
+"Van de Velde, Mr John Joseph","3rd",36,"male",0,0,0.0571364544299869
+"Van der Planke, Miss Augusta","3rd",18,"female",0,1,0.630196590168165
+"Van der Planke, Mr Jules","3rd",31,"male",0,0,0.068651206104855
+"Van der Planke, Mr Leon","3rd",15,"male",0,0,0.121237193717351
+"Van der Planke, Mrs Jules","3rd",31,"female",0,1,0.505940141573311
+"Van der Steen, Mr Leo Peter","3rd",28,"male",0,0,0.0765576227645893
+"Van Derhoef, Mr Wyckoff","1st",61,"male",0,0,0.220719146776003
+"Van Impe, Miss Catharine","3rd",10,"female",0,1,0.699827128608158
+"Van Impe, Mr Jean Baptiste","3rd",36,"male",0,0,0.0571364544299869
+"Van Impe, Mrs Jean Baptiste","3rd",30,"female",0,1,0.515729432792362
+"Vandewalle, Mr Nestor Cyriel","3rd",28,"male",0,0,0.0765576227645893
+"Vartunian, Mr David","3rd",22,"male",1,0,0.0949187191112233
+"Vassilios, Mr Catavelas","3rd",NA,"male",0,0,NA
+"Veale, Mr James","2nd",30,"male",0,0,0.207680877776629
+"Vendel, Mr Olof Wdvin","3rd",29,"male",0,0,0.0738334962653884
+"Vereruysse, Mr Victor","3rd",47,"male",0,0,0.0378906333660509
+"Vestrom, Miss Hulda Amanda Adolfina","3rd",14,"female",0,1,0.665915212614741
+"Vonk, Mr Jenko","3rd",22,"male",0,0,0.0949187191112233
+"Waelens, Mr Achille","2nd",22,"male",0,0,0.263948309194979
+"Walcroft, Miss Nellie","2nd",35,"female",1,1,0.749605834701479
+"Walker, Mr William Anderson","1st",47,"male",0,0,0.328935177105907
+"Ward, Ms Anna","1st",NA,"female",0,1,NA
+"Ware, Mr Frederick","3rd",NA,"male",0,0,NA
+"Ware, Mr John James","2nd",30,"male",0,0,0.207680877776629
+"Ware, Mr William J","2nd",23,"male",0,0,0.256407750931386
+"Ware, Mrs John James (Florence Louise Long)","2nd",28,"female",1,1,0.79750111978482
+"Warren, Mr Charles William","3rd",NA,"male",0,0,NA
+"Warren, Mr Frank Manley","1st",64,"male",0,0,0.201167901806749
+"Warren, Mrs Frank Manley (Anna S Atkinson)","1st",60,"female",1,1,0.803616565887262
+"Watson, Mr Ennis Hastings","2nd",NA,"male",0,0,NA
+"Watt, Miss Bertha","2nd",12,"female",1,1,0.880542540648394
+"Watt, Mrs James (Bessie Inglis Milne)","2nd",40,"female",1,1,0.711078355298247
+"Wazli, Mr Yousif","3rd",NA,"male",0,0,NA
+"Webber, Miss Susan","2nd",36,"female",1,1,0.742180809004211
+"Webber, Mr James","3rd",NA,"male",0,0,NA
+"Weir, Col John","1st",60,"male",0,0,0.227531308207097
+"Weisz, Mr Leopold","2nd",28,"male",0,0,0.220869254298734
+"Weisz, Mrs Leopold (Mathilde)","2nd",32,"female",1,1,0.771013286170696
+"Wells, Master Ralph Lester","2nd",2,"male",1,0,0.439790889372101
+"Wells, Miss Joan","2nd",4,"female",1,1,0.909783345654726
+"Wells, Mrs Arthur H (Addie Trevaskis)","2nd",29,"female",1,1,0.79110055421912
+"Wennerstrom, Mr August Edvard","3rd",NA,"male",1,0,NA
+"Wenzel, Mr Linhart","3rd",NA,"male",0,0,NA
+"West, Miss Barbara J","2nd",NA,"female",1,1,NA
+"West, Miss Constance Mirium","2nd",NA,"female",1,1,NA
+"West, Mr Edwy Arthur","2nd",36,"male",0,0,0.171643712323427
+"West, Mrs Edwy Arthur (Ada Mary)","2nd",33,"female",1,1,0.764023226517117
+"Wheadon, Mr Edward","2nd",NA,"male",0,0,NA
+"Wheeler, Mr Edwin","2nd",NA,"male",0,0,NA
+"Wheeler, Mr Frederick","2nd",NA,"male",0,0,NA
+"White, Mr Percival Wayland","1st",54,"male",0,0,0.271457031558701
+"White, Mr Richard Frasar","1st",21,"male",0,0,0.575808992418657
+"White, Mrs J Stuart (Ella Holmes)","1st",55,"female",1,1,0.832707307037392
+"Wick, Miss Mary Natalie","1st",31,"female",1,1,0.9272490911161
+"Wick, Mr George Dennick","1st",57,"male",0,0,0.248846611653555
+"Wick, Mrs George Dennick (Martha Hitchcock)","1st",45,"female",1,1,0.880450734780513
+"Widegren, Mr Charles Peter","3rd",51,"male",0,0,0.032573781364252
+"Widener, Mr George Dunton","1st",50,"male",0,0,0.303531857154776
+"Widener, Mr Harry Elkins","1st",27,"male",0,0,0.517625509387015
+"Widener, Mrs George Dunton (Eleanor Elkins)","1st",50,"female",1,1,0.858248888378257
+"Wiklund, Mr Jacob Alfred","3rd",18,"male",0,0,0.109262497229707
+"Wilhelms, Mr Charles","2nd",32,"male",1,0,0.195082818613641
+"Wilkes, Mrs Ellen","3rd",45,"female",1,1,0.371750669283926
+"Wilkinson, Mrs Elizabeth Anne","2nd",NA,"female",1,1,NA
+"Willard, Miss Constance","1st",20,"female",1,1,0.951483841713908
+"Willer, Mr Aaron","3rd",NA,"male",0,0,NA
+"Willey, Mr Edward","3rd",NA,"male",0,0,NA
+"Williams, Mr Charles Duane","1st",51,"male",0,0,0.295314170469403
+"Williams, Mr Charles Eugene","2nd",NA,"male",1,0,NA
+"Williams, Mr Fletcher Lambert","1st",NA,"male",0,0,NA
+"Williams, Mr Howard Hugh","3rd",NA,"male",0,0,NA
+"Williams, Mr Leslie","3rd",28,"male",0,0,0.0765576227645893
+"Williams, Mr Richard Norris II","1st",21,"male",1,0,0.575808992418657
+"Wilson, Ms Helen","1st",NA,"female",1,1,NA
+"Windelov, Mr Einar","3rd",21,"male",0,0,0.0983381952525841
+"Wirz, Mr Albert","3rd",27,"male",0,0,0.0793736437015634
+"Wiseman, Mr Phillippe","3rd",NA,"male",0,0,NA
+"Wittevrongel, Mr Camiel","3rd",36,"male",0,0,0.0571364544299869
+"Woolner, Mr Hugh","1st",NA,"male",1,0,NA
+"Wright, Miss Marion","2nd",26,"female",1,1,0.809860271279583
+"Wright, Mr George","1st",NA,"male",0,0,NA
+"Yalsevac, Mr Ivan","3rd",NA,"male",1,0,NA
+"Yasbeck, Mr Antoni","3rd",27,"male",0,0,0.0793736437015634
+"Yasbeck, Mrs Antoni","3rd",15,"female",1,1,0.657143568597217
+"Young, Miss Marie Grice","1st",36,"female",1,1,0.912878314231112
+"Youssef, Mr Gerios","3rd",NA,"male",0,0,NA
+"Yrois, Miss Henriette","2nd",NA,"female",0,1,NA
+"Zabour, Miss Hileni","3rd",NA,"female",0,1,NA
+"Zabour, Miss Tamini","3rd",NA,"female",0,1,NA
+"Zakarian, Mr Artun","3rd",27,"male",0,0,0.0793736437015634
+"Zakarian, Mr Maprieder","3rd",26,"male",0,0,0.082284016676387
+"Zenni, Mr Philip","3rd",22,"male",0,0,0.0949187191112233
+"Zimmerman, Leo","3rd",29,"male",0,0,0.0738334962653884
